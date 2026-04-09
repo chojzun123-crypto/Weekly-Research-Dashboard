@@ -1,0 +1,33 @@
+name: 대시보드 자동 업데이트
+
+on:
+  schedule:
+    - cron: '0 8 * * 5'  # 매주 금요일 오후 5시(KST) = UTC 08:00
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v3
+
+      - name: Python 설치
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 라이브러리 설치
+        run: pip install -r requirements.txt
+
+      - name: 대시보드 생성
+        run: python generate_dashboard.py
+
+      - name: 결과 저장 & 푸시
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add dashboard.html
+          git commit -m "대시보드 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
+          git push
