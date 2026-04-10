@@ -1,4 +1,6 @@
-requests
 pandas
+requests
 beautifulsoup4
-pykrx
+lxml
+finance-datareader
+anthropic
