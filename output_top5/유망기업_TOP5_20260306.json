@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-03-03",
+    "end_date": "2026-03-06",
+    "generated_at": "2026-04-10T04:54:28",
+    "analysis_days": 4
+  },
+  "stats": {
+    "total_reports": 281,
+    "buy_count": 152,
+    "target_up_count": 0,
+    "total_companies": 208
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "덴티움",
+      "stock_code": "145720",
+      "institution_list": "해당기업, 삼성증권, 키움증권, 미래에셋증권",
+      "report_count": 4,
+      "buy_ratio": 0.75,
+      "target_up_ratio": 0.0,
+      "current_price": 44100.0,
+      "avg_target_price": 72333.33333333333,
+      "max_target_price": 90000.0,
+      "avg_upside": 64.0,
+      "bullets": [
+        "2025년 4분기 경영실적 2025년 4분기 경영실적 및 질의응답 기다림이 길어지나 리레이팅을 위한 고군분투 중 4Q25 Review: 내수/중국 부진 지속에도 매출 믹스 개선 및 판관비 통제로 영업 레버리지 소폭 회복하며 영업이익 컨센서스 상회",
+        "! 매출 성장은 아쉬우나, 비용 조절 성공하며 마진 상승 ▶ 업황과 정부 정책의 콜라보, 목표주가 +6% 상향 조정 이 정도면 바닥이 아닐까? 4Q25 Review: 매출 및 영업이익 모두 시장 기대치 크게 상회"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "에이피알",
+      "stock_code": "278470",
+      "institution_list": "LS증권, NH투자증권, 미래에셋증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 283000.0,
+      "avg_target_price": 416666.6666666667,
+      "max_target_price": 450000.0,
+      "avg_upside": 47.2,
+      "bullets": [
+        "점점 더 높아지는 가이던스 상회 가시성 미국, 일본, 유럽 업데이트: 높아지는 QoQ 매출 성장 기대감 ▶ 2026E, 글로벌 동시 확장, 고마진 채널 매출비중 확대로 영업이익 계단식 성장 세계의 중심에 서서 모든 지표가 ‘메디큐브’를 가리킨다 ▶ 채널 다변화로 글로벌 침투 향상 에이피알의 시간이 다시 왔다 상반기 모멘텀 집중, 서프라이즈 가능성 고조"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "와이지엔터테인먼트",
+      "stock_code": "122870",
+      "institution_list": "IBK투자증권, DS투자증권, iM증권, 하나증권, 메리츠증권",
+      "report_count": 5,
+      "buy_ratio": 0.8,
+      "target_up_ratio": 0.0,
+      "current_price": 64200.0,
+      "avg_target_price": 100000.0,
+      "max_target_price": 100000.0,
+      "avg_upside": 55.8,
+      "bullets": [
+        "빅뱅 20주년 기념 월드투어 발표! 빅뱅 20주년 기념 월드투어, 베이비몬스터, 트레저 활동계획 공개 ▶ 4Q25 Review: 영업이익 223억원(+2,1449% YoY) 메가IP-차세대IP-신인IP로 30주년 완벽한 라인업 4Q25/2025Re: 블랙핑크 컴백과 베이비몬스터 성장이 만든 시너지 ▶ 2026년도 기대되는 이유 1)빅뱅 컴백, 2)베몬/트레저 성장, 3)신인 데뷔 ▶ 투자의견 매수, 목표주가 10만원 유지",
+        "투자 매력도 상승 빅뱅 20주년 월드투어 동행 확정 빅뱅 월드투어 공식 발표에 따른 실적 상향 ▶ 연간 2회 앨범 발매와 신인 데뷔 계획 구체화 ▶ 아티스트 풀가동으로 분기 활동 공백 최소화 빅뱅 컴백 오피셜 하반기부터 내년까지 실적과 모멘텀이 동시에 높아지는 구간 ▶ 빅뱅의 데뷔 20주년 글로벌 투어 계획 발표"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "키움증권, 한국투자증권, 미래에셋증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 939000.0,
+      "avg_target_price": 1446666.6666666667,
+      "max_target_price": 1540000.0,
+      "avg_upside": 54.1,
+      "bullets": [
+        "2026년 영업이익 170조원으로 상향 1Q26 영업이익 32조원, 시장 기대치 상회할 전망 ▶ 2026년 영업이익 170조원(+260%YoY)으로 상향 ▶ 목표주가 130만원으로 상향, 업종 차선호주 의견 유지 쇼티지는 숏을 찢어 목표주가를 1,500,000만원으로 15% 상향 ▶ 할당 전쟁 진행 중2026년 영업이익 170조원으로 상향 1Q26 영업이익 32조원, 시장 기대치 상회할 전망 ▶ 2026년 영업이익 170조원(+260%YoY)으로 상향 ▶ 목표주가 130만원으로 상향,"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "한국콜마",
+      "stock_code": "161890",
+      "institution_list": "흥국증권, 유안타증권, 다올투자증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 64200.0,
+      "avg_target_price": 95333.33333333333,
+      "max_target_price": 110000.0,
+      "avg_upside": 48.5,
+      "bullets": [
+        "미국 공장 불확실성만 없다면 4Q25 실적: 대체적으로 시장 기대치 부합 ▶ 국내 별도 성장세는 견고, 미국 공장이 발목을 잡는다 ▶ 투자의견: BUY (유지), 목표주가: 88,000원 (유지) 2026년 국내 맑음, 북미 흐림 4Q25 Review: 국내법인 기대치 상회3배로 ODM 업종 중 저평가 ▶ 2026E 한국 법인 중심의 성장 스토리 저평가 판단, 매수 권고"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "iM증권, 미래에셋증권, 다올투자증권, 메리츠증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 401500.0,
+      "avg_target_price": 530000.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 32.0,
+      "bullets": [
+        "새로운 전기를 맞이하다 높은 ROE x 이익의 지속성 = 할증의 근거 ▶ MLCC, 수요 기대에서 가격 기대로의 전환 ▶ FC-BGA, 이번에는 리레이팅의 단초가 될 것 기판, 살판 났다 AI6 물량 확대의 FC-BGA 직접 수혜 반영 ▶ FC-BGA: T사 향 전장 수요, 이제 규모가 다르다 ▶ MLCC: 가격 인상이 구체화되고 있는 시기1Q26 실적 상향 조정 불가피 두려움보다는 설렘으로 2월 하순 중국 채널 현물가 상승과 Murata CEO의 가격 인상 검토 발언에 따라 MLCC 업종 주가 급등",
+        "국내 업체 인상 관측으로 이어지는 흐름은 17~18년 P 상승 호황기 초입과 유사한 패턴 ▶ 계약가 인상이 2Q26 내 가시화될 경우 영업이익 개선 효과는 빠르게 전사 실적에 반영될 전망 ▶ 26년 영업이익 추정치를 Base 시나리오 기준 14조원으로 상향함에 따라 투자의견 BUY 유지, 적정주가 47만원으로 상향 새 술은 새 부대에 AI기반 MLCC 사이클, 예상보다 강하고 길다 ▶ 업사이클의 새로운 중심 축 ‘패키지솔루션＇ ▶ 많이 오른 것이 아니라, 새로운 시작의 구간"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "NICE인프라",
+      "stock_code": "063570",
+      "institution_list": "LS증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 3810.0,
+      "avg_target_price": 7000.0,
+      "max_target_price": 7000.0,
+      "avg_upside": 83.7,
+      "bullets": [
+        "전기차 충전기 수익성 개선 전기차 충전기 사업부문 수익성 개선 ▶ 2026년 매출액 & 영업이익 최대 실적 전망 ▶ Valuation 저평가"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "HD현대일렉트릭",
+      "stock_code": "267260",
+      "institution_list": "BNK투자증권, 유진투자증권, 유안타증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 987000.0,
+      "avg_target_price": 1226666.6666666667,
+      "max_target_price": 1270000.0,
+      "avg_upside": 24.3,
+      "bullets": [
+        "선별 수주를 통한 업계 최고 수준의 수익성 북미향 고수익 전력기기 납품 호조로 역대 최고 실적 경신 ▶ 글로벌 송전망 인프라 투자 확대 및 AI 데이터센터 수요 급증 현재의 수요대응과 이후의 먹거리까지 2025년 매출액과 영업이익은 4조원, 9,953억원을 기록하며 각각 전년비 23%, 49% 성장2조원을 전망 고마진이 정당화하는 멀티플 765kV, 교체가 아닌 신규 수요 ▶ 송전에서 배전까지 확장"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "이노와이어리스",
+      "stock_code": "073490",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 33900.0,
+      "avg_target_price": 60000.0,
+      "max_target_price": 60000.0,
+      "avg_upside": 77.0,
+      "bullets": [
+        "5G SA 시대에도 큰 수혜 예상됩니다 12개월 목표가 60,000원으로 상향, 실적/주가/이벤트 감안 시 매수 적기 판단 ▶ 5G SA 시대 맞이해 시험장비/스몰셀 매출 크게 증가할 전망 ▶ 역대급 낮은 PBR, 주가 상승 폭 크게 나타날 수 있어 장기 투자 적극 추천5G SA 시대에도 큰 수혜 예상됩니다 12개월 목표가 60,000원으로 상향, 실적/주가/이벤트 감안 시 매수 적기 판단 ▶ 5G SA 시대"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "원익QnC",
+      "stock_code": "074600",
+      "institution_list": "BNK투자증권, 신한투자증권, 유안타증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 30700.0,
+      "avg_target_price": 43666.666666666664,
+      "max_target_price": 45000.0,
+      "avg_upside": 42.2,
+      "bullets": [
+        "수익성 더 좋아진다 본사 수익성 호조로 4Q25 깜짝 실적 기록 ▶ 1Q26 영업이익 253억원, 연간으로 999억원(68%YoY) 전망 ▶ 목표주가 45,000원으로 상향조정, 투자의견 ‘매수’ 유지 변함없는 Top Pick 쿼츠, 세정 등 반도체 부문 성장이 주가 방향성 결정 ▶ 4Q25 Review: 쿼츠, 세정 성장 가속화와 자회사 호실적 기록",
+        "밸류에이션 상향 가능 1Q26 예상 영업이익 247억원 4Q25 영업이익 184억원 기록 ▶ 투자의견 BUY, 목표주가 4"
+      ]
+    }
+  ]
+}
