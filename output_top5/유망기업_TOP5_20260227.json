@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-02-23",
+    "end_date": "2026-02-27",
+    "generated_at": "2026-04-10T05:07:29",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 84,
+    "buy_count": 65,
+    "target_up_count": 0,
+    "total_companies": 54
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "와이지엔터테인먼트",
+      "stock_code": "122870",
+      "institution_list": "한화투자증권, 메리츠증권, 교보증권, 다올투자증권, iM증권",
+      "report_count": 10,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 71300.0,
+      "avg_target_price": 93200.0,
+      "max_target_price": 100000.0,
+      "avg_upside": 30.7,
+      "bullets": [
+        "차세대 Mega IP 보유사로 도약하는 해가 되어야 4Q25 Review: 영업이익 223억, 컨센서스 부합 ▶ 차세대 Mega IP 보유사로 도약하는 해가 되어야 투어 호조 속 IP 확장 가속 4Q25 Review: 무난한 마무리 ▶ 아티스트 파이프라인 풀캐파 가동 4Q25 Review: 전 연차가 만들어 갈 꽃길 시장 기대치 부합7% yoy ▶ 저연차 IP 실적 모멘텀 & 고연차 IP 추가 활동 모멘텀 ▶ 투자의견 매수, 목표주가 85,000원 유지 균형을 확인하는 중 모든 연차의 고른 기여 ▶ 4Q25 Review: 컨센서스 부합 예상한 대로 4분기 매출액은 1,718억원(+651%yoy), 영업이익은 223억원(+2,1451%yoy)으로 시장 컨센서스 부합 ▶ 실적 추정치 하향하며 목표주가를 90,000원으로 하향 조정 ▶ 공식 발표가 나진 않았지만, 블랙핑크 신보 발매 이후 앵콜 투어가 추가되고, 빅뱅의 활동이 공식화될 경우 실적 추정치 상향 예정 차세대 IP 성장 본격화 4분기 영업이익은 223억원(+2,146% Yo)으로 컨센서스 부합"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "한국전력",
+      "stock_code": "015760",
+      "institution_list": "IBK투자증권, 유진투자증권, 신한투자증권, KB증권, NH투자증권",
+      "report_count": 10,
+      "buy_ratio": 0.9,
+      "target_up_ratio": 0.0,
+      "current_price": 63300.0,
+      "avg_target_price": 76000.0,
+      "max_target_price": 92000.0,
+      "avg_upside": 20.1,
+      "bullets": [
+        "배당 확대 여지는 확인 4Q25 영업이익, 시장기대치를 42% 하회 ▶ 원전 모멘텀과 배당 강화, 올해도 시장 재평가 지속될 전망 Top Pick으로 지속 추천! 4Q25 매출액 24조원(-14%qoq, +1%yoy), 영업이익 20조원(-64%qoq, -18%yoy), 순이익 14조원(-63%qoq, +37%yoy)으로 당사 추정과 시장 눈높이를 하회하는 실적 ▶ 2026년 매출액 97조원(-0%yoy), 영업이익 21조원(+55%yoy), 순이익 13조원(+53%yoy)으로 전망 배당은 아쉽지만 원전 모멘텀은 유효하다 본질적인 문제 해결이 전제돼야 탄탄한 우상향 가능0% YoY): 자회사에서 발생한 비용으로 기대치 하회 ▶ 향후 관건은 전기요금 개편의 방향성 및 한미 원전협력의 진전 여부 AI 산업 육성을 위한 한전의 투자 필요성 전기요금 체계 개편 논의보단 전력망 투자 확대 논의 ▶ 일회성 비용 반영 때문 4Q25 Review: 실적과 배당, 둘 다 아쉬웠다 자회사 중심으로 대규모 일회성 반영"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "바텍",
+      "stock_code": "043150",
+      "institution_list": "대신증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 21050.0,
+      "avg_target_price": 32000.0,
+      "max_target_price": 32000.0,
+      "avg_upside": 52.0,
+      "bullets": [
+        "시총보다 이익잉여금이 많은 글로벌 1위 4Q25 Review: 사상 최대 매출, 수익성은 과도기 ▶ 약 3,000억원 vs 이익잉여금 약 4,700억원"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "영원무역",
+      "stock_code": "111770",
+      "institution_list": "NH투자증권, 대신증권, DB증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 93000.0,
+      "avg_target_price": 126666.66666666667,
+      "max_target_price": 140000.0,
+      "avg_upside": 36.2,
+      "bullets": [
+        "육천억무역 프리미엄을 받아야 마땅할 OEM ▶ 4Q25 Review: 어닝 서프라이즈 글로벌 Top vendor다운 놀라운 실적 25년 4분기 OEM 부문 전방 호조로 매출 달러 기준 18% 성장 추정 ▶ OEM 부문 영업이익률 대폭 개선(yoy +5%p)"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "디앤씨미디어",
+      "stock_code": "263720",
+      "institution_list": "신한투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 12070.0,
+      "avg_target_price": 17000.0,
+      "max_target_price": 17000.0,
+      "avg_upside": 40.8,
+      "bullets": [
+        "흥행한 IP의 힘 모멘텀이 돌아오기를 기다리며 ▶ 4Q25 Review: 일시적 정산 효과로 서프라이즈 ▶ Valuation & Risk: 긴 호흡으로 접근"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "이수페타시스",
+      "stock_code": "007660",
+      "institution_list": "BNK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 118500.0,
+      "avg_target_price": 165000.0,
+      "max_target_price": 165000.0,
+      "avg_upside": 39.2,
+      "bullets": [
+        "다중적층 CAPA 조기 확대, 실적 고성장 기대 다중적층 수요 대응, 증설 계획 앞당김에 따라 매출 전망 상향 조정 ▶ AI 데이터센터 수요 고성장, 월평균 수주액 최고치 지속 경신 중 ▶ 목표주가 16만5천원으로 상향조정, 투자의견 ‘매수’ 유지"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "인바디",
+      "stock_code": "041830",
+      "institution_list": "미래에셋증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 33500.0,
+      "avg_target_price": 45000.0,
+      "max_target_price": 45000.0,
+      "avg_upside": 34.3,
+      "bullets": [
+        "올해는 왕년의 영광을 재현할 수 있을까? 4Q25 Review: 매출 시장 기대치 부합, 영업이익 시장 기대치 하회 ▶ 목표주가 45,000원으로 상향하며, 매수의견 유지"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "두산",
+      "stock_code": "000150",
+      "institution_list": "메리츠증권, DS투자증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1215000.0,
+      "avg_target_price": 1800000.0,
+      "max_target_price": 2000000.0,
+      "avg_upside": 48.1,
+      "bullets": [
+        "NDR 후기: 독점/증설/환원, 더 큰 그림이 열린다 북미 N사향 Computing Tray용 CCL은 올해 초부터 양산 샘플 출하를 시작했으며, 현재 양산 샘플 기준 동사가 단독 대응 중인 것으로 파악 ▶ 2027년 수요에 대응하기 위한 브라운필드 증설을 진행 중이며, 중국은 올해 말, 국내는 내년 1분기 완공 예정2% 전량 소각 결정 ▶ 3차 상법 개정 우회하려는 일부 기업들에게 Peer Pressure로 작용할 전망 ▶ 할인율 조정 근거는 충분, 지주회사지만 이례적으로 주가 부양 노력"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "SBS",
+      "stock_code": "034120",
+      "institution_list": "신한투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 18500.0,
+      "avg_target_price": 24000.0,
+      "max_target_price": 24000.0,
+      "avg_upside": 29.7,
+      "bullets": [
+        "확인될때까지 광고 축소+웨이브 종료 <<< 넷플릭스 효과가 클 때까지 ▶ 4Q25 Review: 기대치 하회 ▶ Valuation & Risk: 확인될 시 주가 재평가 가능"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "한국가스공사",
+      "stock_code": "036460",
+      "institution_list": "KB증권, 삼성증권, 신한투자증권, LS증권, 메리츠증권",
+      "report_count": 7,
+      "buy_ratio": 0.8571428571428571,
+      "target_up_ratio": 0.0,
+      "current_price": 43900.0,
+      "avg_target_price": 50714.28571428572,
+      "max_target_price": 55000.0,
+      "avg_upside": 15.5,
+      "bullets": [
+        "유가 하락에 따른 자회사 부진, 미수금 회수는 희망적 투자의견 Buy, 목표주가 48,000원 유지 ▶ 4Q25 영업이익 4,736억원 (-597% YoY): 정산비용 및 자회사 손상차손 인식 ▶ 미수금 회수 시작 긍정적 4Q review - 일회성 비용에 기대치 하회 실적은 컨센서스에 미달 ▶ 목표주가 54,000원, BUY 투자의견 유지 민수용 미수금 회수는 긍정적이나 배당이 아쉽다 민수용 원료비 미수금 회수가 지속돼야 한다7%)으로 컨센서스 하회 ▶ 손상차손으로 인한 배당 축소는 아쉬운 지점",
+        "미수금 감소는 긍정적 4Q review: Earnings miss due to one-offs Kogas logged 4Q sales of KRW9t (down 9"
+      ]
+    }
+  ]
+}
