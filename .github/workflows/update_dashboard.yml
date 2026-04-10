@@ -1,10 +1,19 @@
-name: 대시보드 자동 업데이트
+name: 주간 리포트 스크랩
 on:
   schedule:
-    - cron: '0 8 * * 5'  # 매주 금요일 오후 5시(KST) = UTC 08:00
+    - cron: '0 7 * * 5'  # 매주 금요일 오후 4시 KST
   workflow_dispatch:
+    inputs:
+      start_date:
+        description: '시작일 (YYYYMMDD, 비우면 이번 주 자동)'
+        required: false
+        default: ''
+      end_date:
+        description: '종료일 (YYYYMMDD, 비우면 이번 주 자동)'
+        required: false
+        default: ''
 jobs:
-  update:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - name: 코드 가져오기
@@ -15,8 +24,16 @@ jobs:
           python-version: '3.11'
       - name: 라이브러리 설치
         run: pip install -r requirements.txt
-      - name: 대시보드 생성
-        run: python generate_dashboard.py --scrape --no-open
+      - name: 리포트 스크랩 & 대시보드 생성
+        run: |
+          ARGS="--scrape --no-open"
+          if [ -n "${{ github.event.inputs.start_date }}" ] && [ -n "${{ github.event.inputs.end_date }}" ]; then
+            ARGS="$ARGS --start ${{ github.event.inputs.start_date }} --end ${{ github.event.inputs.end_date }}"
+            echo "기간 지정: ${{ github.event.inputs.start_date }} ~ ${{ github.event.inputs.end_date }}"
+          else
+            echo "기간 미지정 → 이번 주 자동"
+          fi
+          python generate_dashboard.py $ARGS
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: 결과 저장 & 푸시
@@ -25,5 +42,5 @@ jobs:
           git config user.email "actions@github.com"
           git add dashboard.html
           git add -A output_top5/ output_industry/ 2>/dev/null || true
-          git commit -m "대시보드 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
+          git commit -m "주간 리포트 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
           git push
