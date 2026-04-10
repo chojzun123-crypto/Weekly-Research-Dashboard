@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "report_type": "industry",
+    "start_date": "2026-02-09",
+    "end_date": "2026-02-20",
+    "generated_at": "2026-04-10T07:56:58",
+    "analysis_days": 10
+  },
+  "stats": {
+    "total_reports": 111,
+    "covered_industries": 28,
+    "overweight_industries": 13
+  },
+  "industries": [
+    {
+      "industry_name": "반도체와반도체장비",
+      "report_count": 11,
+      "overweight_ratio": 0.36363636363636365,
+      "overweight_ratio_pct": 36,
+      "opinion": "Overweight",
+      "main_institutions": "미래에셋, 유진투자, 교보",
+      "bullets": [
+        "중국 반도체 업종: 큰 장이 열린다 중국 반도체주에 큰 장이 열린다 ▶ 중국 AI 반도체 업체에 투자할 현실적 대안은 ETF Memory Watch - IT 발전 단계와 Capex 부담의 구조적 변화 주간 주가: S&P 500 -01%, 엔비디아 -3%, AMD -12%, 구글 -49% ▶ 2025년 하이퍼스케일러 빅4의 합산 캐팩스는 약 4,100억달러로 65% 급증한 데 이어, 2026년에는 6,900억 달러를 넘어설 전망 2026년 2월 둘째 주 반도체 Weekly AI CapEx 상향 조정, pros and cons 미국 CSPs, 2026년 CapEx 상향 조정 ▶ Positive: 메모리 가격 급등 영향 상쇄"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "자동차",
+      "report_count": 10,
+      "overweight_ratio": 0.4,
+      "overweight_ratio_pct": 40,
+      "opinion": "Overweight",
+      "main_institutions": "다올투자, 메리츠, 대신",
+      "bullets": [
+        "주간 업종 리뷰: 1월 기아 판매대수 부각 Mobility at a glance 타이어업에 대한 반성문: 가치주의 반란 2026년 가치주로서 국내 타이어 업종 매력 지속될 것으로 예상 ▶ 2026년 Q/P/C 실적변수 우호적 흐름 => 업체별 수익성 견조할 것",
+        "▶ 1월 말 실적 발표 이후, 실적이 견조했던 현대모비스와 2026년 차별화된 판매 성장(+68%YoY) 가이던스를 제시한 기아는 외국인이 다시 매수세로 전환"
+      ],
+      "keyword": "한편 외국인 투자자는 매도로 일관"
+    },
+    {
+      "industry_name": "은행",
+      "report_count": 9,
+      "overweight_ratio": 0.4444444444444444,
+      "overweight_ratio_pct": 44,
+      "opinion": "Overweight",
+      "main_institutions": "삼성, 메리츠, 하나",
+      "bullets": [
+        "금융 Weekly Insight - 주주환원의 힘 - KB금융, 이제 PBR 1배를 바라보다 메리츠 Financial Daily 은행 Weekly - 은행주 랠리",
+        "끝이 아닌 진행형 전주 은행주는 106%를 13%p 초과상승 ▶ 전주 특징주는 하나금융"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "조선",
+      "report_count": 7,
+      "overweight_ratio": 0.14285714285714285,
+      "overweight_ratio_pct": 14,
+      "opinion": "Neutral",
+      "main_institutions": "KB, LS, 신영",
+      "bullets": [
+        "1월 글로벌 신조선 발주는 YoY 267% 증가 1월 글로벌 신조선 발주는 전년동월 대비 267% 증가한 561만 CGT 기록 ▶ 한국 M/S는 지난해 1월 21"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "식품",
+      "report_count": 6,
+      "overweight_ratio": 0.16666666666666666,
+      "overweight_ratio_pct": 17,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, 키움, 하나",
+      "bullets": [
+        "F&B Morning Talk 키움 음식료 Weekly F&B Weekly Talk F&B Weekly Comment: 배당주/자산주 점검 + 1월 수출 Re 자산주 업데이트: 하림지주/롯데칠성 ▶ 배당주 업데이트: KT&G/ 하이트진로/ 오리온 ▶ 1월 수출 데이터(수리일 기준) Re F&B Morning Talk F&B Morning Talk"
+      ],
+      "keyword": "F&B Morning Talk 키움 음식료 Weekly F&B Weekl"
+    },
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 6,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 하나, 유안타",
+      "bullets": [
+        "AI 하드웨어: 여전히 Win or Lose의 중심 AI 하드웨어의 매력: Capex 증가는 수요 증가로 직결 ▶ LLM 모델 성능 경쟁도 새로운 장으로 ▶ AI 하드웨어 소재",
+        "부품, 다시 바스켓으로 볼 시점 Weekly 이배속 : 실적 추정치 하향 조정 마무리 데이터 포인트 해석 및 투자 전략 : 단기 모멘텀 활용 ▶ Car/Energy/Robot : Stellantis, 전기차 생산 전략 축소"
+      ],
+      "keyword": "AI 하드웨어: 여전히 Win or Lose의 중심 AI 하드웨어의 매력"
+    },
+    {
+      "industry_name": "건설",
+      "report_count": 6,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "신한투자, 신영, 유진투자",
+      "bullets": [
+        "신한 건설 Weekly 박세라의 건설이야기: Vol296 메시지의 의미 기회비용의 상승 ▶ 매입임대 실효성에 대한 의문 제시 ▶ 부동산 공급-소유-운영(임대)에 대한 구조적 인식 변화 건설/부동산 Weekly - 시종 10조 시대를 앞둔 K-REITs 매매가격지수: 전국(+027%) ▶ 전세가격지수: 전국(+0"
+      ],
+      "keyword": "신한 건설 Weekly 박세라의 건설이야기: Vol"
+    },
+    {
+      "industry_name": "IT서비스",
+      "report_count": 5,
+      "overweight_ratio": 0.2,
+      "overweight_ratio_pct": 20,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, 대신, NH투자",
+      "bullets": [
+        "Meritz Overnight Tech 메모리 가격의 추가 상승 vs",
+        "IT 기기의 수익성 둔화 2026년 1Q 메모리 가격 급등으로 삼성전자, SK하이닉스 실적 상향 가능성 ▶ 다만 AI 인프라 수익성 부담과 IT기기 가격 인상으로 세트 수요 우려 존재"
+      ],
+      "keyword": "Meritz Overnight Tech 메모리 가격의 추가 상승 vs"
+    },
+    {
+      "industry_name": "부동산",
+      "report_count": 5,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "KB, 삼성, NH투자",
+      "bullets": [
+        "관광객 증가로 서울 관광상권 회복, 호텔 시장 호황 리테일 투자시장의 서울 쏠림 현상 심화",
+        "외국인 관광객 증가로 서울 주요 상권 공실률 안정화 ▶ 외국인 관광객 증가로 호텔 시장 호황기",
+        "서울을 중심으로 호텔 시장 성장 전망 해외투자자가 주도한 2025년 물류센터 투자시장 물류센터 거래규모는 전년대비 7"
+      ],
+      "keyword": "관광객 증가로 서울 관광상권 회복, 호텔 시장 호황 리테일 투자시장의 서"
+    },
+    {
+      "industry_name": "화장품",
+      "report_count": 5,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성, 메리츠",
+      "bullets": [
+        "화장품 데일리 업데이트-2월 9일 Morning brief Weekly Cosmetics Letter-예상보다 좋은 실적들 4분기 실적발표 단상: 2026년 기대감을 높이는 메이저 브랜드 기업(아모레퍼시픽/에이피알) ▶ 이슈 분석: 실리콘투를 걱정하지 마세요!"
+      ],
+      "keyword": "화장품 데일리 업데이트-2월 9일 Morning brief Weekly"
+    },
+    {
+      "industry_name": "방송과엔터테인먼트",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "신한투자, 하나, 대신",
+      "bullets": [
+        "신한 플랫폼팀 Weekly (엔터/미디어/인터넷/게임/통신) - 돈이 되는 오지랖 (2월 2주차) 엔터/미디어/레저 - 미디어 확실한 턴어라운드, 엔터/레저 1Q 모멘텀에 초점 ▶ 인터넷/게임 - 실적과 신작으로 주가 반등, AI 도구를 사용한 IP 레버리지 효과 기대"
+      ],
+      "keyword": "신한 플랫폼팀 Weekly (엔터/미디어/인터넷/게임/통신) - 돈이 되"
+    },
+    {
+      "industry_name": "판매업체",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠, LS, 신영",
+      "bullets": [
+        "Retail Weekly Traffic 소비재/플랫폼 Weekly: 에스티로더, 호실적에도 주가 급락 에스티로더 FY26 2Q 매출액 YoY +6% 증가한 423억달러, 영업이익 YoY +32% 증가한 61억달러 ▶ 중국 본토 매출액 YoY 13% 증가하며 2개 분기 연속 두자릿수 성장, 미국 점진적인 회복 조짐 ▶ 관세와 투자 집행 부담이 집중되는 하반기: 실적 개선 지속성 확인 전까지 주가 변동성 불가피할 것 ▶"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "양방향미디어와서비스",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠, IBK투자",
+      "bullets": [
+        "인터넷/게임 Weekly IBKS Daily [인터넷/게임] IBKS Daily [인터넷/게임] IBKS Daily [인터넷/게임]"
+      ],
+      "keyword": "인터넷/게임 Weekly IBKS Daily [인터넷/게임] IBKS D"
+    },
+    {
+      "industry_name": "제약",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "SK, DS투자, 키움",
+      "bullets": [
+        "Weekly Bio Insight HIMS&HERS, 저가 경구용 위고비 출시 철회 HIMS&HERS, 저가 경구용 위고비 출시 ▶ HIMS&HERS의 입장, “환자 개인화된 용량 제공” ▶ FDA의 답변, “쇼티지가 아닌 상황에서 명백한 불법” Kiwoom Healthcare 종합정리"
+      ],
+      "keyword": "Weekly Bio Insight HIMS&HERS, 저가 경구용 위고비"
+    },
+    {
+      "industry_name": "무선통신서비스",
+      "report_count": 3,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 대신, 하나",
+      "bullets": [
+        "Meritz 통신서비스 Weekly 통신서비스 업종 주간 동향 주가 코멘트: 어느새 지수를 따라잡았습니다",
+        "주간 통신업 급등하면서 YTD 지수 수익률 상회 ▶ 이번 주도 SKT가 주도주 역할",
+        "SKT는 21년 분할 이후 최고가, KT는 02년 이후 최고가 이면서 합병 KT 출범 후 ATH, LGU+도 18년 이후 최고가 통신서비스 Weekly - 통신주 결코 비싸지 않습니다 2026년 이익/배당 조기 정상화 가능성 고조, AI 국책 사업자 선정 가능성도 긍정적"
+      ],
+      "keyword": "Meritz 통신서비스 Weekly 통신서비스 업종 주간 동향 주가 코멘"
+    },
+    {
+      "industry_name": "기계",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "위클리에요(로봇/방산/조선/항공/해운) - 2026/02/02~2026/02/08 [로봇] 전략 산업이 되어가는 로봇 산업 ▶ [방산] 미국의 자주포 도입 사업 ▶ [조선] 사우디 함정 수주 노력 안녕하세요 데일리에요(로봇/방산/조선) 안녕하세요 데일리에요(로봇/방산/조선)"
+      ],
+      "keyword": "위클리에요(로봇/방산/조선/항공/해운) - 2026/02/02~2026/"
+    },
+    {
+      "industry_name": "우주항공과국방",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "DS투자, 유진투자",
+      "bullets": [
+        "DS Defense Daily DS Defense Daily 아마존의 저궤도 위성통신망 LEO 아마존의 저궤도 위성통신망 LEO"
+      ],
+      "keyword": "DS Defense Daily DS Defense Daily 아마존의 저"
+    },
+    {
+      "industry_name": "화학",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, iM",
+      "bullets": [
+        "Weekly Monitor: 미국 태양광, 상반기 모멘텀 극대화 603/톤3주 상승// US 프로판(↑): 334$/톤",
+        "사우디 2월 CP 545$/톤(MoM +20$) ▶ 에틸렌(보합), 프로필렌(보합), 벤젠(-8$, -1"
+      ],
+      "keyword": "Weekly Monitor: 미국 태양광, 상반기 모멘텀 극대화 603/"
+    },
+    {
+      "industry_name": "철강",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 신한투자",
+      "bullets": [
+        "철강금속 Weekly: 발개위, 중국 철강시장 2월에도 약세 전망 국내 철강 유통가격: 전주 상승 이후 금주 보합 기록",
+        "철강사들의 가격 인상 정책으로 추후 상승 지속 전망 ▶ 중국 철강 유통가격: 주요 원재료인 철광석 가격 하락과 수요 부진으로 3주일 연속 소폭 조정 ▶ 산업용 금속가격: 미달러 강세, 특히 전기동은 LME 재고 증가와 올해 중국 전기동 생산 증가 전망으로 큰 폭 하락 철강/비철금속 Blink Report"
+      ],
+      "keyword": "철강금속 Weekly: 발개위, 중국 철강시장 2월에도 약세 전망 국내"
+    },
+    {
+      "industry_name": "운송인프라",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "신한투자, 하나",
+      "bullets": [
+        "I 1월 인천공항 수송실적: 시작이 좋다 1월 인천공항 여객수송실적 688만명(+5% (YoY)) ▶ 1월 인천공항 화물수송실적 237만톤(+7% (YoY)) ▶ 대한항공 산하 항공사 실적 부진의 배경"
+      ],
+      "keyword": "7만톤(+7% (YoY)) ▶ 대한항공 산하 항공사 실적 부진의 배경"
+    },
+    {
+      "industry_name": "건강관리장비와용품",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "삼성, 키움",
+      "bullets": [
+        "국내외 의료기기 주요 이슈 Weekly 실적 외 이슈: 덴티움 대상 주주 행동주의 서한 및 인모드 인수 시도 ▶ 실적 관련 이슈: 대웅제약 중국 판권 계약 해지 및 아이센스 유럽 판권 계약 체결 얼라인파트너스, 덴티움 정기주총 주주제안 발표 정기주총을 향한 행동주의 펀드의 주주제안 ▶ 정관 변경은 특별결의, 일반결의보다 조건이 까다롭다"
+      ],
+      "keyword": "국내외 의료기기 주요 이슈 Weekly 실적 외 이슈: 덴티움 대상 주주"
+    },
+    {
+      "industry_name": "복합유틸리티",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나",
+      "bullets": [
+        "Profitability Possibility 평가 기준: 돈이 되는가, 가능한가 ▶ 대형원전: 수익내기도 어렵고, 캐파도 한계가 있고 ▶ SMR: 가격보다는 납기, 시공보다는 제작 유틸리티 Weekly-산업용 전기요금 인하 가능성의 실마리 김성환 기후장관 “국가 균형발전에 기여하도록 전기요금 체계 개편”"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "항공사",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "한국투자, 상상인",
+      "bullets": [
+        "1월 항공실적: 1년 사이 많은 게 달라진 일본 여행수요 덕분에 국제선 여객은 사상 최대치 달성 ▶ 일본과 미주는 중국 항공사 이탈에 따른 반사수혜를 누리는 중 ▶ 항공업종에 대해 기대가 너무 없어서 반대로 기회 1월 항공 실적 - 시작이 좋아 1월 전국 공항 국제선 여객 수송 실적 yoy +10% ▶ 1월 인천 공항 화물 수송 실적 yoy +7%1월 항공실적: 1년 사이 많은 게 달라진 일본 여행수요 덕분에 국제선 여객은 사상 최대치 달성 ▶ 일본과 미주는 중국 항공사"
+      ],
+      "keyword": "1월 항공실적: 1년 사이 많은 게 달라진 일본 여행수요 덕분에 국제선"
+    },
+    {
+      "industry_name": "에너지장비및서비스",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "다시 부각되는 4680 배터리 기대감 주간 주요 기업 주가 변동 ▶ 모델 Y 이후 모델 3, 로보택시까지 적용 기대"
+      ],
+      "keyword": "다시 부각되는 4680 배터리 기대감 주간 주요 기업 주가 변동 ▶ 모델"
+    },
+    {
+      "industry_name": "해운사",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "글로벌 조선, 해운 Weekly-춘절 영향에 진입한 벌크, 컨테이너 시황",
+        "선가 약세에도 계속되는 LNG선 수주 문의"
+      ],
+      "keyword": "글로벌 조선, 해운 Weekly-춘절 영향에 진입한 벌크, 컨테이너 시황"
+    },
+    {
+      "industry_name": "건강관리업체및서비스",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성",
+      "bullets": [
+        "헬스케어 수출 데이터 weekly"
+      ],
+      "keyword": "헬스케어 수출 데이터 weekly"
+    },
+    {
+      "industry_name": "전기제품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "교보",
+      "bullets": [
+        "2026년 2월 둘째 주 전기전자 Weekly 실적 발표 기간으로 호실적은 지역을 불문하고 핵심 주가 트리거로 작용 ▶ 여전히 AI향 등의 고부가품 판매 호조 여부가 전기전자 섹터 호실적의 주요한 요인 ▶ 호실적을 발표한 국내 기판 업체들은 추가 모멘텀의 부재로 기판 전반의 차익 실현 발생2026년 2월 둘째 주 전기전자 Weekly 실적 발표 기간으로 호실적은 지역을 불문하고 핵심 주가 트리거로 작용 ▶ 여전히 AI향 등의"
+      ],
+      "keyword": "2026년 2월 둘째 주 전기전자 Weekly 실적 발표 기간으로 호실적"
+    },
+    {
+      "industry_name": "증권",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "KB",
+      "bullets": [
+        "기보유 자사주 소각과 주가 상승에 대한 소고 2/13 자사주 보유비중이 높은 증권사 중심으로 주가 급등 ▶ 기보유 자사주 소각이 Valuation에 미치는 영향 ▶ 기보유 자사주 소각의 긍정적 기대 효과"
+      ],
+      "keyword": "기보유 자사주 소각과 주가 상승에 대한 소고 2/13 자사주 보유비중이"
+    }
+  ]
+}
