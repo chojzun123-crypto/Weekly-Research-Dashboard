@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-03-16",
+    "end_date": "2026-03-20",
+    "generated_at": "2026-04-10T04:37:51",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 387,
+    "buy_count": 225,
+    "target_up_count": 0,
+    "total_companies": 262
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "씨어스테크놀로지",
+      "stock_code": "458870",
+      "institution_list": "상상인증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 53563.0,
+      "avg_target_price": 260000.0,
+      "max_target_price": 260000.0,
+      "avg_upside": 385.4,
+      "bullets": [
+        "씽크 잠재력 좀 더 공격적으로 보자 2026년 1분기 영업실적 가이던스 초과 전망 ▶ 씽크(thynC™), 국내외 매출 성장 잠재력이 더 커지고 있다"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "오리온",
+      "stock_code": "271560",
+      "institution_list": "KB증권, 유안타증권, 현대차증권, 한화투자증권, NH투자증권",
+      "report_count": 11,
+      "buy_ratio": 0.7272727272727273,
+      "target_up_ratio": 0.0,
+      "current_price": 134000.0,
+      "avg_target_price": 173125.0,
+      "max_target_price": 200000.0,
+      "avg_upside": 29.2,
+      "bullets": [
+        "2월 잠정 실적 코멘트 법인별 합산 매출액 2,544억원 (+131% YoY), 영업이익 365억원 (+113%) ▶ 한국 법인 매출액 870억원 (-23%) ▶ 한국: 비쵸비 라인 증설 완료, 고가동 제품 중심 출고 성장 지속 ▶ 중국: 명절 시점 차이에도 불구, 주요 채널 및 카테고리 모두 성장 2월 잠정 실적 Review 오리온 2월 잠정 법인별 합산 매출액은 2,544억원(+13"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "DS투자증권, 대신증권, 미래에셋증권, KB증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 200500.0,
+      "avg_target_price": 296000.0,
+      "max_target_price": 320000.0,
+      "avg_upside": 47.6,
+      "bullets": [
+        "파운드리도 봐야 할 때 2027년 파운드리 흑전 전망 ▶ 1Q26 Pre: 메모리 서프는 당연지사 ▶ 투자의견 매수, 목표주가 27만원으로 상향 지금이라도 사야 하는 이유 2026년 영업이익 전망치를 기존 201조원에서 242조원으로 상향 ▶ 강한 이익 성장 속, 재무 체력 강화 전망",
+        "초과성장의 동력이 될 것 진정한 풀스택 LPU 수주에 따른 파운드리 밸류에이션 할인율 축소 ▶ 엔비디아 Groq 3 LPU 양산 수주의 의미 추가 상승 여력 충분 가격보다 물량 확보 최우선 ▶ 2026년추정영업이익220조원,전년비+5배"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "우리금융지주",
+      "stock_code": "316140",
+      "institution_list": "흥국증권, 하나증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 32600.0,
+      "avg_target_price": 41500.0,
+      "max_target_price": 43000.0,
+      "avg_upside": 27.3,
+      "bullets": [
+        "환원과 성장 두 마리 토끼 기업가치제고계획 업데이트: 환원의 속도감, 성장의 방향성 ▶ 투자의견 Buy 유지, 목표주가 40,00원으로 상향 동양생명 완전자회사화는 ABL생명 통합을 위한 사전작업 동양생명 완전자회사화에 따른 신주 발행은 CET 1 비율 약 15bp 개선 요인 예상",
+        "총주주환원율 큰폭 상승의 기폭제 될 듯"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "HD현대에너지솔루션",
+      "stock_code": "322000",
+      "institution_list": "교보증권, 현대차증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 126000.0,
+      "avg_target_price": 144000.0,
+      "max_target_price": 150000.0,
+      "avg_upside": 14.3,
+      "bullets": [
+        "K-정책 수혜 국내 정책 기대와 미국향 수익성 개선 ▶ 국내 기준 독보적인 지위(모듈 M/S 2위, 고마진 N-type 전량 전환)를 감안, 멀티플 할증에 따른 밸류에이션 부담보다는 상단이 열려있다는 점에 주목할 시점 미국 가정용 수요 호조와 고유가 국내 태양광 시장 고성장 지속 및 우호적인 정책 기대 ▶ 2026년 실적은 매출액 8,602억원(+746% yoy), 영업이익 1,212억원(+1940% yoy) 기록하여 컨센서스 및 가이던스를 크게 상회하는 실적을 기록할 전망 ▶ 주가 급등했으나, 실적 강세로 견조한 주가 전망"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "S-Oil",
+      "stock_code": "010950",
+      "institution_list": "NH투자증권, IBK투자증권, 유안타증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 110600.0,
+      "avg_target_price": 140333.33333333334,
+      "max_target_price": 150000.0,
+      "avg_upside": 26.9,
+      "bullets": [
+        "2026년부터 실적과 재무구조 개선 본격화 2026~2028년 업황 강세를 온전히 누릴 전망 ▶ 1Q26 Preview: 시장 컨센서스 크게 상회할 전망 사우디 직계 정제설비의 구조적 프리미엄 왕가의 혈통, S-Oil의 원유 조달 경쟁력 재부각5조원 깜짝 실적 가능 ▶ 호르무즈 통제로 2가지 강점 부각 ▶ 재무부담 1"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "아이센스",
+      "stock_code": "099190",
+      "institution_list": "다올투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 19740.0,
+      "avg_target_price": 31000.0,
+      "max_target_price": 31000.0,
+      "avg_upside": 57.0,
+      "bullets": [
+        "Win-Win이 필요하다 커버리지 재개, 적정주가 31만원 제시 ▶ 2025년 CGM 가이던스 초과 달성, Lifescan과 공급 계약 체결, CGM 버전업 2027년 출시 목표"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "감성코퍼레이션",
+      "stock_code": "036620",
+      "institution_list": "삼성증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 5600.0,
+      "avg_target_price": 8000.0,
+      "max_target_price": 8000.0,
+      "avg_upside": 42.9,
+      "bullets": [
+        "높아진 기대에 부합한 4분기, 중국 확장 모멘텀 유효 4분기 영업이익 컨센서스 소폭 상회, 높아진 시장 기대에 부합 ▶ 중국 출점 계획 소폭 조정, 효율성 중심 전략으로 우려 제한적 ▶ 목표주가 8,000원 (Target ’26E PER 15배) 및 BUY 투자의견 유지"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "CJ프레시웨이",
+      "stock_code": "051500",
+      "institution_list": "현대차증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 31500.0,
+      "avg_target_price": 45000.0,
+      "max_target_price": 45000.0,
+      "avg_upside": 42.9,
+      "bullets": [
+        "온라인/키친리스 외형 성장 + 프레시원 통합 효과까지! 2026F 연결 기준 매출액은 3조 7,888억원(+9%yoy), 영업이익 1,174억원(+15%yoy, OPM 31%) 전망 ▶ 2026년 가이던스: 연간 매출액 +12~14%yoy 제시, 하반기로 갈수록 온라인 성장 가속화되며 성장 폭 확대될 것으로 전망 ▶ 2026년 1) 온라인/키친리스 중심 성장 가속화 2) 프레시원 통합 효과로 인한 수익성 동반 성장 가시화 긍정적"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "롯데쇼핑",
+      "stock_code": "023530",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 103500.0,
+      "avg_target_price": 144000.0,
+      "max_target_price": 144000.0,
+      "avg_upside": 39.1,
+      "bullets": [
+        "백화점에서 확산되는 온기(溫氣) 1분기 영업이익 시장 기대치 상회 전망 ▶ 내수 소비경기 호조로 주요 사업부 수혜 강화 전망"
+      ]
+    }
+  ]
+}
