@@ -187,8 +187,12 @@ def get_fin_metrics(code: str) -> dict:
 
 # ── 경로 설정 ───────────────────────────────────────────────
 SCRIPT_DIR   = Path(__file__).parent
-TOP5_DIR     = SCRIPT_DIR.parent / "wisereport_top5"    / "output"
-INDUSTRY_DIR = SCRIPT_DIR.parent / "wisereport_industry" / "output"
+# 평탄한 리포 구조: 스크립트와 같은 폴더의 output_top5/, output_industry/ 사용
+TOP5_DIR     = SCRIPT_DIR / "output_top5"
+INDUSTRY_DIR = SCRIPT_DIR / "output_industry"
+# 하위 호환: 옛 구조(부모 폴더의 wisereport_*/output)도 함께 검색
+_LEGACY_TOP5_DIR     = SCRIPT_DIR.parent / "wisereport_top5"    / "output"
+_LEGACY_INDUSTRY_DIR = SCRIPT_DIR.parent / "wisereport_industry" / "output"
 TEMPLATE     = SCRIPT_DIR / "template.html"
 DEFAULT_OUT  = SCRIPT_DIR / "dashboard.html"
 
@@ -444,8 +448,11 @@ def load_all_json() -> list[dict]:
     """
     weeks: dict[str, dict] = {}
 
-    # TOP10 JSON
-    for p in sorted(TOP5_DIR.glob("유망기업_TOP5_*.json")):
+    # TOP10 JSON (신/구 경로 모두 검색)
+    _top5_paths = list(TOP5_DIR.glob("유망기업_TOP5_*.json"))
+    if _LEGACY_TOP5_DIR.exists():
+        _top5_paths += list(_LEGACY_TOP5_DIR.glob("유망기업_TOP5_*.json"))
+    for p in sorted(_top5_paths):
         d = _extract_date(p)
         if not d:
             continue
@@ -458,8 +465,11 @@ def load_all_json() -> list[dict]:
         except Exception as e:
             print(f"[경고] TOP5 JSON 읽기 실패 {p.name}: {e}")
 
-    # 산업 JSON
-    for p in sorted(INDUSTRY_DIR.glob("산업동향_*.json")):
+    # 산업 JSON (신/구 경로 모두 검색)
+    _ind_paths = list(INDUSTRY_DIR.glob("산업동향_*.json"))
+    if _LEGACY_INDUSTRY_DIR.exists():
+        _ind_paths += list(_LEGACY_INDUSTRY_DIR.glob("산업동향_*.json"))
+    for p in sorted(_ind_paths):
         d = _extract_date(p)
         if not d:
             continue
