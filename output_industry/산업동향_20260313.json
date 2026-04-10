@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "report_type": "industry",
+    "start_date": "2026-03-09",
+    "end_date": "2026-03-13",
+    "generated_at": "2026-04-10T04:51:04",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 218,
+    "covered_industries": 36,
+    "overweight_industries": 27
+  },
+  "industries": [
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 14,
+      "overweight_ratio": 0.6428571428571429,
+      "overweight_ratio_pct": 64,
+      "opinion": "Overweight",
+      "main_institutions": "iM, 하나, 한국투자",
+      "bullets": [
+        "패키지기판 업종 주가상승 코멘트: 한국 기판 업체들 너무 싸다 해외가 한국보다 두 배 비싸다 ▶ 업황 개선 방향은 다르지 않다 ▶ 무엇이 프리미엄을 만들었을까 ▶ 무엇이 디스카운트를 만들었을까 Weekly 이배속 : 유럽 IAA와 인터배터리 모멘텀 적극 활용 데이터 포인트 해석 및 투자 전략 : 셀 메이커",
+        "그러나 수혜는 고르게 분산되지 않을 것 ▶ 시장이 먼저 움직이는 지금이 포지션 재편 시점 미국, 대중 음극재 추가 관세 취소했으나 포스코퓨처엠 영향은 제한적일 전망 미국의 중국산 음극재 관세 35%로 축소 ▶ 득 보다 실이 많으므로 추가 관세 취소3달러로 시장 경쟁력 유지 인터배터리 2026 참관 후기 인터배터리 2026 행사와 2차전지 주가 ▶ 한국 배터리 셀 3사, 인터배터리 2026 전시 주요 이슈 AI 서버용 MLCC 공급 역량이 승패를 가르는 사이클 채널에서도 확인되는 MLCC 가격 인상의 단서 ▶ AI 서버용 MLCC 수요 확대는 구조적 사이클로 진입"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "조선",
+      "report_count": 14,
+      "overweight_ratio": 0.21428571428571427,
+      "overweight_ratio_pct": 21,
+      "opinion": "Neutral",
+      "main_institutions": "삼성, 신영, LS",
+      "bullets": [
+        "조선/기계 주간 코멘트-확장되는 이란 이슈, 중동 노출분 점검 선가 동향: 신조선가 지수는 직전 주와 동일하게 182에서 유지 ▶ 해운 지표: Clarksea 지수(선박 수익 지표)는 이번 주 53,319달러/일을 기록하며, 지난주 대비 41유조선 운임 급등 영향 ▶ 주간 코멘트 주제: 이란 이슈 확장을 인한 조선/기계 업종 내 중동 의존도 점검 조선/운송 Weekly-선1990년 이후 최고 해상운임 기록 운임이 최고치지만 웃을 수 없는 것은 해상운임지수 신고가 기록 ▶ 가장 좋지 않은 시나리오는 높은 운임에 활기 잃는 시장 조운날 Weekly: 미",
+        "이란 전쟁 Comment(2): 공급망 불안 현실화 항해일지 미국-이란 사태, 카타르의 LNG 입지에 치명적 카타르의 안정적 LNG 공급자 지위가 약화 ▶ 반대로 미국의 전략적 LNG 공급자 지위는 강화"
+      ],
+      "keyword": "T: Pretty Young Tan ▶ Rock with U"
+    },
+    {
+      "industry_name": "자동차",
+      "report_count": 13,
+      "overweight_ratio": 0.23076923076923078,
+      "overweight_ratio_pct": 23,
+      "opinion": "Neutral",
+      "main_institutions": "대신, 메리츠, 교보",
+      "bullets": [
+        "중동 전쟁 영향 점검과 시나리오별 투자전략 중동 지정학적 리스크의 핵심은 ‘지속 기간’",
+        "장기화될수록 부담 ↑ ▶ 중동 리스크 관련 다섯가지 변수와 네가지 시나리오별 투자전략 제시 ▶ Top Picks 기아",
+        "이외 주목해야할 이벤트/지배구조개편 가능성 점검 Mobility at a glance 2026년 3월 둘째 주 자동차/이차전지 Weekly 미국: 2월 판매량 YoY -1"
+      ],
+      "keyword": "중동 전쟁 영향 점검과 시나리오별 투자전략 중동 지정학적 리스크의 핵심은"
+    },
+    {
+      "industry_name": "은행",
+      "report_count": 13,
+      "overweight_ratio": 0.15384615384615385,
+      "overweight_ratio_pct": 15,
+      "opinion": "Neutral",
+      "main_institutions": "삼성, LS, 메리츠",
+      "bullets": [
+        "금융 Weekly Insight - 지정학 리스크 부각에 따른 조정 - Valuation 부담 완화를 기회로 해외 사모대출 리스크와 국내 금융주 영향 점검 블루아울에 이어 블랙록까지",
+        "해외 사모대출 노이즈 지속 ▶ 국내외 금융주 수급에 부정적 영향",
+        "제한적 규모와 이슈의 개별성 감안시 금융권 불안 가능성 낮아 ▶ 국내도 BDC(기업성장펀드) 도입"
+      ],
+      "keyword": "해외 사모대출 노이즈 지속 ▶ 국내외 금융주 수급에 부정적 영향"
+    },
+    {
+      "industry_name": "반도체와반도체장비",
+      "report_count": 10,
+      "overweight_ratio": 0.6,
+      "overweight_ratio_pct": 60,
+      "opinion": "Overweight",
+      "main_institutions": "교보, 유진투자, iM",
+      "bullets": [
+        "2026년 3월 둘째 주 반도체 Weekly Memory Watch - Semiconductor in the Fire Horse Year 호르무즈 봉쇄로 WTI는 주간 기준 35% 급등",
+        "방향 전환 가능성 유효 ▶ 메모리반도체 초호황 증거는 지속 확인",
+        "파운드리도 회복 가시성 증가 ▶ GTC 2026, 주주환원 강화 및 판매 정책의 변화 가능성에 주목 매크로 구간 이후 4월 말까지 New Level 3월 셋째 주부터는 바텀업 모멘텀 작동 구간으로 진입 ▶ GTC 행사를 통해 메모리 프리미엄이 재확인될 전망이며, 아울러 마이크론 실적 발표 전후로 국내 대형주 실적 컨센서스의 상향세 재개 예상"
+      ],
+      "keyword": "방향 전환 가능성 유효 ▶ 메모리반도체 초호황 증거는 지속 확인"
+    },
+    {
+      "industry_name": "화장품",
+      "report_count": 10,
+      "overweight_ratio": 0.2,
+      "overweight_ratio_pct": 20,
+      "opinion": "Neutral",
+      "main_institutions": "삼성, 메리츠, SK",
+      "bullets": [
+        "화장품 데일리 업데이트-3월 9일 Morning brief Weekly Cosmetics Letter-미국/유럽 오프라인 전개의 의미 3월 아마존 뷰티 톱 100 분석: 셀리맥스/아누아 신규 진입",
+        "화장품 데일리 업데이트-3월 9일 Morning brief Weekly Cosmetics Letter-미국/유럽 오프라인 전개의 의미 3월 아마존 뷰티 톱 100 분석: 셀리맥스/아누아 신규"
+      ],
+      "keyword": "화장품 데일리 업데이트-3월 9일 Morning brief Weekly"
+    },
+    {
+      "industry_name": "화학",
+      "report_count": 10,
+      "overweight_ratio": 0.2,
+      "overweight_ratio_pct": 20,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, iM, 하나",
+      "bullets": [
+        "원유 공급차질 장기화 우려 대응 필요 지정학 Risk, 공급 불안감의 극도의 공포심리, 가격 프리미엄 발생 ▶ 이란 사태 장기화 시나리오에 국내 정유/화학 업황 관찰 필요 이란 사태 팔로웝, 그리고 향후 고민해야 할 것들 (feat",
+        "종결 시나리오별 영향 전망) 이란 사태로 인한 에너지 시장 영향 ▶ 정유/화학/유틸리티 업종 영향 점검 및 전망 ▶ 미국의 진짜 의도와 종결 시나리오별 영향 점검 Weekly Monitor: 호르무즈 사실 상 봉쇄: 에너지 산업 Update(2) WTI 90아시아 JKM +94%, 유럽 TTF +66%, 유럽 디젤 선물 +54%, 아시아 석탄 +16% 급등 ▶ 정제마진 33"
+      ],
+      "keyword": "9$/bbl로 +35% 상승"
+    },
+    {
+      "industry_name": "식품",
+      "report_count": 9,
+      "overweight_ratio": 0.1111111111111111,
+      "overweight_ratio_pct": 11,
+      "opinion": "Neutral",
+      "main_institutions": "키움, 메리츠, 하나",
+      "bullets": [
+        "키움 음식료 Weekly F&B Weekly Talk F&B Morning Talk F&B Weekly Comment: 변동성을 대처하는 자세(Feat",
+        "전쟁 영향 점검) 전주 음식료 업종지수는 코스피 대비 30%p 아웃퍼폼 시현, 미국-이란 전쟁 기인해 변동성이 극심했던 전쟁 같은 한 주 였음 ▶ 섹터 내 대장 격인 삼양식품은 -13"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "방송과엔터테인먼트",
+      "report_count": 9,
+      "overweight_ratio": 0.2222222222222222,
+      "overweight_ratio_pct": 22,
+      "opinion": "Neutral",
+      "main_institutions": "신한투자, 유진투자, LS",
+      "bullets": [
+        "신한 플랫폼팀 Weekly (엔터/미디어/인터넷/게임/통신) - 돈이 되는 오지랖 (3월 2주차) 엔터/미디어/레저 - 고연차 IP 귀환, 1Q 실적 턴어라운드 가시화 ▶ 인터넷/게임 - 인앱결제 수수료 인하 기대감, 모바일 중심 신작 보유 게임사 수혜 전망",
+        "구체화되는 모멘텀 속 매수 기회로 접근 ▶ BTS: 구체화되는 모멘텀 ▶ 빅뱅 월드투어 공식화",
+        "블랙핑크 IP 파워 견고 알아두면 쓸모있는 콘텐츠 캘린더 [음악] 2/27 블랙핑크 초동 약 177만장 (+15%) ▶ [영화] <왕과 사는 남자> 6주차 누적 관객 수 1,200만명 돌파 (콘텐트리중앙) 놀면 뭐하니? 실적 턴어라운드, 빈 수급, 3월 모멘텀, 코스닥 부양, 생산적 금융 = 엔미레 ‘반격의 서막"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "양방향미디어와서비스",
+      "report_count": 9,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠, IBK투자, 한국투자",
+      "bullets": [
+        "인터넷/게임 Weekly IBKS Daily [인터넷/게임] 플레이스토어 수수료율 인하 영향 분석 구글, 플레이스토어 수수료 인하 발표 ▶ 게임사, 최대 수혜주는 넷마블 ▶ 네이버&카카오, 냉정하게 수혜주라기엔 좀",
+        "MWC 2026: Embodied Intelligence 통신서비스: AI 적용: AI agent, AI DC ▶ 반도체: Agentic AI, 웨어러블로 확장 ▶ Embodied AI: [스마트폰] 보안 x 편안함 IBKS Daily [인터넷/게임] IBKS Daily [인터넷/게임] AI격화되는 Agent AI 경쟁 AI 산업 트렌드"
+      ],
+      "keyword": "인터넷/게임 Weekly IBKS Daily [인터넷/게임] 플레이스토어"
+    },
+    {
+      "industry_name": "무선통신서비스",
+      "report_count": 8,
+      "overweight_ratio": 0.125,
+      "overweight_ratio_pct": 12,
+      "opinion": "Neutral",
+      "main_institutions": "KB, 메리츠, 대신",
+      "bullets": [
+        "MWC 26: 2026년, 우주-지상 통신 시대의 초입 SpaceX, D2C 시장의 표준 주도 ▶ 경쟁 위성 플랫폼 현황 ▶ D2C 서비스를 중심으로 위성 생태계 성장 Meritz 통신서비스 Weekly AI 시대에 통신의 먹거리(MWC 2026 참관기) MWC 2026지능의 시대를 맞이하는 통신의 역할 ▶ AI 시대에 통신의 먹거리는 무엇인가? Agentic AI, Physical AI, N/W 효율화 ▶ 한국 통신사들의 AI 준비 상황 MWC 2026 참관기: 통신의 구조적 변화 시작 (feat",
+        "AI) MWC2026 컨퍼런스 참가 ▶ 통신서비스, AI 생태계 내 경쟁력 우위 ▶ 탑픽 SK텔레콤 유지 통신 Weekly-방어주 역할 톡톡 통신기술, 이대로는 안됩니다!(Feat"
+      ],
+      "keyword": "MWC 26: 2026년, 우주-지상 통신 시대의 초입 SpaceX, D"
+    },
+    {
+      "industry_name": "건설",
+      "report_count": 8,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "신영, 신한투자, 유진투자",
+      "bullets": [
+        "299 중동 사태 1주일차 유가 100달러 신한 건설 Weekly 건설/부동산 Weekly - 공공기관 지방 이전과 서울 오피스 시장 주간 아파트가격 동향 ▶ 서울 내 공공기관 125 개, 임직원 69 만명의 이탈 가능성 가까이서 보면 비극, 멀리서 보면 희극 단기적으로 건설업종은 몇 가지 불확실성에 직면해 있음 ▶ 그러나 역사적으로 지정학적 갈등은 단기 충격 이후 오히려 에너지 인프라 투자 사이클의 촉매로 작용해 왔음1% 상회 ▶ 주요 지표로 전국 매매수급동향은 96"
+      ],
+      "keyword": "박세라의 건설이야기: Vol"
+    },
+    {
+      "industry_name": "기계",
+      "report_count": 8,
+      "overweight_ratio": 0.125,
+      "overweight_ratio_pct": 12,
+      "opinion": "Neutral",
+      "main_institutions": "KB, 유진투자, 삼성",
+      "bullets": [
+        "1월 중국 굴착기 내수 판매량 YoY 613% 증가 1월 중국 굴착기 내수 판매량 YoY 613% 증가 ▶ 한국 등 외자계 브랜드들은 시장대비 언더퍼폼 ▶ Sany 등 로컬업체들의 강세 지속 위클리에요(로봇/방산/조선/항공/해운) - 2026/03/02~2026/03/08 [로봇] 3월 10일 ▶ [방산] 중동의 방패가 된 천궁 ▶ [조선] 호르무즈 사태와, 캐나다 잠수함"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "복합유틸리티",
+      "report_count": 8,
+      "overweight_ratio": 0.375,
+      "overweight_ratio_pct": 38,
+      "opinion": "Overweight",
+      "main_institutions": "NH투자, 키움, LS",
+      "bullets": [
+        "동아시아發 리스크 확대 가능성 러우 전쟁에서 답을 찾아보면 ▶ 동아시아 3국이 야기할 수 있는 LNG 가격 상승 비관적인 내러티브 확산 속, 기회를 찾아서 한국전력: 2022년보다는 강해진 이익 체력 ▶ 포스코인터내셔널: 고유가 장기화 시, 수혜 전망",
+        "원전 프로젝트 시작을 넘어 미국이 그리는 원전 산업의 미래를 확인하는 해 ▶ 미국이 원전산업에서 궁극적으로 원하는 것: Best Practice",
+        "민간 주도 확산 ▶ 글로벌 원전투자의 룰이 바뀔 것이다: 연료/운영"
+      ],
+      "keyword": "민간 주도 확산 ▶ 글로벌 원전투자의 룰이 바뀔 것이다: 연료/운영"
+    },
+    {
+      "industry_name": "우주항공과국방",
+      "report_count": 7,
+      "overweight_ratio": 0.2857142857142857,
+      "overweight_ratio_pct": 29,
+      "opinion": "Neutral",
+      "main_institutions": "키움, DB, 신한투자",
+      "bullets": [
+        "자주국방 시대로 전환 글로벌 지정학정 분쟁 확대 ▶ 국내 방산 업체 수주 확대 전망 ▶ 방산업종 투자 전략 중동전쟁: 가성비 방공시스템의 필요성 멈추지 않는 이란의 파상공세와 방공무기의 활약 ▶ 단순 물량 확대보다는 가성비 무기에 대한 수요 급증할 것 원한상보(怨恨相報): 보복의 악순환 다양한 확전과 동시다발적 영향",
+        "자주국방 시대로 전환 글로벌 지정학정 분쟁 확대 ▶ 국내 방산 업체 수주 확대 전망 ▶ 방산업종 투자 전략 중동전쟁: 가성비"
+      ],
+      "keyword": "자주국방 시대로 전환 글로벌 지정학정 분쟁 확대 ▶ 국내 방산 업체 수주"
+    },
+    {
+      "industry_name": "제약",
+      "report_count": 7,
+      "overweight_ratio": 0.14285714285714285,
+      "overweight_ratio_pct": 14,
+      "opinion": "Neutral",
+      "main_institutions": "미래에셋, SK, 키움",
+      "bullets": [
+        "[월간 리서치] 글로벌 헬스케어 처방전: 봄은 온다 미래에셋증권 헬스케어 처방전 3월호 ▶ 제약/바이오 투자전략 및 Top picks ▶ 의료기기/디지털헬스 투자전략 및 Top picks Weekly Bio Insight Kiwoom Healthcare 종합정리 상승 곡선의 시작점4 - 기다림의 시간(기획: 면역질환 치료제 개발사) 제약업종 지수 동향 ▶ 주목할 만한 임상, 신약, 제품: 비만 치료제, 항암/면역 치료제 ▶ 2026년 주목해야 할 국내 이슈 : 면역질환 치료제 개발사 Biotech Investor Primer #1 - 관해, 자가면역질환에서도 기대 가능 다양한 기전의 치료제가 필요한 자가면역질환"
+      ],
+      "keyword": "[월간 리서치] 글로벌 헬스케어 처방전: 봄은 온다 미래에셋증권 헬스케어"
+    },
+    {
+      "industry_name": "판매업체",
+      "report_count": 7,
+      "overweight_ratio": 0.14285714285714285,
+      "overweight_ratio_pct": 14,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, LS, 유안타",
+      "bullets": [
+        "Retail Weekly Traffic 소비재/플랫폼 Weekly: 이커머스, 엇갈린 성적표 쿠팡, ＇탈팡＇ 영향으로 기존 성장률 대비 둔화한 모습, 수익성 변동성 확대된 모습 ▶ 컬리, 외형 성장과 수익성 개선이 동시에 나타나는 흐름",
+        "일본 탐방기) 日 백화점 및 식품 업체 미팅 진행 ▶ 백화점, 인바운드 모멘텀 본격화 ▶ 高유가 장기화된다면, 음식료 선호 백화점 외국인 매출 비중은 어디까지 올라갈 수 있을까? 백화점 외국인 매출 비중은 어디까지 올라갈 수 있을까? ▶ 외국인 매출 비중 확대, 이제 본격적 시작, 백화점 비중 확대 유효"
+      ],
+      "keyword": "Retail Weekly Traffic 소비재/플랫폼 Weekly: 이커"
+    },
+    {
+      "industry_name": "IT서비스",
+      "report_count": 6,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "KB, 메리츠",
+      "bullets": [
+        "AI agent가 AI를 사용한다 Physical AI, 로봇 경제의 시작 ▶ AI 인프라 주도권, 빅테크에서 통신사로 분산 ▶ Agentic AI 오케스트레이션",
+        "AI agent가 AI를 사용한다 Physical AI, 로봇 경제의 시작 ▶ AI 인프라 주도권, 빅테크에서 통신사로 분산 ▶ Agentic AI 오케스트레이션,"
+      ],
+      "keyword": "AI agent가 AI를 사용한다 Physical AI, 로봇 경제의 시"
+    },
+    {
+      "industry_name": "게임엔터테인먼트",
+      "report_count": 5,
+      "overweight_ratio": 0.4,
+      "overweight_ratio_pct": 40,
+      "opinion": "Overweight",
+      "main_institutions": "유진투자, 메리츠, DS투자",
+      "bullets": [
+        "2월 게임시장 Review 2월 모바일 월간 통합매출 넥슨 ‘메이플 키우기’(11/6일 출시)가 석 달 연속 1위 차지 ▶ 3월 모바일 신작은 데브시스터즈 ‘쿠키런: 오븐스매시’ 3/26일 출시 예정 3 Issues sum-up 구글 앱수수료 인하 ▶ 자사주 소각과 주주환원2 구글 앱수수료 인하에 따른 영향 점검 ▶ 상반기 주요신작 살펴보기"
+      ],
+      "keyword": "2 구글 앱수수료 인하에 따른 영향 점검 ▶ 상반기 주요신작 살펴보기"
+    },
+    {
+      "industry_name": "에너지장비및서비스",
+      "report_count": 5,
+      "overweight_ratio": 0.2,
+      "overweight_ratio_pct": 20,
+      "opinion": "Neutral",
+      "main_institutions": "한화투자, 유진투자, IBK투자",
+      "bullets": [
+        "3월을 넘기면 더 힘들어진다 사상 처음 겪는 해협 봉쇄 Next Energy - 우주 태양광 다음은 우주 전고체 배터리: LG화학(-216%) ▶ 원자력: Nuscale(-98%) 에너지자립이 필수가 된 대한민국 글로벌 정세가 신냉전시대를 넘어 야만의 시대로 진입하고 있는 상황 ▶ 러시아의 우크라이나 침공 전후의 유럽의 태양광 설치량 변화가 에너지자립에대한 명백한 사례"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "철강",
+      "report_count": 4,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 한화투자, 다올투자",
+      "bullets": [
+        "철강금속 Weekly: 전쟁으로 POSCO홀딩스의 실적 악화 과도한 우려 지양 국내 철강 유통가격: 연말연초 급등했던 철근 가격 금주 추가 상승, 판재류 가격은 보합 기록 ▶ 중국 철강 유통가격: 전세계 무역 규제 확대로 약보합, but 전인대에서 생산능력 감축 언급되며 향후 전망 긍정적",
+        "낮은 기저로 성장에 대한 기대를 ▶ 격변의 비철: 수요, 공급 그리고 지정학 리스크 철강/비철금속 Blink Report"
+      ],
+      "keyword": "철강금속 Weekly: 전쟁으로 POSCO홀딩스의 실적 악화 과도한 우려"
+    },
+    {
+      "industry_name": "호텔,레스토랑,레저",
+      "report_count": 4,
+      "overweight_ratio": 0.25,
+      "overweight_ratio_pct": 25,
+      "opinion": "Neutral",
+      "main_institutions": "한화투자, 흥국, KB",
+      "bullets": [
+        "Mar, ‘26: P/E 15배 부근에서는 매수가 맞다 뜨거운 실적과 차가운 주가",
+        "저점 매수 구간 진입 ▶ 희비가 엇갈렸던 2월 외인카지노: ＇이원화＇로 보는 2026 인바운드 회복에 따른 외인카지노 수혜 ▶ K-콘텐츠 인기 + 정책 규제 완화의 시너지 ▶ ＇26년 중국인 방한 수요 가속, 인바운드 수요 +17% 전망 ▶ 중국인 Mass 중심 확장",
+        "제주부터 수혜 한국: 여행 수지 흑자를 향해 인바운드 관광객 증가: 우호적 외교 상황, 콘텐츠 ▶ 카지노: 늘어나는 방문자 수 ▶ 호텔: 잘 곳이 없다 쇼티지와 레버리지 수요: 인바운드 증가 수혜 ▶ 공급: 쇼티지에 따른 레버리지"
+      ],
+      "keyword": "Mar, ‘26: P/E 15배 부근에서는 매수가 맞다 뜨거운 실적과 차"
+    },
+    {
+      "industry_name": "손해보험",
+      "report_count": 4,
+      "overweight_ratio": 0.25,
+      "overweight_ratio_pct": 25,
+      "opinion": "Neutral",
+      "main_institutions": "한화투자, NH투자, 다올투자",
+      "bullets": [
+        "먼 기대 가까운 기대 해약환급금준비금: 제도 완화의 양면성 ▶ 관리급여와 실손: 비정상의 정상화 ▶ CSM: 허와 실 ▶ Valuation: 시장수익률(Rm) 변경에 따른 목표주가 상향 삼성전자 자사주 소각 = 삼성생명, 화재의 전자 초과지분 매각 삼성전자 자사주 소각 시 삼성생명과 화재는 전자 초과지분 매각 필요",
+        "먼 기대 가까운 기대 해약환급금준비금: 제도 완화의 양면성 ▶ 관리급여와 실손: 비정상의 정상화 ▶ CSM: 허와 실 ▶ Valuation: 시장수익률(Rm)"
+      ],
+      "keyword": "먼 기대 가까운 기대 해약환급금준비금: 제도 완화의 양면성 ▶ 관리급여와"
+    },
+    {
+      "industry_name": "항공사",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "상상인, 한국투자, NH투자",
+      "bullets": [
+        "2월 항공 실적: 매크로 변동성은 선반영 2월 전국 공항 국제선 여객 수송 실적 yoy +12% ▶ 2월 인천 공항 화물 수송 실적 yoy +1% ▶ 탑라인은 견조, 전쟁 장기화 우려는 주가에 이미 반영 2월 항공실적: 유가만 잡힌다면 1~2월 겨울 성수기 국제선 여객은 11% 증가 ▶ 1분기 제주항공 더 큰 실적 서프라이즈 기대",
+        "연료비 안정을 기다린다 ▶ 2월 국제선 여객 수송량 +1102 항공 수송 실적: 역대급 수요 재확인 2월 인천공항 국제선 여객 수송실적 637 만명 (YoY + 6"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "증권",
+      "report_count": 3,
+      "overweight_ratio": 0.6666666666666666,
+      "overweight_ratio_pct": 67,
+      "opinion": "Overweight",
+      "main_institutions": "LS, 한국투자, 대신",
+      "bullets": [
+        "거래강도 과열 구간 증시변동성 확대: 거래대금 추가 상승 ▶ ’261Q 브로커리지 수익 급증: 현 추세 감안시 QoQ +100% 이상 증가 예상 ▶ 거래강도는 과열구간 진입",
+        "회전율 역사적 최고 수준 단기 과열을 걷어내도 얻는 부분이 크다 실적 기반 목표주가 상향 ▶ 올해 1분기 이익체력은 전분기대비 20~49% 개선 ▶ 퇴직연금 등에 기반한 개인 ETF 순매수는 우호적 수급으로 연결 엄청날 실적에 준비하라 1분기 평균 거래대금 70조원, 커버리지 합산 BK수익 3조원 전망"
+      ],
+      "keyword": "증시 변동성 확대로 거래대금 급증"
+    },
+    {
+      "industry_name": "부동산",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "LS, 대신",
+      "bullets": [
+        "부동산 Weekly Data 2026년 서울 오피스 시장의 모멘텀과 리스크 서울 오피스 시장 현황 ▶ 26년 모멘텀과 리스크 ▶ 2025년 주요 거래사례 K-REITs 10조 원의 시대, 본격적인 차별화 국면 기초자산 안정성",
+        "자금 조달 경쟁력 중심으로 종목 간 본격적인 차별화 국면 진입 ▶ 국내 자산 중심",
+        "저금리 회사채 조달 리츠, 실적 차별화로 두드러진 성과 ▶ 2026 K-REITs 운용 전략: 포폴 고도화"
+      ],
+      "keyword": "자금 조달 경쟁력 중심으로 종목 간 본격적인 차별화 국면 진입 ▶ 국내"
+    },
+    {
+      "industry_name": "운송인프라",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "신한투자, 하나",
+      "bullets": [
+        "I - 전쟁 보험료의 해상 운임 반영 구조와 중동 사태 선종별 영향 2월 인천공항 수송실적: 기저 효과 지속, 고유가는 부담 2월 인천공항 여객수송실적 637만명(+7% (YoY)) ▶ 2월 인천공항 화물수송실적 214만톤(+1% (YoY)) ▶ 고유가/고환율에 대비하는 항공사의 자세 로봇에서 움트는 현대차그룹의 미래 상용화 단계로의 진입을 시도하는 휴머노이드 로봇 시장 ▶ 현대차그룹 지배구조 개편의 핵심 열쇠, ‘보스턴 다이내믹스’"
+      ],
+      "keyword": "신한 운송 Weekly T.M.I - 전쟁 보험료의 해상 운임 반영 구조"
+    },
+    {
+      "industry_name": "해운사",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "NH투자, 한국투자",
+      "bullets": [
+        "글로벌 조선, 해운 Weekly-사실상 패쇄된 호르무즈 해협, 연료비 급등과 설비 파괴로 웃을 수 없는 해운사 운임과 함께 불확실성도 확대 해운은 환율/유가 상승 방어주이자 물류안보 지키는 국가기간산업 ▶ 운임이 급등하고 있지만, 이 정도의 혼란은 모두에게 리스크",
+        "글로벌 조선, 해운 Weekly-사실상 패쇄된 호르무즈 해협, 연료비 급등과 설비 파괴로 웃을 수 없는 해운사 운임과 함께 불확실성도 확대 해운은"
+      ],
+      "keyword": "글로벌 조선, 해운 Weekly-사실상 패쇄된 호르무즈 해협, 연료비 급"
+    },
+    {
+      "industry_name": "건강관리장비와용품",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 삼성",
+      "bullets": [
+        "밸류에이션, 주요 지표 점검 및 시지바이오 매각 코멘트 밸류에이션 현황: 기타 인젝터블 218배 ▶ 주요 지표 점검: 수출, 방한 관광객 및 외국인 피부과 소비 성장세 견조 ▶ IMM PE의 시지바이오 매수, 동종진피 ECM에서의 경쟁력은 그대로 연구실 속 진주들, 연구용 장비 업체 글로벌 시장으로 진격 중인 국산 연구용 장비 ▶ 랩 오토메이션과 동물 실험 폐지의 장기 수혜 업종"
+      ],
+      "keyword": "밸류에이션, 주요 지표 점검 및 시지바이오 매각 코멘트 밸류에이션 현황:"
+    },
+    {
+      "industry_name": "석유와가스",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "삼성, KB",
+      "bullets": [
+        "중동 전쟁 Monitor #2 - 설비 가동중단 본격화 2/28일 발발한 중동 전쟁이 지속되며, 지난 일주일간 정유제품, 원유, 화학제품순의 가격 급등세 시현 ▶ 특히 정유업체 및 화학업체 중 설비 가동중단 발표가 본격화",
+        "글로벌 정제설비 158만bpd와 글로벌 에틸렌 707만톤의 가동중단 발표 ▶ 화학 설비중단 확대로 스프레드 반등하겠으나, 그럼에도 원가 급등 영향이 부정적",
+        "정유는 내수 가격 상한제 시행에도 가동률 유지만 가능하면 수익성 개선 전망 전쟁 +25일: 동남아/아프리카 셧다운 가능성 호르무즈 통제 영향 ▶ IEA 32개 회원국, 4억 배럴 긴급 방출 결정 ▶ 국가별/기업별 영향: 4월부터는 “가격”"
+      ],
+      "keyword": "중동 전쟁 Monitor #2 - 설비 가동중단 본격화 2/28일 발발한"
+    },
+    {
+      "industry_name": "건강관리업체및서비스",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성",
+      "bullets": [
+        "헬스케어 수출 데이터 weekly AACR/ASCO 2026: 소문이 아닌 숫자로 판단 글로벌R&D 동향 ▶ 기업별 임상 결과 분석",
+        "헬스케어 수출 데이터 weekly AACR/ASCO 2026: 소문이 아닌 숫자로 판단 글로벌R&D 동향 ▶ 기업별 임상 결과 분석"
+      ],
+      "keyword": "헬스케어 수출 데이터 weekly AACR/ASCO 2026: 소문이 아"
+    },
+    {
+      "industry_name": "핸드셋",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "하나",
+      "bullets": [
+        "하나증권 x KOTRA MWC 2026 : 연결을 넘어 지능의 시대로 AI를 적극적으로 수용하는 통신 ▶ AI Agent 스마트폰 ▶ 차세대 컴퓨팅 플랫폼 스마트 글라스",
+        "하나증권 x KOTRA MWC 2026 : 연결을 넘어 지능의 시대로 AI를 적극적으로 수용하는 통신 ▶ AI Agent 스마트폰 ▶ 차세대"
+      ],
+      "keyword": "하나증권 x KOTRA MWC 2026 : 연결을 넘어 지능의 시대로 A"
+    },
+    {
+      "industry_name": "복합기업",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "SK",
+      "bullets": [
+        "개정상법 효과 - 자사주 소각기업 확산 SK, 자사주 203% 소각 공시 ▶ 상법개정 이후 자사주 소각기업 확산 ▶ 지주회사 재평가 요인"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "항공화물운송과물류",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "2 월 항공 데이터: 좋았던 겨울 성수기, 난기류 돌입 [2월 총평] 겨울 성수기에 2월 설연휴가 겹치며 해외 여행 수요 견조했음 ▶ [3월 전망] 겨울철 성수기 종료되나, 3월 초 삼일절 연휴로 단거리 해외 수요는 강세를 전망2 월 항공 데이터: 좋았던 겨울 성수기, 난기류 돌입 [2월 총평] 겨울 성수기에 2월 설연휴가 겹치며 해외 여행 수요 견조했음"
+      ],
+      "keyword": "2 월 항공 데이터: 좋았던 겨울 성수기, 난기류 돌입 [2월 총평] 겨"
+    },
+    {
+      "industry_name": "전기제품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "교보",
+      "bullets": [
+        "2026년 3월 첫째 주 전기전자 Weekly 중동의 지정학적 이슈가 야기하는 강한 시장 변동성 여파는 전기전자 섹터에도 존재 ▶ 강한 주가 수익률을 보였던 기업들의 수익률 약세가 지속 ▶ 국내의 경우 과도한 매도세 이후 SOCAMM 양산 본격화에 따른 기대감 등이 작용2026년 3월 첫째 주 전기전자 Weekly 중동의 지정학적 이슈가 야기하는 강한 시장 변동성 여파는 전기전자 섹터에도 존재 ▶ 강한 주가"
+      ],
+      "keyword": "2026년 3월 첫째 주 전기전자 Weekly 중동의 지정학적 이슈가 야"
+    },
+    {
+      "industry_name": "통신장비",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나",
+      "bullets": [
+        "미국 AT&T 망 투자 소식은 두번째 상승 트리거 OBBBA 제정에 이어 미국 AT&T가 대규모 망 투자 계획을 발표 ▶ 과거 2019년과 데칼코마니, 팩트는 나왔고 주연은 미국이라는 점만 다르다 ▶ 광/무선 1등업체 위주로 매수 추천, 단기 실적보단 장기 업황 개선 가능성 주목",
+        "미국 AT&T 망 투자 소식은 두번째 상승 트리거 OBBBA 제정에 이어 미국 AT&T가 대규모 망 투자 계획을 발표 ▶ 과거"
+      ],
+      "keyword": "미국 AT&T 망 투자 소식은 두번째 상승 트리거 OBBBA 제정에 이어"
+    }
+  ]
+}

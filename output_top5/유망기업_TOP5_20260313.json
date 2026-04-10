@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-03-09",
+    "end_date": "2026-03-13",
+    "generated_at": "2026-04-10T04:50:50",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 377,
+    "buy_count": 236,
+    "target_up_count": 0,
+    "total_companies": 255
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "JYP Ent.",
+      "stock_code": "035900",
+      "institution_list": "유진투자증권, 해당기업, 신영증권, 흥국증권, iM증권",
+      "report_count": 15,
+      "buy_ratio": 0.8666666666666667,
+      "target_up_ratio": 0.0,
+      "current_price": 66400.0,
+      "avg_target_price": 96923.07692307692,
+      "max_target_price": 100000.0,
+      "avg_upside": 46.0,
+      "bullets": [
+        "실적추이 및 전망 꾸준한 북미 성과 기대 ▶ 하반기 스키즈 컴백에 따른 실적 성장 2025년 4분기 실적발표 4분기 실적발표 및 향후 사업전망 20254Q Financial Results 4분기 실적발표 및 향후 사업전망 규모의 경제 시현 전체 부문의 호조 ▶ 아티스트 재계약 이후에도 수익성 유지 ▶ 상반기, 스트레이키즈 제외한 JYP Nation 풀가동 주력 IP파워 재확인, 다음은 저연차 4Q25 Review: 음반?MD가 견인한 컨센서스 상회8%yoy), 영업이익은 419억원(+136% yoy)으로 시장 컨센서스 상회 ▶ 주요 아티스트의 음반과 공연, MD 매출 모두 확대되며 사상 최대 분기매출 기록 ▶ 올해 상반기는 트와이스, 하반기는 스트레이키즈의 역대급 투어가 더해지며 사상 최대 실적 전망 어닝 서프라이즈! 든든한 고연차, 올라오는 저연차"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "미래에셋증권, BNK투자증권, DB증권, 다올투자증권, 현대차증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 187900.0,
+      "avg_target_price": 270375.0,
+      "max_target_price": 320000.0,
+      "avg_upside": 43.9,
+      "bullets": [
+        "주가 매력도가 더 높아졌다 동ㅅ하에 대한 투자의견과 목표주가 유지 ▶ 메모리 가격은 견조 ▶ 밸류에이션 매력도가 급격히 커졌다 ▶ 배당수익률이 5% 수준으로 커졌다 반도체 업황 호전과 사업 경쟁력 제고 동시에 진행 HBM4, SOCAMM2, CPX 등 AI 서버 메모리 시장 지배력 제고 ▶ 1Q26 영업이익 38조원, 연간 196조원으로 상향 조정4조원(+25% QoQ, +48% YoY), 377조원(+88% QoQ, +464% YoY) 전망 ▶ 제한적인 메모리 공급과 견조한 수요가 맞물리며 DS 실적 강세 지속 예상 ▶ - 1Q26 메모리 출하량은 계절적 비수기임에도 전분기 대비 증가할 것으로 예상하며 판가는 전분기 상승폭을 능가할 것으로 예상 (ASP: DRAM +48%",
+        "NAND +50% QoQ) 모든 모멘텀 재료가 조화로운 구간 매출액 118"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "농심",
+      "stock_code": "004370",
+      "institution_list": "KB증권, 해당기업, 현대차증권, 교보증권, 한화투자증권",
+      "report_count": 12,
+      "buy_ratio": 0.8333333333333334,
+      "target_up_ratio": 0.0,
+      "current_price": 394000.0,
+      "avg_target_price": 549000.0,
+      "max_target_price": 570000.0,
+      "avg_upside": 39.3,
+      "bullets": [
+        "가벼워진 발걸음 투자의견 Buy 유지,  목표주가 55만원으로 하향 ▶ 4Q25 Review: 일회성 비용 반영되며 낮아진 컨센서스 부합 ▶ 1Q26E 영업이익 565억원 (+07% YoY) 2025년 연간 경영실적 Earnings Release for 2025 미국, 기대 대비 아쉽다 농심 4Q25 연결 기준 매출액은 8,824억원(+32%yoy), 영업이익은 333억원 (+638%)로 시장 컨센서스를 하회하는 실적 시현 ▶ 1) 국내(별도): 매출 +1"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "비에이치",
+      "stock_code": "090460",
+      "institution_list": "대신증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 17610.0,
+      "avg_target_price": 30000.0,
+      "max_target_price": 30000.0,
+      "avg_upside": 70.4,
+      "bullets": [
+        "2026년 3차 성장 진입 : 아이폰 폴드, HDI = 양산 시작 애플 폴더블폰(아이폰 폴드)향 R/F PCB 공급은 6월로 전망 ▶ 2H26년 매출과 영업이익은 각각 21%(yoy), 58%(yoy) 증가 추정 ▶ 26년 최고 매출(21조원 16% yoy), 영업이익 1,212억원(125% yoy) 추정"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "롯데관광개발",
+      "stock_code": "032350",
+      "institution_list": "유진투자증권, 한화투자증권, 흥국증권, DS투자증권, KB증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 19080.0,
+      "avg_target_price": 31000.0,
+      "max_target_price": 33000.0,
+      "avg_upside": 62.5,
+      "bullets": [
+        "실적추이 및 전망 중국 방문객 증가에 따른 외형 성장 기대 ▶ 리파이낸싱에 따른 금융비용 축소 기대감 부진했던 2월을 뒤로하고 3월부터 성수기 채비 2월 카지노 순매출액과 드롭액은 각각 326억원, 1,729억원을 기록 ▶ 시장 컨센서스 기준 동사의 12mth Fwd P/E 배수는 16지난해 하반기 기준 밴드가 20~25배 부근에서 형성됐던 점을 고려하면 저평가 구간으로 판단 이제 본게임 마카오형 복합리조트 카지노의 구조적 이점 부각 ▶ 중국발 Mass 유입에 따른 이익 레버리지 확대 ▶ 롯데관광개발 투자의견 BUY/TP 30,000원 제시 비중 확대 시점 상대적 비수기에도 이어진 YoY 성장 흐름"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "SAMG엔터",
+      "stock_code": "419530",
+      "institution_list": "유진투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 33700.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 107.7,
+      "bullets": [
+        "실적추이 및 전망 연내 영화 개봉에 따른 외형 성장 ▶ 지역별 진출 전략으로 글로벌 확대 ▶ 오프라인 스토어를 통한 업타겟 기대"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "현대차증권, 미래에셋증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 254000.0,
+      "avg_target_price": 360000.0,
+      "max_target_price": 360000.0,
+      "avg_upside": 41.7,
+      "bullets": [
+        "언제든 부각받을 수 있는 Valuation 매력 단단한 본업, 성장하는 기판, 휴머노이드는 덤 ▶ LG이노텍에 대한 목표주가를 기존 360,000원 유지(26F BPS 2741,646원에 Target P/B 13배 적용) 우리만 역주행 중 아이폰 롱테일 수요 견조1Q26 실적 컨센서스 상회 전망 ▶ 애플 전략 변화: 하드웨어 GPM보다 생태계 확장 중심 ▶ 피지컬 AI 초기 매출 시작",
+        "휴머노이드 카메라 ASP 상승 사이클 진입"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "STX엔진",
+      "stock_code": "077970",
+      "institution_list": "메리츠증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 29600.0,
+      "avg_target_price": 60000.0,
+      "max_target_price": 60000.0,
+      "avg_upside": 102.7,
+      "bullets": [
+        "K-군함의 심장 투자포인트1: 황금함대와 황금엔진 ▶ 투자포인트2: 무인함정의 등장 ▶ 투자포인트3: 전 세계가 원하는 K-군함 ▶ 투자포인트4: 캐시카우, 육상 방산"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "한국전력",
+      "stock_code": "015760",
+      "institution_list": "삼성증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 47600.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 47.1,
+      "bullets": [
+        "또 한 번 사상 최대 실적 경신이 기대되는 한 해 원전 증설과 이용률 제고에 따른 실적 개선이 기대되는 상황 ▶ 유가 급등은 단기 이슈로 판단되며 전기 요금 상승으로 유가 buffer가 충분한 상황 ▶ 2026E P/B 08배를 적용, 목표주가 7만원에 BUY 투자의견으로 커버리지 개시"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "DB증권, 다올투자증권, KB증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 930000.0,
+      "avg_target_price": 1466666.6666666667,
+      "max_target_price": 1700000.0,
+      "avg_upside": 57.7,
+      "bullets": [
+        "타이트한 메모리 수급 지속 SK하이닉스의 1Q26 매출, 영업이익은 각각 493조원(+50% QoQ, +180% YoY), 349조원(+82% QoQ, +369% YoY) 전망 ▶ - 계절적 비수기임에도 불구하고 타이트한 메모리 수급으로 강력한 메모리 판가 상승 예상 ▶ 현재 메모리 공급사들의 재고는 2~3주 수준으로 추정되며 제한적인 공급 상황을 고려 시 메모리 가격 상승세는 2026년 내내 지속될 것으로 전망함 여전히 모든 것이 좋다 매출액 488조원(+49%, 이하 QoQ), 영업이익 33"
+      ]
+    }
+  ]
+}
