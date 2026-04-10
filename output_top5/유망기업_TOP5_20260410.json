@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-04-06",
+    "end_date": "2026-04-10",
+    "generated_at": "2026-04-10T02:15:25",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 628,
+    "buy_count": 485,
+    "target_up_count": 0,
+    "total_companies": 289
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "미래에셋증권, 흥국증권, 신한투자증권, 한국투자증권, 삼성증권",
+      "report_count": 25,
+      "buy_ratio": 0.92,
+      "target_up_ratio": 0.0,
+      "current_price": 210500.0,
+      "avg_target_price": 298260.8695652174,
+      "max_target_price": 360000.0,
+      "avg_upside": 41.7,
+      "bullets": [
+        "뉴 노멀 증명 구간 영업레버리지가 증명될 1Q26 실적 ▶ 장기계약에 따른 高 ROE 지속과 P/B 배수 재평가 뉴노멀 진입 1Q26 영업이익 49조원 전망 ▶ 2026년 영업이익 274조원 전망 현 시점은 Peak 구간의 초입 메모리 가격 탄력성 확대",
+        "레버리지 효과 극대화 ▶ 1Q26 Preview: DS 부문 영업이익 41조원으로 전사 실적 견인할 전망 ▶ Valuation & Risk: 업황 강세 속 추가 주주환원정책 기대감도 재부각 1Q26 Preview: 주도권은 이미 넘어왔다 1분기 실적은 컨센서스 상회 전망 ▶ 26년 영업이익 302조원으로 50% 상향2조원 발표 ▶ 투자의견 매수, 목표주가 30만원 상향 Memory Giant 투자전략: 이 정도로 놀라긴 이르다 ▶ 1Q26 Review: 삼성의 저력 놀라운 실적의 시작 1Q26 잠정 실적은 매출액 1332조원을 기록해 시장 및 당사 추정치를 크게 상회 1Q26P - 이제 겨우 시작 1Q26 잠정 실적 - 향후 실적 추정치 상향 예상 ▶ 1Q26P 부분별 실적 - 메모리 영업레버리지는 가속화 구간 진입 1Q26 Preview - 폭발적 성장 1분기 실적은 컨센서스를 대폭 상회할 전망"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "기아",
+      "stock_code": "000270",
+      "institution_list": "다올투자증권, 대신증권, 삼성증권, 현대차증권, 한화투자증권",
+      "report_count": 20,
+      "buy_ratio": 0.9,
+      "target_up_ratio": 0.0,
+      "current_price": 150500.0,
+      "avg_target_price": 223235.29411764705,
+      "max_target_price": 250000.0,
+      "avg_upside": 48.3,
+      "bullets": [
+        "1Q26 Preview: 전기차 판매량 급등 투자의견 BUY를 유지하며, 적정주가는 기존 25만원 유지 ▶ 1Q26 매출액은 297%) 추정 ▶ 1Q26동사에 대해 주목할 점은 가파른 전기차 판매 반등 CEO Investor Day, D-3일 1Q26 OP 22조/OPM 8%로 시장 눈높이 부합 예상 ▶ 관세/기말환율은 부정적영향 불가피하나, 물량&인센 긍정적이었을 것 ▶ 4/9일 CID 통해 Physical AI 수혜주 매력 부각되며 밸류 키맞추기 예상 1Q26 Preview: 쌓이는 현금과 실적에 대한 신뢰 2026년에 전 지역 고른 판매 회복세 기록 중",
+        "매해 2~4조원의 현금 축적 중 ▶ CEO Investor Day를 통해 SDV 로드맵과 로봇 사업에서의 역할 발표 예상"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "미래에셋증권, 신한투자증권, 한국투자증권, 유안타증권, 흥국증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 998000.0,
+      "avg_target_price": 1567500.0,
+      "max_target_price": 1900000.0,
+      "avg_upside": 57.1,
+      "bullets": [
+        "고성장에서 안정적 고수익으로 고수익을 근간으로 한 고밸류 시장 진출효과 극대화 ▶ 가격 상승폭 둔화보다는 고수익성 유지에 주목할 필요 연간 영업이익 200조원 초과 전망 메모리 전 제품 가격 상승폭 확대",
+        "수익성 개선 가속화 ▶ 1Q26 Preview: 역대급 수익성 개선, 매 분기 역대 최대 실적 기대 ▶ Valuation & Risk: 지정학적 우려 완화 시 메모리의 주도력 복원 전망 1Q26 Preview: 근거 있는 추정치 상향 1분기 실적은 컨센서스 상회 전망 ▶ ASP가 지속 증가하며 실적을 견인할 것4조원 ▶ 투자의견 BUY 유지, 목표주가 180만원으로 상향 조정 다시 메모리의 시간 1Q26 영업이익 40조원 전망 ▶ 2026년 영업이익 230조 전망 ▶ SK하이닉스 투자의견 BUY/TP 1,400,000원 상향 이보다 더 좋을 수 없다 1Q26 영업이익 40조원, 기대치 상회 예상 ▶ 2Q26 영업이익 60조원 전망, 시장 기대치 상회",
+        "Google 영업이익 상회 ▶ 27년 영업이익 358조원, 글로벌 3위 도약"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "한중엔시에스",
+      "stock_code": "107640",
+      "institution_list": "유안타증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 49250.0,
+      "avg_target_price": 97000.0,
+      "max_target_price": 97000.0,
+      "avg_upside": 97.0,
+      "bullets": [
+        "AI DC 최고 프리미엄은 냉각 1Q26 Preview(컨센서스는 당사 추정 밖에 없음) ▶ 높은 진입장벽, 그리고 글로벌 최고의 기술력 ▶ 외형 성장은 기본, 2027년 미국 현지화 본격화 + 고객 다변화까지 기대 잠재력 풍부"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "풍산홀딩스",
+      "stock_code": "005810",
+      "institution_list": "BNK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 36350.0,
+      "avg_target_price": 100000.0,
+      "max_target_price": 100000.0,
+      "avg_upside": 175.1,
+      "bullets": [
+        "목표주가 10만원으로 상향 자회사 풍산의 방산 지분가치 15조원으로 평가 ▶ 특별배당 등 주주환원 기대"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "HD현대마린엔진",
+      "stock_code": "071970",
+      "institution_list": "신영증권, 현대차증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 79300.0,
+      "avg_target_price": 131000.0,
+      "max_target_price": 150000.0,
+      "avg_upside": 65.2,
+      "bullets": [
+        "납품처의 한계를 그룹을 통해 뛰어넘기 해외사업장 건조 선박 엔진 조달 수혜 예상 ▶ 나의 어닝 서프라이즈는 이제 시작 ▶ 매수의견과 목표주가 15만원 유지, 기자재 최선호주도 유지 1Q26 Preview: 무난한 실적, 기대되는 하반기 1Q26 영업이익은 278억원(+yoy 1705%)으로, 영업이익 컨센서스(297억원) 부합 전망 ▶ 1Q26 매출액은 1,239억원(+yoy 492%), 영업이익은 278억원(+yoy 1705%)으로, 컨센서스(각 1,305억원, 297억원) 부합 전망 ▶ 목표주가는 27F EPS 4,767원(직전 EPS 4,770원)에 Targe P/E 24배(직전 2025년 평균 P/E 24배) 적용하여 목표주가 112,000원 유지"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "SK바이오팜",
+      "stock_code": "326030",
+      "institution_list": "한국투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 97600.0,
+      "avg_target_price": 160000.0,
+      "max_target_price": 160000.0,
+      "avg_upside": 63.9,
+      "bullets": [
+        "1Q26 Preview: 좋은 시작 영업이익 컨센서스 14% 상회 전망 ▶ 지금부터가 진짜 ▶ 뇌전증 환자의 사망을 예방하는 엑스코프리1Q26 Preview: 좋은 시작 영업이익 컨센서스 14% 상회 전망 ▶ 지금부터가 진짜 ▶ 뇌전증 환자의 사망을 예방하는 엑스코프리"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "효성티앤씨",
+      "stock_code": "298020",
+      "institution_list": "신한투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 376000.0,
+      "avg_target_price": 600000.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 59.6,
+      "bullets": [
+        "스판덱스 서프라이즈, 끝이 아닌 시작 업종 Top Pick ▶ 1Q26 Preview: 기타 부문 약세를 상쇄할 스판덱스 서프라이즈 ▶ Valuation & Risk: 구조적인 재평가 구간 진입"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "HL만도",
+      "stock_code": "204320",
+      "institution_list": "현대차증권, 신한투자증권, 다올투자증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 50900.0,
+      "avg_target_price": 71333.33333333333,
+      "max_target_price": 78000.0,
+      "avg_upside": 40.1,
+      "bullets": [
+        "낮아진 눈높이도 부담 1Q26 영업이익은 833억원(+50% 하회할 전망 ▶ 1Q26 Preview: 북미 IDB2 낮은 기저효과 종료와 보조금 일몰로 성장 제한 ▶ 2025년 초 가이던스를 통해 소통한 2026년 이후 고객사 생산 확대와 전장 확대 적용 등 매출 성장과 5% 이상 영업이익률 달성은 1년 이상 지연 단기 실적 부진 불가피",
+        "중기 모멘텀은 여전히 유효 북미 EV 둔화의 바닥을 지나며",
+        "▶ 1Q26 Preview: 3% 중반대의 수익성 방어 확인이 핵심 ▶ Valuation & Risk: ‘로봇 내러티브’, ‘숫자의 회복’ 둘 다 놓치지 않아야 함 1Q26 Preview: 역대 최대 1분기 실적 예상 1Q26 실적은 동일 분기 기준 사상최대 실적 예상 ▶ 주력 Non-Captive  고객사향 매출의 정상화/신규발생 시작하며 4"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "한화엔진",
+      "stock_code": "082740",
+      "institution_list": "한국투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 46600.0,
+      "avg_target_price": 72000.0,
+      "max_target_price": 72000.0,
+      "avg_upside": 54.5,
+      "bullets": [
+        "1Q26 Preview: 저속엔진 수익성 한단계 더 상승 영업이익은 컨센서스를 8% 상회할 것, 저속엔진 OPM 126%로 추정 ▶ 4행정 중속엔진, Seam AS 등 두 가지 신규 수익원을 추정치에 반영 ▶ 목표주가 13% 상향, 실적 주도 기업가치 상승세 당분간 지속될 것"
+      ]
+    }
+  ]
+}
