@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-03-30",
+    "end_date": "2026-04-03",
+    "generated_at": "2026-04-10T04:46:26",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 444,
+    "buy_count": 309,
+    "target_up_count": 0,
+    "total_companies": 284
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "키움증권, KB증권, 현대차증권, NH투자증권, iM증권",
+      "report_count": 9,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 178400.0,
+      "avg_target_price": 277555.55555555556,
+      "max_target_price": 320000.0,
+      "avg_upside": 55.6,
+      "bullets": [
+        "1Q26 영업이익 43조원, 서프라이즈 예상 1Q26 영업이익 43조원으로, 서프라이즈 예상 ▶ 2Q26 영업이익 57조원, 시장 기대치 상회 예상 ▶ 목표주가 26만원, 업종 top pick 유지 1,000조원 AI 투자, 최대 수혜는 메모리 중동 불확실성 압도하는 AI 투자, 승자는 반도체 ▶ 2026년 영업이익 220조원, 전년대비 +5배8배 적용)에 투자의견 매수 유지 ▶ Google의 TurboQuant는 자주 사용하는 KV Cache 압축을 통해 Memory 반도체 사용량을 줄일 것이라는 우려가 있지만 작은 오차도 서비스에 영향이 큰 대형 LLM에서 기술 검증이 필요하며 해당 기술의 높은 완성도를 보일 경우 Low Latency가 중요한 Agentic AI 서비스가 보다 다양한",
+        "배수 상향 조정이 이란 전쟁 발발에 따라 멈춘 상황임 ▶ 단 P/B 30배의 적용과 28만원의 목표주가는 이란 전쟁이 단기 종료될 경우에 한함 ▶ 2Q26 DRAM, NAND ASP 상승률 전망치를 각각 33%, 37%로 상향 조정하며, 이에 따라 2Q26 및 FY26 영업이익 전망치 역시 70"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "KB증권, NH투자증권, 미래에셋증권, iM증권, 하나증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 830000.0,
+      "avg_target_price": 1581666.6666666667,
+      "max_target_price": 1700000.0,
+      "avg_upside": 90.6,
+      "bullets": [
+        "중동 불안은 비중확대 기회 중동 긴장에도 더 강해진 2분기 메모리 주문 ▶ 예약된실적서프라이즈,이익추정치상향지속 ▶ 조정은 기회, 수요 리바운드 효과 본격화 기대 나는 미국으로 간다 여전히 저평가 구간 ▶ 상향되는 실적 포화가 두렵지만 포기는 이르다 과매도 구간",
+        "매수의견 및 목표가 유지 현물가격과 빅테크 Capex 증가율에 주목 현주가는 FY26 BPS 대비 2배 (최근 중간 배수) 이하에서 거래 중이며, 이란 전쟁 발발에 따라 Val",
+        "배수 하락 중 ▶ 2Q26 DRAM, NAND ASP 상승률 전망치를 상향 조정하며, 이에 따라 2Q26 및 FY26 영업이익 전망치 역시 605조원으로 상향함 ▶ 1Q26 매출과 영업이익은 QoQ 73%, 105% 증가하는 56"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "삼성바이오로직스",
+      "stock_code": "207940",
+      "institution_list": "다올투자증권, NH투자증권, 키움증권, 유안타증권, 하나증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1585000.0,
+      "avg_target_price": 2168571.4285714286,
+      "max_target_price": 2300000.0,
+      "avg_upside": 36.8,
+      "bullets": [
+        "좋은 출발, 이제 미국 공장이 더해진다 1~4공장 풀가동 및 4Q25 이연 물량 매출 인식, 원/달러 환율 상승 효과로컨센서스 상회 전망 ▶ 미국 현지 공장 인수에 따른 매출 반영으로 연간가이던스 상향 가능성 유효",
+        "불확실성 해소 기대 시장 기대치 소폭 상회 전망 ▶ 6공장 착공 소식과 노사 협의 기대 ▶ 투자의견 BUY, 목표주가 210만원 유지 1Q26Pre: 안정적인 성장 1Q26Pre: 안정적인 성장 ▶ GSK 공장 인수 완료하며 미국 생산 거점 마련"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "대신증권, 다올투자증권, 현대차증권, SK증권, iM증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 293500.0,
+      "avg_target_price": 384000.0,
+      "max_target_price": 420000.0,
+      "avg_upside": 30.8,
+      "bullets": [
+        "1Q 예상 상회! 반도체 기판은 성장 진입! 1Q26 영업이익(2,021억원 615% yoy)은 컨센서스대비 상회 추정 ▶ 반도체 기판의 믹스 효과 및 가동율 확대가 예상을 상회 ▶ 2026년 영업이익은 331%(yoy) 증가 추정, 성장으로 전환 우려를 딛고, 기판까지 점화 1Q26 전사 매출액 55조원(+10%, 이하 YoY), 영업이익 2,027억원 (+62%)으로 컨센서스(OP 1,750억원)를 상회할 전망 ▶ 패키지솔루션(기판) 은 RF-SiP"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "크래프톤",
+      "stock_code": "259960",
+      "institution_list": "삼성증권, 한국투자증권, 하나증권, 신영증권, 한화투자증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 262000.0,
+      "avg_target_price": 370000.0,
+      "max_target_price": 420000.0,
+      "avg_upside": 41.2,
+      "bullets": [
+        "PUBG는 성장 중, 넥스트 IP 확보 과제 1분기 다시 반등한 PUBG ▶ `26년에도 새로워질 배틀그라운드 ▶ 신작 흥행은 풀어야할 과제 1Q26 Preview: 건재함을 확인 1분기는 4분기와 다르다 ▶ 저점매수가 유효한 가격대와 상황",
+        "이후는 서브노티카 2 살아남았다는 것은 강하다는 것 26년 1분기: 외부 데이터와 괴리 확인, 성장 지속 중 ▶ <서브노티카 2> 얼리억세스, 연내 출시 유지 ▶ 주가에 반영된 경쟁작+신작부재 우려는 해소 중 바닥 잡은 상황, 넥스트 IP가 그 이상을 올려 줄 것 1Q26 실적은 시장 기대치 상회 추정"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "엘앤에프",
+      "stock_code": "066970",
+      "institution_list": "DS투자증권, 상상인증권, 다올투자증권, 유안타증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 147400.0,
+      "avg_target_price": 203250.0,
+      "max_target_price": 250000.0,
+      "avg_upside": 37.9,
+      "bullets": [
+        "실적도 모멘텀도 가장 든든 1Q26F Pre: 컨센서스 영업이익 상회 예상 ▶ 올해 7월 한국판 IRA 확정 시 수혜 최선호주 ▶ 첫 수주공시로 증명해버린 LFP 사업 가시성 1Q26 Preview - 연말 LFP 양극재 생산, 이익성장 가시화 투자의견 매수 유지, 목표주가 200,000원으로 상향 조정"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "한중엔시에스",
+      "stock_code": "107640",
+      "institution_list": "유안타증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 49350.0,
+      "avg_target_price": 97000.0,
+      "max_target_price": 97000.0,
+      "avg_upside": 96.6,
+      "bullets": [
+        "AI DC 최고 프리미엄은 냉각 높은 진입장벽, 그리고 글로벌 최고의 기술력 ▶ 외형 성장은 기본, 2027년 미국 현지화 본격화 + 고객 다변화까지 기대 잠재력 풍부"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "휴젤",
+      "stock_code": "145020",
+      "institution_list": "상상인증권, 하나증권, 키움증권, 다올투자증권, DB증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 243000.0,
+      "avg_target_price": 376000.0,
+      "max_target_price": 410000.0,
+      "avg_upside": 54.7,
+      "bullets": [
+        "2026년에도 외형 고성장은 지속된다 2026년 1분기 영업실적은 컨센서스 부합 예상 ▶ 북미 톡신 수출 고성장으로 전사 매출 20% 내외 성장 전망 1Q26 Pre: 하반기 미국 직판을 위한 선제 투자 구간 1Q26 Preview: 하반기 미국 직판을 위한 선제 투자 구간 ▶ 빠른 제품 포트폴리오 확대를 위한 셀르디엠 국내 유통 계약 체결9% 상향 글로벌 리더로의 첫 걸음 ECM 스킨부스터 도입 코멘트정기주총에서 인체조직이식재 유통분배/수입업 사업목적 추가 ▶ 1Q26E 매출액 1,099억원(YoY +22%, QoQ -8%), 영업이익 408억원(YoY +5%, QoQ -29%)으로 매출액 추정치 부합, 영업이익 추정치 하회 전망"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "롯데웰푸드",
+      "stock_code": "280360",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 111100.0,
+      "avg_target_price": 200000.0,
+      "max_target_price": 200000.0,
+      "avg_upside": 80.0,
+      "bullets": [
+        "1Q26 Pre: 단기 실적 모멘텀 부재 1Q26 Pre: 주요 원재료 부담 지속 ▶ 사측 연간 가이던스 높아 보여 ▶ 단기 실적 모멘텀 부재1Q26 Pre: 단기 실적 모멘텀 부재 1Q26 Pre: 주요 원재료 부담 지속 ▶ 사측 연간 가이던스 높아 보여 ▶ 단기"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "미래에셋증권, 유안타증권, 현대차증권, SK증권, 유진투자증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 417000.0,
+      "avg_target_price": 562000.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 34.8,
+      "bullets": [
+        "기판 완판 다음은 판가 점프 기판 완판에 이어 가격 인상 시작",
+        "MLCC 가격 인상 시나ㅣㄹ오 분석 ▶ 1Q26 일회성 비용으로 소폭 하회, 일회성 제외 시 컨센서스 상회 공급망 안정에 부과된 가격 프리미엄의 수혜 성장을 이끄는 MLCC, 견조한 서버 수요 속 제약된 공급 ▶ AI 발전의 방향, 반도체 및 랙 성능 개선 과정에서 올라갈 MLCC 탑재량8% 상향 조정하여 제시(기존 목표주가는 26F BPS 131,251원에 Target P/B 26배를 적용하여 340,000원 산출) ▶ 1Q26F 연결 기준 매출액은 3조 1,040억원(YoY +13"
+      ]
+    }
+  ]
+}
