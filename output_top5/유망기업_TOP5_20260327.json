@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-03-23",
+    "end_date": "2026-03-27",
+    "generated_at": "2026-04-10T04:43:09",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 308,
+    "buy_count": 164,
+    "target_up_count": 0,
+    "total_companies": 215
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "하이브",
+      "stock_code": "352820",
+      "institution_list": "교보증권, SK증권, 신한투자증권, 한국투자증권, 하나증권",
+      "report_count": 8,
+      "buy_ratio": 0.75,
+      "target_up_ratio": 0.0,
+      "current_price": 304500.0,
+      "avg_target_price": 462500.0,
+      "max_target_price": 500000.0,
+      "avg_upside": 51.9,
+      "bullets": [
+        "성장의 물결 위로, SWIM 2026 년 매출액 4조 3,810억원 (YoY +653%), 영업이익 5,381억원(YoY +9783%) 전망 ▶ 글로벌, 중저연차 IP 성장 지속 ▶ 투자의견 BUY 및 목표주가 455 ,000 원 유지 방탄소년단 활동 초기 구간, 주가 조정은 매수 기회 방탄소년단 컴백과 동시에 음원 차트 진입 및 음반 판매량 신기록 갱신 ▶ 광화문 공연 및 신곡에 대한 부정적 여론으로 주가 -15오히려 매수 기회로 대응 BTS 컴백에 대한 신한생각 과도한 BTS 컴백 반응 ▶ BTS 컴백 실제 성과 ▶ 글로벌 활동 본격화로 실적 모멘텀 vs"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "엘앤에프",
+      "stock_code": "066970",
+      "institution_list": "키움증권, 미래에셋증권, 한화투자증권, NH투자증권, 흥국증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 125000.0,
+      "avg_target_price": 174500.0,
+      "max_target_price": 180000.0,
+      "avg_upside": 39.6,
+      "bullets": [
+        "Tesla 서플라이 체인 이점 부각 하이니켈 양극재 채용 지속 ▶ 흑자 기조 유지, 실적 차별화 예상 ▶ ESS용 LFP 모멘텀 지속 LFP 수주: 끝이 아닌 시작 망 목표주가 18만원 및 2차전지 소재 내 탑픽 의견 유지 ▶ LFP: 선제적 의사결정의 효과",
+        "삼성SDI를 통한 Tesla ESS 공급 시작 ▶ 중국 출장 후기: 연중 견조한 리튬 가격 전망 커져가는 LFP 양극재 모멘텀 1분기: 테슬라향 견조한 수요와 충당금 환입 효과 ▶ LFP 양극재 기반의 중장기 모멘텀 가속화 ▶ 투자의견 BUY, 목표주가 18만 원 유지 땡큐 테슬라 테슬라의 유럽 판매가 회복되고 N95 독점이 더 이어질 것"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "포스코인터내셔널",
+      "stock_code": "047050",
+      "institution_list": "iM증권, KB증권, IBK투자증권, 유진투자증권, DB증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 75800.0,
+      "avg_target_price": 95166.66666666667,
+      "max_target_price": 110000.0,
+      "avg_upside": 25.5,
+      "bullets": [
+        "에너지 전쟁시대, 롱 포지션 기업 유가상승으로 미얀마 가스전 및 발전사업 실적개선 가시화 될 듯 ▶ 트럼프 20 시대 알래스카 등 미국산 LNG 등을 직접 확보함에 따라 LNG 트레이딩 기회 증가로 성장성 가속화⇒ 밸류에이션 리레이팅 기반 마련 ▶ 탈중국 희토류 공급망 확대 등을 기반으로 신규수주 증가 뿐만 아니라 미국 생산 거점 확보로 성장성 가속화 되면서 밸류에이션 리레이팅 될 듯 업스트림 = 국가 전략 자산 투자의견 Buy 유지8조원(-5%qoq, -1%yoy), 영업이익 2,656억원 (-16%qoq, +84%yoy)으로 당사 추정과 시장 눈높이를 소폭 상회하는 호실적 기록 ▶ 1Q26 매출액 74조원(-5%qoq, -9%yoy), 영업이익 2"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "메리츠증권, 하나증권, NH투자증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 303000.0,
+      "avg_target_price": 406666.6666666667,
+      "max_target_price": 480000.0,
+      "avg_upside": 34.2,
+      "bullets": [
+        "1Q 서프라이즈, 여기도 기판이 완판 1Q26 Preview: 환율 효과 + 기판 실적 견인 본격화 ▶ 여기도 기판이 완판 ▶ 투자의견 Buy 유지, 적정주가 360,000원으로 상향 제시 저도 기판 멀티플 주세요 의심을 거둘 때, 목표주가 48만원으로 상향 ▶ 1Q26 Preview: 고환율 + 롱테일 효과 + 기판 수요 호조1Q 서프라이즈, 여기도 기판이 완판 1Q26 Preview: 환율 효과 + 기판 실적 견인 본격화 ▶ 여기도 기판이 완판 ▶ 투자의견"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "현대차",
+      "stock_code": "005380",
+      "institution_list": "IBK투자증권, KB증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 485000.0,
+      "avg_target_price": 725000.0,
+      "max_target_price": 800000.0,
+      "avg_upside": 49.5,
+      "bullets": [
+        "Physical AI 초기 상용화 플랫폼 기업 2026년 이어가는 성장 기조 ▶ 탈 Legacy 자동차 OEM의 첫번째 주자 ▶ 투자의견 매수 유지, 목표주가 650,000원 상향 1분기 기대치 상회, 판매로 증명된 실적 차별화 로보틱스 최선호주 1분기 실적, 기대치 상회할 전망 ▶ 해외 투자자 관심은 로보틱스 집중 글로벌 자금 로보틱스 베팅 예상9조원, 기대치 상회 1~2월 판매가 증명한 실적 업사이드"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "메리츠증권, 교보증권, 대신증권, 하나증권, NH투자증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 454500.0,
+      "avg_target_price": 578000.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 27.2,
+      "bullets": [
+        "북미 NV사와의 FC-BGA 연결고리, 구조적 진화 중 강화되는 북미 NV사와의 파트너십 ▶ T-Glass 공급 부족 장기화와 맞물리며 FC-BGA 쇼티지 심화 예상 ▶ FC-BGA",
+        "MLCC 동반 초호황 국면 진입, 가격/수익성 중심 전략 강화 예상 1Q26 Preview: 일회성 비용 제거 시 컨센상회 1Q26 Preview 일회성 비용제거시 컨센 상회 ▶ 영업이익은 2026년 13조원, 2027년 2조원에 근접하며 2년 내 두 배 이상 성장할 전망 새로운 역사가 진행, 추가로 도약을 예상 1Q26 영업이익(2,713억원)은 353% qoq) 증가, 호실적 추정 ▶ FC BGA, MLCC 매출 확대 속에 고부가 비중 증가 중, 가격 상승 전망 ▶ 밸류에이션 재평가 진행 중 : 고수익 비중 증가, 피지컬 AI 비중 확대 아직 호황의 초입 1Q26 Preview: 일회성 비용 반영, 컨센서스 하회 전망 ▶ 제한적인 공급으로 공급자 우위 시장 장기화"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "카카오페이",
+      "stock_code": "377300",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 53900.0,
+      "avg_target_price": 130000.0,
+      "max_target_price": 130000.0,
+      "avg_upside": 141.2,
+      "bullets": [
+        "에이전트 총아 인터넷 업종 최선호주 ▶ AI 솔루션 탑재 기재"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "카카오",
+      "stock_code": "035720",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 48200.0,
+      "avg_target_price": 110000.0,
+      "max_target_price": 110000.0,
+      "avg_upside": 128.2,
+      "bullets": [
+        "AI 밸류 발현 인터넷 업종 최선호주 ▶ 에이전트 밸류에 주목"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "피에스케이",
+      "stock_code": "319660",
+      "institution_list": "BNK투자증권, 하나증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 79800.0,
+      "avg_target_price": 105000.0,
+      "max_target_price": 105000.0,
+      "avg_upside": 31.6,
+      "bullets": [
+        "고객사 투자 증가와 시장점유율 상승 동시 수혜 업황 호조로 기대치 상회한 4Q25 실적 ▶ PR Strip 시장점유율 상승과 고객사 역대 최대 설비투자 수혜 ▶ 목표주가 105,000원으로 상향조정, 투자의견 ‘매수’ 유지 높아지는 2026년 실적 눈높이 4Q25 Review: 분기 최대 매출액 달성 ▶ 고객사 Capex 상향으로 2026년 실적 상향"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "코스메카코리아",
+      "stock_code": "241710",
+      "institution_list": "NH투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 77800.0,
+      "avg_target_price": 120000.0,
+      "max_target_price": 120000.0,
+      "avg_upside": 54.2,
+      "bullets": [
+        "조용히 강하다 올해도 사상 최대 별도 실적 기록할 메카 ▶ 1Q26 Preview: 컨센서스 부합 예상"
+      ]
+    }
+  ]
+}
