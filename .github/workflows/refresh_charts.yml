@@ -1,0 +1,31 @@
+name: 차트 자동 새로고침
+on:
+  schedule:
+    - cron: '0 0 * * 1-5'  # 평일 오전 9시 KST
+    - cron: '0 1 * * 1-5'  # 평일 오전 10시 KST
+    - cron: '0 4 * * 1-5'  # 평일 오후 1시 KST
+    - cron: '0 5 * * 1-5'  # 평일 오후 2시 KST
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v3
+      - name: Python 설치
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: 라이브러리 설치
+        run: pip install -r requirements.txt
+      - name: 대시보드 재생성 (스크랩 없이 차트만 갱신)
+        run: python generate_dashboard.py --no-open
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: 결과 저장 & 푸시
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add dashboard.html
+          git diff --staged --quiet && echo "변경 없음" || git commit -m "차트 새로고침: $(date '+%Y-%m-%d %H:%M' -u -d '+9 hours')"
+          git push || echo "푸시할 변경사항 없음"
