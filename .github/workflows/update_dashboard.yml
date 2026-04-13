@@ -1,7 +1,7 @@
 name: 주간 리포트 스크랩
 on:
   schedule:
-    - cron: '0 7 * * 5'  # 매주 금요일 오후 4시 KST
+    - cron: '43 6 * * 5'  # 매주 금요일 오후 3시 43분 KST
   workflow_dispatch:
     inputs:
       start_date:
