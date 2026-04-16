@@ -24,6 +24,11 @@ jobs:
           python-version: '3.11'
       - name: 라이브러리 설치
         run: pip install -r requirements.txt
+      - name: Playwright 설치          # ← 추가
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
       - name: 리포트 스크랩 & 대시보드 생성
         run: |
           ARGS="--scrape --no-open"
@@ -40,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add dashboard.html
+          git add dashboard.html dashboard_data.json   # ← dashboard_data.json 추가
           git add -A output_top5/ output_industry/ 2>/dev/null || true
           git commit -m "주간 리포트 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
           git push
