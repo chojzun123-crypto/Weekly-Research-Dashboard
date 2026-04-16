@@ -727,7 +727,14 @@
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
-const DASHBOARD_DATA = /*__DASHBOARD_DATA__*/null;
+let DASHBOARD_DATA = /*__DASHBOARD_DATA__*/null;
+if (!DASHBOARD_DATA) {
+  fetch('dashboard_data.json')
+    .then(r => r.json())
+    .then(data => { DASHBOARD_DATA = data; initDashboard(); })
+    .catch(e => document.querySelector('main').innerHTML =
+      '<div style="padding:80px;text-align:center;color:#da3633">데이터 로드 실패.<br>python -m http.server 8080 으로 실행해 주세요.</div>');
+}
 
 // ── 유틸 ─────────────────────────────
 function fmt(n, digits = 0) {
@@ -1757,7 +1764,10 @@ function initDashboard() {
   renderHistoryTable(weeks, weeks[0].label);
 }
 
-document.addEventListener('DOMContentLoaded', initDashboard);
+document.addEventListener('DOMContentLoaded', () => {
+  if (DASHBOARD_DATA) initDashboard();
+  // fetch 방식이면 위 fetch 콜백에서 자동 실행됨
+});
 </script>
 </body>
 </html>
