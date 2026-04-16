@@ -1148,11 +1148,13 @@ def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: di
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
-def render_dashboard(data_json: str) -> str:
+def render_dashboard(data_json: str, use_fetch: bool = False) -> str:
     if not TEMPLATE.exists():
         raise FileNotFoundError(f"템플릿 파일을 찾을 수 없습니다: {TEMPLATE}")
     html = TEMPLATE.read_text(encoding="utf-8")
-    html = html.replace("/*__DASHBOARD_DATA__*/null", data_json, 1)
+    if not use_fetch:
+        html = html.replace("/*__DASHBOARD_DATA__*/null", data_json, 1)
+    # use_fetch=True 이면 null 그대로 둠 → template의 fetch가 처리
     return html
 
 
@@ -1881,7 +1883,14 @@ def main() -> None:
     print(f"  캔들 데이터: {len(candles)}개 종목")
 
     data_json = build_dashboard_data(weeks, performance, candles)
-    html = render_dashboard(data_json)
+
+    # JSON 데이터 파일 따로 저장
+    json_path = out_path.parent / "dashboard_data.json"
+    json_path.write_text(data_json, encoding="utf-8")
+    print(f"데이터 파일 저장: {json_path} ({json_path.stat().st_size / 1024 / 1024:.1f} MB)")
+
+    # HTML은 가볍게 생성 (데이터 미포함)
+    html = render_dashboard(data_json, use_fetch=True)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
