@@ -48,4 +48,5 @@ jobs:
           git add dashboard.html dashboard_data.json   # ← dashboard_data.json 추가
           git add -A output_top5/ output_industry/ 2>/dev/null || true
           git commit -m "주간 리포트 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
+          git pull --rebase origin main
           git push

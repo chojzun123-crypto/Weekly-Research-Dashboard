@@ -28,4 +28,5 @@ jobs:
           git config user.email "actions@github.com"
           git add dashboard.html dashboard_data.json
           git diff --staged --quiet && echo "변경 없음" || git commit -m "차트 새로고침: $(date '+%Y-%m-%d %H:%M' -u -d '+9 hours')"
+          git pull --rebase origin main
           git push || echo "푸시할 변경사항 없음"
