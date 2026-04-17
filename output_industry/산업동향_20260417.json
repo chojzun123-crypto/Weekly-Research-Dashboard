@@ -3,11 +3,11 @@
     "report_type": "industry",
     "start_date": "2026-04-13",
     "end_date": "2026-04-17",
-    "generated_at": "2026-04-17T08:00:28",
+    "generated_at": "2026-04-17T08:56:30",
     "analysis_days": 5
   },
   "stats": {
-    "total_reports": 190,
+    "total_reports": 191,
     "covered_industries": 35,
     "overweight_industries": 24
   },
@@ -277,16 +277,17 @@
       "keyword": "대체투자 Weekly - 지방 데이터센터 개발 증가 선벨트 물류센터 수급"
     },
     {
-      "industry_name": "건강관리장비와용품",
+      "industry_name": "무선통신서비스",
       "report_count": 3,
-      "overweight_ratio": 0.0,
-      "overweight_ratio_pct": 0,
-      "opinion": "",
-      "main_institutions": "유안타, DB, LS",
+      "overweight_ratio": 0.6666666666666666,
+      "overweight_ratio_pct": 67,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 신한투자, 삼성",
       "bullets": [
-        "ECM 스킨부스터 시장, 이제 실적으로 증명한다 주가는 리스크만 반영되어 있다 ▶ ECM 시장 1분기 의료 미용 업황 점검 내수) 의료 관광 시장 성장세 확인 ▶ 수출) 비수기를 이긴 1분기 수출 호조, 2분기도 기대해볼만 하다 ▶ 수출에 강한 기업에 주목 Medtech & Growth Bi-Weekly"
+        "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이끌까 실적, 규제, 주주환원 삼박자",
+        "완만한 주가 상승 기대 ▶ 1Q26 Preview: 무난한 실적 예상 ▶ 이슈 점검: SK텔레콤 엔트로픽 지분가치 부각 달라진 시선: 안정에서 성장으로 재평가되는 통신의 본질 가치 ▶ 정상화를 넘어 리레이팅 구간 진입 ▶ 통신 3사: 1Q26 실적 preview"
       ],
-      "keyword": "ECM 스킨부스터 시장, 이제 실적으로 증명한다 주가는 리스크만 반영되어"
+      "keyword": "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이"
     },
     {
       "industry_name": "증권",
@@ -301,6 +302,18 @@
         "좋았던 거래대금마저 지속 가능성에 의문 생길 수 있는 국면"
       ],
       "keyword": "순간이 아닌 그 너머까지 1Q26E 실적은 대체로 양호할 전망"
+    },
+    {
+      "industry_name": "건강관리장비와용품",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유안타, DB, LS",
+      "bullets": [
+        "ECM 스킨부스터 시장, 이제 실적으로 증명한다 주가는 리스크만 반영되어 있다 ▶ ECM 시장 1분기 의료 미용 업황 점검 내수) 의료 관광 시장 성장세 확인 ▶ 수출) 비수기를 이긴 1분기 수출 호조, 2분기도 기대해볼만 하다 ▶ 수출에 강한 기업에 주목 Medtech & Growth Bi-Weekly"
+      ],
+      "keyword": "ECM 스킨부스터 시장, 이제 실적으로 증명한다 주가는 리스크만 반영되어"
     },
     {
       "industry_name": "호텔,레스토랑,레저",
@@ -325,19 +338,6 @@
         "항공화물 운임 상승, 포워딩 사업 영향 글로벌 물류 흐름 변화와 네트워크 분절화 중동전쟁 영향과 글로벌 물류시장 점검 ▶ 글로벌 국경간 물동량 변화 ▶ 주요 이커머스 물동량 교역 변화"
       ],
       "keyword": "신한 운송 Weekly T.M.I - 컨테이너·항공화물 운임 상승, 포워"
-    },
-    {
-      "industry_name": "무선통신서비스",
-      "report_count": 2,
-      "overweight_ratio": 0.5,
-      "overweight_ratio_pct": 50,
-      "opinion": "Overweight",
-      "main_institutions": "메리츠, 신한투자",
-      "bullets": [
-        "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이끌까 실적, 규제, 주주환원 삼박자",
-        "완만한 주가 상승 기대 ▶ 1Q26 Preview: 무난한 실적 예상 ▶ 이슈 점검: SK텔레콤 엔트로픽 지분가치 부각"
-      ],
-      "keyword": "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이"
     },
     {
       "industry_name": "항공화물운송과물류",
