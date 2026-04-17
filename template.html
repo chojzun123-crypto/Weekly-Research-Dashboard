@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>주간 투자 리서치 대시보드</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpolygon points='32,6 54,18.7 54,44.3 32,57 10,44.3 10,18.7' fill='none' stroke='%23DAA520' stroke-width='3'/%3E%3Cpolygon points='32,10 50,20.4 50,41.6 32,52 14,41.6 14,20.4' fill='none' stroke='%23f0b429' stroke-width='1.5' opacity='.5'/%3E%3Cpolyline points='16,40 24,32 32,36 42,20 48,14' fill='none' stroke='%2358a6ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='14' r='2.5' fill='%2358a6ff'/%3E%3Ctext x='18' y='38' font-family='Arial,sans-serif' font-size='16' font-weight='800' fill='%23f0b429'%3EWR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1222,68 +1225,190 @@
 </head>
 <body>
 
-<header>
-  <h1><svg width="40" height="40" viewBox="0 0 64 64" style="vertical-align:middle;margin-right:6px"><polygon points="32,6 54,18.7 54,44.3 32,57 10,44.3 10,18.7" fill="none" stroke="#DAA520" stroke-width="3"/><polygon points="32,10 50,20.4 50,41.6 32,52 14,41.6 14,20.4" fill="none" stroke="#f0b429" stroke-width="1.5" opacity=".5"/><polyline points="16,40 24,32 32,36 42,20 48,14" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="14" r="2.5" fill="#58a6ff"/><text x="18" y="38" font-family="Arial,sans-serif" font-size="16" font-weight="800" fill="#f0b429">WR</text></svg>주간 투자 리서치 대시보드</h1>
-  <div class="header-meta">
-    <div class="meta-pill">기간: <span id="hdr-period">—</span></div>
-    <div class="meta-pill">업데이트: <span id="hdr-updated">—</span></div>
-  </div>
-  <select id="week-select"></select>
-</header>
+<div class="shell">
 
-<main>
-  <!-- 섹션 1: TOP5 -->
+  <!-- ═══════════════════════════════════════
+       HERO : 브랜드 + 메타 + 섹션 네비
+       ═══════════════════════════════════════ -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-brand">
+        <div class="eyebrow">Weekly Research Dashboard</div>
+        <h1><span class="logo-dot"></span>주간 투자 리서치 대시보드</h1>
+        <div class="hero-meta">
+          <span class="pill"><span class="pill-label">기간</span><span class="pill-value" id="hdr-period">04.06 ~ 04.10</span></span>
+          <span class="pill"><span class="pill-label">업데이트</span><span class="pill-value" id="hdr-updated">2026-04-10 10:36</span></span>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <nav class="nav-tabs" id="nav-tabs">
+          <button class="nav-tab active" data-target="sec-exec">개요</button>
+          <button class="nav-tab" data-target="sec-top5">TOP10</button>
+          <button class="nav-tab" data-target="sec-industry">산업 동향</button>
+          <button class="nav-tab" data-target="sec-perf">성과 검증</button>
+          <button class="nav-tab" data-target="sec-candle">차트 해설</button>
+          <button class="nav-tab" data-target="sec-financial">재무 해석</button>
+        </nav>
+        <select id="week-select"></select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       EXECUTIVE SUMMARY
+       ═══════════════════════════════════════ -->
+  <section id="sec-exec" class="exec">
+    <div class="exec-inner">
+      <div class="exec-badge">Executive Summary</div>
+
+      <h2 class="exec-headline">
+        추천 종목을<br>
+        <span class="accent">읽는 순서</span>부터 다시 설계한 리서<span class="accent">치 화면</span>
+      </h2>
+
+      <p class="exec-lead">
+        이번 버전은 단순히 종목을 많이 나열하지 않습니다. 상단에서 전략 요약과 검증 기준을 먼저
+        제시하고, 각 종목 카드는 핵심 포인트·실적 근거·리스크 메모를 동일한 구조로 정리해
+        비교 가능한 리서치 운영 화면으로 바꿉니다.
+      </p>
+
+      <div class="exec-meta">
+        <span class="pill"><span class="pill-label">데이터 기준 시점</span><span class="pill-value" id="exec-asof">2026-04-15 10:05</span></span>
+        <span class="pill"><span class="pill-label">추천</span><span class="pill-value">10종목 · 업종 핵심 섹터</span></span>
+        <span class="pill"><span class="pill-label">구성</span><span class="pill-value">성과 검증 · 차트 분석 · 재무 해석 포함</span></span>
+      </div>
+
+      <!-- ═══ 성과 스트립 ═══ -->
+      <div class="perf-strip">
+        <div class="perf-strip-item">
+          <span class="perf-strip-label">전략 누적</span>
+          <span class="perf-strip-value pos" id="kpi-return">+16.3%</span>
+          <span class="perf-strip-sub">(10종목 평균)</span>
+        </div>
+        <div class="perf-strip-item">
+          <span class="perf-strip-label">승률</span>
+          <span class="perf-strip-value blue" id="kpi-winrate">100%</span>
+          <span class="perf-strip-sub" id="kpi-winrate-detail">(10/10)</span>
+        </div>
+        <div class="perf-strip-item">
+          <span class="perf-strip-label">vs KOSPI</span>
+          <span class="perf-strip-value pos" id="kpi-alpha">+15.1%p</span>
+          <span class="perf-strip-sub">초과수익</span>
+        </div>
+        <div class="perf-strip-item">
+          <span class="perf-strip-label">최고 성과</span>
+          <span class="perf-strip-value pos" id="kpi-best">+24.3%</span>
+          <span class="perf-strip-sub" id="kpi-best-name">효성중공업</span>
+        </div>
+      </div>
+
+      <!-- ═══ 지수 카드 2장 ═══ -->
+      <div class="market-grid" id="market-grid"></div>
+
+      <!-- ═══ 시장 상황 ═══ -->
+      <div class="market-status">
+        <div class="ms-head">
+          <span class="ms-dot"></span>
+          <span class="ms-heading">시장 상황</span>
+          <span class="ms-tag">Macro Watch</span>
+        </div>
+        <div class="ms-grid">
+          <div class="ms-item">
+            <span class="ms-label">원/달러</span>
+            <span class="ms-value">1,385<span class="ms-unit">원</span></span>
+            <span class="ms-desc">전일 대비 보합 · 안정세</span>
+          </div>
+          <div class="ms-item">
+            <span class="ms-label">미 10년물</span>
+            <span class="ms-value">4.28<span class="ms-unit">%</span></span>
+            <span class="ms-desc">금리 안정세 유지</span>
+          </div>
+          <div class="ms-item">
+            <span class="ms-label">외국인 수급</span>
+            <span class="ms-value pos">+8,200<span class="ms-unit">억</span></span>
+            <span class="ms-desc">3일 연속 순매수 전환</span>
+          </div>
+          <div class="ms-item">
+            <span class="ms-label">이번 주 주목</span>
+            <span class="ms-value event">FOMC 의사록</span>
+            <span class="ms-desc">변동성 분수령 · 4/18 공개</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TOP 10
+       ═══════════════════════════════════════ -->
   <section id="sec-top5">
-    <div class="section-title">① 유망기업 TOP 10</div>
+    <div class="section-head">
+      <div class="section-title-wrap">
+        <div class="section-index">01 / TOP 10</div>
+        <div class="section-title">유망기업 TOP 10</div>
+        <div class="section-desc">애널리스트 컨센서스 기준 상승여력 상위 종목</div>
+      </div>
+    </div>
     <div id="top5-container" class="top5-grid"></div>
   </section>
 
-  <!-- 섹션 2: 산업 동향 -->
+  <!-- ═══════════════════════════════════════
+       산업 동향
+       ═══════════════════════════════════════ -->
   <section id="sec-industry">
-    <div class="section-title-row">
-      <div class="section-title">② 전체 산업 동향</div>
-      <div class="fin-legend">
-        <span class="fin-legend-item"><span class="opinion-badge badge-overweight" style="font-size:11px;padding:2px 8px">Overweight</span>비중확대</span>
-        <span class="fin-legend-item"><span class="opinion-badge badge-neutral" style="font-size:11px;padding:2px 8px">Neutral</span>중립</span>
+    <div class="section-head">
+      <div class="section-title-wrap">
+        <div class="section-index">02 / SECTOR</div>
+        <div class="section-title">전체 산업 동향</div>
+        <div class="section-desc">핵심 6개 섹터의 투자의견 · 키워드 · 주요 이슈</div>
+      </div>
+      <div class="section-legend">
+        <span class="opinion-badge badge-overweight">Overweight</span><span>비중확대</span>
+        <span class="opinion-badge badge-neutral">Neutral</span><span>중립</span>
       </div>
     </div>
     <div id="industry-container" class="industry-grid"></div>
   </section>
 
-  <!-- 섹션 3: 추천 성과 추적 -->
+  <!-- ═══════════════════════════════════════
+       성과 검증
+       ═══════════════════════════════════════ -->
   <section id="sec-perf">
-    <div class="section-title">③ 추천 성과 추적</div>
+    <div class="section-head">
+      <div class="section-title-wrap">
+        <div class="section-index">03 / PERFORMANCE</div>
+        <div class="section-title">추천 성과 추적</div>
+        <div class="section-desc">추천가 대비 현재가 · 목표가 달성 여부</div>
+      </div>
+    </div>
     <div id="perf-summary-grid" class="perf-summary-grid"></div>
     <div id="perf-updated" class="perf-updated"></div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>추천일</th>
-            <th>순위</th>
-            <th>종목명</th>
-            <th>종목코드</th>
-            <th>추천가</th>
-            <th>목표가</th>
-            <th>현재가</th>
-            <th>수익률</th>
-            <th>목표달성</th>
+            <th>추천일</th><th>순위</th><th>종목명</th><th>종목코드</th>
+            <th>추천가</th><th>목표가</th><th>현재가</th><th>수익률</th><th>목표달성</th>
           </tr>
         </thead>
         <tbody id="perf-tbody"></tbody>
       </table>
     </div>
-  </section>
 
-  <!-- 섹션 4: 히스토리 -->
-  <section id="sec-history">
-    <div class="section-title">④ 주차별 히스토리</div>
+    <div class="section-head" style="margin-top:36px">
+      <div class="section-title-wrap">
+        <div class="section-index">03.1 / HISTORY</div>
+        <div class="section-title">주차별 히스토리</div>
+      </div>
+    </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
             <th>주차</th>
-            <th>1위</th><th>2위</th><th>3위</th><th>4위</th><th>5위</th><th>6위</th><th>7위</th><th>8위</th><th>9위</th><th>10위</th>
+            <th>1위</th><th>2위</th><th>3위</th><th>4위</th><th>5위</th>
+            <th>6위</th><th>7위</th><th>8위</th><th>9위</th><th>10위</th>
             <th>평균상승여력</th>
           </tr>
         </thead>
@@ -1292,52 +1417,663 @@
     </div>
   </section>
 
-  <!-- 섹션 5: 캔들 차트 -->
+  <!-- ═══════════════════════════════════════
+       차트 해설
+       ═══════════════════════════════════════ -->
   <section id="sec-candle">
-    <div class="section-title">⑤ TOP10 종목 캔들 차트</div>
+    <div class="section-head">
+      <div class="section-title-wrap">
+        <div class="section-index">04 / CHART</div>
+        <div class="section-title">TOP10 종목 캔들 차트</div>
+        <div class="section-desc">패턴 · 4단계 매매전략 · 엘리어트 파동 분석</div>
+      </div>
+    </div>
     <div id="candle-tabs" class="candle-tabs"></div>
     <div id="candle-patterns" class="pattern-badges"></div>
-    <div id="four-phase-panel" class="four-phase-panel" style="display:none">
-      <div class="fp-title">4단계 매매전략 분석 <span id="fp-phase-badge" class="fp-check info"></span></div>
-      <div id="fp-cards" class="fp-cards"></div>
-      <div id="fp-detail" class="fp-detail"></div>
-    </div>
-    <div id="elliott-wave" style="display:none"><div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px"><div style="font-weight:700;color:var(--text);margin-bottom:6px;font-size:13px">엘리어트 파동 분석</div><div id="elliott-wave-content"></div></div></div>
-    <div id="marker-summary" style="display:none">
-      <div class="ms-title">최근 감지된 주요 패턴</div>
-      <div id="marker-summary-list" class="ms-list"></div>
-    </div>
     <div id="candle-chart-wrap"><div id="candle-chart"></div></div>
     <div id="candle-rsi-wrap"><div id="candle-rsi"></div></div>
     <div class="candle-legend">
-      <span class="candle-legend-item"><span style="color:#ef5350;font-size:15px">■</span> 양봉 (상승)</span>
-      <span class="candle-legend-item"><span style="color:#1565C0;font-size:15px">■</span> 음봉 (하락)</span>
-      <span class="candle-legend-item"><span style="color:#58a6ff">┄</span> 추천가</span>
-      <span class="candle-legend-item"><span style="color:#f0b429">┄</span> 목표가</span>
-      <span class="candle-legend-item"><span style="color:#da3633">┄</span> 손절 -10%</span>
-      <span class="candle-legend-item"><span style="color:#2ea043">─</span> MA111</span>
-      <span class="candle-legend-item"><span style="color:#f0b429">─</span> MA224</span>
-      <span class="candle-legend-item"><span style="color:#555555">┄</span> MA448</span>
-      <span class="candle-legend-item"><span style="color:#6e7681">─</span> BB 하단</span>
+      <span>▲ 20일 이동평균</span>
+      <span>▲ 60일 이동평균</span>
+      <span>▲ 거래량</span>
     </div>
   </section>
 
-  <!-- 섹션 6: TOP5 재무 정보 -->
+  <!-- ═══════════════════════════════════════
+       재무 해석
+       ═══════════════════════════════════════ -->
   <section id="sec-financial">
-    <div class="section-title-row">
-      <div class="section-title">⑥ TOP10 종목 재무 정보</div>
-      <div class="fin-legend">
-        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--green)"></span>우수</span>
-        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--yellow)"></span>보통</span>
-        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--red)"></span>위험</span>
+    <div class="section-head">
+      <div class="section-title-wrap">
+        <div class="section-index">05 / FINANCIALS</div>
+        <div class="section-title">재무 지표 해석</div>
+        <div class="section-desc">업종 기준 벤치마크 대비 PER · PBR · ROE · 부채비율 등</div>
+      </div>
+      <div class="section-legend">
+        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--green)"></span>우수</span>
+        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--yellow)"></span>중립</span>
+        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--red)"></span>주의</span>
       </div>
     </div>
     <div id="financial-container" class="fin-grid"></div>
   </section>
+
+</div>
+
+<script>
+/* ─────────────────────────────────────────────────────────────
+   데모 데이터 — 실제 사용 시 DASHBOARD_DATA 를 JSON 파일로
+   교체하거나 run.py 에서 주입하세요.
+   ───────────────────────────────────────────────────────────── */
+const DASHBOARD_DATA = {
+  weeks: [
+    {
+      date: "2026-04-10",
+      label: "2026년 16주차 (04.06~04.10)",
+      top5: {
+        meta: { start_date: "2026-04-06", end_date: "2026-04-10", generated_at: "2026-04-10T10:36:00" },
+        items: [
+          { rank:1, company_name:"삼성전자", code:"005930", current_price:78500, target_price:95000, upside:21.0,
+            opinion:"매수", analyst_count:28,
+            bullets:["HBM3E 양산 본격화 · 메모리 업사이클 진입", "파운드리 GAA 2nm 공정 양산 준비 가속", "AI 수요 지속으로 DRAM 가격 QoQ +18% 전망"] },
+          { rank:2, company_name:"SK하이닉스", code:"000660", current_price:198000, target_price:240000, upside:21.2,
+            opinion:"매수", analyst_count:26,
+            bullets:["HBM3E 12단 양산으로 NVIDIA 공급 확대", "eSSD 라인업 확장 · 엔터프라이즈 수요 증가", "2026년 영업이익 28조원 가시권"] },
+          { rank:3, company_name:"현대차", code:"005380", current_price:245000, target_price:320000, upside:30.6,
+            opinion:"매수", analyst_count:22,
+            bullets:["EV 판매 회복 · 제네시스 믹스 개선", "인도/동남아 수출 확대", "2026년 배당성향 30%+ 유지"] },
+          { rank:4, company_name:"LG에너지솔루션", code:"373220", current_price:380000, target_price:460000, upside:21.1,
+            opinion:"매수", analyst_count:24,
+            bullets:["IRA 수혜로 북미 매출 비중 확대", "ESS 수주 잔고 신기록", "46시리즈 원통형 양산 개시"] },
+          { rank:5, company_name:"NAVER", code:"035420", current_price:192000, target_price:250000, upside:30.2,
+            opinion:"매수", analyst_count:20,
+            bullets:["HyperCLOVA X 상용화로 B2B 매출 반영", "웹툰 IP 수익화 본격화", "일본·동남아 커머스 확장"] },
+          { rank:6, company_name:"카카오", code:"035720", current_price:54200, target_price:68000, upside:25.5,
+            opinion:"매수", analyst_count:18,
+            bullets:["AI 서비스 기반 광고 단가 회복", "엔터프라이즈 Kakao i Cloud 매출 확대", "카카오뱅크 · 페이 수익 안정화"] },
+          { rank:7, company_name:"POSCO홀딩스", code:"005490", current_price:395000, target_price:480000, upside:21.5,
+            opinion:"매수", analyst_count:16,
+            bullets:["리튬 생산능력 확장 · 단가 하락 상쇄", "전기강판 수요 증가", "중국 경기부양 기대감으로 판가 지지"] },
+          { rank:8, company_name:"한미약품", code:"128940", current_price:312000, target_price:390000, upside:25.0,
+            opinion:"매수", analyst_count:12,
+            bullets:["ROLONTIS 미국 매출 안정 궤도", "GLP-1 계열 임상 2상 진입", "연구개발비 효율화로 수익성 개선"] },
+          { rank:9, company_name:"효성중공업", code:"298040", current_price:412000, target_price:520000, upside:26.2,
+            opinion:"매수", analyst_count:10,
+            bullets:["초고압 변압기 미국 수주 잔고 역대 최고", "데이터센터 전력 인프라 수요 폭증", "2026년 영업이익률 두 자릿수 진입"] },
+          { rank:10, company_name:"두산에너빌리티", code:"034020", current_price:22800, target_price:30000, upside:31.6,
+            opinion:"매수", analyst_count:14,
+            bullets:["SMR 상용화 프로젝트 수주 임박", "가스터빈 · 풍력 동반 성장", "원전 정책 수혜주로 재평가"] }
+        ]
+      },
+      industry: {
+        meta: { start_date: "2026-04-06", end_date: "2026-04-10", generated_at: "2026-04-10T10:36:00" },
+        items: [
+          { name:"반도체", opinion:"Overweight", keyword:"HBM · AI 서버 · DRAM 가격 상승",
+            bullets:["메모리 업사이클 재개 · 하반기 피크 전망", "파운드리 2nm 양산 경쟁 본격화"] },
+          { name:"2차전지", opinion:"Overweight", keyword:"IRA · ESS · 46 원통형",
+            bullets:["북미 매출 비중 확대로 수익성 회복", "LFP 양산 확대로 중저가 시장 진입"] },
+          { name:"자동차", opinion:"Neutral", keyword:"EV 회복 · 하이브리드 호조",
+            bullets:["재고 조정 마무리 국면", "관세 불확실성은 지속적 리스크"] },
+          { name:"인터넷/게임", opinion:"Overweight", keyword:"AI 수익화 · 광고 회복",
+            bullets:["LLM 상용화로 B2B 매출 가시성 확보", "일본/동남아 IP 수익화 본격화"] },
+          { name:"철강/소재", opinion:"Neutral", keyword:"중국 경기부양 · 판가 지지",
+            bullets:["리튬 단가 하락 영향 제한적", "수소 · 전기강판 신사업 모멘텀"] },
+          { name:"유틸리티/발전", opinion:"Overweight", keyword:"데이터센터 전력 · SMR",
+            bullets:["초고압 변압기 수출 역대 최고", "원전 정책 수혜 본격화"] }
+        ]
+      }
+    }
+  ],
+  performance: {
+    "2026-04-10": {
+      updated_at: "2026-04-15T10:05:00",
+      summary: { total_return: 15.1, win_rate: 100, achieved: 0, avg_holding_days: 5 },
+      items: [
+        { date:"2026-04-10", rank:1, name:"삼성전자", code:"005930", rec_price:78500, target:95000, current:81200, return:3.44, achieved:"N" },
+        { date:"2026-04-10", rank:2, name:"SK하이닉스", code:"000660", rec_price:198000, target:240000, current:215000, return:8.59, achieved:"N" },
+        { date:"2026-04-10", rank:3, name:"현대차", code:"005380", rec_price:245000, target:320000, current:268000, return:9.39, achieved:"N" },
+        { date:"2026-04-10", rank:4, name:"LG에너지솔루션", code:"373220", rec_price:380000, target:460000, current:425000, return:11.84, achieved:"N" },
+        { date:"2026-04-10", rank:5, name:"NAVER", code:"035420", rec_price:192000, target:250000, current:220000, return:14.58, achieved:"N" },
+        { date:"2026-04-10", rank:6, name:"카카오", code:"035720", rec_price:54200, target:68000, current:60500, return:11.62, achieved:"N" },
+        { date:"2026-04-10", rank:7, name:"POSCO홀딩스", code:"005490", rec_price:395000, target:480000, current:445000, return:12.66, achieved:"N" },
+        { date:"2026-04-10", rank:8, name:"한미약품", code:"128940", rec_price:312000, target:390000, current:358000, return:14.74, achieved:"N" },
+        { date:"2026-04-10", rank:9, name:"효성중공업", code:"298040", rec_price:412000, target:520000, current:512000, return:24.27, achieved:"N" },
+        { date:"2026-04-10", rank:10, name:"두산에너빌리티", code:"034020", rec_price:22800, target:30000, current:27500, return:20.61, achieved:"N" }
+      ]
+    }
+  },
+  candles: {
+    "2026-04-10": {
+      "005930": { rank:1, company_name:"삼성전자", patterns:[{name:"상승 돌파",type:"bullish"},{name:"거래량 급증",type:"bullish"}],
+        fin_data:{ industry:"반도체와반도체장비", per:13.2, pbr:1.4, roe:11.5, debt_ratio:35.2, eps:5920, div_yield:1.8, fiscal_quarter:"2026Q1" } },
+      "000660": { rank:2, company_name:"SK하이닉스", patterns:[{name:"신고가 돌파",type:"bullish"}],
+        fin_data:{ industry:"반도체와반도체장비", per:15.8, pbr:2.1, roe:18.2, debt_ratio:42.5, eps:12500, div_yield:1.2, fiscal_quarter:"2026Q1" } },
+      "005380": { rank:3, company_name:"현대차", patterns:[{name:"골든크로스",type:"bullish"}],
+        fin_data:{ industry:"자동차와부품", per:6.2, pbr:0.68, roe:12.1, debt_ratio:145.3, eps:39500, div_yield:3.5, fiscal_quarter:"2026Q1" } }
+    }
+  }
+};
+
+/* ─────────────────────────────────────────────────────────────
+   유틸리티
+   ───────────────────────────────────────────────────────────── */
+const fmt = n => Number(n).toLocaleString("ko-KR");
+const fmtPct = n => (n >= 0 ? "+" : "") + Number(n).toFixed(2) + "%";
+const upsideClass = v => v >= 0 ? "pos" : "neg";
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 1: TOP10 렌더
+   ───────────────────────────────────────────────────────────── */
+function renderTop5(week) {
+  const container = document.getElementById("top5-container");
+  const items = (week.top5 && week.top5.items) || [];
+  if (!items.length) { container.innerHTML = '<div class="empty-state">데이터가 없습니다</div>'; return; }
+
+  container.innerHTML = items.map(it => {
+    const upsidePct = it.upside;
+    const progress = Math.min(100, Math.max(0, (it.current_price / it.target_price) * 100));
+    return `
+    <div class="stock-card" data-rank="${it.rank}">
+      <div class="card-inner">
+        <div class="card-header">
+          <div class="rank-badge">${it.rank}</div>
+          <div class="company-info">
+            <div class="company-name">${it.company_name}</div>
+            <div class="company-sub">${it.code}</div>
+          </div>
+          <div>
+            <div class="upside-big ${upsideClass(upsidePct)}">${fmtPct(upsidePct)}</div>
+            <div class="upside-label">Upside</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="price-row">
+          <div class="price-item">
+            <div class="price-label">현재가</div>
+            <div class="price-value">${fmt(it.current_price)}</div>
+          </div>
+          <div class="price-item">
+            <div class="price-label">목표가</div>
+            <div class="price-value">${fmt(it.target_price)}</div>
+          </div>
+          <div class="price-item">
+            <div class="price-label">갭</div>
+            <div class="price-value">${fmt(it.target_price - it.current_price)}</div>
+          </div>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-target" style="width:100%"></div>
+          <div class="progress-current" style="width:${progress}%"></div>
+        </div>
+        <div class="tags">
+          <span class="tag tag-buy">${it.opinion}</span>
+          <span class="tag tag-up">상승여력 ${upsidePct.toFixed(1)}%</span>
+          <span class="tag tag-count">애널리스트 ${it.analyst_count}명</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <ul class="bullets">
+          ${it.bullets.map(b => `<li>${b}</li>`).join("")}
+        </ul>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 2: 산업 동향 렌더
+   ───────────────────────────────────────────────────────────── */
+function renderIndustry(week) {
+  const container = document.getElementById("industry-container");
+  const items = (week.industry && week.industry.items) || [];
+  if (!items.length) { container.innerHTML = '<div class="empty-state">데이터가 없습니다</div>'; return; }
+
+  container.innerHTML = items.map(it => {
+    const badgeClass = it.opinion === "Overweight" ? "badge-overweight"
+                     : it.opinion === "Neutral" ? "badge-neutral" : "badge-other";
+    return `
+    <div class="industry-card">
+      <div class="industry-card-header">
+        <div class="industry-name">${it.name}</div>
+        <div class="opinion-badge ${badgeClass}">${it.opinion}</div>
+      </div>
+      <div class="industry-keyword">${it.keyword}</div>
+      <ul class="industry-bullets">
+        ${it.bullets.map(b => `<li>${b}</li>`).join("")}
+      </ul>
+    </div>`;
+  }).join("");
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 3: 성과 추적 렌더
+   ───────────────────────────────────────────────────────────── */
+function renderPerformance(date) {
+  const perf = (DASHBOARD_DATA.performance || {})[date];
+  const grid = document.getElementById("perf-summary-grid");
+  const tbody = document.getElementById("perf-tbody");
+  const updated = document.getElementById("perf-updated");
+
+  if (!perf) {
+    grid.innerHTML = ''; tbody.innerHTML = '';
+    updated.textContent = '';
+    return;
+  }
+
+  const s = perf.summary;
+  grid.innerHTML = `
+    <div class="perf-summary-card">
+      <div class="ps-label">누적 수익률</div>
+      <div class="ps-value ${s.total_return >= 0 ? 'pos' : 'neg'}">${fmtPct(s.total_return)}</div>
+      <div class="ps-sub">10개 종목 평균</div>
+    </div>
+    <div class="perf-summary-card">
+      <div class="ps-label">승률</div>
+      <div class="ps-value blue">${s.win_rate}%</div>
+      <div class="ps-sub">수익 구간 종목 비율</div>
+    </div>
+    <div class="perf-summary-card">
+      <div class="ps-label">목표가 달성</div>
+      <div class="ps-value gold">${s.achieved} / 10</div>
+      <div class="ps-sub">추천가 대비 목표가 도달</div>
+    </div>
+    <div class="perf-summary-card">
+      <div class="ps-label">평균 보유기간</div>
+      <div class="ps-value">${s.avg_holding_days}일</div>
+      <div class="ps-sub">추천일 이후 경과</div>
+    </div>
+  `;
+
+  updated.textContent = `업데이트: ${perf.updated_at.replace('T',' ').slice(0,16)}`;
+
+  tbody.innerHTML = perf.items.map(it => {
+    const retClass = it.return > 0 ? 'ret-pos' : it.return < 0 ? 'ret-neg' : 'ret-zero';
+    const achievedClass = it.achieved === 'Y' ? 'achieved-y' : it.achieved === 'N' ? 'achieved-n' : 'achieved-u';
+    const achievedText = it.achieved === 'Y' ? '달성' : it.achieved === 'N' ? '미달성' : '-';
+    return `
+      <tr>
+        <td>${it.date}</td>
+        <td>${it.rank}</td>
+        <td class="td-text">${it.name}</td>
+        <td>${it.code}</td>
+        <td>${fmt(it.rec_price)}</td>
+        <td>${fmt(it.target)}</td>
+        <td>${fmt(it.current)}</td>
+        <td class="${retClass}">${fmtPct(it.return)}</td>
+        <td class="${achievedClass} td-text">${achievedText}</td>
+      </tr>
+    `;
+  }).join("");
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 3.1: 히스토리
+   ───────────────────────────────────────────────────────────── */
+function renderHistoryTable(weeks, currentLabel) {
+  const tbody = document.getElementById("history-tbody");
+  tbody.innerHTML = weeks.map(w => {
+    const items = (w.top5 && w.top5.items) || [];
+    const names = Array.from({length:10}, (_, i) => items[i] ? items[i].company_name : '-');
+    const avg = items.length ? (items.reduce((s,i)=>s+i.upside,0) / items.length) : 0;
+    const trClass = w.label === currentLabel ? 'current-week' : '';
+    return `
+      <tr class="${trClass}">
+        <td class="week-label">${w.label}</td>
+        ${names.map(n => `<td class="td-text">${n}</td>`).join('')}
+        <td class="upside-cell">${avg.toFixed(2)}%</td>
+      </tr>
+    `;
+  }).join("");
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 4: 캔들 차트 (간단 버전 - 실제로는 Lightweight Charts 연결)
+   ───────────────────────────────────────────────────────────── */
+function renderCandleSection(date) {
+  const candles = (DASHBOARD_DATA.candles || {})[date] || {};
+  const codes = Object.keys(candles).sort((a,b) => (candles[a].rank||99) - (candles[b].rank||99));
+  const tabsEl = document.getElementById("candle-tabs");
+  const patternsEl = document.getElementById("candle-patterns");
+
+  if (!codes.length) {
+    tabsEl.innerHTML = '';
+    patternsEl.innerHTML = '<span class="pattern-none">이 주차의 캔들 데이터가 없습니다.</span>';
+    return;
+  }
+
+  tabsEl.innerHTML = codes.map(code => {
+    const d = candles[code];
+    return `<button class="candle-tab" data-code="${code}">
+      <span class="tab-rank">${d.rank}위</span>${d.company_name}
+    </button>`;
+  }).join('');
+
+  tabsEl.querySelectorAll('.candle-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabsEl.querySelectorAll('.candle-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderPatterns(candles[btn.dataset.code].patterns);
+    });
+  });
+  tabsEl.querySelector('.candle-tab').classList.add('active');
+  renderPatterns(candles[codes[0]].patterns);
+}
+
+function renderPatterns(patterns) {
+  const el = document.getElementById("candle-patterns");
+  if (!patterns || !patterns.length) {
+    el.innerHTML = '<span class="pattern-none">감지된 주요 패턴 없음</span>';
+    return;
+  }
+  el.innerHTML = patterns.map(p => {
+    const cls = p.type === 'bullish' ? 'pattern-bullish' : p.type === 'bearish' ? 'pattern-bearish' : 'pattern-warning';
+    return `<span class="pattern-badge ${cls}">${p.name}</span>`;
+  }).join('');
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 5: 재무 지표
+   ───────────────────────────────────────────────────────────── */
+function renderFinancialSection(date) {
+  const container = document.getElementById("financial-container");
+  const candles = (DASHBOARD_DATA.candles || {})[date] || {};
+  const codes = Object.keys(candles).sort((a,b) => (candles[a].rank||99) - (candles[b].rank||99));
+
+  if (!codes.length) {
+    container.innerHTML = '<div class="fin-empty">이 주차의 재무 데이터가 없습니다.</div>';
+    return;
+  }
+
+  const BENCH = {
+    '반도체와반도체장비': { per:[10,20], pbr:[1.2,2.5], roe:[10,20], debt:[30,80], div:[0.5,1.5] },
+    '자동차와부품':       { per:[5,10],  pbr:[0.5,1],   roe:[8,15],  debt:[100,200], div:[2,4] },
+    _default:            { per:[10,20], pbr:[0.8,2],   roe:[8,15],  debt:[80,150],  div:[1,3] }
+  };
+  const getBench = (ind) => {
+    if (!ind) return BENCH._default;
+    for (const [k, v] of Object.entries(BENCH)) {
+      if (k !== '_default' && ind.includes(k)) return v;
+    }
+    return BENCH._default;
+  };
+  const cls = (v, lo, hi, flip=false) => {
+    if (v == null || v <= 0) return 'warn';
+    if (flip) { if (v < lo) return 'good'; if (v <= hi) return 'neutral'; return 'warn'; }
+    if (v > hi) return 'good'; if (v >= lo) return 'neutral'; return 'warn';
+  };
+  const fmtv = (v, s) => v == null ? '—' : Number(v).toLocaleString('ko-KR', {maximumFractionDigits:2}) + (s||'');
+
+  container.innerHTML = codes.map(code => {
+    const d = candles[code];
+    const f = d.fin_data || {};
+    const b = getBench(f.industry);
+    const naver = `https://finance.naver.com/item/main.naver?code=${code}`;
+    return `
+    <div class="fin-card">
+      <div class="fin-card-header">
+        <span class="fin-rank">${d.rank}위</span>
+        <span class="fin-company">${d.company_name}</span>
+        <span class="fin-code">${code}</span>
+      </div>
+      ${f.industry ? `<div class="fin-industry"><span class="fin-industry-label">업종</span><span class="fin-industry-name">${f.industry}</span></div>` : ''}
+      <div class="fin-metrics">
+        <div class="fin-metric">
+          <div class="fin-metric-label">PER</div>
+          <div class="fin-metric-value ${cls(f.per, b.per[0], b.per[1], true)}">${fmtv(f.per, '배')}</div>
+        </div>
+        <div class="fin-metric">
+          <div class="fin-metric-label">PBR</div>
+          <div class="fin-metric-value ${cls(f.pbr, b.pbr[0], b.pbr[1], true)}">${fmtv(f.pbr, '배')}</div>
+        </div>
+        <div class="fin-metric">
+          <div class="fin-metric-label">ROE</div>
+          <div class="fin-metric-value ${cls(f.roe, b.roe[0], b.roe[1])}">${fmtv(f.roe, '%')}</div>
+        </div>
+        <div class="fin-metric">
+          <div class="fin-metric-label">부채비율</div>
+          <div class="fin-metric-value ${cls(f.debt_ratio, b.debt[0], b.debt[1], true)}">${fmtv(f.debt_ratio, '%')}</div>
+        </div>
+        <div class="fin-metric">
+          <div class="fin-metric-label">EPS</div>
+          <div class="fin-metric-value neutral">${fmtv(f.eps, '원')}</div>
+        </div>
+        <div class="fin-metric">
+          <div class="fin-metric-label">배당수익률</div>
+          <div class="fin-metric-value ${cls(f.div_yield, b.div[0], b.div[1])}">${fmtv(f.div_yield, '%')}</div>
+        </div>
+      </div>
+      <a class="fin-naver-link" href="${naver}" target="_blank">▶ 네이버 금융에서 상세보기</a>${f.fiscal_quarter ? `<span class="fin-fiscal">(${f.fiscal_quarter} 기준)</span>` : ''}
+    </div>`;
+  }).join('');
+}
+
+/* ─────────────────────────────────────────────────────────────
+   시장 지수 데이터 (실제 연동 시 pykrx → JSON 주입)
+   ───────────────────────────────────────────────────────────── */
+const MARKET_DATA = {
+  kospi: {
+    name: "KOSPI",
+    sub: "KOSPI 종합지수",
+    current: 2645.21,
+    daily_pct: 0.42,
+    daily_change: 11.06,
+    weekly_pct: 1.21,
+    high: 2651.30,
+    low: 2612.48,
+    sparkline: [2614.2, 2621.5, 2625.8, 2638.1, 2632.4, 2640.7, 2645.21]
+  },
+  kosdaq: {
+    name: "KOSDAQ",
+    sub: "코스닥 종합지수",
+    current: 865.43,
+    daily_pct: -0.18,
+    daily_change: -1.56,
+    weekly_pct: -0.82,
+    high: 878.52,
+    low: 861.20,
+    sparkline: [872.4, 878.1, 875.3, 869.8, 863.1, 867.0, 865.43]
+  }
+};
+
+function renderSparkline(data, rising, idSuffix) {
+  const w = 560, h = 90, padX = 4, padY = 8;
+  const min = Math.min(...data);
+  const max = Math.max(...data);
+  const range = max - min || 1;
+  const stepX = (w - padX * 2) / (data.length - 1);
+  const points = data.map((v, i) => {
+    const x = padX + i * stepX;
+    const y = padY + (h - padY * 2) * (1 - (v - min) / range);
+    return [x, y];
+  });
+  let pathD = `M ${points[0][0]} ${points[0][1]}`;
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[i - 1] || points[i];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[i + 2] || p2;
+    const cp1x = p1[0] + (p2[0] - p0[0]) / 6;
+    const cp1y = p1[1] + (p2[1] - p0[1]) / 6;
+    const cp2x = p2[0] - (p3[0] - p1[0]) / 6;
+    const cp2y = p2[1] - (p3[1] - p1[1]) / 6;
+    pathD += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${p2[0]} ${p2[1]}`;
+  }
+  const areaD = pathD + ` L ${points[points.length-1][0]} ${h-padY} L ${points[0][0]} ${h-padY} Z`;
+  const color = rising ? 'var(--green)' : 'var(--red)';
+  const gradId = `spark-grad-${idSuffix}`;
+  const glowId = `spark-glow-${idSuffix}`;
+  const lastPt = points[points.length - 1];
+  return `
+    <svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="${gradId}" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="${color}" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="${glowId}">
+          <feGaussianBlur stdDeviation="1.5" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <path d="${areaD}" fill="url(#${gradId})"/>
+      <path d="${pathD}" fill="none" stroke="${color}" stroke-width="2"
+            stroke-linejoin="round" stroke-linecap="round" filter="url(#${glowId})"/>
+      <circle cx="${lastPt[0]}" cy="${lastPt[1]}" r="3.5" fill="${color}"/>
+      <circle cx="${lastPt[0]}" cy="${lastPt[1]}" r="6" fill="${color}" opacity="0.25"/>
+    </svg>`;
+}
+
+function renderMarketCard(key, d) {
+  const up = d.daily_pct >= 0;
+  const arrow = up ? "▲" : "▼";
+  const fmtN = n => Number(n).toLocaleString("ko-KR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const fmtP = n => (n >= 0 ? "+" : "") + Number(n).toFixed(2) + "%";
+  const fmtC = n => (n >= 0 ? "+" : "") + Number(n).toFixed(2);
+  const weeklyUp = d.weekly_pct >= 0;
+  return `
+    <div class="market-card">
+      <div class="mc-head">
+        <div class="mc-title-wrap">
+          <div class="mc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>
+            </svg>
+          </div>
+          <div>
+            <div class="mc-title">${d.name}</div>
+            <div class="mc-sub">${d.sub}</div>
+          </div>
+        </div>
+        <span class="mc-status ${up ? 'up' : 'down'}">${up ? '상승' : '하락'}</span>
+      </div>
+      <div class="mc-price-row">
+        <div class="mc-price">${fmtN(d.current)}</div>
+        <div class="mc-change ${up ? 'up' : 'down'}">
+          <span class="mc-change-arrow">${arrow}</span>
+          <span>${fmtC(d.daily_change)}</span>
+          <span>(${fmtP(d.daily_pct)})</span>
+        </div>
+      </div>
+      <div class="mc-chart-wrap">${renderSparkline(d.sparkline, up, key)}</div>
+      <div class="mc-footer">
+        <div class="mc-foot-item">
+          <span class="mc-foot-label">주간 변동</span>
+          <span class="mc-foot-value ${weeklyUp ? 'pos' : 'neg'}">${fmtP(d.weekly_pct)}</span>
+        </div>
+        <div class="mc-foot-item">
+          <span class="mc-foot-label">주간 고가</span>
+          <span class="mc-foot-value">${fmtN(d.high)}</span>
+        </div>
+        <div class="mc-foot-item">
+          <span class="mc-foot-label">주간 저가</span>
+          <span class="mc-foot-value">${fmtN(d.low)}</span>
+        </div>
+      </div>
+    </div>`;
+}
+
+
+function renderWeek(idx) {
+  const w = DASHBOARD_DATA.weeks[idx];
+  if (!w) return;
+
+  if (w.top5) {
+    const m = w.top5.meta;
+    document.getElementById("hdr-period").textContent =
+      (m.start_date || '').slice(5).replace('-','.') + ' ~ ' + (m.end_date || '').slice(5).replace('-','.');
+    document.getElementById("hdr-updated").textContent =
+      (m.generated_at || '').slice(0,16).replace('T',' ');
+  }
+
+  const perf = (DASHBOARD_DATA.performance || {})[w.date];
+  if (perf) {
+    const asof = perf.updated_at.replace('T',' ').slice(0,16);
+    const asofEl = document.getElementById("exec-asof");
+    const retEl = document.getElementById("kpi-return");
+    const retAsofEl = document.getElementById("kpi-return-asof");
+    const wrEl = document.getElementById("kpi-winrate");
+    const wrDetailEl = document.getElementById("kpi-winrate-detail");
+    if (asofEl) asofEl.textContent = asof;
+    if (retEl) {
+      retEl.textContent = fmtPct(perf.summary.total_return);
+      retEl.className = "kpi-value " + (perf.summary.total_return >= 0 ? "pos" : "neg");
+    }
+    if (retAsofEl) retAsofEl.textContent = asof;
+    if (wrEl) wrEl.textContent = perf.summary.win_rate + "%";
+    if (wrDetailEl) {
+      const wins = perf.items.filter(i => i.return > 0).length;
+      wrDetailEl.textContent = `(${wins}/${perf.items.length})`;
+    }
+  }
+
+  renderTop5(w);
+  renderIndustry(w);
+  renderPerformance(w.date);
+  renderHistoryTable(DASHBOARD_DATA.weeks, w.label);
+  renderCandleSection(w.date);
+  renderFinancialSection(w.date);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   섹션 네비게이션
+   ───────────────────────────────────────────────────────────── */
+function initNav() {
+  const tabs = document.querySelectorAll(".nav-tab");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const target = document.getElementById(tab.dataset.target);
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+    });
+  });
+
+  // 스크롤 위치에 따른 active 갱신
+  const sections = ["sec-exec", "sec-top5", "sec-industry", "sec-perf", "sec-candle", "sec-financial"]
+    .map(id => document.getElementById(id)).filter(Boolean);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tabs.forEach(t => t.classList.toggle("active", t.dataset.target === id));
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+}
+
+/* ─────────────────────────────────────────────────────────────
+   초기화
+   ───────────────────────────────────────────────────────────── */
+function init() {
+  const sel = document.getElementById("week-select");
+  sel.innerHTML = DASHBOARD_DATA.weeks.map((w, i) =>
+    `<option value="${i}">${w.label}</option>`).join("");
+  sel.addEventListener("change", e => renderWeek(Number(e.target.value)));
+  renderWeek(0);
+  initNav();
+
+  // 지수 카드 렌더
+  const marketGrid = document.getElementById("market-grid");
+  if (marketGrid) {
+    marketGrid.innerHTML =
+      renderMarketCard("kospi", MARKET_DATA.kospi) +
+      renderMarketCard("kosdaq", MARKET_DATA.kosdaq);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
 </main>
+</div>
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
+
 let DASHBOARD_DATA = /*__DASHBOARD_DATA__*/null;
 if (!DASHBOARD_DATA) {
   fetch('dashboard_data.json')
@@ -1352,8 +2088,8 @@ if (!DASHBOARD_DATA) {
     })
     .then(data => { DASHBOARD_DATA = data; initDashboard(); })
     .catch(e => {
-      const el = document.querySelector('main');
-      if (el) el.innerHTML = '<div style="padding:80px;text-align:center;color:#da3633">오류: ' + (e.message || e) + '</div>';
+      const el = document.querySelector('main') || document.body;
+      el.innerHTML = '<div style="padding:80px;text-align:center;color:#da3633">오류: ' + (e.message || e) + '</div>';
     });
 }
 
@@ -2390,4 +3126,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 </body>
+
 </html>
