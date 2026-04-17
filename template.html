@@ -1474,7 +1474,63 @@ if (!DASHBOARD_DATA) {
         .replace(/:-Infinity/g, ':null');
       return JSON.parse(clean);
     })
-    .then(data => { DASHBOARD_DATA = data; init(); })
+    .then(data => {
+      // 실제 데이터 구조 → 새 디자인 구조 어댑터
+      if (data.weeks) {
+        data.weeks = data.weeks.map(w => {
+          // top5.top5 → top5.items
+          if (w.top5 && w.top5.top5 && !w.top5.items) {
+            w.top5.items = w.top5.top5.map(c => ({
+              rank: c.rank,
+              company_name: c.company_name,
+              code: c.stock_code || '',
+              current_price: c.current_price || 0,
+              target_price: c.avg_target_price || 0,
+              upside: c.avg_upside || 0,
+              opinion: '매수',
+              analyst_count: c.report_count || 0,
+              bullets: c.bullets || [],
+            }));
+          }
+          // industry.industries → industry.items
+          if (w.industry && w.industry.industries && !w.industry.items) {
+            w.industry.items = w.industry.industries.map(i => ({
+              name: i.industry_name || i.name || '',
+              opinion: i.opinion || '',
+              keyword: i.keyword || '',
+              bullets: i.bullets || [],
+              report_count: i.report_count || 0,
+              main_institutions: i.main_institutions || '',
+            }));
+          }
+          return w;
+        });
+      }
+      // candles: {code: {...}} → {date: {code: {...}}}
+      if (data.candles && data.weeks && data.weeks.length) {
+        const firstDate = data.weeks[0].date;
+        const rawCandles = data.candles;
+        const keys = Object.keys(rawCandles);
+        if (keys.length && !data.candles[firstDate]) {
+          const newCandles = {};
+          newCandles[firstDate] = {};
+          keys.forEach(code => {
+            const cd = rawCandles[code];
+            newCandles[firstDate][code] = {
+              rank: cd.rank,
+              company_name: cd.company_name,
+              patterns: (cd.markers || []).slice(-3).map(m => ({
+                name: m.text,
+                type: m.position === 'belowBar' ? 'bullish' : 'bearish'
+              })),
+              fin_data: cd.fin_data || {}
+            };
+          });
+          data.candles = newCandles;
+        }
+      }
+      DASHBOARD_DATA = data; init();
+    })
     .catch(() => {
       document.querySelector('.shell').innerHTML =
         '<div style="padding:80px;text-align:center;color:#f66a6a">데이터 로드 실패.<br>python -m http.server 8080 으로 실행해 주세요.</div>';
