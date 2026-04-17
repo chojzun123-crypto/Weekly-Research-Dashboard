@@ -1519,10 +1519,17 @@ if (!DASHBOARD_DATA) {
             newCandles[firstDate][code] = {
               rank: cd.rank,
               company_name: cd.company_name,
-              patterns: (cd.markers || []).slice(-3).map(m => ({
+              ohlcv: cd.ohlcv || [],
+              rec_price: cd.rec_price,
+              target_price: cd.target_price,
+              stop_loss: cd.stop_loss,
+              patterns: cd.patterns || (cd.markers || []).slice(-3).map(m => ({
                 name: m.text,
                 type: m.position === 'belowBar' ? 'bullish' : 'bearish'
               })),
+              markers: cd.markers || [],
+              trend_lines: cd.trend_lines || [],
+              four_phases: cd.four_phases || {},
               fin_data: cd.fin_data || {}
             };
           });
