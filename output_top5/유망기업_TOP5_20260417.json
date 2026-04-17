@@ -3,14 +3,14 @@
     "report_type": "top5",
     "start_date": "2026-04-13",
     "end_date": "2026-04-17",
-    "generated_at": "2026-04-17T07:07:26",
+    "generated_at": "2026-04-17T08:00:15",
     "analysis_days": 5
   },
   "stats": {
-    "total_reports": 654,
+    "total_reports": 661,
     "buy_count": 464,
     "target_up_count": 0,
-    "total_companies": 359
+    "total_companies": 364
   },
   "top5": [
     {
