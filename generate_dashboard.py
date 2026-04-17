@@ -1084,6 +1084,158 @@ def fetch_candle_data(weeks: list[dict]) -> dict:
     return result
 
 
+def fetch_market_data() -> dict:
+    """KOSPI/KOSDAQ 지수 및 매크로 지표(환율, 미 10년물, 외국인 수급, 주간 이벤트) 수집.
+
+    템플릿의 Executive Summary 상단에 표시되는 지수 카드 2장과
+    '시장 상황' 4블록에 사용됩니다. 각 항목은 개별적으로 실패해도
+    나머지는 정상 수집되도록 방어적으로 작성했습니다.
+    """
+    try:
+        import FinanceDataReader as fdr
+    except ImportError:
+        print("[경고] FinanceDataReader 미설치 — 시장 데이터 스킵")
+        return {}
+
+    result: dict = {"kospi": None, "kosdaq": None, "macro": {}}
+
+    # 최근 약 3주치 조회 → 이 중 최근 7영업일로 주간 지표 계산
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=21)
+
+    # ── 1) 지수 데이터 (KOSPI / KOSDAQ) ─────────────────
+    indices = {
+        "kospi":  {"code": "KS11", "name": "KOSPI",  "sub": "KOSPI 종합지수"},
+        "kosdaq": {"code": "KQ11", "name": "KOSDAQ", "sub": "코스닥 종합지수"},
+    }
+    for key, info in indices.items():
+        try:
+            df = fdr.DataReader(info["code"], start_date, end_date)
+            if df is None or df.empty or len(df) < 2:
+                continue
+            last = float(df["Close"].iloc[-1])
+            prev = float(df["Close"].iloc[-2])
+            week_df = df.tail(7)
+            start_val = float(week_df["Close"].iloc[0])
+            result[key] = {
+                "name": info["name"],
+                "sub": info["sub"],
+                "current": round(last, 2),
+                "daily_change": round(last - prev, 2),
+                "daily_pct": round((last / prev - 1) * 100, 2),
+                "weekly_pct": round((last / start_val - 1) * 100, 2),
+                "high": round(float(week_df["High"].max()), 2),
+                "low": round(float(week_df["Low"].min()), 2),
+                "sparkline": [round(float(c), 2) for c in week_df["Close"].tolist()],
+            }
+            print(f"  {info['name']}: {result[key]['current']} ({result[key]['daily_pct']:+.2f}%)")
+        except Exception as e:
+            print(f"  [경고] {info['name']} 조회 실패: {e}")
+
+    # ── 2) 매크로: 원/달러 환율 ────────────────────────
+    try:
+        krw = fdr.DataReader("USD/KRW", start_date, end_date)
+        if krw is not None and not krw.empty and len(krw) >= 2:
+            last = float(krw["Close"].iloc[-1])
+            prev = float(krw["Close"].iloc[-2])
+            chg = last - prev
+            result["macro"]["krw_usd"] = {
+                "value": round(last, 2),
+                "change": round(chg, 2),
+                "label": "원/달러",
+                "unit": "원",
+                "desc": ("전일 대비 " + ("상승" if chg > 0 else "하락" if chg < 0 else "보합")) + " · " +
+                        ("안정세" if abs(chg) < 5 else "변동 확대"),
+            }
+            print(f"  원/달러: {last:.2f} ({chg:+.2f})")
+    except Exception as e:
+        print(f"  [경고] 원/달러 조회 실패: {e}")
+
+    # ── 3) 매크로: 미 10년물 금리 ──────────────────────
+    # FinanceDataReader 는 'US10YT=X' 심볼 지원. 실패 시 yfinance 대체 시도
+    try:
+        us10y = fdr.DataReader("US10YT=X", start_date, end_date)
+        if us10y is not None and not us10y.empty and len(us10y) >= 2:
+            last = float(us10y["Close"].iloc[-1])
+            prev = float(us10y["Close"].iloc[-2])
+            chg = last - prev
+            result["macro"]["us10y"] = {
+                "value": round(last, 2),
+                "change": round(chg, 3),
+                "label": "미 10년물",
+                "unit": "%",
+                "desc": ("금리 " + ("상승" if chg > 0 else "하락" if chg < 0 else "보합")) + " 추세",
+            }
+            print(f"  미 10년물: {last:.2f}% ({chg:+.3f})")
+    except Exception as e:
+        print(f"  [경고] 미 10년물 조회 실패: {e}")
+
+    # ── 4) 외국인 순매수 (pykrx 있으면) ────────────────
+    try:
+        from pykrx import stock as pykrx_stock
+        end_str = end_date.strftime("%Y%m%d")
+        start_str = (end_date - timedelta(days=10)).strftime("%Y%m%d")
+
+        # 최근 5영업일 일별 순매수 (연속 순매수 일수 계산용)
+        net_daily = pykrx_stock.get_market_net_purchases_of_equities(
+            start_str, end_str, "KOSPI", "외국인"
+        )
+        if net_daily is not None and not net_daily.empty:
+            # 거래대금 컬럼 자동 탐지 (pykrx 버전에 따라 다름)
+            amount_col = None
+            for col in net_daily.columns:
+                if "순매수거래대금" in col or "거래대금" in col:
+                    amount_col = col
+                    break
+            if amount_col:
+                # 연속 순매수 일수 계산 (뒤에서부터)
+                vals = net_daily[amount_col].tolist()
+                streak = 0
+                for v in reversed(vals):
+                    if v > 0:
+                        streak += 1
+                    else:
+                        break
+                total = sum(vals[-5:]) / 1e8  # 최근 5일 합계 (억 단위)
+                result["macro"]["foreign_net"] = {
+                    "value": round(total),
+                    "streak_days": streak,
+                    "label": "외국인 수급",
+                    "unit": "억",
+                    "desc": (f"{streak}일 연속 순매수" if streak >= 2 else
+                             f"{abs(streak)}일 연속 순매도" if streak == 0 and vals[-1] < 0 else
+                             "혼조세"),
+                }
+                print(f"  외국인 수급: {total:+,.0f}억 ({streak}일 연속)")
+    except ImportError:
+        print("  [정보] pykrx 미설치 — 외국인 수급 스킵 (pip install pykrx)")
+    except Exception as e:
+        print(f"  [경고] 외국인 수급 조회 실패: {e}")
+
+    # ── 5) 이번 주 주목 이벤트 (weekly_events.json 수기 입력) ─────
+    events_path = SCRIPT_DIR / "weekly_events.json"
+    event_data = None
+    if events_path.exists():
+        try:
+            events = json.loads(events_path.read_text(encoding="utf-8"))
+            today_key = end_date.strftime("%Y-%m-%d")
+            # 오늘 이전 날짜 중 가장 최근 것 선택
+            candidate_keys = sorted([k for k in events.keys() if k <= today_key], reverse=True)
+            if candidate_keys:
+                event_data = events[candidate_keys[0]]
+                print(f"  이번 주 이벤트: {event_data.get('name', '—')} ({candidate_keys[0]})")
+        except Exception as e:
+            print(f"  [경고] weekly_events.json 파싱 실패: {e}")
+
+    result["macro"]["event"] = event_data or {
+        "name": "—",
+        "desc": "weekly_events.json 파일에 이번 주 이벤트 입력",
+        "label": "이번 주 주목",
+    }
+
+    return result
+
+
 def fetch_performance_data(weeks: list[dict]) -> list[dict]:
     try:
         import FinanceDataReader as fdr
@@ -1138,12 +1290,14 @@ def fetch_performance_data(weeks: list[dict]) -> list[dict]:
     return records
 
 
-def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: dict) -> str:
+def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: dict,
+                         market: dict | None = None) -> str:
     payload = {
         "weeks": weeks,
         "performance": performance,
         "perf_updated_at": datetime.now().isoformat(timespec="seconds"),
         "candles": candles,
+        "market": market or {},
     }
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
@@ -1882,7 +2036,10 @@ def main() -> None:
     candles = fetch_candle_data(weeks)
     print(f"  캔들 데이터: {len(candles)}개 종목")
 
-    data_json = build_dashboard_data(weeks, performance, candles)
+    print("시장 지수·매크로 조회 중...")
+    market = fetch_market_data()
+
+    data_json = build_dashboard_data(weeks, performance, candles, market)
 
     # JSON 데이터 파일 따로 저장
     json_path = out_path.parent / "dashboard_data.json"
