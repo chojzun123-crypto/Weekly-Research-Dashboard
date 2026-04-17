@@ -42,7 +42,7 @@
     --rank3: #cd7f32;
     --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-    /* compat aliases for old var refs in inline styles */
+    /* compat aliases */
     --bg: var(--bg-base);
     --border: var(--hairline);
     --surface: var(--card);
@@ -66,14 +66,14 @@
     background-attachment: fixed;
   }
 
-  /* ── 셸 컨테이너 ────────────────── */
+  /* ── Shell Container ────────────────── */
   .shell {
     max-width: 1760px;
     margin: 0 auto;
     padding: 20px 24px 80px;
   }
 
-  /* ── 히어로 블록 ────────────────── */
+  /* ── Hero Block ────────────────── */
   .hero {
     background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%), var(--card);
     border: 1px solid var(--hairline);
@@ -149,7 +149,7 @@
   .pill .pill-label { color: var(--muted); font-size: 11px; }
   .pill .pill-value { color: var(--text); font-family: var(--font-mono); font-size: 12px; font-weight: 500; }
 
-  /* 섹션 네비 pill-tabs */
+  /* Nav pill-tabs */
   .nav-tabs {
     display: flex;
     gap: 6px;
@@ -258,64 +258,195 @@
     flex-wrap: wrap;
     margin-bottom: 36px;
   }
-  .kpi-grid {
+
+  /* ── Perf Strip ──────────────────── */
+  .perf-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    padding: 14px 20px;
+    background: linear-gradient(90deg, rgba(91,157,255,0.04), rgba(91,157,255,0.01));
+    border: 1px solid var(--hairline);
+    border-left: 3px solid var(--blue);
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  .perf-strip-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 4px 20px;
+    position: relative;
+  }
+  .perf-strip-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 1px; height: 18px;
+    background: var(--hairline-hi);
+  }
+  .perf-strip-item:first-child { padding-left: 0; }
+  .perf-strip-label {
+    font-size: 11px; color: var(--muted);
+    letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  }
+  .perf-strip-value {
+    font-size: 18px; font-weight: 700;
+    font-family: var(--font-mono);
+    letter-spacing: -0.02em;
+    font-feature-settings: "tnum" 1;
+  }
+  .perf-strip-value.pos { color: var(--green); }
+  .perf-strip-value.neg { color: var(--red); }
+  .perf-strip-value.blue { color: var(--blue); }
+  .perf-strip-sub {
+    font-size: 11px; color: var(--muted);
+    font-family: var(--font-mono);
+    margin-left: 4px;
+  }
+
+  /* ── Market Cards (KOSPI/KOSDAQ) ───── */
+  .market-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    margin-bottom: 24px;
   }
-  @media (max-width: 760px) { .kpi-grid { grid-template-columns: 1fr; } }
-  .kpi {
+  @media (max-width: 760px) { .market-grid { grid-template-columns: 1fr; } }
+
+  .market-card {
     background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%), var(--card-hi);
     border: 1px solid var(--hairline);
     border-radius: 16px;
-    padding: 22px 24px 20px;
+    padding: 22px 24px 18px;
     position: relative;
     overflow: hidden;
     transition: border-color 0.2s;
   }
-  .kpi:hover { border-color: var(--hairline-hi); }
-  .kpi::after {
+  .market-card:hover { border-color: var(--hairline-hi); }
+  .market-card::after {
     content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(400px 180px at 0% 0%, rgba(91,157,255,0.06), transparent 70%);
+    position: absolute; inset: 0;
+    background: radial-gradient(400px 180px at 0% 0%, rgba(91,157,255,0.05), transparent 70%);
     pointer-events: none;
   }
-  .kpi-head {
-    display: flex;
-    align-items: center;
+  .mc-head {
+    display: flex; align-items: center;
     justify-content: space-between;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
   }
-  .kpi-icon {
-    width: 40px; height: 40px;
-    border-radius: 12px;
+  .mc-title-wrap { display: flex; align-items: center; gap: 10px; }
+  .mc-icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
     background: rgba(255,255,255,0.04);
     border: 1px solid var(--hairline);
     display: flex; align-items: center; justify-content: center;
     color: var(--text-soft);
   }
-  .kpi-tag {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.22em;
-    color: var(--muted);
+  .mc-title { font-size: 15px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+  .mc-sub { font-size: 10.5px; color: var(--muted); letter-spacing: 0.12em; font-weight: 600; text-transform: uppercase; font-family: var(--font-mono); }
+  .mc-status {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted);
+    display: inline-flex; align-items: center; gap: 5px;
   }
-  .kpi-label { font-size: 13px; color: var(--muted-strong); margin-bottom: 8px; font-weight: 500; }
-  .kpi-value {
-    font-size: 40px;
-    font-weight: 800;
-    letter-spacing: -0.035em;
-    line-height: 1;
-    margin-bottom: 12px;
-    font-feature-settings: "tnum" 1;
+  .mc-status::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--muted);
   }
-  .kpi-value.pos { color: var(--green); }
-  .kpi-value.neg { color: var(--red); }
-  .kpi-value.blue { color: var(--blue); }
-  .kpi-sub { font-size: 12px; color: var(--muted); line-height: 1.55; }
+  .mc-status.up::before { background: var(--green); box-shadow: 0 0 8px rgba(63,201,112,0.6); }
+  .mc-status.down::before { background: var(--red); box-shadow: 0 0 8px rgba(246,106,106,0.6); }
+  .mc-status.up { color: var(--green); }
+  .mc-status.down { color: var(--red); }
+  .mc-price-row {
+    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px;
+  }
+  .mc-price {
+    font-size: 36px; font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+    color: var(--text); font-family: var(--font-mono); font-feature-settings: "tnum" 1;
+  }
+  .mc-change {
+    font-size: 15px; font-weight: 700; font-family: var(--font-mono);
+    letter-spacing: -0.01em; display: inline-flex; align-items: baseline; gap: 4px;
+  }
+  .mc-change.up { color: var(--green); }
+  .mc-change.down { color: var(--red); }
+  .mc-change-arrow { font-size: 12px; }
+  .mc-chart-wrap {
+    margin: 14px -6px 12px; position: relative; height: 90px;
+  }
+  .mc-chart-wrap svg { display: block; width: 100%; height: 100%; }
+  .mc-footer {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    padding-top: 12px; border-top: 1px solid var(--hairline-lo);
+  }
+  .mc-foot-item { display: flex; flex-direction: column; gap: 2px; }
+  .mc-foot-label { font-size: 10px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+  .mc-foot-value { font-size: 13px; font-weight: 600; color: var(--text-soft); font-family: var(--font-mono); letter-spacing: -0.01em; }
+  .mc-foot-value.pos { color: var(--green); }
+  .mc-foot-value.neg { color: var(--red); }
 
-  /* ── 메인 레이아웃 ───────────────── */
+  /* ── Market Status ──────────────────── */
+  .market-status {
+    background: var(--card-hi);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 20px 24px 22px;
+    position: relative;
+    overflow: hidden;
+  }
+  .market-status::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--blue-ring), transparent);
+  }
+  .ms-head {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  .ms-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--blue); box-shadow: 0 0 8px var(--blue-ring);
+  }
+  .ms-heading { font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: 0.02em; }
+  .ms-tag {
+    margin-left: auto; font-size: 10.5px; padding: 3px 10px;
+    border-radius: 999px; font-weight: 600; letter-spacing: 0.04em;
+    background: var(--blue-soft); color: var(--blue);
+    border: 1px solid rgba(91,157,255,0.3);
+  }
+  .ms-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  }
+  @media (max-width: 760px) { .ms-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+  .ms-grid > .ms-item {
+    padding: 0 20px; position: relative;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .ms-grid > .ms-item:first-child { padding-left: 4px; }
+  .ms-grid > .ms-item:not(:last-child)::after {
+    content: ""; position: absolute; right: 0; top: 50%;
+    transform: translateY(-50%); width: 1px; height: 48px;
+    background: var(--hairline-hi);
+  }
+  @media (max-width: 760px) {
+    .ms-grid > .ms-item { padding: 0; }
+    .ms-grid > .ms-item::after { display: none; }
+  }
+  .ms-label { font-size: 10.5px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .ms-value {
+    font-size: 22px; font-weight: 800; color: var(--text);
+    font-family: var(--font-mono); letter-spacing: -0.02em;
+    font-feature-settings: "tnum" 1; line-height: 1.1;
+  }
+  .ms-value.pos { color: var(--green); }
+  .ms-value.neg { color: var(--red); }
+  .ms-value.blue { color: var(--blue); }
+  .ms-value.event { font-size: 18px; color: var(--text); }
+  .ms-unit { font-size: 13px; font-weight: 600; color: var(--muted-strong); margin-left: 2px; font-feature-settings: normal; }
+  .ms-desc { font-size: 11.5px; color: var(--muted); font-weight: 500; margin-top: 2px; }
+
+  /* ── Main Layout ───────────────── */
   main { max-width: 1760px; margin: 0 auto; padding: 0; }
 
   section { margin-top: 56px; scroll-margin-top: 24px; }
@@ -359,7 +490,7 @@
     flex-wrap: wrap;
   }
 
-  /* ── TOP10 카드 ───────────────────── */
+  /* ── TOP10 Cards ───────────────────── */
   .top5-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,9 +508,6 @@
     overflow: hidden;
   }
   .stock-card:hover { border-color: var(--hairline-hi); }
-  .stock-card.upside-high  { border-color: var(--hairline); }
-  .stock-card.upside-mid   { border-color: var(--hairline); }
-  .stock-card.upside-low   { border-color: var(--hairline); }
 
   .card-inner { padding: 20px 22px 0; }
   .card-body { padding: 0 22px 16px; }
@@ -402,21 +530,24 @@
     flex-shrink: 0;
     font-weight: 800; font-size: 15px;
     font-family: var(--font-mono);
-    background: var(--blue-soft);
+    background: rgba(91,157,255,0.12);
     color: var(--blue);
-    border: 1px solid var(--blue-ring);
-    overflow: hidden;
+    border: 1px solid rgba(91,157,255,0.22);
   }
-  .rank-badge svg {
-    width: 100%; height: 100%;
+  .stock-card[data-rank="1"] .rank-badge {
+    background: rgba(240,180,41,0.14);
+    color: var(--gold);
+    border-color: rgba(240,180,41,0.3);
   }
-  .rank-badge.rank-num {
-    width: 38px; height: 38px;
-    border-radius: 11px;
-    font-weight: 800; font-size: 15px;
-    background: var(--blue-soft);
-    color: var(--blue);
-    border: 1px solid var(--blue-ring);
+  .stock-card[data-rank="2"] .rank-badge {
+    background: rgba(181,188,196,0.12);
+    color: var(--rank2);
+    border-color: rgba(181,188,196,0.28);
+  }
+  .stock-card[data-rank="3"] .rank-badge {
+    background: rgba(205,127,50,0.14);
+    color: var(--rank3);
+    border-color: rgba(205,127,50,0.3);
   }
 
   .company-info { flex: 1; min-width: 0; }
@@ -514,7 +645,7 @@
   }
   .bullets li:first-child::before { top: 10px; }
 
-  /* ── 산업 카드 ───────────────────── */
+  /* ── Industry Cards ───────────────────── */
   .industry-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -570,7 +701,7 @@
   }
   .industry-bullets li:first-child::before { top: 9px; }
 
-  /* ── 성과 추적 섹션 ──────────────── */
+  /* ── Performance Section ──────────────── */
   .perf-summary-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -628,7 +759,7 @@
   .achieved-n { color: var(--red); }
   .achieved-u { color: var(--muted); }
 
-  /* ── 테이블 ──────────────────────── */
+  /* ── Tables ──────────────────────── */
   .table-wrap {
     background: var(--card);
     border: 1px solid var(--hairline);
@@ -664,7 +795,7 @@
   .week-label { color: var(--gold); font-weight: 600; font-family: var(--font-mono); }
   .upside-cell { color: var(--green); font-weight: 600; }
 
-  /* ── 빈 상태 ─────────────────────── */
+  /* ── Empty State ─────────────────────── */
   .empty-state {
     text-align: center;
     padding: 60px 20px;
@@ -672,7 +803,7 @@
     font-size: 14px;
   }
 
-  /* ── 캔들 차트 섹션 ──────────────── */
+  /* ── Candle Chart Section ──────────────── */
   .candle-tabs {
     display: flex; gap: 6px; flex-wrap: wrap;
     margin-bottom: 14px;
@@ -710,9 +841,10 @@
   .pattern-warning { background: var(--gold-soft); color: var(--gold); border: 1px solid rgba(240,180,41,0.35); }
   .pattern-none { font-size: 12px; color: var(--muted); }
 
+  /* ── Marker Summary ──────────────────── */
   #marker-summary {
-    background: var(--surface);
-    border: 1px solid var(--border);
+    background: var(--card);
+    border: 1px solid var(--hairline);
     border-radius: 8px;
     padding: 10px 14px;
     margin-bottom: 10px;
@@ -734,7 +866,7 @@
   .ms-vpa     { background: rgba(255,152,0,0.15);  color: #ffb74d; border: 1px solid rgba(255,152,0,0.35); }
   .ms-neutral { background: rgba(158,158,158,0.15);color: #bdbdbd; border: 1px solid rgba(158,158,158,0.35); }
 
-  /* ── 4구간 매매전략 패널 ──────────────── */
+  /* ── Four Phase Panel ──────────────── */
   .four-phase-panel {
     background: var(--card);
     border: 1px solid var(--hairline);
@@ -809,7 +941,7 @@
   }
   .candle-legend-item { display: flex; align-items: center; gap: 5px; }
 
-  /* ── 섹션 6: 재무 정보 ──────────────── */
+  /* ── Financial Section ──────────────── */
   .fin-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -949,206 +1081,19 @@
     color: var(--muted); font-size: 13px; padding: 20px 0;
   }
 
-  /* ── 스크롤바 ────────────────────── */
+  /* ── Scrollbar ────────────────────── */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
   ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
 
-  /* ── 애니메이션 ──────────────────── */
+  /* ── Animations ──────────────────── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(8px); }
     to   { opacity: 1; transform: translateY(0); }
   }
   .hero, .exec { animation: fadeUp 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
   .exec { animation-delay: 0.1s; }
-
-  /* ── 성과 스트립 ────────────────── */
-  .perf-strip {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0;
-    padding: 14px 20px;
-    background: linear-gradient(90deg, rgba(91,157,255,0.04), rgba(91,157,255,0.01));
-    border: 1px solid var(--hairline);
-    border-left: 3px solid var(--blue);
-    border-radius: 12px;
-    margin-bottom: 24px;
-  }
-  .perf-strip-item {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    padding: 4px 20px;
-    position: relative;
-  }
-  .perf-strip-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0; top: 50%;
-    transform: translateY(-50%);
-    width: 1px; height: 18px;
-    background: var(--hairline-hi);
-  }
-  .perf-strip-item:first-child { padding-left: 0; }
-  .perf-strip-label {
-    font-size: 11px; color: var(--muted);
-    letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
-  }
-  .perf-strip-value {
-    font-size: 18px; font-weight: 700;
-    font-family: var(--font-mono);
-    letter-spacing: -0.02em;
-    font-feature-settings: "tnum" 1;
-  }
-  .perf-strip-value.pos { color: var(--green); }
-  .perf-strip-value.neg { color: var(--red); }
-  .perf-strip-value.blue { color: var(--blue); }
-  .perf-strip-sub {
-    font-size: 11px; color: var(--muted);
-    font-family: var(--font-mono);
-    margin-left: 4px;
-  }
-
-  /* ── 지수 카드 (KOSPI/KOSDAQ) ───── */
-  .market-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  @media (max-width: 760px) { .market-grid { grid-template-columns: 1fr; } }
-
-  .market-card {
-    background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%), var(--card-hi);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
-    padding: 22px 24px 18px;
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.2s;
-  }
-  .market-card:hover { border-color: var(--hairline-hi); }
-  .market-card::after {
-    content: "";
-    position: absolute; inset: 0;
-    background: radial-gradient(400px 180px at 0% 0%, rgba(91,157,255,0.05), transparent 70%);
-    pointer-events: none;
-  }
-  .mc-head {
-    display: flex; align-items: center;
-    justify-content: space-between;
-    margin-bottom: 14px;
-  }
-  .mc-title-wrap { display: flex; align-items: center; gap: 10px; }
-  .mc-icon {
-    width: 36px; height: 36px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--hairline);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--text-soft);
-  }
-  .mc-title { font-size: 15px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
-  .mc-sub { font-size: 10.5px; color: var(--muted); letter-spacing: 0.12em; font-weight: 600; text-transform: uppercase; font-family: var(--font-mono); }
-  .mc-status {
-    font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted);
-    display: inline-flex; align-items: center; gap: 5px;
-  }
-  .mc-status::before {
-    content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--muted);
-  }
-  .mc-status.up::before { background: var(--green); box-shadow: 0 0 8px rgba(63,201,112,0.6); }
-  .mc-status.down::before { background: var(--red); box-shadow: 0 0 8px rgba(246,106,106,0.6); }
-  .mc-status.up { color: var(--green); }
-  .mc-status.down { color: var(--red); }
-  .mc-price-row {
-    display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px;
-  }
-  .mc-price {
-    font-size: 36px; font-weight: 800; letter-spacing: -0.03em; line-height: 1;
-    color: var(--text); font-family: var(--font-mono); font-feature-settings: "tnum" 1;
-  }
-  .mc-change {
-    font-size: 15px; font-weight: 700; font-family: var(--font-mono);
-    letter-spacing: -0.01em; display: inline-flex; align-items: baseline; gap: 4px;
-  }
-  .mc-change.up { color: var(--green); }
-  .mc-change.down { color: var(--red); }
-  .mc-change-arrow { font-size: 12px; }
-  .mc-chart-wrap {
-    margin: 14px -6px 12px; position: relative; height: 90px;
-  }
-  .mc-chart-wrap svg { display: block; width: 100%; height: 100%; }
-  .mc-footer {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
-    padding-top: 12px; border-top: 1px solid var(--hairline-lo);
-  }
-  .mc-foot-item { display: flex; flex-direction: column; gap: 2px; }
-  .mc-foot-label { font-size: 10px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
-  .mc-foot-value { font-size: 13px; font-weight: 600; color: var(--text-soft); font-family: var(--font-mono); letter-spacing: -0.01em; }
-  .mc-foot-value.pos { color: var(--green); }
-  .mc-foot-value.neg { color: var(--red); }
-
-  /* ── 시장 상황 ──────────────────── */
-  .market-status {
-    background: var(--card-hi);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
-    padding: 20px 24px 22px;
-    position: relative;
-    overflow: hidden;
-  }
-  .market-status::before {
-    content: "";
-    position: absolute; top: 0; left: 0; right: 0; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--blue-ring), transparent);
-  }
-  .ms-head {
-    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
-  }
-  .ms-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--blue); box-shadow: 0 0 8px var(--blue-ring);
-  }
-  .ms-heading { font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: 0.02em; }
-  .ms-tag {
-    margin-left: auto; font-size: 10.5px; padding: 3px 10px;
-    border-radius: 999px; font-weight: 600; letter-spacing: 0.04em;
-    background: var(--blue-soft); color: var(--blue);
-    border: 1px solid rgba(91,157,255,0.3);
-  }
-  .ms-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
-  }
-  @media (max-width: 760px) { .ms-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
-  .ms-item {
-    padding: 0 20px; position: relative;
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .ms-item:first-child { padding-left: 4px; }
-  .ms-item:not(:last-child)::after {
-    content: ""; position: absolute; right: 0; top: 50%;
-    transform: translateY(-50%); width: 1px; height: 48px;
-    background: var(--hairline-hi);
-  }
-  @media (max-width: 760px) {
-    .ms-item { padding: 0; }
-    .ms-item::after { display: none; }
-  }
-  .ms-label { font-size: 10.5px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
-  .ms-value {
-    font-size: 22px; font-weight: 800; color: var(--text);
-    font-family: var(--font-mono); letter-spacing: -0.02em;
-    font-feature-settings: "tnum" 1; line-height: 1.1;
-  }
-  .ms-value.pos { color: var(--green); }
-  .ms-value.neg { color: var(--red); }
-  .ms-value.blue { color: var(--blue); }
-  .ms-value.event { font-size: 18px; color: var(--text); }
-  .ms-unit { font-size: 13px; font-weight: 600; color: var(--muted-strong); margin-left: 2px; font-feature-settings: normal; }
-  .ms-desc { font-size: 11.5px; color: var(--muted); font-weight: 500; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -1198,7 +1143,7 @@
         <span class="pill"><span class="pill-label">추천</span><span class="pill-value">10종목 · 업종 핵심 섹터</span></span>
         <span class="pill"><span class="pill-label">구성</span><span class="pill-value">성과 검증 · 차트 분석 · 재무 해석 포함</span></span>
       </div>
-      <!-- 성과 스트립 -->
+      <!-- Perf Strip -->
       <div class="perf-strip" id="perf-strip">
         <div class="perf-strip-item">
           <span class="perf-strip-label">전략 누적</span>
@@ -1222,26 +1167,24 @@
         </div>
       </div>
 
-      <!-- 지수 카드 -->
+      <!-- Market Index Cards -->
       <div class="market-grid" id="market-grid"></div>
 
-      <!-- 시장 상황 -->
+      <!-- Market Status -->
       <div class="market-status">
         <div class="ms-head">
           <span class="ms-dot"></span>
           <span class="ms-heading">시장 상황</span>
           <span class="ms-tag">Macro Watch</span>
         </div>
-        <div class="ms-grid" id="ms-grid">
-          <!-- renderMarketStatus()에서 동적 렌더 -->
-        </div>
+        <div class="ms-grid" id="ms-grid"></div>
       </div>
     </div>
   </section>
 
 <main>
 
-  <!-- 섹션 1: TOP10 -->
+  <!-- Section 1: TOP10 -->
   <section id="sec-top5">
     <div class="section-head">
       <div class="section-title-wrap">
@@ -1253,7 +1196,7 @@
     <div id="top5-container" class="top5-grid"></div>
   </section>
 
-  <!-- 섹션 2: 산업 동향 -->
+  <!-- Section 2: Industry -->
   <section id="sec-industry">
     <div class="section-head">
       <div class="section-title-wrap">
@@ -1269,7 +1212,7 @@
     <div id="industry-container" class="industry-grid"></div>
   </section>
 
-  <!-- 섹션 3: 추천 성과 추적 -->
+  <!-- Section 3: Performance -->
   <section id="sec-perf">
     <div class="section-head">
       <div class="section-title-wrap">
@@ -1319,7 +1262,7 @@
     </div>
   </section>
 
-  <!-- 섹션 4: 캔들 차트 -->
+  <!-- Section 4: Candle Chart -->
   <section id="sec-candle">
     <div class="section-head">
       <div class="section-title-wrap">
@@ -1335,7 +1278,7 @@
       <div id="fp-cards" class="fp-cards"></div>
       <div id="fp-detail" class="fp-detail"></div>
     </div>
-    <div id="elliott-wave" style="display:none"><div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px"><div style="font-weight:700;color:var(--text);margin-bottom:6px;font-size:13px">엘리어트 파동 분석</div><div id="elliott-wave-content"></div></div></div>
+    <div id="elliott-wave" style="display:none"><div style="background:var(--card);border:1px solid var(--hairline);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px"><div style="font-weight:700;color:var(--text);margin-bottom:6px;font-size:13px">엘리어트 파동 분석</div><div id="elliott-wave-content"></div></div></div>
     <div id="marker-summary" style="display:none">
       <div class="ms-title">최근 감지된 주요 패턴</div>
       <div id="marker-summary-list" class="ms-list"></div>
@@ -1355,7 +1298,7 @@
     </div>
   </section>
 
-  <!-- 섹션 5: 재무 정보 -->
+  <!-- Section 5: Financials -->
   <section id="sec-financial">
     <div class="section-head">
       <div class="section-title-wrap">
@@ -1385,9 +1328,7 @@ if (!DASHBOARD_DATA) {
       '<div style="padding:80px;text-align:center;color:#da3633">데이터 로드 실패.<br>python -m http.server 8080 으로 실행해 주세요.</div>');
 }
 
-// ── 시장 데이터 ─────────────────────────────
-// DASHBOARD_DATA.market 에서 주입됨 (generate_dashboard.py의 fetch_market_data()).
-// 데이터 누락 시 아래 폴백 값이 그대로 사용됩니다.
+// ── Market Data ─────────────────────────────
 let MARKET_DATA = {
   kospi: {
     name: "KOSPI", sub: "KOSPI 종합지수",
@@ -1400,8 +1341,9 @@ let MARKET_DATA = {
     weekly_pct: 0, high: 0, low: 0, sparkline: []
   }
 };
-let MACRO_DATA = null;  // DASHBOARD_DATA.market.macro 에서 주입
+let MACRO_DATA = null;
 
+// ── Sparkline SVG ─────────────────────────────
 function _renderSparkline(data, rising, idSuffix) {
   const w = 560, h = 90, padX = 4, padY = 8;
   const mn = Math.min(...data), mx = Math.max(...data);
@@ -1428,6 +1370,7 @@ function _renderSparkline(data, rising, idSuffix) {
   </svg>`;
 }
 
+// ── Market Card Render ─────────────────────────
 function _renderMarketCard(key, d) {
   const up = d.daily_pct >= 0;
   const arrow = up ? '▲' : '▼';
@@ -1435,11 +1378,11 @@ function _renderMarketCard(key, d) {
   const _f = n => Number(n).toLocaleString('ko-KR',{minimumFractionDigits:2,maximumFractionDigits:2});
   const _fp = n => (n>=0?'+':'')+Number(n).toFixed(2)+'%';
   const _fc = n => (n>=0?'+':'')+Number(n).toFixed(2);
-  return `<div class="market-card"><div class="mc-head"><div class="mc-title-wrap"><div class="mc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><div><div class="mc-title">${d.name}</div><div class="mc-sub">${d.sub}</div></div></div><span class="mc-status ${up?'up':'down'}">${up?'상승':'하락'}</span></div><div class="mc-price-row"><div class="mc-price">${_f(d.current)}</div><div class="mc-change ${up?'up':'down'}"><span class="mc-change-arrow">${arrow}</span><span>${_fc(d.daily_change)}</span><span>(${_fp(d.daily_pct)})</span></div></div><div class="mc-chart-wrap">${_renderSparkline(d.sparkline,up,key)}</div><div class="mc-footer"><div class="mc-foot-item"><span class="mc-foot-label">주간 변동</span><span class="mc-foot-value ${wUp?'pos':'neg'}">${_fp(d.weekly_pct)}</span></div><div class="mc-foot-item"><span class="mc-foot-label">주간 고가</span><span class="mc-foot-value">${_f(d.high)}</span></div><div class="mc-foot-item"><span class="mc-foot-label">주간 저가</span><span class="mc-foot-value">${_f(d.low)}</span></div></div></div>`;
+  return `<div class="market-card"><div class="mc-head"><div class="mc-title-wrap"><div class="mc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><div><div class="mc-title">${d.name}</div><div class="mc-sub">${d.sub}</div></div></div><span class="mc-status ${up?'up':'down'}">${up?'상승':'하락'}</span></div><div class="mc-price-row"><div class="mc-price">${_f(d.current)}</div><div class="mc-change ${up?'up':'down'}"><span class="mc-change-arrow">${arrow}</span><span>${_fc(d.daily_change)}</span><span>(${_fp(d.daily_pct)})</span></div></div><div class="mc-chart-wrap">${d.sparkline && d.sparkline.length > 1 ? _renderSparkline(d.sparkline,up,key) : ''}</div><div class="mc-footer"><div class="mc-foot-item"><span class="mc-foot-label">주간 변동</span><span class="mc-foot-value ${wUp?'pos':'neg'}">${_fp(d.weekly_pct)}</span></div><div class="mc-foot-item"><span class="mc-foot-label">주간 고가</span><span class="mc-foot-value">${_f(d.high)}</span></div><div class="mc-foot-item"><span class="mc-foot-label">주간 저가</span><span class="mc-foot-value">${_f(d.low)}</span></div></div></div>`;
 }
 
+// ── Market Status Render ─────────────────────────
 function _renderMarketStatus(macro) {
-  // macro: { krw_usd, us10y, foreign_net, event }
   const el = document.getElementById('ms-grid');
   if (!el) return;
   if (!macro) {
@@ -1452,55 +1395,31 @@ function _renderMarketStatus(macro) {
 
   const items = [];
 
-  // 원/달러
   if (macro.krw_usd) {
     const k = macro.krw_usd;
-    items.push(`
-      <div class="ms-item">
-        <span class="ms-label">${k.label || '원/달러'}</span>
-        <span class="ms-value">${_nf(k.value)}<span class="ms-unit">${k.unit || '원'}</span></span>
-        <span class="ms-desc">${k.desc || '—'}</span>
-      </div>`);
+    items.push(`<div class="ms-item"><span class="ms-label">${k.label || '원/달러'}</span><span class="ms-value">${_nf(k.value)}<span class="ms-unit">${k.unit || '원'}</span></span><span class="ms-desc">${k.desc || '—'}</span></div>`);
   }
 
-  // 미 10년물
   if (macro.us10y) {
     const u = macro.us10y;
-    items.push(`
-      <div class="ms-item">
-        <span class="ms-label">${u.label || '미 10년물'}</span>
-        <span class="ms-value">${_nf(u.value)}<span class="ms-unit">${u.unit || '%'}</span></span>
-        <span class="ms-desc">${u.desc || '—'}</span>
-      </div>`);
+    items.push(`<div class="ms-item"><span class="ms-label">${u.label || '미 10년물'}</span><span class="ms-value">${_nf(u.value)}<span class="ms-unit">${u.unit || '%'}</span></span><span class="ms-desc">${u.desc || '—'}</span></div>`);
   }
 
-  // 외국인 수급
   if (macro.foreign_net) {
     const f = macro.foreign_net;
     const cls = f.value > 0 ? 'pos' : f.value < 0 ? 'neg' : '';
-    items.push(`
-      <div class="ms-item">
-        <span class="ms-label">${f.label || '외국인 수급'}</span>
-        <span class="ms-value ${cls}">${_nfSigned(f.value)}<span class="ms-unit">${f.unit || '억'}</span></span>
-        <span class="ms-desc">${f.desc || '—'}</span>
-      </div>`);
+    items.push(`<div class="ms-item"><span class="ms-label">${f.label || '외국인 수급'}</span><span class="ms-value ${cls}">${_nfSigned(f.value)}<span class="ms-unit">${f.unit || '억'}</span></span><span class="ms-desc">${f.desc || '—'}</span></div>`);
   }
 
-  // 이번 주 주목
   if (macro.event) {
     const e = macro.event;
-    items.push(`
-      <div class="ms-item">
-        <span class="ms-label">${e.label || '이번 주 주목'}</span>
-        <span class="ms-value event">${e.name || '—'}</span>
-        <span class="ms-desc">${e.desc || '—'}</span>
-      </div>`);
+    items.push(`<div class="ms-item"><span class="ms-label">${e.label || '이번 주 주목'}</span><span class="ms-value event">${e.name || '—'}</span><span class="ms-desc">${e.desc || '—'}</span></div>`);
   }
 
   el.innerHTML = items.join('') || '<div class="ms-item"><span class="ms-label">—</span><span class="ms-value">데이터 없음</span><span class="ms-desc">fetch_market_data() 확인</span></div>';
 }
 
-// ── 유틸 ─────────────────────────────
+// ── Utilities ─────────────────────────────
 function fmt(n, digits = 0) {
   if (n == null || isNaN(n)) return '—';
   return Number(n).toLocaleString('ko-KR', { minimumFractionDigits: digits, maximumFractionDigits: digits });
@@ -1524,25 +1443,7 @@ function upsideCardClass(v) {
 }
 function rankBadgeClass(r) { return 'rank-' + Math.min(r, 10); }
 
-function medalSvg(rank) {
-  const medals = {
-    1: { ribbon: '#e53935', body: '#FFD700', shine: '#FFF8DC', ring: '#DAA520', num: '#8B6914', label: '1' },
-    2: { ribbon: '#e53935', body: '#C0C0C0', shine: '#F0F0F0', ring: '#A0A0A0', num: '#606060', label: '2' },
-    3: { ribbon: '#e53935', body: '#CD7F32', shine: '#E8C07A', ring: '#A0622E', num: '#6B3A1F', label: '3' },
-  };
-  const m = medals[rank];
-  if (!m) return `<div class="rank-badge rank-num">${rank}</div>`;
-  return `<div class="rank-badge"><svg width="40" height="48" viewBox="0 0 40 48">
-    <path d="M14 0 L20 16 L26 0" fill="none" stroke="${m.ribbon}" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="20" cy="28" r="14" fill="${m.body}" stroke="${m.ring}" stroke-width="2"/>
-    <circle cx="20" cy="28" r="10" fill="none" stroke="${m.ring}" stroke-width="1" opacity="0.5"/>
-    <circle cx="16" cy="24" r="3" fill="${m.shine}" opacity="0.35"/>
-    <text x="20" y="33" text-anchor="middle" font-size="14" font-weight="800" fill="${m.num}">${m.label}</text>
-    <path d="M13 21 C14 19,16 18,17 19 M23 19 C24 18,26 19,27 21" fill="none" stroke="${m.ring}" stroke-width="0.7" opacity="0.4"/>
-  </svg></div>`;
-}
-
-// ── 섹션 1: TOP5 카드 렌더 ───────────
+// ── Section 1: TOP10 Cards ───────────
 function renderTop5(weekData) {
   const container = document.getElementById('top5-container');
   const top5 = weekData && weekData.top5 ? weekData.top5.top5 : [];
@@ -1559,10 +1460,10 @@ function renderTop5(weekData) {
       ? Math.min((c.current_price / c.avg_target_price) * 100, 100).toFixed(1)
       : 50;
     return `
-    <div class="stock-card ${uClass}">
+    <div class="stock-card ${uClass}" data-rank="${c.rank}">
       <div class="card-inner">
         <div class="card-header">
-          ${medalSvg(c.rank)}
+          <div class="rank-badge">${c.rank}</div>
           <div class="company-info">
             <div class="company-name">${c.company_name}</div>
             <div class="company-sub">${c.stock_code || ''} &nbsp;|&nbsp; ${c.institution_list || ''}</div>
@@ -1603,7 +1504,7 @@ function renderTop5(weekData) {
   }).join('');
 }
 
-// ── 섹션 2: 산업 카드 렌더 ───────────
+// ── Section 2: Industry Cards ───────────
 function renderIndustry(weekData) {
   const container = document.getElementById('industry-container');
   const industries = weekData && weekData.industry ? weekData.industry.industries : [];
@@ -1627,13 +1528,12 @@ function renderIndustry(weekData) {
   }).join('');
 }
 
-// ── 섹션 3: 추천 성과 추적 ────────────
+// ── Section 3: Performance Tracking ────────────
 function renderPerformance(weekDate) {
   const allPerf = (DASHBOARD_DATA && DASHBOARD_DATA.performance) ? DASHBOARD_DATA.performance : [];
   const perf = weekDate ? allPerf.filter(r => r.date === weekDate) : allPerf;
   const updatedAt = (DASHBOARD_DATA && DASHBOARD_DATA.perf_updated_at) ? DASHBOARD_DATA.perf_updated_at : null;
 
-  // 요약 통계
   const withPrice = perf.filter(r => r.return_pct != null);
   const avgReturn = withPrice.length
     ? (withPrice.reduce((s, r) => s + r.return_pct, 0) / withPrice.length)
@@ -1647,7 +1547,6 @@ function renderPerformance(weekDate) {
     ? withPrice.reduce((a, b) => a.return_pct > b.return_pct ? a : b)
     : null;
 
-  // 요약 카드 4개
   const grid = document.getElementById('perf-summary-grid');
   const avgReturnClass = avgReturn == null ? 'blue' : (avgReturn >= 0 ? 'pos' : 'neg');
   const avgReturnText = avgReturn == null ? '—' : (avgReturn >= 0 ? '+' : '') + avgReturn.toFixed(1) + '%';
@@ -1673,11 +1572,9 @@ function renderPerformance(weekDate) {
       <div class="ps-sub">${best ? ((best.return_pct >= 0 ? '+' : '') + best.return_pct.toFixed(1) + '%') : '조회 불가'}</div>
     </div>`;
 
-  // 업데이트 시각
   const updEl = document.getElementById('perf-updated');
   updEl.textContent = updatedAt ? '현재가 기준: ' + updatedAt.slice(0, 16).replace('T', ' ') : '';
 
-  // 성과 테이블
   const tbody = document.getElementById('perf-tbody');
   if (!perf.length) {
     tbody.innerHTML = '<tr><td colspan="9" class="empty-state">성과 데이터가 없습니다.<br>FinanceDataReader가 설치되어 있어야 현재가를 조회할 수 있습니다.</td></tr>';
@@ -1691,7 +1588,6 @@ function renderPerformance(weekDate) {
     else if (r.target_achieved === false) { achText = '미달'; achClass = 'achieved-n'; }
     else                                  { achText = '—';   achClass = 'achieved-u'; }
 
-    // 추천일: date 필드 YYYYMMDD → YYYY.MM.DD
     const d = r.date || '';
     const dateLabel = d.length === 8
       ? d.slice(0,4) + '.' + d.slice(4,6) + '.' + d.slice(6,8)
@@ -1711,7 +1607,7 @@ function renderPerformance(weekDate) {
   }).join('');
 }
 
-// ── 섹션 4: 히스토리 테이블 ──────────
+// ── Section 4: History Table ──────────
 function renderHistoryTable(weeks, currentLabel) {
   const tbody = document.getElementById('history-tbody');
   const recent12 = weeks.slice(0, 12);
@@ -1734,7 +1630,7 @@ function renderHistoryTable(weeks, currentLabel) {
   }).join('');
 }
 
-// ── 섹션 5: 캔들 차트 ────────────────
+// ── Section 5: Candle Chart ────────────────
 let _chart = null, _candleSeries = null, _volSeries = null;
 let _priceLines = [], _trendLineSeries = [], _indicatorSeries = [];
 let _rsiChart = null, _rsiSeries = null;
@@ -1762,7 +1658,7 @@ function _clearIndicators() {
   if (ms) ms.style.display = 'none';
 }
 
-// ── 지표 계산 헬퍼 ──────────────────────────────────────────
+// ── Indicator Calculations ──────────────────────────────────────────
 
 function _calcBBLower(closes, period = 20, mult = 2) {
   const result = new Array(closes.length).fill(null);
@@ -1797,7 +1693,7 @@ function _calcEMA(closes, period) {
   return result;
 }
 
-// ── 엘리어트 파동 분석 ──────────────────────────────────────
+// ── Elliott Wave Analysis ──────────────────────────────────────
 function _analyzeElliottWave(ohlcv) {
   const n = ohlcv.length;
   if (n < 224) return null;
@@ -1949,7 +1845,7 @@ function initCandleChart() {
     scaleMargins: { top: 0.85, bottom: 0 },
   });
 
-  // RSI 차트 (별도 패널)
+  // RSI chart (separate panel)
   const rsiWrap = document.getElementById('candle-rsi-wrap');
   const rsiContainer = document.getElementById('candle-rsi');
   _rsiChart = LightweightCharts.createChart(rsiContainer, {
@@ -1972,7 +1868,7 @@ function initCandleChart() {
     },
   });
 
-  // 타임스케일 양방향 동기화
+  // Bi-directional timescale sync
   _chart.timeScale().subscribeVisibleLogicalRangeChange(range => {
     if (_syncingMain || !range) return;
     _syncingRsi = true;
@@ -1992,7 +1888,7 @@ function initCandleChart() {
   }).observe(wrap);
 }
 
-// ── 4구간 매매전략 렌더링 함수 ─────────────────────────────────
+// ── Four Phase Strategy Panel ─────────────────────────────────
 function renderFourPhases(fp, ohlcv) {
   const panel = document.getElementById('four-phase-panel');
   const cardsEl = document.getElementById('fp-cards');
@@ -2014,7 +1910,6 @@ function renderFourPhases(fp, ohlcv) {
     { n: 4, name: '시세 분출', color: '#2ea043', desc: '본격 상승 구간' },
   ];
 
-  // 상단 뱃지
   const phaseInfo = PHASES.find(p => p.n === cur);
   if (badgeEl && phaseInfo) {
     badgeEl.textContent = `현재 ${cur}구간 · ${phaseInfo.name}`;
@@ -2025,7 +1920,6 @@ function renderFourPhases(fp, ohlcv) {
     else badgeEl.classList.add('ok');
   }
 
-  // 4개 카드
   cardsEl.innerHTML = PHASES.map(p => {
     const isActive = p.n === cur;
     const isCompleted = p.n < cur;
@@ -2065,10 +1959,8 @@ function renderFourPhases(fp, ohlcv) {
     </div>`;
   }).join('');
 
-  // 상세 정보 (기간 비교 바 + 돌파 정보)
   let detail = '';
 
-  // 기간 비교 바
   if (fp.phase1_duration && fp.phase2_duration) {
     const maxD = Math.max(fp.phase1_duration, fp.phase2_duration, 1);
     const p1w = (fp.phase1_duration / maxD * 100).toFixed(0);
@@ -2084,7 +1976,6 @@ function renderFourPhases(fp, ohlcv) {
     <span class="fp-check ${isOk ? 'ok' : 'ng'}">${isOk ? '✓ 충분한 매집' : '✗ 매집 부족'}</span>`;
   }
 
-  // 돌파·안착 정보
   if (fp.ma224_breakout_date) {
     const bvol = fp.breakout_volume_confirmed;
     detail += `<span class="fp-check ${bvol ? 'ok' : 'ng'}">${bvol ? '✓ 거래량 돌파' : '✗ 거래량 미확인'}</span>`;
@@ -2098,7 +1989,7 @@ function renderFourPhases(fp, ohlcv) {
 
   detailEl.innerHTML = detail;
 
-  // ── 차트에 구간 전환 마커 추가 ─────────────────────────────
+  // Phase boundary markers on chart
   if (_candleSeries && fp.phase_boundaries && fp.phase_boundaries.length) {
     const PHASE_COLORS = { 1: '#da3633', 2: '#d29922', 3: '#58a6ff', 4: '#2ea043' };
     const PHASE_NAMES  = { 1: '1구간▼', 2: '2구간▶', 3: '3구간▲', 4: '4구간★' };
@@ -2110,7 +2001,6 @@ function renderFourPhases(fp, ohlcv) {
       shape: 'square',
       text: PHASE_NAMES[b.phase] || '',
     }));
-    // 기존 마커와 병합 (시간순 정렬)
     const allMarkers = [...existingMarkers, ...phaseMarkers].sort((a, b) => a.time < b.time ? -1 : 1);
     _candleSeries.setMarkers(allMarkers);
   }
@@ -2154,7 +2044,7 @@ function renderCandleChart(code, weekDate) {
   const closes = data.ohlcv.map(c => c.close);
   const times  = data.ohlcv.map(c => c.time);
 
-  // ── 장기 이동평균선 ──────────────────────────────────────
+  // Long-term moving averages
   [
     { calc: _calcSMA, period: 111, color: '#2ea043', width: 2, style: LightweightCharts.LineStyle.Solid },
     { calc: _calcEMA, period: 224, color: '#f0b429', width: 1.5, style: LightweightCharts.LineStyle.Solid },
@@ -2168,7 +2058,7 @@ function renderCandleChart(code, weekDate) {
     _indicatorSeries.push(s);
   });
 
-  // ── BB 하단선 ──────────────────────────────────────────
+  // BB lower band
   const bbL = _calcBBLower(closes);
   const bbD = times.map((t, i) => bbL[i] != null ? { time: t, value: bbL[i] } : null).filter(Boolean);
   if (bbD.length > 2) {
@@ -2177,7 +2067,7 @@ function renderCandleChart(code, weekDate) {
     _indicatorSeries.push(sb);
   }
 
-  // ── 엘리어트 파동 분석 렌더링 ──────────────────────────────
+  // Elliott Wave analysis rendering
   const ewEl = document.getElementById('elliott-wave');
   const ewC = document.getElementById('elliott-wave-content');
   const ew = _analyzeElliottWave(data.ohlcv);
@@ -2199,7 +2089,7 @@ function renderCandleChart(code, weekDate) {
     }
   } else if (ewEl) { ewEl.style.display = 'none'; }
 
-  // ── RSI 렌더링 ──────────────────────────────────────────
+  // RSI rendering
   if (_rsiChart) {
     const rsiVals = _calcRSI(closes);
     _rsiSeries = _rsiChart.addLineSeries({
@@ -2209,7 +2099,6 @@ function renderCandleChart(code, weekDate) {
     });
     _rsiSeries.setData(times.map((t, i) => rsiVals[i] != null ? { time: t, value: rsiVals[i] } : null).filter(Boolean));
 
-    // 70 / 30 가이드라인
     [{ v: 70, color: '#f85149', label: '과매수 70' }, { v: 30, color: '#388bfd', label: '과매도 30' }].forEach(({ v, color, label }) => {
       _rsiSeries.createPriceLine({ price: v, color, lineWidth: 1, lineStyle: LightweightCharts.LineStyle.Dashed, title: label, axisLabelVisible: true });
     });
@@ -2217,9 +2106,8 @@ function renderCandleChart(code, weekDate) {
     _rsiChart.priceScale('right').applyOptions({ minimum: 0, maximum: 100 });
   }
 
-  // 추세선 렌더링
+  // Trend lines rendering
   const LS2 = LightweightCharts.LineStyle;
-  // falling_wedge 여부 판별 (같은 패턴값을 가진 resistance+support 쌍)
   const wedgeLines = new Set(
     (data.trend_lines || [])
       .filter(tl => tl.pattern === 'falling_wedge')
@@ -2228,7 +2116,6 @@ function renderCandleChart(code, weekDate) {
   (data.trend_lines || []).forEach(tl => {
     const isRes     = tl.type === 'resistance';
     const isWedge   = tl.pattern === 'falling_wedge';
-    // 색상: 하락쐐기형=주황, 일반저항=빨강, 지지=파랑
     const lineColor = isWedge ? '#ff9800' : (isRes ? '#f85149' : '#388bfd');
     const lineWidth = isWedge ? 2 : 1;
     const series = _chart.addLineSeries({
@@ -2246,13 +2133,13 @@ function renderCandleChart(code, weekDate) {
     _trendLineSeries.push(series);
   });
 
-  // ── 캔들 마커 렌더링 ────────────────────────────────────
+  // Candle markers rendering
   const markers = (data.markers || []).slice().sort((a, b) => a.time < b.time ? -1 : 1);
   if (_candleSeries && markers.length) {
     _candleSeries.setMarkers(markers);
   }
 
-  // 최근 감지 패턴 요약 패널 (최근 30일 이내 마커만 표시)
+  // Recent pattern summary panel
   const summaryEl     = document.getElementById('marker-summary');
   const summaryListEl = document.getElementById('marker-summary-list');
   if (summaryEl && summaryListEl) {
@@ -2280,7 +2167,7 @@ function renderCandleChart(code, weekDate) {
     }
   }
 
-  // 패턴 뱃지
+  // Pattern badges
   const el = document.getElementById('candle-patterns');
   const patterns = data.patterns || [];
   if (!patterns.length) {
@@ -2288,15 +2175,14 @@ function renderCandleChart(code, weekDate) {
   } else {
     el.innerHTML = patterns.map(p => {
       const cls  = p.type === 'bullish' ? 'pattern-bullish' : p.type === 'bearish' ? 'pattern-bearish' : 'pattern-warning';
-      const icon = p.type === 'bullish' ? '🟢' : p.type === 'bearish' ? '🔴' : '🟡';
-      return `<span class="pattern-badge ${cls}">${icon} ${p.name}</span>`;
+      return `<span class="pattern-badge ${cls}">${p.name}</span>`;
     }).join('');
   }
 
-  // ── 4구간 매매전략 렌더링 ──────────────────────────────────
+  // Four phase strategy rendering
   renderFourPhases(data.four_phases || {}, data.ohlcv);
 
-  // 초기 표시: 최근 1개월, 전체 1년 데이터는 스크롤/드래그로 탐색 가능
+  // Initial view: recent 6 months
   if (data.ohlcv.length > 0) {
     const lastTime  = data.ohlcv[data.ohlcv.length - 1].time;
     const lastDate  = new Date(lastTime);
@@ -2349,7 +2235,7 @@ function renderCandleSection(weekDate) {
   renderCandleChart(codes[0], weekDate);
 }
 
-// ── 섹션 6: 재무 정보 렌더 ───────────
+// ── Section 6: Financial Data ───────────
 function renderFinancialSection(weekDate) {
   const container = document.getElementById('financial-container');
   const weekCandles = (DASHBOARD_DATA && DASHBOARD_DATA.candles && DASHBOARD_DATA.candles[weekDate])
@@ -2363,7 +2249,7 @@ function renderFinancialSection(weekDate) {
     return;
   }
 
-  // ── 업종별 재무지표 기준표 ──
+  // Industry benchmark table
   const IND_BENCH = {
     '반도체와반도체장비': { per:[10,20], pbr:[1.2,2.5], roe:[10,20], debt:[30,80], div:[0.5,1.5] },
     '제약':             { per:[30,80], pbr:[2,5],   roe:[5,15],  debt:[20,60],   div:[0,1] },
@@ -2393,7 +2279,6 @@ function renderFinancialSection(weekDate) {
     return IND_BENCH._default;
   }
 
-  // 재무지표 평가 색상 (업종 기준)
   function perClass(v, b) {
     if (v == null) return '';
     if (v <= 0) return 'warn';
@@ -2478,43 +2363,26 @@ function renderFinancialSection(weekDate) {
   }).join('');
 }
 
-// ── 주차 선택 시 렌더 ─────────────────
-function renderWeek(idx) {
-  if (!DASHBOARD_DATA || !DASHBOARD_DATA.weeks) return;
-  const weeks = DASHBOARD_DATA.weeks;
-  const w = weeks[idx];
-  if (!w) return;
-
-  // 헤더 업데이트
-  if (w.top5) {
-    const m = w.top5.meta;
-    document.getElementById('hdr-period').textContent =
-      (m.start_date || '').slice(5).replace('-','.') + ' ~ ' + (m.end_date || '').slice(5).replace('-','.');
-    document.getElementById('hdr-updated').textContent =
-      (m.generated_at || '').slice(0, 16).replace('T', ' ');
-  } else if (w.industry) {
-    const m = w.industry.meta;
-    document.getElementById('hdr-period').textContent =
-      (m.start_date || '').slice(5).replace('-','.') + ' ~ ' + (m.end_date || '').slice(5).replace('-','.');
-    document.getElementById('hdr-updated').textContent =
-      (m.generated_at || '').slice(0, 16).replace('T', ' ');
-  }
-
-  // Executive Summary perf-strip 업데이트
+// ── Executive Summary Render ─────────────────
+function renderExecSummary(weekData) {
   const allPerf = DASHBOARD_DATA.performance || [];
-  const weekPerf = w.date ? allPerf.filter(r => r.date === w.date) : [];
+  const weekDate = weekData ? weekData.date : null;
+  const weekPerf = weekDate ? allPerf.filter(r => r.date === weekDate) : [];
   const wpWithPrice = weekPerf.filter(r => r.return_pct != null);
+
   if (wpWithPrice.length) {
     const avgRet = wpWithPrice.reduce((s, r) => s + r.return_pct, 0) / wpWithPrice.length;
     const wins = wpWithPrice.filter(r => r.return_pct > 0).length;
     const wr = (wins / wpWithPrice.length * 100).toFixed(0);
     const best = wpWithPrice.reduce((a, b) => a.return_pct > b.return_pct ? a : b);
+
     const psReturn = document.getElementById('ps-return');
     const psReturnSub = document.getElementById('ps-return-sub');
     const psWin = document.getElementById('ps-winrate');
     const psWinSub = document.getElementById('ps-winrate-sub');
     const psBestVal = document.getElementById('ps-best-val');
     const psBestName = document.getElementById('ps-best-name');
+
     if (psReturn) {
       psReturn.textContent = (avgRet >= 0 ? '+' : '') + avgRet.toFixed(1) + '%';
       psReturn.className = 'perf-strip-value ' + (avgRet >= 0 ? 'pos' : 'neg');
@@ -2530,6 +2398,7 @@ function renderWeek(idx) {
       psBestVal.className = 'perf-strip-value ' + (best.return_pct >= 0 ? 'pos' : 'neg');
     }
     if (psBestName && best) psBestName.textContent = best.company_name;
+
     const psVsKospi = document.getElementById('ps-vs-kospi');
     if (psVsKospi) {
       const benchmark = (typeof MARKET_DATA !== 'undefined' && MARKET_DATA.kospi && MARKET_DATA.kospi.weekly_pct) || 0;
@@ -2538,11 +2407,39 @@ function renderWeek(idx) {
       psVsKospi.className = 'perf-strip-value ' + (excess >= 0 ? 'pos' : 'neg');
     }
   }
+
   const execAsof = document.getElementById('exec-asof');
   if (execAsof && DASHBOARD_DATA.perf_updated_at) {
     execAsof.textContent = DASHBOARD_DATA.perf_updated_at.slice(0,16).replace('T',' ');
   }
+}
 
+// ── Week Render ─────────────────
+function renderWeek(idx) {
+  if (!DASHBOARD_DATA || !DASHBOARD_DATA.weeks) return;
+  const weeks = DASHBOARD_DATA.weeks;
+  const w = weeks[idx];
+  if (!w) return;
+
+  // Header update
+  if (w.top5) {
+    const m = w.top5.meta;
+    document.getElementById('hdr-period').textContent =
+      (m.start_date || '').slice(5).replace('-','.') + ' ~ ' + (m.end_date || '').slice(5).replace('-','.');
+    document.getElementById('hdr-updated').textContent =
+      (m.generated_at || '').slice(0, 16).replace('T', ' ');
+  } else if (w.industry) {
+    const m = w.industry.meta;
+    document.getElementById('hdr-period').textContent =
+      (m.start_date || '').slice(5).replace('-','.') + ' ~ ' + (m.end_date || '').slice(5).replace('-','.');
+    document.getElementById('hdr-updated').textContent =
+      (m.generated_at || '').slice(0, 16).replace('T', ' ');
+  }
+
+  // Executive Summary
+  renderExecSummary(w);
+
+  // All sections
   renderTop5(w);
   renderIndustry(w);
   renderPerformance(w.date);
@@ -2551,12 +2448,19 @@ function renderWeek(idx) {
   renderFinancialSection(w.date);
 }
 
-// ── 초기화 ───────────────────────────
+// ── Init Dashboard ───────────────────────────
 function initDashboard() {
   if (!DASHBOARD_DATA || !DASHBOARD_DATA.weeks || DASHBOARD_DATA.weeks.length === 0) {
     document.querySelector('main').innerHTML =
       '<div class="empty-state" style="padding:80px">JSON 데이터가 없습니다.<br>run.py를 먼저 실행해 주세요.</div>';
     return;
+  }
+
+  // Market index/macro data injection (before renderWeek so exec summary has data)
+  if (DASHBOARD_DATA.market) {
+    if (DASHBOARD_DATA.market.kospi)  MARKET_DATA.kospi  = DASHBOARD_DATA.market.kospi;
+    if (DASHBOARD_DATA.market.kosdaq) MARKET_DATA.kosdaq = DASHBOARD_DATA.market.kosdaq;
+    MACRO_DATA = DASHBOARD_DATA.market.macro || null;
   }
 
   const weeks = DASHBOARD_DATA.weeks;
@@ -2567,26 +2471,18 @@ function initDashboard() {
   sel.addEventListener('change', e => renderWeek(Number(e.target.value)));
 
   initCandleChart();
+
+  // Market index cards render
+  const mgEl = document.getElementById('market-grid');
+  if (mgEl) mgEl.innerHTML = _renderMarketCard('kospi', MARKET_DATA.kospi) + _renderMarketCard('kosdaq', MARKET_DATA.kosdaq);
+  _renderMarketStatus(MACRO_DATA);
+
   renderWeek(0);
   renderHistoryTable(weeks, weeks[0].label);
   initNav();
-
-  // 시장 지수·매크로 데이터 주입 (DASHBOARD_DATA.market)
-  if (DASHBOARD_DATA.market) {
-    if (DASHBOARD_DATA.market.kospi)  MARKET_DATA.kospi  = DASHBOARD_DATA.market.kospi;
-    if (DASHBOARD_DATA.market.kosdaq) MARKET_DATA.kosdaq = DASHBOARD_DATA.market.kosdaq;
-    MACRO_DATA = DASHBOARD_DATA.market.macro || null;
-  }
-
-  // 시장 지수 카드 렌더
-  const mgEl = document.getElementById('market-grid');
-  if (mgEl) mgEl.innerHTML = _renderMarketCard('kospi', MARKET_DATA.kospi) + _renderMarketCard('kosdaq', MARKET_DATA.kosdaq);
-
-  // 시장 상황 렌더
-  _renderMarketStatus(MACRO_DATA);
 }
 
-// ── 섹션 네비게이션 ─────────────────
+// ── Section Navigation ─────────────────
 function initNav() {
   const tabs = document.querySelectorAll('.nav-tab');
   tabs.forEach(tab => {
@@ -2612,7 +2508,6 @@ function initNav() {
 
 document.addEventListener('DOMContentLoaded', () => {
   if (DASHBOARD_DATA) initDashboard();
-  // fetch 방식이면 위 fetch 콜백에서 자동 실행됨
 });
 </script>
 </body>
