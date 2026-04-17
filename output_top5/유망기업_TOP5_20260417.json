@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-04-13",
+    "end_date": "2026-04-17",
+    "generated_at": "2026-04-17T07:07:26",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 654,
+    "buy_count": 464,
+    "target_up_count": 0,
+    "total_companies": 359
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "대한항공",
+      "stock_code": "003490",
+      "institution_list": "해당기업, 다올투자증권, 미래에셋증권, iM증권, 상상인증권",
+      "report_count": 14,
+      "buy_ratio": 0.7857142857142857,
+      "target_up_ratio": 0.0,
+      "current_price": 24800.0,
+      "avg_target_price": 31416.666666666668,
+      "max_target_price": 36000.0,
+      "avg_upside": 26.7,
+      "bullets": [
+        "2026년 1분기 잠정실적 2026년 1분기 실적 설명 및 질의 응답 20261Q Financial Results 2026년 1분기 실적 설명 및 질의 응답 1Q Re",
+        "같은 일도 대감집에서 1Q 별도 매출액 45조원, 영업이익 5,169억원을 기록 ▶ 사업부별 매출은 국제선 2"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "선익시스템",
+      "stock_code": "171090",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 81900.0,
+      "avg_target_price": 163000.0,
+      "max_target_price": 163000.0,
+      "avg_upside": 99.0,
+      "bullets": [
+        "변동성보다는 역대 최고 수주잔고에 주목! 1분기 실적 시장 기대치 하회 ▶ 역대 최고 수준의 수주잔고 예상 ▶ 우려를 이미 반영한 주가, 변함없는 성장 스토리"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "롯데관광개발",
+      "stock_code": "032350",
+      "institution_list": "신한투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 16770.0,
+      "avg_target_price": 32000.0,
+      "max_target_price": 32000.0,
+      "avg_upside": 90.8,
+      "bullets": [
+        "아직은 비수기 매출액 1,581억원(293%)으로 기대치(400억원) 대비 소폭 하회 예상 ▶ 1Q26 카지노 드랍액과 매출액은 아주 높아진 시장 기대치에는 밑도는 상황"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "브이엠",
+      "stock_code": "089970",
+      "institution_list": "다올투자증권, 하나증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 50000.0,
+      "avg_target_price": 85500.0,
+      "max_target_price": 87000.0,
+      "avg_upside": 71.0,
+      "bullets": [
+        "계속 저평가 되기엔 이미 많은 것을 증명 가파른 실적 기울기와 함께 서프라이즈 확인2분기까지 실적 모멘텀이 극대 화 되는 국면이라는 점을 주목 ▶ ＇27년까지 공정 및 장비 M/S 증가에 따른 차별적 실적 성장이 유력함에도 장비사 중 상대적으로 눌려있는 Valuation 이라는 점에서 리레이팅 기회요인이 클 것으로 판단 ▶ 적극 비중확대가 유효 하며 소부장 최선호주 의견 유지",
+        "적정주가 87,000원으로 상향 예상보다 더 좋네요 1Q26 Review: 서프라이즈 시현 ▶ 2Q26 이후 실적도 양호",
+        "높아진 실적 가시성에 주목 ▶ 여전히 저평가 영역"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "KB증권, IBK투자증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1103000.0,
+      "avg_target_price": 1850000.0,
+      "max_target_price": 1900000.0,
+      "avg_upside": 67.7,
+      "bullets": [
+        "실적 가속 구간 진입 목표주가 1,900,000원 유지 ▶ 1분기 영업이익 40조원, 실적 서프라이즈 ▶ 외국인이 돌아온다, 파운드리형 사업 모델 전환 Memory를 System으로 봐야 그림이 보인다 26년 1분기 사상 최대 수준 ▶ 서버에서 DRAM은 System이다"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "한화오션",
+      "stock_code": "042660",
+      "institution_list": "메리츠증권, 상상인증권, 한국투자증권, SK증권, 유진투자증권",
+      "report_count": 9,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 131900.0,
+      "avg_target_price": 167000.0,
+      "max_target_price": 179000.0,
+      "avg_upside": 26.6,
+      "bullets": [
+        "1Q26 Preview: 실적보다는 수주를 더 기대하는 시기 영업이익은 컨센서스 대비 +6그러나 2분기부터 군함 수주에 주목할 시기 근거 있는 자신감 1Q26E 매출액 3조 2,621억원, 영업이익 3,667억원, 컨센서스 부합 전망 ▶ 안정적 실적 성장에 더해 여전히 풍부한 함정 기대 요인",
+        "선제적 매수 시점 수주로서 ‘특수선 최강자’임을 증명해 낼 것이다 1Q26 매출액 3조 1,551억원(+0%yoy), 영업이익 3,816억원(+48%yoy, OPM 121%)으로 추정 ▶ 상선 P-mix 개선은 지속됨 ▶ 시장에서 우려하는 중동 사태 영향은 제한적 1Q26 실적 함의: 수주 시점 차별화 검증 기회 1Q26 매출 3"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "한미약품",
+      "stock_code": "128940",
+      "institution_list": "삼성증권, DS투자증권, 한국투자증권, NH투자증권, 키움증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 510000.0,
+      "avg_target_price": 660000.0,
+      "max_target_price": 720000.0,
+      "avg_upside": 29.4,
+      "bullets": [
+        "안정적 실적 위에 쌓이는 R&D 변곡점 1Q26 preview ▶ 주요 파이프라인 업데이트 ▶ 투자의견 BUY, 목표주가 72만원 유지 1Q26 Pre: 에페글레나타이드 기반 성장에 주목 1Q26 Preview: 견조한 성장세 유지, 단 임상시료 부재로 QoQ 부진 ▶ 에페글레나타이드, 한미약품 실적 성장을 견인할 것",
+        "‘26년은 한미약품 성장의 해 1Q26 Preview: 실적보다 모멘텀 영업이익 컨센서스 14% 하회 전망 ▶ 실적보다 모멘텀 기대되는 올해 비만/MASH 대장주 등극 가능성 주목 제약사 Top Pick 유지: 비만/MASH 섹터 대장주 등극 가능성 ▶ 1Q26 Pre: 임상시료 기저효과로 컨센 하회, 다만 실적은 중요치 않음 실적 하회 전망",
+        "상반기 MASH 발표 주목! MSD향 임상시료 기고효과 부재에 따른 하회 전망 ▶ R&D 모멘텀: MASH 2b상 발표, 올해 목표: 1건+ 기술이전 ▶ 투자의견 Outperform 하향, 목표주가 56만 원 상향",
+        "숨고르기 이후 다시 R&D의 시간 MSD향 임상 시료 공급 매출 기저효과로 시장 기대치 하회 예상 ▶ 1H26에피노페그듀타이드(MASH) 2b상"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "LS증권, KB증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 206500.0,
+      "avg_target_price": 315000.0,
+      "max_target_price": 360000.0,
+      "avg_upside": 52.5,
+      "bullets": [
+        "2026 + 2027 = k + f(매크로 환경, AI 수익성) 올해 실적 서프라이즈에 대한 해석 ▶ 투자의견 매수 유지, 목표주가 소폭 상향 지금은 매수의 시간 2분기 메모리 수요 강력 ▶ 2분기 영업이익, 보수적 가정에도 16배 증가 ▶ 실적서프라이즈구간진입,외국인최선호투자처2026 + 2027 = k + f(매크로 환경, AI 수익성) 올해 실적 서프라이즈에 대한 해석 ▶ 투자의견 매수 유지, 목표주가"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "크래프톤",
+      "stock_code": "259960",
+      "institution_list": "미래에셋증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 239000.0,
+      "avg_target_price": 390000.0,
+      "max_target_price": 390000.0,
+      "avg_upside": 63.2,
+      "bullets": [
+        "PUBG 트래픽 서프라이즈 지속 높아진 컨센도 뛰어넘는 1분기 서프라이즈 예상 ▶ 4월 이후에도 이어지는 트래픽 성장세 ▶ 투자의견 ＇매수＇, 목표주가 390,000원 유지"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "CJ ENM",
+      "stock_code": "035760",
+      "institution_list": "신한투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 53600.0,
+      "avg_target_price": 80000.0,
+      "max_target_price": 80000.0,
+      "avg_upside": 49.3,
+      "bullets": [
+        "1Q26를 가장 낮게 출발 매출액 18%)으로 기대치 하회 예상 ▶ 영화/드라마는 BEP 수준",
+        "<어쩔 수가 없다> 수출 부가수익 외 개봉작 부재 ▶ 2026년은 1분기를 가장 낮게 시작"
+      ]
+    }
+  ]
+}
