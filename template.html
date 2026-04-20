@@ -4,627 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>주간 투자 리서치 대시보드</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpolygon points='32,6 54,18.7 54,44.3 32,57 10,44.3 10,18.7' fill='none' stroke='%23DAA520' stroke-width='3'/%3E%3Cpolygon points='32,10 50,20.4 50,41.6 32,52 14,41.6 14,20.4' fill='none' stroke='%23f0b429' stroke-width='1.5' opacity='.5'/%3E%3Cpolyline points='16,40 24,32 32,36 42,20 48,14' fill='none' stroke='%2358a6ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='14' r='2.5' fill='%2358a6ff'/%3E%3Ctext x='18' y='38' font-family='Arial,sans-serif' font-size='16' font-weight='800' fill='%23f0b429'%3EWR%3C/text%3E%3C/svg%3E">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg-base: #08090c;
-    --bg-grad-1: #0c1018;
-    --bg-grad-2: #0a0d14;
-
-    --card: #12161f;
-    --card-hi: #161b26;
-    --card-inner: #0d1117;
-
-    --hairline: rgba(255,255,255,0.06);
-    --hairline-hi: rgba(255,255,255,0.10);
-    --hairline-lo: rgba(255,255,255,0.04);
-
-    --text: #e6ebf2;
-    --text-soft: #c3cad6;
-    --muted: #7a8494;
-    --muted-strong: #9ba4b4;
-
-    --blue: #5b9dff;
-    --blue-hi: #79b0ff;
-    --blue-soft: rgba(91,157,255,0.12);
-    --blue-ring: rgba(91,157,255,0.22);
-
-    --green: #3fc970;
-    --green-soft: rgba(63,201,112,0.12);
-    --red: #f66a6a;
-    --red-soft: rgba(246,106,106,0.12);
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
     --gold: #f0b429;
-    --gold-soft: rgba(240,180,41,0.12);
+    --green: #2ea043;
+    --blue: #58a6ff;
     --yellow: #d29922;
-
+    --red: #da3633;
     --rank1: #f0b429;
     --rank2: #b5bcc4;
     --rank3: #cd7f32;
-
-    --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-    --font-serif: "Instrument Serif", Georgia, serif;
   }
 
-  html, body { background: var(--bg-base); }
-
   body {
+    background: var(--bg);
     color: var(--text);
-    font-family: var(--font-sans);
+    font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', -apple-system, sans-serif;
     font-size: 14px;
     line-height: 1.6;
     min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: -0.005em;
-
-    /* 은은한 배경 분위기 */
-    background:
-      radial-gradient(1200px 600px at 15% -10%, rgba(91,157,255,0.08), transparent 60%),
-      radial-gradient(900px 500px at 95% 5%, rgba(240,180,41,0.05), transparent 55%),
-      linear-gradient(180deg, var(--bg-grad-1) 0%, var(--bg-base) 40%, var(--bg-grad-2) 100%);
-    background-attachment: fixed;
   }
 
-  /* ── 컨테이너 ───────────────────────── */
-  .shell {
-    max-width: 1760px;
-    margin: 0 auto;
-    padding: 20px 24px 80px;
-  }
-
-  /* ── 히어로 블록 ──────────────────── */
-  .hero {
-    background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0) 100%),
-                var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 20px;
-    padding: 22px 26px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(600px 200px at 20% 0%, rgba(91,157,255,0.08), transparent 70%);
-    pointer-events: none;
-  }
-
-  .hero-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 24px;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  .hero-brand {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 0;
-  }
-  .eyebrow {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    color: var(--muted-strong);
-    text-transform: uppercase;
-    font-family: var(--font-sans);
-  }
-  .hero h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    line-height: 1.3;
-  }
-  .hero h1 .logo-dot {
-    display: inline-block;
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--gold);
-    margin-right: 10px;
-    vertical-align: middle;
-    box-shadow: 0 0 12px rgba(240,180,41,0.5);
-  }
-
-  .hero-meta {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 6px;
-  }
-  .pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--hairline);
-    border-radius: 999px;
-    padding: 6px 12px;
-    font-size: 12px;
-    color: var(--muted-strong);
-    white-space: nowrap;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .pill .pill-label {
-    color: var(--muted);
-    font-size: 11px;
-  }
-  .pill .pill-value {
-    color: var(--text);
-    font-family: var(--font-mono);
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  /* 섹션 네비 pill-tabs */
-  .nav-tabs {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    padding: 4px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-  }
-  .nav-tab {
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 7px 14px;
-    font-size: 12.5px;
-    font-weight: 500;
-    color: var(--muted-strong);
-    cursor: pointer;
-    transition: all 0.18s;
-    font-family: inherit;
-    letter-spacing: -0.005em;
-  }
-  .nav-tab:hover {
-    background: rgba(255,255,255,0.04);
-    color: var(--text);
-  }
-  .nav-tab.active {
-    background: rgba(255,255,255,0.08);
-    border-color: var(--hairline-hi);
-    color: var(--text);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
-  }
-
-  #week-select {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--hairline);
-    border-radius: 10px;
-    color: var(--text);
-    padding: 7px 14px;
-    font-size: 12.5px;
-    font-family: inherit;
-    cursor: pointer;
-    outline: none;
-  }
-  #week-select:focus { border-color: var(--blue-ring); }
-
-  /* ── Executive Summary 블록 ──────── */
-  .exec {
+  /* ── 헤더 ─────────────────────────── */
+  header {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 20px;
-    padding: 40px 44px 36px;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-  }
-  .exec::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(800px 400px at 10% 20%, rgba(91,157,255,0.07), transparent 60%),
-      radial-gradient(500px 300px at 90% 80%, rgba(240,180,41,0.04), transparent 60%);
-    pointer-events: none;
-  }
-  .exec-inner { position: relative; }
-
-  .exec-badge {
-    display: inline-flex;
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
     align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--hairline-hi);
-    border-radius: 999px;
-    padding: 6px 14px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    color: var(--text-soft);
-    text-transform: uppercase;
-    margin-bottom: 28px;
-  }
-  .exec-badge::before {
-    content: "";
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--blue);
-    box-shadow: 0 0 8px var(--blue-ring);
-  }
-
-  .exec-headline {
-    font-size: clamp(36px, 5.2vw, 64px);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.035em;
-    color: var(--text);
-    margin-bottom: 24px;
-    max-width: 1100px;
-  }
-  .exec-headline .accent {
-    color: var(--blue);
-    font-weight: 700;
-  }
-
-  .exec-lead {
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--muted-strong);
-    max-width: 780px;
-    margin-bottom: 24px;
-    letter-spacing: -0.005em;
-  }
-
-  .exec-meta {
-    display: flex;
-    gap: 8px;
+    gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 36px;
   }
-
-  /* ── 성과 스트립 ──────────────────── */
-  .perf-strip {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0;
-    padding: 14px 20px;
-    background: linear-gradient(90deg, rgba(91,157,255,0.04), rgba(91,157,255,0.01));
-    border: 1px solid var(--hairline);
-    border-left: 3px solid var(--blue);
-    border-radius: 12px;
-    margin-bottom: 24px;
-  }
-  .perf-strip-item {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    padding: 4px 20px;
-    position: relative;
-  }
-  .perf-strip-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 18px;
-    background: var(--hairline-hi);
-  }
-  .perf-strip-item:first-child { padding-left: 0; }
-  .perf-strip-label {
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .perf-strip-value {
+  header h1 {
     font-size: 18px;
     font-weight: 700;
-    font-family: var(--font-mono);
-    letter-spacing: -0.02em;
-    font-feature-settings: "tnum" 1;
+    color: var(--gold);
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
-  .perf-strip-value.pos { color: var(--green); }
-  .perf-strip-value.neg { color: var(--red); }
-  .perf-strip-value.blue { color: var(--blue); }
-  .perf-strip-sub {
-    font-size: 11px;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    margin-left: 4px;
-  }
-
-  /* ── 지수 카드 (코스피/코스닥) ─────── */
-  .market-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  @media (max-width: 760px) { .market-grid { grid-template-columns: 1fr; } }
-
-  .market-card {
-    background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%),
-                var(--card-hi);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
-    padding: 22px 24px 18px;
-    position: relative;
-    overflow: hidden;
-    transition: border-color 0.2s;
-  }
-  .market-card:hover { border-color: var(--hairline-hi); }
-  .market-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(400px 180px at 0% 0%, rgba(91,157,255,0.05), transparent 70%);
-    pointer-events: none;
-  }
-  .mc-head {
+  .header-meta {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 14px;
-  }
-  .mc-title-wrap { display: flex; align-items: center; gap: 10px; }
-  .mc-icon {
-    width: 36px; height: 36px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--hairline);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--text-soft);
-  }
-  .mc-title {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.01em;
-  }
-  .mc-sub {
-    font-size: 10.5px;
-    color: var(--muted);
-    letter-spacing: 0.12em;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: var(--font-mono);
-  }
-  .mc-status {
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .mc-status::before {
-    content: "";
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--muted);
-  }
-  .mc-status.up::before    { background: var(--green); box-shadow: 0 0 8px rgba(63,201,112,0.6); }
-  .mc-status.down::before  { background: var(--red);   box-shadow: 0 0 8px rgba(246,106,106,0.6); }
-  .mc-status.up    { color: var(--green); }
-  .mc-status.down  { color: var(--red); }
-
-  .mc-price-row {
-    display: flex;
-    align-items: baseline;
     gap: 12px;
     flex-wrap: wrap;
-    margin-bottom: 4px;
+    flex: 1;
   }
-  .mc-price {
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1;
-    color: var(--text);
-    font-family: var(--font-mono);
-    font-feature-settings: "tnum" 1;
-  }
-  .mc-change {
-    font-size: 15px;
-    font-weight: 700;
-    font-family: var(--font-mono);
-    letter-spacing: -0.01em;
-    display: inline-flex;
-    align-items: baseline;
-    gap: 4px;
-  }
-  .mc-change.up   { color: var(--green); }
-  .mc-change.down { color: var(--red); }
-  .mc-change-arrow { font-size: 12px; }
-
-  .mc-chart-wrap {
-    margin: 14px -6px 12px;
-    position: relative;
-    height: 90px;
-  }
-  .mc-chart-wrap svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .mc-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    padding-top: 12px;
-    border-top: 1px solid var(--hairline-lo);
-  }
-  .mc-foot-item { display: flex; flex-direction: column; gap: 2px; }
-  .mc-foot-label {
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .mc-foot-value {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text-soft);
-    font-family: var(--font-mono);
-    letter-spacing: -0.01em;
-  }
-  .mc-foot-value.pos { color: var(--green); }
-  .mc-foot-value.neg { color: var(--red); }
-
-  /* ── 시장 상황 ──────────────── */
-  .market-status {
-    background: var(--card-hi);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
-    padding: 20px 24px 22px;
-    position: relative;
-    overflow: hidden;
-  }
-  .market-status::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 1px;
-    background: linear-gradient(90deg, transparent, var(--blue-ring), transparent);
-  }
-  .ms-head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-  .ms-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--blue);
-    box-shadow: 0 0 8px var(--blue-ring);
-  }
-  .ms-heading {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: 0.02em;
-  }
-  .ms-tag {
-    margin-left: auto;
-    font-size: 10.5px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    background: var(--blue-soft);
-    color: var(--blue);
-    border: 1px solid rgba(91,157,255,0.3);
-  }
-  .ms-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-  }
-  @media (max-width: 760px) { .ms-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
-  .ms-item {
-    padding: 0 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .ms-item:first-child { padding-left: 4px; }
-  .ms-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 48px;
-    background: var(--hairline-hi);
-  }
-  @media (max-width: 760px) {
-    .ms-item { padding: 0; }
-    .ms-item::after { display: none; }
-  }
-  .ms-label {
-    font-size: 10.5px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .ms-value {
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--text);
-    font-family: var(--font-mono);
-    letter-spacing: -0.02em;
-    font-feature-settings: "tnum" 1;
-    line-height: 1.1;
-  }
-  .ms-value.pos { color: var(--green); }
-  .ms-value.neg { color: var(--red); }
-  .ms-value.blue { color: var(--blue); }
-  .ms-value.event { font-size: 18px; color: var(--text); }
-  .ms-unit {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--muted-strong);
-    margin-left: 2px;
-    font-feature-settings: normal;
-  }
-  .ms-desc {
-    font-size: 11.5px;
-    color: var(--muted);
-    font-weight: 500;
-    margin-top: 2px;
-  }
-
-  /* ── 섹션 공통 ──────────────────── */
-  section { margin-top: 56px; scroll-margin-top: 24px; }
-  .section-head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .section-title-wrap { display: flex; flex-direction: column; gap: 6px; }
-  .section-index {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    color: var(--muted);
-    font-weight: 600;
-    font-family: var(--font-mono);
-  }
-  .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-  }
-  .section-desc {
-    font-size: 13px;
-    color: var(--muted-strong);
-    margin-top: 4px;
-  }
-  .section-legend {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  .meta-pill {
+    background: #21262d;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3px 12px;
     font-size: 12px;
     color: var(--muted);
-    flex-wrap: wrap;
+    white-space: nowrap;
+  }
+  .meta-pill span { color: var(--text); }
+  #week-select {
+    background: #21262d;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  #week-select:focus { outline: none; border-color: var(--blue); }
+
+  /* ── 메인 레이아웃 ───────────────── */
+  main { max-width: 1800px; margin: 0 auto; padding: 24px 20px; }
+
+  section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    border-left: 3px solid var(--gold);
+    padding-left: 12px;
+    margin-bottom: 16px;
   }
 
   /* ── TOP10 카드 ───────────────────── */
@@ -633,137 +101,91 @@
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
-  @media (max-width: 980px) { .top5-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) {
+    .top5-grid { grid-template-columns: 1fr; }
+  }
 
   .stock-card {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0;
     position: relative;
+    transition: border-color 0.2s;
     overflow: hidden;
-    transition: border-color 0.2s, transform 0.2s;
   }
-  .stock-card:hover { border-color: var(--hairline-hi); }
+  .stock-card.upside-high  { border-color: var(--border); }
+  .stock-card.upside-mid   { border-color: var(--border); }
+  .stock-card.upside-low   { border-color: var(--border); }
 
-  .card-inner { padding: 20px 22px 0; }
-  .card-body { padding: 0 22px 16px; }
+  /* 카드 내부 영역 구분 */
+  .card-inner {
+    padding: 18px 20px 0 20px;
+  }
+  .card-body {
+    padding: 0 20px;
+  }
   .card-footer {
-    padding: 14px 22px 18px;
-    background: rgba(0,0,0,0.2);
-    border-top: 1px solid var(--hairline-lo);
+    padding: 12px 20px 16px 20px;
+    background: rgba(0,0,0,0.15);
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
   }
 
   .card-header {
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   .rank-badge {
-    width: 38px; height: 38px;
-    border-radius: 11px;
+    width: 40px; height: 48px;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
-    font-weight: 800;
-    font-size: 15px;
-    font-family: var(--font-mono);
-    background: rgba(91,157,255,0.12);
-    color: var(--blue);
-    border: 1px solid rgba(91,157,255,0.22);
   }
-  .stock-card[data-rank="1"] .rank-badge {
-    background: rgba(240,180,41,0.14);
-    color: var(--gold);
-    border-color: rgba(240,180,41,0.3);
-  }
-  .stock-card[data-rank="2"] .rank-badge {
-    background: rgba(181,188,196,0.12);
-    color: var(--rank2);
-    border-color: rgba(181,188,196,0.28);
-  }
-  .stock-card[data-rank="3"] .rank-badge {
-    background: rgba(205,127,50,0.14);
-    color: var(--rank3);
-    border-color: rgba(205,127,50,0.3);
+  .rank-badge.rank-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-weight: 800; font-size: 16px;
+    background: var(--blue); color: #0d1117;
   }
 
   .company-info { flex: 1; min-width: 0; }
-  .company-name {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.015em;
-  }
-  .company-sub {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 3px;
-    font-family: var(--font-mono);
-  }
+  .company-name { font-size: 17px; font-weight: 700; color: #e6edf3; }
+  .company-sub  { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
   .upside-big {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 26px; font-weight: 800;
     text-align: right;
     flex-shrink: 0;
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" 1;
-    line-height: 1;
   }
   .upside-big.pos { color: var(--green); }
   .upside-big.neg { color: var(--red); }
-  .upside-label {
-    font-size: 10px;
-    color: var(--muted);
-    text-align: right;
-    margin-top: 4px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+  .upside-label { font-size: 11px; color: var(--muted); text-align: right; }
 
   .price-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 14px;
-    padding: 12px 14px;
-    background: var(--card-inner);
-    border: 1px solid var(--hairline-lo);
-    border-radius: 10px;
+    display: flex; gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
   }
-  .price-item { min-width: 0; }
-  .price-label {
-    font-size: 10.5px;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 3px;
-  }
-  .price-value {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-    font-family: var(--font-mono);
-    letter-spacing: -0.01em;
-  }
+  .price-item { flex: 1; min-width: 80px; }
+  .price-label { font-size: 11px; color: var(--muted); }
+  .price-value { font-size: 14px; font-weight: 600; color: var(--text); }
 
   .progress-bar-wrap {
-    background: rgba(255,255,255,0.04);
+    background: #21262d;
     border-radius: 4px;
-    height: 4px;
-    margin-bottom: 16px;
+    height: 6px;
+    margin-bottom: 14px;
     position: relative;
     overflow: visible;
   }
   .progress-current {
     height: 100%;
     border-radius: 4px 0 0 4px;
-    background: linear-gradient(90deg, var(--blue), var(--blue-hi));
+    background: var(--blue);
     position: absolute;
     top: 0; left: 0;
-    box-shadow: 0 0 10px rgba(91,157,255,0.4);
   }
   .progress-target {
     height: 100%;
@@ -771,49 +193,34 @@
     background: var(--gold);
     position: absolute;
     top: 0; left: 0;
-    opacity: 0.55;
+    opacity: 0.5;
   }
 
-  .tags {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
-  }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
   .tag {
-    font-size: 11px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    border: 1px solid;
+    font-size: 11px; padding: 2px 8px;
+    border-radius: 10px; border: 1px solid;
     white-space: nowrap;
-    font-weight: 500;
   }
-  .tag-buy { border-color: rgba(63,201,112,0.4); color: var(--green); background: var(--green-soft); }
-  .tag-up  { border-color: rgba(240,180,41,0.4); color: var(--gold); background: var(--gold-soft); }
-  .tag-count { border-color: var(--hairline-hi); color: var(--muted-strong); background: rgba(255,255,255,0.03); }
+  .tag-buy   { border-color: var(--green); color: var(--green); }
+  .tag-up    { border-color: var(--gold);  color: var(--gold); }
+  .tag-count { border-color: var(--muted); color: var(--muted); }
 
   .bullets { list-style: none; }
   .bullets li {
     font-size: 13px;
-    color: var(--text-soft);
-    padding: 7px 0 7px 16px;
+    color: var(--text);
+    padding: 4px 0 4px 14px;
     position: relative;
-    border-top: 1px solid var(--hairline-lo);
-    line-height: 1.55;
+    border-top: 1px solid rgba(48,54,61,0.6);
   }
-  .bullets li:first-child { border-top: none; padding-top: 2px; }
-  .bullets li:last-child { padding-bottom: 2px; }
+  .bullets li:first-child { border-top: none; }
   .bullets li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 14px;
-    width: 4px; height: 4px;
-    border-radius: 50%;
-    background: var(--blue);
-    box-shadow: 0 0 6px var(--blue-ring);
+    content: "›";
+    position: absolute; left: 0;
+    color: var(--gold);
+    font-weight: 700;
   }
-  .bullets li:first-child::before { top: 10px; }
 
   /* ── 산업 카드 ───────────────────── */
   .industry-grid {
@@ -821,119 +228,72 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
   }
-  @media (max-width: 1180px) { .industry-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 680px)  { .industry-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 1100px) { .industry-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 650px)  { .industry-grid { grid-template-columns: 1fr; } }
 
   .industry-card {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-    padding: 16px 18px;
-    transition: border-color 0.2s;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
   }
-  .industry-card:hover { border-color: var(--hairline-hi); }
   .industry-card-header {
     display: flex; align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .industry-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.015em;
-  }
-  .opinion-badge {
-    font-size: 10.5px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    font-weight: 600;
-    white-space: nowrap;
-    letter-spacing: 0.02em;
-  }
-  .badge-overweight { background: var(--green-soft); color: var(--green); border: 1px solid rgba(63,201,112,0.35); }
-  .badge-neutral    { background: var(--gold-soft); color: var(--gold); border: 1px solid rgba(240,180,41,0.35); }
-  .badge-other      { background: rgba(255,255,255,0.04); color: var(--muted); border: 1px solid var(--hairline); }
-
-  .industry-meta {
-    font-size: 11px;
-    color: var(--muted);
     margin-bottom: 8px;
-    font-family: var(--font-mono);
   }
-  .industry-keyword {
-    font-size: 12px;
-    color: var(--blue);
-    margin-bottom: 10px;
+  .industry-name { font-size: 15px; font-weight: 700; color: #e6edf3; }
+  .opinion-badge {
+    font-size: 11px; padding: 2px 9px;
+    border-radius: 10px; font-weight: 600;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  }
+  .badge-overweight { background: rgba(46,160,67,0.2);  color: #3fb950; border: 1px solid rgba(46,160,67,0.4); }
+  .badge-neutral    { background: rgba(210,153,34,0.2); color: #d29922; border: 1px solid rgba(210,153,34,0.4); }
+  .badge-other      { background: rgba(139,148,158,0.15); color: var(--muted); border: 1px solid var(--border); }
+
+  .industry-meta { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  .industry-keyword {
+    font-size: 12px; color: var(--blue);
+    margin-bottom: 8px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .industry-bullets { list-style: none; }
   .industry-bullets li {
-    font-size: 12.5px;
-    color: var(--text-soft);
-    padding: 5px 0 5px 12px;
+    font-size: 12px; color: var(--text);
+    padding: 3px 0 3px 12px;
     position: relative;
-    border-top: 1px solid var(--hairline-lo);
-    line-height: 1.5;
+    border-top: 1px solid #21262d;
   }
-  .industry-bullets li:first-child { border-top: none; padding-top: 2px; }
-  .industry-bullets li::before {
-    content: "";
-    position: absolute; left: 0; top: 12px;
-    width: 3px; height: 3px;
-    border-radius: 50%;
-    background: var(--green);
-  }
-  .industry-bullets li:first-child::before { top: 9px; }
+  .industry-bullets li:first-child { border-top: none; }
+  .industry-bullets li::before { content: "•"; position: absolute; left: 0; color: var(--green); }
 
-  /* ── 성과 추적 ──────────────────── */
+  /* ── 성과 추적 섹션 ──────────────── */
   .perf-summary-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
-  @media (max-width: 980px) { .perf-summary-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 520px) { .perf-summary-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .perf-summary-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .perf-summary-grid { grid-template-columns: 1fr; } }
 
   .perf-summary-card {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-    padding: 20px 22px;
-    position: relative;
-    overflow: hidden;
-  }
-  .perf-summary-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(300px 150px at 100% 0%, rgba(91,157,255,0.05), transparent 70%);
-    pointer-events: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    text-align: center;
   }
   .perf-summary-card .ps-label {
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: 10px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .perf-summary-card .ps-value {
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" 1;
-    line-height: 1;
+    font-size: 11px; color: var(--muted);
     margin-bottom: 8px;
   }
+  .perf-summary-card .ps-value {
+    font-size: 24px; font-weight: 800;
+  }
   .perf-summary-card .ps-sub {
-    font-size: 11.5px;
-    color: var(--muted);
-    margin-top: 4px;
-    line-height: 1.5;
+    font-size: 11px; color: var(--muted); margin-top: 4px;
   }
   .ps-value.pos { color: var(--green); }
   .ps-value.neg { color: var(--red); }
@@ -941,220 +301,219 @@
   .ps-value.blue { color: var(--blue); }
 
   .perf-updated {
-    font-size: 11px;
-    color: var(--muted);
-    text-align: right;
-    margin-bottom: 12px;
-    font-family: var(--font-mono);
+    font-size: 11px; color: var(--muted);
+    text-align: right; margin-bottom: 10px;
   }
 
-  .ret-pos { color: var(--green); font-weight: 600; }
-  .ret-neg { color: var(--red);   font-weight: 600; }
+  .ret-pos  { color: var(--green); font-weight: 600; }
+  .ret-neg  { color: var(--red);   font-weight: 600; }
   .ret-zero { color: var(--muted); }
   .achieved-y { color: var(--green); }
   .achieved-n { color: var(--red); }
   .achieved-u { color: var(--muted); }
 
-  /* ── 테이블 ─────────────────────── */
+  /* ── 히스토리 테이블 ─────────────── */
   .table-wrap {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
     overflow-x: auto;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-variant-numeric: tabular-nums;
-  }
-  thead tr { background: rgba(255,255,255,0.02); }
+  table { width: 100%; border-collapse: collapse; }
+  thead tr { background: #21262d; }
   th {
-    padding: 12px 16px;
-    font-size: 11px;
-    font-weight: 600;
+    padding: 10px 14px;
+    font-size: 12px; font-weight: 600;
     color: var(--muted);
     text-align: left;
-    border-bottom: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--border);
     white-space: nowrap;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
   td {
-    padding: 12px 16px;
-    font-size: 13px;
-    color: var(--text-soft);
-    border-bottom: 1px solid var(--hairline-lo);
+    padding: 10px 14px;
+    font-size: 13px; color: var(--text);
+    border-bottom: 1px solid #21262d;
     white-space: nowrap;
-    font-family: var(--font-mono);
   }
-  td.td-text { font-family: var(--font-sans); }
   tr:last-child td { border-bottom: none; }
-  tr.current-week td { background: rgba(240,180,41,0.04); }
-  tbody tr { transition: background 0.15s; }
-  tbody tr:hover td { background: rgba(255,255,255,0.015); }
-  .week-label { color: var(--gold); font-weight: 600; font-family: var(--font-mono); }
+  tr.current-week td { background: rgba(240,180,41,0.07); }
+  .week-label { color: var(--gold); font-weight: 600; }
   .upside-cell { color: var(--green); font-weight: 600; }
 
-  /* ── 빈 상태 ────────────────────── */
+  /* ── 빈 상태 ─────────────────────── */
   .empty-state {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px;
     color: var(--muted);
     font-size: 14px;
   }
 
-  /* ── 캔들 탭 ───────────────────── */
+  /* ── 캔들 차트 섹션 ──────────────── */
   .candle-tabs {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
-    padding: 4px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid var(--hairline);
-    border-radius: 12px;
+    display: flex; gap: 6px; flex-wrap: wrap;
+    margin-bottom: 12px;
   }
   .candle-tab {
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 7px 14px;
-    font-size: 12.5px;
-    color: var(--muted-strong);
+    background: #21262d;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 13px; color: var(--muted);
     cursor: pointer;
     transition: all 0.15s;
     white-space: nowrap;
     font-family: inherit;
-    font-weight: 500;
   }
-  .candle-tab:hover { background: rgba(255,255,255,0.04); color: var(--text); }
-  .candle-tab.active {
-    background: var(--blue);
-    color: #0a0d14;
-    font-weight: 700;
-  }
-  .candle-tab .tab-rank {
-    font-size: 10.5px;
-    margin-right: 5px;
-    opacity: 0.75;
-    font-family: var(--font-mono);
-  }
+  .candle-tab:hover { border-color: var(--blue); color: var(--text); }
+  .candle-tab.active { background: var(--blue); border-color: var(--blue); color: #0d1117; font-weight: 700; }
+  .candle-tab .tab-rank { font-size: 11px; margin-right: 5px; opacity: 0.75; }
 
   .pattern-badges {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    min-height: 26px;
-    align-items: center;
+    display: flex; gap: 8px; flex-wrap: wrap;
+    margin-bottom: 10px; min-height: 26px; align-items: center;
   }
   .pattern-badge {
-    font-size: 11.5px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    font-weight: 600;
-    white-space: nowrap;
+    font-size: 12px; padding: 3px 10px;
+    border-radius: 12px; font-weight: 600; white-space: nowrap;
   }
-  .pattern-bullish { background: var(--green-soft); color: var(--green); border: 1px solid rgba(63,201,112,0.35); }
-  .pattern-bearish { background: var(--red-soft); color: var(--red); border: 1px solid rgba(246,106,106,0.35); }
-  .pattern-warning { background: var(--gold-soft); color: var(--gold); border: 1px solid rgba(240,180,41,0.35); }
+  .pattern-bullish { background: rgba(46,160,67,0.2);  color: #3fb950; border: 1px solid rgba(46,160,67,0.4); }
+  .pattern-bearish { background: rgba(218,54,51,0.2);  color: #f85149; border: 1px solid rgba(218,54,51,0.4); }
+  .pattern-warning { background: rgba(210,153,34,0.2); color: #d29922; border: 1px solid rgba(210,153,34,0.4); }
   .pattern-none { font-size: 12px; color: var(--muted); }
 
-  #candle-chart-wrap {
+  #marker-summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  #marker-summary .ms-title {
+    font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 13px;
+  }
+  #marker-summary .ms-list {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .ms-item {
+    display: flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 10px;
+    font-size: 11px; font-weight: 600; white-space: nowrap;
+  }
+  .ms-bullish { background: rgba(33,150,243,0.15); color: #64b5f6; border: 1px solid rgba(33,150,243,0.35); }
+  .ms-bearish { background: rgba(239,83,80,0.15);  color: #ef9a9a; border: 1px solid rgba(239,83,80,0.35); }
+  .ms-vpa     { background: rgba(255,152,0,0.15);  color: #ffb74d; border: 1px solid rgba(255,152,0,0.35); }
+  .ms-neutral { background: rgba(158,158,158,0.15);color: #bdbdbd; border: 1px solid rgba(158,158,158,0.35); }
+
+  /* ── 4구간 매매전략 패널 ──────────────── */
+  .four-phase-panel {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 14px 14px 0 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  .four-phase-panel .fp-title {
+    font-weight: 700; color: var(--text); margin-bottom: 10px; font-size: 13px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .fp-cards {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px;
+  }
+  @media (max-width: 650px) { .fp-cards { grid-template-columns: repeat(2, 1fr); } }
+  .fp-card {
+    background: #0d1117; border-radius: 6px; padding: 10px 12px;
+    border-left: 3px solid var(--border); opacity: 0.5; transition: all 0.2s;
+  }
+  .fp-card.active { opacity: 1; }
+  .fp-card.phase-1.active { border-left-color: #da3633; }
+  .fp-card.phase-2.active { border-left-color: #d29922; }
+  .fp-card.phase-3.active { border-left-color: #58a6ff; }
+  .fp-card.phase-4.active { border-left-color: #2ea043; }
+  .fp-card.completed { opacity: 0.75; }
+  .fp-card .fp-num { font-size: 11px; color: var(--muted); }
+  .fp-card .fp-name { font-size: 13px; font-weight: 600; color: var(--text); margin-top: 2px; }
+  .fp-card .fp-val { font-size: 16px; font-weight: 700; margin-top: 4px; }
+  .fp-card .fp-val.c1 { color: #da3633; }
+  .fp-card .fp-val.c2 { color: #d29922; }
+  .fp-card .fp-val.c3 { color: #58a6ff; }
+  .fp-card .fp-val.c4 { color: #2ea043; }
+  .fp-detail {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 12px;
+  }
+  .fp-bar-wrap {
+    display: flex; align-items: center; gap: 6px; flex: 1; min-width: 200px;
+  }
+  .fp-bar {
+    flex: 1; height: 6px; border-radius: 3px; background: #21262d; position: relative; overflow: hidden;
+  }
+  .fp-bar-inner { height: 100%; border-radius: 3px; transition: width 0.3s; }
+  .fp-check { font-size: 12px; padding: 2px 8px; border-radius: 10px; font-weight: 600; white-space: nowrap; }
+  .fp-check.ok { background: rgba(46,160,67,0.2); color: #3fb950; border: 1px solid rgba(46,160,67,0.4); }
+  .fp-check.ng { background: rgba(218,54,51,0.2); color: #f85149; border: 1px solid rgba(218,54,51,0.4); }
+  .fp-check.info { background: rgba(88,166,255,0.15); color: #58a6ff; border: 1px solid rgba(88,166,255,0.35); }
+
+  #candle-chart-wrap {
+    background: #161b22;
+    border: 1px solid var(--border);
+    border-radius: 10px 10px 0 0;
     overflow: hidden;
     height: 440px;
   }
   #candle-chart { height: 100%; }
+
   #candle-rsi-wrap {
-    background: var(--card);
-    border: 1px solid var(--hairline);
+    background: #161b22;
+    border: 1px solid var(--border);
     border-top: none;
-    border-radius: 0 0 14px 14px;
+    border-radius: 0 0 10px 10px;
     overflow: hidden;
     height: 120px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   #candle-rsi { height: 100%; }
 
   .candle-legend {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    font-size: 12px;
-    color: var(--muted);
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-top: 8px; font-size: 12px; color: var(--muted);
     align-items: center;
   }
+  .candle-legend-item { display: flex; align-items: center; gap: 5px; }
 
-  /* ── 재무 카드 ──────────────────── */
+  /* ── 섹션 6: 재무 정보 ──────────────── */
   .fin-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
   }
   .fin-card {
     background: var(--card);
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-    padding: 18px 20px;
-    transition: border-color 0.2s;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
   }
-  .fin-card:hover { border-color: var(--hairline-hi); }
   .fin-card-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 14px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--hairline-lo);
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
   }
   .fin-rank {
     font-size: 11px;
     font-weight: 700;
-    color: var(--blue);
-    background: var(--blue-soft);
-    border: 1px solid rgba(91,157,255,0.25);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-family: var(--font-mono);
+    color: var(--muted);
   }
   .fin-company {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--text);
     flex: 1;
-    letter-spacing: -0.015em;
   }
   .fin-code {
     font-size: 11px;
     color: var(--muted);
-    font-family: var(--font-mono);
-  }
-  .fin-industry {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-    padding: 8px 12px;
-    background: rgba(255,255,255,0.02);
-    border-radius: 8px;
-    flex-wrap: wrap;
-  }
-  .fin-industry-label {
-    font-size: 10.5px;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 600;
-    flex-shrink: 0;
-  }
-  .fin-industry-name {
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--text);
   }
   .fin-metrics {
     display: grid;
@@ -1162,253 +521,158 @@
     gap: 8px;
   }
   .fin-metric {
-    background: var(--card-inner);
-    border: 1px solid var(--hairline-lo);
-    border-radius: 10px;
-    padding: 10px 12px;
+    background: #0d1117;
+    border-radius: 6px;
+    padding: 8px 10px;
   }
   .fin-metric-label {
-    font-size: 10.5px;
+    font-size: 11px;
     color: var(--muted);
-    margin-bottom: 4px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 600;
+    margin-bottom: 2px;
   }
   .fin-metric-value {
     font-size: 15px;
     font-weight: 700;
     color: var(--text);
-    font-family: var(--font-mono);
-    letter-spacing: -0.01em;
   }
-  .fin-metric-value.good { color: var(--green); }
-  .fin-metric-value.warn { color: var(--red); }
+  .fin-metric-value.good  { color: var(--green); }
+  .fin-metric-value.warn  { color: var(--red); }
   .fin-metric-value.neutral { color: var(--yellow); }
   .fin-naver-link {
     display: inline-block;
     margin-top: 12px;
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--blue);
     text-decoration: none;
-    opacity: 0.9;
+    opacity: 0.8;
   }
-  .fin-naver-link:hover { text-decoration: underline; opacity: 1; }
+  .fin-naver-link:hover { opacity: 1; text-decoration: underline; }
+  .fin-industry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    background: #0d1117;
+    border-radius: 6px;
+    flex-wrap: wrap;
+  }
+  .fin-industry-label {
+    font-size: 11px;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  .fin-industry-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+  }
   .fin-fiscal {
-    font-size: 10.5px;
+    font-size: 11px;
     color: var(--muted);
     margin-left: 6px;
-    font-family: var(--font-mono);
   }
-  .fin-empty { color: var(--muted); font-size: 13px; padding: 20px 0; }
-
-  /* ── 스크롤바 ──────────────────── */
-  ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.08);
-    border-radius: 4px;
+  .section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
   }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
-
-  /* ── 유틸 ───────────────────────── */
-  .mono { font-family: var(--font-mono); }
-
-  /* ── 애니메이션 ───────────────── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
+  .section-title-row .section-title {
+    margin-bottom: 0;
   }
-  .hero, .exec { animation: fadeUp 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-  .exec { animation-delay: 0.1s; }
+  .fin-legend {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .fin-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .fin-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .fin-empty {
+    color: var(--muted); font-size: 13px; padding: 20px 0;
+  }
+
+  /* ── 스크롤바 ────────────────────── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 </style>
 </head>
 <body>
 
-<div class="shell">
-
-  <!-- ═══════════════════════════════════════
-       HERO : 브랜드 + 메타 + 섹션 네비
-       ═══════════════════════════════════════ -->
-  <div class="hero">
-    <div class="hero-top">
-      <div class="hero-brand">
-        <div class="eyebrow">Weekly Research Dashboard</div>
-        <h1><span class="logo-dot"></span>주간 투자 리서치 대시보드</h1>
-        <div class="hero-meta">
-          <span class="pill"><span class="pill-label">기간</span><span class="pill-value" id="hdr-period">04.06 ~ 04.10</span></span>
-          <span class="pill"><span class="pill-label">업데이트</span><span class="pill-value" id="hdr-updated">2026-04-10 10:36</span></span>
-        </div>
-      </div>
-
-      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-        <nav class="nav-tabs" id="nav-tabs">
-          <button class="nav-tab active" data-target="sec-exec">개요</button>
-          <button class="nav-tab" data-target="sec-top5">TOP10</button>
-          <button class="nav-tab" data-target="sec-industry">산업 동향</button>
-          <button class="nav-tab" data-target="sec-perf">성과 검증</button>
-          <button class="nav-tab" data-target="sec-candle">차트 해설</button>
-          <button class="nav-tab" data-target="sec-financial">재무 해석</button>
-        </nav>
-        <select id="week-select"></select>
-      </div>
-    </div>
+<header>
+  <h1><svg width="40" height="40" viewBox="0 0 64 64" style="vertical-align:middle;margin-right:6px"><polygon points="32,6 54,18.7 54,44.3 32,57 10,44.3 10,18.7" fill="none" stroke="#DAA520" stroke-width="3"/><polygon points="32,10 50,20.4 50,41.6 32,52 14,41.6 14,20.4" fill="none" stroke="#f0b429" stroke-width="1.5" opacity=".5"/><polyline points="16,40 24,32 32,36 42,20 48,14" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="14" r="2.5" fill="#58a6ff"/><text x="18" y="38" font-family="Arial,sans-serif" font-size="16" font-weight="800" fill="#f0b429">WR</text></svg>주간 투자 리서치 대시보드</h1>
+  <div class="header-meta">
+    <div class="meta-pill">기간: <span id="hdr-period">—</span></div>
+    <div class="meta-pill">업데이트: <span id="hdr-updated">—</span></div>
   </div>
+  <select id="week-select"></select>
+</header>
 
-  <!-- ═══════════════════════════════════════
-       EXECUTIVE SUMMARY
-       ═══════════════════════════════════════ -->
-  <section id="sec-exec" class="exec">
-    <div class="exec-inner">
-      <div class="exec-badge">Executive Summary</div>
-
-      <h2 class="exec-headline">
-        추천 종목을<br>
-        <span class="accent">읽는 순서</span>부터 다시 설계한 리서<span class="accent">치 화면</span>
-      </h2>
-
-      <p class="exec-lead">
-        이번 버전은 단순히 종목을 많이 나열하지 않습니다. 상단에서 전략 요약과 검증 기준을 먼저
-        제시하고, 각 종목 카드는 핵심 포인트·실적 근거·리스크 메모를 동일한 구조로 정리해
-        비교 가능한 리서치 운영 화면으로 바꿉니다.
-      </p>
-
-      <div class="exec-meta">
-        <span class="pill"><span class="pill-label">데이터 기준 시점</span><span class="pill-value" id="exec-asof">2026-04-15 10:05</span></span>
-        <span class="pill"><span class="pill-label">추천</span><span class="pill-value">10종목 · 업종 핵심 섹터</span></span>
-        <span class="pill"><span class="pill-label">구성</span><span class="pill-value">성과 검증 · 차트 분석 · 재무 해석 포함</span></span>
-      </div>
-
-      <!-- ═══ 성과 스트립 ═══ -->
-      <div class="perf-strip">
-        <div class="perf-strip-item">
-          <span class="perf-strip-label">전략 누적</span>
-          <span class="perf-strip-value pos" id="kpi-return">+16.3%</span>
-          <span class="perf-strip-sub">(10종목 평균)</span>
-        </div>
-        <div class="perf-strip-item">
-          <span class="perf-strip-label">승률</span>
-          <span class="perf-strip-value blue" id="kpi-winrate">100%</span>
-          <span class="perf-strip-sub" id="kpi-winrate-detail">(10/10)</span>
-        </div>
-        <div class="perf-strip-item">
-          <span class="perf-strip-label">vs KOSPI</span>
-          <span class="perf-strip-value pos" id="kpi-alpha">+15.1%p</span>
-          <span class="perf-strip-sub">초과수익</span>
-        </div>
-        <div class="perf-strip-item">
-          <span class="perf-strip-label">최고 성과</span>
-          <span class="perf-strip-value pos" id="kpi-best">+24.3%</span>
-          <span class="perf-strip-sub" id="kpi-best-name">효성중공업</span>
-        </div>
-      </div>
-
-      <!-- ═══ 지수 카드 2장 ═══ -->
-      <div class="market-grid" id="market-grid"></div>
-
-      <!-- ═══ 시장 상황 ═══ -->
-      <div class="market-status">
-        <div class="ms-head">
-          <span class="ms-dot"></span>
-          <span class="ms-heading">시장 상황</span>
-          <span class="ms-tag">Macro Watch</span>
-        </div>
-        <div class="ms-grid">
-          <div class="ms-item">
-            <span class="ms-label">원/달러</span>
-            <span class="ms-value">1,385<span class="ms-unit">원</span></span>
-            <span class="ms-desc">전일 대비 보합 · 안정세</span>
-          </div>
-          <div class="ms-item">
-            <span class="ms-label">미 10년물</span>
-            <span class="ms-value">4.28<span class="ms-unit">%</span></span>
-            <span class="ms-desc">금리 안정세 유지</span>
-          </div>
-          <div class="ms-item">
-            <span class="ms-label">외국인 수급</span>
-            <span class="ms-value pos">+8,200<span class="ms-unit">억</span></span>
-            <span class="ms-desc">3일 연속 순매수 전환</span>
-          </div>
-          <div class="ms-item">
-            <span class="ms-label">이번 주 주목</span>
-            <span class="ms-value event">FOMC 의사록</span>
-            <span class="ms-desc">변동성 분수령 · 4/18 공개</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       TOP 10
-       ═══════════════════════════════════════ -->
+<main>
+  <!-- 섹션 1: TOP5 -->
   <section id="sec-top5">
-    <div class="section-head">
-      <div class="section-title-wrap">
-        <div class="section-index">01 / TOP 10</div>
-        <div class="section-title">유망기업 TOP 10</div>
-        <div class="section-desc">애널리스트 컨센서스 기준 상승여력 상위 종목</div>
-      </div>
-    </div>
+    <div class="section-title">① 유망기업 TOP 10</div>
     <div id="top5-container" class="top5-grid"></div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       산업 동향
-       ═══════════════════════════════════════ -->
+  <!-- 섹션 2: 산업 동향 -->
   <section id="sec-industry">
-    <div class="section-head">
-      <div class="section-title-wrap">
-        <div class="section-index">02 / SECTOR</div>
-        <div class="section-title">전체 산업 동향</div>
-        <div class="section-desc">핵심 6개 섹터의 투자의견 · 키워드 · 주요 이슈</div>
-      </div>
-      <div class="section-legend">
-        <span class="opinion-badge badge-overweight">Overweight</span><span>비중확대</span>
-        <span class="opinion-badge badge-neutral">Neutral</span><span>중립</span>
+    <div class="section-title-row">
+      <div class="section-title">② 전체 산업 동향</div>
+      <div class="fin-legend">
+        <span class="fin-legend-item"><span class="opinion-badge badge-overweight" style="font-size:11px;padding:2px 8px">Overweight</span>비중확대</span>
+        <span class="fin-legend-item"><span class="opinion-badge badge-neutral" style="font-size:11px;padding:2px 8px">Neutral</span>중립</span>
       </div>
     </div>
     <div id="industry-container" class="industry-grid"></div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       성과 검증
-       ═══════════════════════════════════════ -->
+  <!-- 섹션 3: 추천 성과 추적 -->
   <section id="sec-perf">
-    <div class="section-head">
-      <div class="section-title-wrap">
-        <div class="section-index">03 / PERFORMANCE</div>
-        <div class="section-title">추천 성과 추적</div>
-        <div class="section-desc">추천가 대비 현재가 · 목표가 달성 여부</div>
-      </div>
-    </div>
+    <div class="section-title">③ 추천 성과 추적</div>
     <div id="perf-summary-grid" class="perf-summary-grid"></div>
     <div id="perf-updated" class="perf-updated"></div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>추천일</th><th>순위</th><th>종목명</th><th>종목코드</th>
-            <th>추천가</th><th>목표가</th><th>현재가</th><th>수익률</th><th>목표달성</th>
+            <th>추천일</th>
+            <th>순위</th>
+            <th>종목명</th>
+            <th>종목코드</th>
+            <th>추천가</th>
+            <th>목표가</th>
+            <th>현재가</th>
+            <th>수익률</th>
+            <th>목표달성</th>
           </tr>
         </thead>
         <tbody id="perf-tbody"></tbody>
       </table>
     </div>
+  </section>
 
-    <div class="section-head" style="margin-top:36px">
-      <div class="section-title-wrap">
-        <div class="section-index">03.1 / HISTORY</div>
-        <div class="section-title">주차별 히스토리</div>
-      </div>
-    </div>
+  <!-- 섹션 4: 히스토리 -->
+  <section id="sec-history">
+    <div class="section-title">④ 주차별 히스토리</div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
             <th>주차</th>
-            <th>1위</th><th>2위</th><th>3위</th><th>4위</th><th>5위</th>
-            <th>6위</th><th>7위</th><th>8위</th><th>9위</th><th>10위</th>
+            <th>1위</th><th>2위</th><th>3위</th><th>4위</th><th>5위</th><th>6위</th><th>7위</th><th>8위</th><th>9위</th><th>10위</th>
             <th>평균상승여력</th>
           </tr>
         </thead>
@@ -1417,69 +681,59 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       차트 해설
-       ═══════════════════════════════════════ -->
+  <!-- 섹션 5: 캔들 차트 -->
   <section id="sec-candle">
-    <div class="section-head">
-      <div class="section-title-wrap">
-        <div class="section-index">04 / CHART</div>
-        <div class="section-title">TOP10 종목 캔들 차트</div>
-        <div class="section-desc">패턴 · 4단계 매매전략 · 엘리어트 파동 분석</div>
-      </div>
-    </div>
+    <div class="section-title">⑤ TOP10 종목 캔들 차트</div>
     <div id="candle-tabs" class="candle-tabs"></div>
     <div id="candle-patterns" class="pattern-badges"></div>
+    <div id="four-phase-panel" class="four-phase-panel" style="display:none">
+      <div class="fp-title">4단계 매매전략 분석 <span id="fp-phase-badge" class="fp-check info"></span></div>
+      <div id="fp-cards" class="fp-cards"></div>
+      <div id="fp-detail" class="fp-detail"></div>
+    </div>
+    <div id="elliott-wave" style="display:none"><div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px"><div style="font-weight:700;color:var(--text);margin-bottom:6px;font-size:13px">엘리어트 파동 분석</div><div id="elliott-wave-content"></div></div></div>
+    <div id="marker-summary" style="display:none">
+      <div class="ms-title">최근 감지된 주요 패턴</div>
+      <div id="marker-summary-list" class="ms-list"></div>
+    </div>
     <div id="candle-chart-wrap"><div id="candle-chart"></div></div>
     <div id="candle-rsi-wrap"><div id="candle-rsi"></div></div>
     <div class="candle-legend">
-      <span>▲ 20일 이동평균</span>
-      <span>▲ 60일 이동평균</span>
-      <span>▲ 거래량</span>
+      <span class="candle-legend-item"><span style="color:#ef5350;font-size:15px">■</span> 양봉 (상승)</span>
+      <span class="candle-legend-item"><span style="color:#1565C0;font-size:15px">■</span> 음봉 (하락)</span>
+      <span class="candle-legend-item"><span style="color:#58a6ff">┄</span> 추천가</span>
+      <span class="candle-legend-item"><span style="color:#f0b429">┄</span> 목표가</span>
+      <span class="candle-legend-item"><span style="color:#da3633">┄</span> 손절 -10%</span>
+      <span class="candle-legend-item"><span style="color:#2ea043">─</span> MA111</span>
+      <span class="candle-legend-item"><span style="color:#f0b429">─</span> MA224</span>
+      <span class="candle-legend-item"><span style="color:#555555">┄</span> MA448</span>
+      <span class="candle-legend-item"><span style="color:#6e7681">─</span> BB 하단</span>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       재무 해석
-       ═══════════════════════════════════════ -->
+  <!-- 섹션 6: TOP5 재무 정보 -->
   <section id="sec-financial">
-    <div class="section-head">
-      <div class="section-title-wrap">
-        <div class="section-index">05 / FINANCIALS</div>
-        <div class="section-title">재무 지표 해석</div>
-        <div class="section-desc">업종 기준 벤치마크 대비 PER · PBR · ROE · 부채비율 등</div>
-      </div>
-      <div class="section-legend">
-        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--green)"></span>우수</span>
-        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--yellow)"></span>중립</span>
-        <span style="display:inline-flex; align-items:center; gap:5px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--red)"></span>주의</span>
+    <div class="section-title-row">
+      <div class="section-title">⑥ TOP10 종목 재무 정보</div>
+      <div class="fin-legend">
+        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--green)"></span>우수</span>
+        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--yellow)"></span>보통</span>
+        <span class="fin-legend-item"><span class="fin-legend-dot" style="background:var(--red)"></span>위험</span>
       </div>
     </div>
     <div id="financial-container" class="fin-grid"></div>
   </section>
-
-</div>
+</main>
 
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
-
 let DASHBOARD_DATA = /*__DASHBOARD_DATA__*/null;
 if (!DASHBOARD_DATA) {
   fetch('dashboard_data.json')
-    .then(r => r.text())
-    .then(text => {
-      const clean = text
-        .replace(/:NaN/g, ':null')
-        .replace(/: NaN/g, ': null')
-        .replace(/:Infinity/g, ':null')
-        .replace(/:-Infinity/g, ':null');
-      return JSON.parse(clean);
-    })
+    .then(r => r.json())
     .then(data => { DASHBOARD_DATA = data; initDashboard(); })
-    .catch(e => {
-      const el = document.querySelector('main') || document.body;
-      el.innerHTML = '<div style="padding:80px;text-align:center;color:#da3633">오류: ' + (e.message || e) + '</div>';
-    });
+    .catch(e => document.querySelector('main').innerHTML =
+      '<div style="padding:80px;text-align:center;color:#da3633">데이터 로드 실패.<br>python -m http.server 8080 으로 실행해 주세요.</div>');
 }
 
 // ── 유틸 ─────────────────────────────
@@ -2512,8 +1766,8 @@ function initDashboard() {
 
 document.addEventListener('DOMContentLoaded', () => {
   if (DASHBOARD_DATA) initDashboard();
+  // fetch 방식이면 위 fetch 콜백에서 자동 실행됨
 });
 </script>
 </body>
-
 </html>
