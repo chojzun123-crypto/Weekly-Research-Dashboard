@@ -1138,27 +1138,14 @@ def fetch_performance_data(weeks: list[dict]) -> list[dict]:
     return records
 
 
-def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: dict,
-                         market: dict | None = None) -> str:
-    def _clean(obj):
-        """NaN / Infinity → None (JSON 표준 준수)"""
-        if isinstance(obj, float):
-            if math.isnan(obj) or math.isinf(obj):
-                return None
-        if isinstance(obj, dict):
-            return {k: _clean(v) for k, v in obj.items()}
-        if isinstance(obj, list):
-            return [_clean(v) for v in obj]
-        return obj
-
+def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: dict) -> str:
     payload = {
         "weeks": weeks,
         "performance": performance,
         "perf_updated_at": datetime.now().isoformat(timespec="seconds"),
         "candles": candles,
-        "market": market or {},
     }
-    return json.dumps(_clean(payload), ensure_ascii=False, separators=(",", ":"))
+    return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
 def render_dashboard(data_json: str, use_fetch: bool = False) -> str:
@@ -1167,6 +1154,7 @@ def render_dashboard(data_json: str, use_fetch: bool = False) -> str:
     html = TEMPLATE.read_text(encoding="utf-8")
     if not use_fetch:
         html = html.replace("/*__DASHBOARD_DATA__*/null", data_json, 1)
+    # use_fetch=True 이면 null 그대로 둠 → template의 fetch가 처리
     return html
 
 
@@ -1894,14 +1882,7 @@ def main() -> None:
     candles = fetch_candle_data(weeks)
     print(f"  캔들 데이터: {len(candles)}개 종목")
 
-    print("시장 지수·매크로 조회 중...")
-    try:
-        market = fetch_market_data()
-    except Exception as e:
-        print(f"  [경고] 시장 데이터 조회 실패: {e}")
-        market = {}
-
-    data_json = build_dashboard_data(weeks, performance, candles, market)
+    data_json = build_dashboard_data(weeks, performance, candles)
 
     # JSON 데이터 파일 따로 저장
     json_path = out_path.parent / "dashboard_data.json"
