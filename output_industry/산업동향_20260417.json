@@ -3,20 +3,20 @@
     "report_type": "industry",
     "start_date": "2026-04-13",
     "end_date": "2026-04-17",
-    "generated_at": "2026-04-17T16:10:03",
+    "generated_at": "2026-04-20T05:10:05",
     "analysis_days": 5
   },
   "stats": {
-    "total_reports": 191,
+    "total_reports": 194,
     "covered_industries": 35,
     "overweight_industries": 24
   },
   "industries": [
     {
       "industry_name": "은행",
-      "report_count": 15,
-      "overweight_ratio": 0.2,
-      "overweight_ratio_pct": 20,
+      "report_count": 16,
+      "overweight_ratio": 0.1875,
+      "overweight_ratio_pct": 19,
       "opinion": "Neutral",
       "main_institutions": "삼성, 교보, 메리츠",
       "bullets": [
@@ -26,28 +26,16 @@
     },
     {
       "industry_name": "반도체와반도체장비",
-      "report_count": 12,
-      "overweight_ratio": 0.4166666666666667,
-      "overweight_ratio_pct": 42,
+      "report_count": 13,
+      "overweight_ratio": 0.38461538461538464,
+      "overweight_ratio_pct": 38,
       "opinion": "Overweight",
-      "main_institutions": "DB, 유진투자, 그로쓰리서치",
+      "main_institutions": "DB, 교보, 유진투자",
       "bullets": [
-        "3월 대만 Tech 매출: 1Q26 보다 2Q26E를 더 기대 3월 대만 주요 Tech 품목의 MoM 및 YoY 증감률 ▶ 반도체: 견조한 반도체 업황 지속 ▶ 전기전자: 1Q26보다 2Q26E를 더 기대 Memory Watch - AI 추론 확대로 재조명되는 인텔 인텔",
-        "구글 IPU 개발 협력 ▶ 인텔, 국가 전략 인프라 자산으로 진화 이제 GPU보다 더 중요한 인프라, 연결 AI 인프라의 새로운 병목: 연산에서 연결로 ▶ 패러다임의 전환: CPO의 도입 ▶ CPO 생태계의 본격화 2027년~2028년, AI CapEx 증가율 둔화 AI CapEx, 2027년~2028년 증가율 둔화2분기도 상향 가능성 농후 데이터 포인트 및 주간 리뷰: 이란 사태 휴전 및 삼성전자 호실적으로 반등 ▶ 전망 및 전략: 비중확대 지속 추천"
+        "3월 대만 Tech 매출: 1Q26 보다 2Q26E를 더 기대 3월 대만 주요 Tech 품목의 MoM 및 YoY 증감률 ▶ 반도체: 견조한 반도체 업황 지속 ▶ 전기전자: 1Q26보다 2Q26E를 더 기대 2026년 4월 둘째 주 반도체 Weekly 이란-미국 종전 협상 진행되며 코스피, 코스닥 1주일 누적 외국인 순매수로 전환4/10 기준 298조원 ▶ 대만 IT 기업 3월 매출액 Nanya MoM +16%, Quanta MoM +68% 등 ATH 지속 Memory Watch - AI 추론 확대로 재조명되는 인텔 인텔",
+        "구글 IPU 개발 협력 ▶ 인텔, 국가 전략 인프라 자산으로 진화 이제 GPU보다 더 중요한 인프라, 연결 AI 인프라의 새로운 병목: 연산에서 연결로 ▶ 패러다임의 전환: CPO의 도입 ▶ CPO 생태계의 본격화 2027년~2028년, AI CapEx 증가율 둔화 AI CapEx, 2027년~2028년 증가율 둔화"
       ],
       "keyword": "지속력도 강화 ▶ 삼성전자와 SK하이닉스 목표주가 상향"
-    },
-    {
-      "industry_name": "전자장비와기기",
-      "report_count": 11,
-      "overweight_ratio": 0.45454545454545453,
-      "overweight_ratio_pct": 45,
-      "opinion": "Overweight",
-      "main_institutions": "교보, 메리츠, 하나",
-      "bullets": [
-        "2026년 4월 둘째 주 반도체 Weekly 이란-미국 종전 협상 진행되며 코스피, 코스닥 1주일 누적 외국인 순매수로 전환 ▶ 삼성전자 1Q26 호실적 발표 이후 FY26 영업이익 컨센서스 급증4/10 기준 298조원 ▶ 대만 IT 기업 3월 매출액 Nanya MoM +16%, Quanta MoM +68% 등 ATH 지속 3월 대만 IT 동향: 전부 다 좋았다 대다수 대만 IT 업체들의 3월 매출은 견조한 성장 모멘텀을 시현했으며, 특히 AI 공급망 중심으로 가파른 성장세가 지속되고 있음이 확인 ▶패닉바잉과 더블부킹) 아직 패닉바잉과 더블부킹은 시작되지 않았다 CATL 1Q26 Review CATL 1Q26 Review: ESS 판매량 +110% YoY 증가 ▶ 이차전지 산업 최선호주 CATL: 중국 외 시장 지배력 ↑ 애플이 2027년에도 아이폰 생산량을 늘린다면? 애플 아이폰, 소비 수요 부진에도 견조한 출하량 & 늘어나는 생산량"
-      ],
-      "keyword": "2026년 4월 둘째 주 반도체 Weekly 이란-미국 종전 협상 진행되"
     },
     {
       "industry_name": "조선",
@@ -75,6 +63,32 @@
       "keyword": "화장품 수출 데이터북-2026년 4월 1-10일 잠정치 Weekly Co"
     },
     {
+      "industry_name": "판매업체",
+      "report_count": 10,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 신한투자, 한국투자",
+      "bullets": [
+        "Retail Weekly Traffic 소비는 여전히 맑음 소비심리 호조 지속, 백화점의 성장성 부각 ▶ 소비심리 호조, 1Q26 유통 업종 실적 긍정적-구조적 변화의 사다리 백화점: 답은 이미 나와있다 ▶ 대형마트: 새벽배송보다 중요한 것 ▶ 이커머스: 검색의 시작점이 이동한다 ▶ 편의점: 담배 끊기 힘드네요 역풍 속에 피는 꽃, 트레이드다운 트레이드다운, 반짝 사이클이 아닌 ‘구조적 변화’"
+      ],
+      "keyword": "Retail Weekly Traffic 소비는 여전히 맑음 소비심리 호조"
+    },
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 10,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 하나, 다올투자",
+      "bullets": [
+        "3월 대만 IT 동향: 전부 다 좋았다 대다수 대만 IT 업체들의 3월 매출은 견조한 성장 모멘텀을 시현했으며, 특히 AI 공급망 중심으로 가파른 성장세가 지속되고 있음이 확인 ▶ ▶ Weekly 이배속 : 배터리 비중 확대 필요 데이터 포인트 해석 및 투자 전략 : 셀 메이커와 ESS 소형주",
+        "패닉바잉과 더블부킹) 아직 패닉바잉과 더블부킹은 시작되지 않았다 CATL 1Q26 Review CATL 1Q26 Review: ESS 판매량 +110% YoY 증가 ▶ 이차전지 산업 최선호주 CATL: 중국 외 시장 지배력 ↑ 애플이 2027년에도 아이폰 생산량을 늘린다면? 애플 아이폰, 소비 수요 부진에도 견조한 출하량 & 늘어나는 생산량",
+        "길어질 수밖에 없는 Cycle 3월 ESS Battery : 유럽 Grid ESS 증가 지역별 ESS 배터리 신규 설치량 ▶ 전력망(Grid) 시장 내 연계 유형별 ESS 배터리 신규 설치량 ▶ 글로벌 ESS 케미스트리별 신규 설치 비중 양극재 3월 수출액 코멘트 양극재 수출량 점진적인 회복세 지속 2차전지 Weekly"
+      ],
+      "keyword": "3월 대만 IT 동향: 전부 다 좋았다 대다수 대만 IT 업체들의 3월"
+    },
+    {
       "industry_name": "자동차",
       "report_count": 10,
       "overweight_ratio": 0.2,
@@ -87,18 +101,6 @@
         "고유가 시대가 중장기화될 가능성이 높아지며, 전기차 소비 급증 ▶ 현대기아의 EV밸류체인 및 Tesla의 밸류체인에 대한 수혜 기대 ▶ 기아의 경우, 이미 대규모 EV판매 반등세가 확인되었고, Tesla의 경우 4월 들어서 미국 EV M/S 급반등에 따른 국내 자동차 부품업체 수혜 기대"
       ],
       "keyword": "HMG 미래 모빌리티(로봇/SDV) 전략의 수혜 (로보틱스) 상용화 추진"
-    },
-    {
-      "industry_name": "판매업체",
-      "report_count": 10,
-      "overweight_ratio": 0.5,
-      "overweight_ratio_pct": 50,
-      "opinion": "Overweight",
-      "main_institutions": "메리츠, 신한투자, 한국투자",
-      "bullets": [
-        "Retail Weekly Traffic 소비는 여전히 맑음 소비심리 호조 지속, 백화점의 성장성 부각 ▶ 소비심리 호조, 1Q26 유통 업종 실적 긍정적-구조적 변화의 사다리 백화점: 답은 이미 나와있다 ▶ 대형마트: 새벽배송보다 중요한 것 ▶ 이커머스: 검색의 시작점이 이동한다 ▶ 편의점: 담배 끊기 힘드네요 역풍 속에 피는 꽃, 트레이드다운 트레이드다운, 반짝 사이클이 아닌 ‘구조적 변화’"
-      ],
-      "keyword": "Retail Weekly Traffic 소비는 여전히 맑음 소비심리 호조"
     },
     {
       "industry_name": "건설",
@@ -188,24 +190,10 @@
       "keyword": ""
     },
     {
-      "industry_name": "철강",
-      "report_count": 5,
-      "overweight_ratio": 0.2,
-      "overweight_ratio_pct": 20,
-      "opinion": "Neutral",
-      "main_institutions": "삼성, 하나, 상상인",
-      "bullets": [
-        "내수 가격 반등으로 2Q26 실적 개선 기대 철강 시황 변화를 크게 야기하긴 어려운 중국 양회 결과 ▶ 한국 철강 가격 회복에 거는 기대 ▶ 비철금속 가격은 견고할 것 철강금속 Weekly: 글로벌 철강가격 강세 기조 유지 전망 국내 철강 유통가격: 주요 제품 5주 연속 상승, 수입 감소 혹은 감산 영향으로 급격하게 타이트해진 재고가 원인",
-        "리튬 근황 철강/비철금속 Blink Report 제한적 반등 국면 Macro: 중동 리스크 완화로 ‘제한적’ 반등 국면 ▶ 귀금속/비철금속: 귀금속이 가장 유망",
-        "공급 차질에 따른 ‘품목별’ 가격 강세 ▶ 철강: 중국 부진 지속 전망"
-      ],
-      "keyword": "공급 차질에 따른 ‘품목별’ 가격 강세 ▶ 철강: 중국 부진 지속 전망"
-    },
-    {
       "industry_name": "방송과엔터테인먼트",
-      "report_count": 5,
-      "overweight_ratio": 0.6,
-      "overweight_ratio_pct": 60,
+      "report_count": 6,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
       "opinion": "Overweight",
       "main_institutions": "하나, 신한투자, 유진투자",
       "bullets": [
@@ -226,6 +214,20 @@
         "하반기 원가 부담 확대 경계 필요 1Q26 Pre: 실적은 분기별 편차, 수주는 레벨업 당사 커버리지 6개사 합산 기준 매출액 5조 4,728억원(YoY +20"
       ],
       "keyword": ""
+    },
+    {
+      "industry_name": "철강",
+      "report_count": 5,
+      "overweight_ratio": 0.2,
+      "overweight_ratio_pct": 20,
+      "opinion": "Neutral",
+      "main_institutions": "삼성, 하나, 상상인",
+      "bullets": [
+        "내수 가격 반등으로 2Q26 실적 개선 기대 철강 시황 변화를 크게 야기하긴 어려운 중국 양회 결과 ▶ 한국 철강 가격 회복에 거는 기대 ▶ 비철금속 가격은 견고할 것 철강금속 Weekly: 글로벌 철강가격 강세 기조 유지 전망 국내 철강 유통가격: 주요 제품 5주 연속 상승, 수입 감소 혹은 감산 영향으로 급격하게 타이트해진 재고가 원인",
+        "리튬 근황 철강/비철금속 Blink Report 제한적 반등 국면 Macro: 중동 리스크 완화로 ‘제한적’ 반등 국면 ▶ 귀금속/비철금속: 귀금속이 가장 유망",
+        "공급 차질에 따른 ‘품목별’ 가격 강세 ▶ 철강: 중국 부진 지속 전망"
+      ],
+      "keyword": "공급 차질에 따른 ‘품목별’ 가격 강세 ▶ 철강: 중국 부진 지속 전망"
     },
     {
       "industry_name": "에너지장비및서비스",
@@ -265,27 +267,15 @@
       "keyword": "1Q Preview: 기대만큼 빠르지 못한 업황회복 속도 1Q 실적 컨센"
     },
     {
-      "industry_name": "부동산",
-      "report_count": 3,
-      "overweight_ratio": 0.0,
-      "overweight_ratio_pct": 0,
-      "opinion": "",
-      "main_institutions": "삼성, NH투자, LS",
-      "bullets": [
-        "대체투자 Weekly - 지방 데이터센터 개발 증가 선벨트 물류센터 수급 회복 가시화 주간 글로벌 리츠 +355%, 미-이란 휴전 소식에 리츠 지수 반등 ▶ 미국 산업용 부동산: 선벨트 중심의 수요 회복과 AI 관련 임차 수요에 주목 부동산 Weekly Data"
-      ],
-      "keyword": "대체투자 Weekly - 지방 데이터센터 개발 증가 선벨트 물류센터 수급"
-    },
-    {
       "industry_name": "무선통신서비스",
-      "report_count": 3,
-      "overweight_ratio": 0.6666666666666666,
-      "overweight_ratio_pct": 67,
+      "report_count": 4,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
       "opinion": "Overweight",
-      "main_institutions": "메리츠, 신한투자, 삼성",
+      "main_institutions": "메리츠, 신한투자, 대신",
       "bullets": [
         "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이끌까 실적, 규제, 주주환원 삼박자",
-        "완만한 주가 상승 기대 ▶ 1Q26 Preview: 무난한 실적 예상 ▶ 이슈 점검: SK텔레콤 엔트로픽 지분가치 부각 달라진 시선: 안정에서 성장으로 재평가되는 통신의 본질 가치 ▶ 정상화를 넘어 리레이팅 구간 진입 ▶ 통신 3사: 1Q26 실적 preview"
+        "완만한 주가 상승 기대 ▶ 1Q26 Preview: 무난한 실적 예상 ▶ 이슈 점검: SK텔레콤 엔트로픽 지분가치 부각 통신서비스 업종 주간 동향 주가 코멘트: 통신을 장기투자 하세요 ▶ 통신 주간 +3지수를 거의 다 따라 잡음 ▶ 2/27 지정학 이슈 부각 후 기준으로는 통신이 확실한 아웃퍼폼"
       ],
       "keyword": "Meritz 통신서비스 Weekly 엔트로픽과 AIDC가 멀티플 상승 이"
     },
@@ -302,6 +292,18 @@
         "좋았던 거래대금마저 지속 가능성에 의문 생길 수 있는 국면"
       ],
       "keyword": "순간이 아닌 그 너머까지 1Q26E 실적은 대체로 양호할 전망"
+    },
+    {
+      "industry_name": "부동산",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성, NH투자, LS",
+      "bullets": [
+        "대체투자 Weekly - 지방 데이터센터 개발 증가 선벨트 물류센터 수급 회복 가시화 주간 글로벌 리츠 +355%, 미-이란 휴전 소식에 리츠 지수 반등 ▶ 미국 산업용 부동산: 선벨트 중심의 수요 회복과 AI 관련 임차 수요에 주목 부동산 Weekly Data"
+      ],
+      "keyword": "대체투자 Weekly - 지방 데이터센터 개발 증가 선벨트 물류센터 수급"
     },
     {
       "industry_name": "건강관리장비와용품",
