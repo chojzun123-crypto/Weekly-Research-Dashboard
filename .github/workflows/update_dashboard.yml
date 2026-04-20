@@ -41,6 +41,8 @@ jobs:
           python generate_dashboard.py $ARGS
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
       - name: 결과 저장 & 푸시
         run: |
           git config user.name "github-actions"
@@ -48,5 +50,10 @@ jobs:
           git add dashboard.html dashboard_data.json   # ← dashboard_data.json 추가
           git add -A output_top5/ output_industry/ 2>/dev/null || true
           git commit -m "주간 리포트 업데이트: $(date '+%Y-%m-%d')" || echo "변경 없음"
-          git pull --rebase origin main
-          git push
+          # 생성 산출물은 매번 재생성되므로 충돌 시 봇 버전(theirs) 채택
+          git pull --rebase -X theirs origin main || (
+            git checkout --theirs dashboard.html dashboard_data.json 2>/dev/null || true
+            git add dashboard.html dashboard_data.json
+            GIT_EDITOR=true git rebase --continue || git rebase --abort
+          )
+          git push || echo "푸시할 변경사항 없음"

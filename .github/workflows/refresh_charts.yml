@@ -22,11 +22,19 @@ jobs:
         run: python generate_dashboard.py --no-open
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
       - name: 결과 저장 & 푸시
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add dashboard.html dashboard_data.json
           git diff --staged --quiet && echo "변경 없음" || git commit -m "차트 새로고침: $(date '+%Y-%m-%d %H:%M' -u -d '+9 hours')"
-          git pull --rebase origin main
+          # 생성 산출물(dashboard.html / dashboard_data.json)은 매번 재생성되므로
+          # 충돌 시 방금 만든 봇 버전(theirs)을 채택
+          git pull --rebase -X theirs origin main || (
+            git checkout --theirs dashboard.html dashboard_data.json 2>/dev/null || true
+            git add dashboard.html dashboard_data.json
+            GIT_EDITOR=true git rebase --continue || git rebase --abort
+          )
           git push || echo "푸시할 변경사항 없음"
