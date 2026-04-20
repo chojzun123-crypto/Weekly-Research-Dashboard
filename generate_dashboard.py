@@ -1138,14 +1138,225 @@ def fetch_performance_data(weeks: list[dict]) -> list[dict]:
     return records
 
 
-def build_dashboard_data(weeks: list[dict], performance: list[dict], candles: dict) -> str:
+def build_dashboard_data(
+    weeks: list[dict],
+    performance: list[dict],
+    candles: dict,
+    market: dict | None = None,
+    perf_summary: dict | None = None,
+) -> str:
     payload = {
         "weeks": weeks,
         "performance": performance,
         "perf_updated_at": datetime.now().isoformat(timespec="seconds"),
         "candles": candles,
+        "market": market or {},
+        "perf_summary": perf_summary or {},
     }
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+
+
+# ── 시장 데이터 수집 (네이버 금융 + FinanceDataReader) ───────────────────
+
+def _fetch_index_info(code: str, name: str, sub: str) -> dict | None:
+    """KS11/KQ11 등 지수 현재가·스파크라인 (FinanceDataReader 기반)."""
+    try:
+        import FinanceDataReader as fdr
+        df = fdr.DataReader(code).dropna(subset=["Close"]).tail(30)
+        if df.empty or len(df) < 2:
+            return None
+        latest = df.iloc[-1]
+        prev = df.iloc[-2]
+        week_ago = df.iloc[-6] if len(df) >= 6 else df.iloc[0]
+        recent = df.tail(7)
+        daily_change = float(latest["Close"] - prev["Close"])
+        return {
+            "name": name,
+            "sub": sub,
+            "current": round(float(latest["Close"]), 2),
+            "daily_change": round(daily_change, 2),
+            "daily_pct": round(daily_change / float(prev["Close"]) * 100, 2),
+            "weekly_pct": round(
+                float(latest["Close"] - week_ago["Close"]) / float(week_ago["Close"]) * 100, 2
+            ),
+            "high": round(float(recent["High"].max()), 2),
+            "low": round(float(recent["Low"].min()), 2),
+            "sparkline": [round(float(v), 2) for v in recent["Close"].tolist()],
+        }
+    except Exception as e:
+        print(f"  [시장] {name} 조회 실패: {e}")
+        return None
+
+
+def _fetch_usd_krw_fdr() -> dict | None:
+    """원/달러 환율 (FinanceDataReader)."""
+    try:
+        import FinanceDataReader as fdr
+        df = fdr.DataReader("USD/KRW").dropna(subset=["Close"]).tail(5)
+        if df.empty or len(df) < 2:
+            return None
+        latest = float(df["Close"].iloc[-1])
+        prev = float(df["Close"].iloc[-2])
+        diff = latest - prev
+        if abs(diff) < 1:
+            desc = "전일 대비 보합"
+        elif diff > 0:
+            desc = f"전일 대비 +{diff:.1f}원 상승"
+        else:
+            desc = f"전일 대비 {diff:.1f}원 하락"
+        return {
+            "value": round(latest, 2),
+            "daily_change": round(diff, 2),
+            "desc": desc,
+        }
+    except Exception as e:
+        print(f"  [시장] USD/KRW 조회 실패: {e}")
+        return None
+
+
+def _fetch_us_10y_fred() -> dict | None:
+    """FRED DGS10 (미국 10년물 국채 금리) — FinanceDataReader 경유."""
+    try:
+        import FinanceDataReader as fdr
+        df = fdr.DataReader("FRED:DGS10").dropna().tail(10)
+        if df.empty or len(df) < 2:
+            return None
+        col = df.columns[0]
+        latest = float(df[col].iloc[-1])
+        prev = float(df[col].iloc[-2])
+        diff = latest - prev
+        if abs(diff) < 0.02:
+            desc = "금리 안정세 유지"
+        elif diff > 0:
+            desc = f"전일 대비 +{diff:.2f}%p 상승"
+        else:
+            desc = f"전일 대비 {diff:.2f}%p 하락"
+        return {"value": round(latest, 2), "desc": desc}
+    except Exception as e:
+        print(f"  [시장] 미 10년물 조회 실패: {e}")
+        return None
+
+
+def _fetch_foreign_flow() -> dict | None:
+    """외국인 KOSPI 순매수 (네이버 모바일 스톡 API). 실패 시 market_event.json에서 수동 폴백."""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X)",
+            "Referer": "https://m.stock.naver.com/",
+            "Accept": "application/json, text/plain, */*",
+        }
+        # 모바일 KOSPI 지수 페이지의 투자자별 매매 API
+        url = "https://api.stock.naver.com/chart/domestic/index/KOSPI/investors?periodType=day&count=10"
+        r = requests.get(url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            rows = data if isinstance(data, list) else data.get("data", [])
+            values: list[float] = []
+            for row in rows:
+                # 외국인 순매수 필드 탐색 (다양한 키명 대응)
+                for key in ("foreignerNetPurchase", "foreignNetBuy", "frgnNetBuy", "foreign"):
+                    if key in row and row[key] is not None:
+                        try:
+                            values.append(float(row[key]) / 1e8)  # 원 → 억원
+                            break
+                        except (TypeError, ValueError):
+                            pass
+            if values:
+                latest = values[0]
+                streak = ""
+                if len(values) >= 2:
+                    sign = 1 if latest > 0 else -1
+                    run = 1
+                    for v in values[1:]:
+                        if (sign > 0 and v > 0) or (sign < 0 and v < 0):
+                            run += 1
+                        else:
+                            break
+                    if run >= 2:
+                        kind = "순매수" if latest > 0 else "순매도"
+                        streak = f"{run}일 연속 {kind} 진행"
+                if not streak:
+                    streak = "순매수 진행" if latest > 0 else "순매도 진행"
+                return {"value": int(round(latest)), "desc": streak}
+    except Exception as e:
+        print(f"  [시장] 외국인 수급 API 실패: {e}")
+
+    # 폴백: market_event.json의 foreign_flow 필드
+    try:
+        event_path = SCRIPT_DIR / "market_event.json"
+        if event_path.exists():
+            data = json.loads(event_path.read_text(encoding="utf-8"))
+            ff = data.get("foreign_flow") if isinstance(data, dict) else None
+            if isinstance(ff, dict) and ff.get("value") is not None:
+                return ff
+    except Exception:
+        pass
+    return None
+
+
+def _load_market_event() -> dict:
+    """주간 매크로 이벤트 (market_event.json 또는 기본값)."""
+    event_path = SCRIPT_DIR / "market_event.json"
+    if event_path.exists():
+        try:
+            data = json.loads(event_path.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and data.get("title"):
+                return data
+        except Exception as e:
+            print(f"  [시장] market_event.json 파싱 실패: {e}")
+    return {"title": "FOMC 의사록", "desc": "변동성 주시 · 공개 예정"}
+
+
+def fetch_market_data() -> dict:
+    """KOSPI/KOSDAQ/환율/미10Y/외국인 수급/이벤트 한 번에 수집."""
+    result: dict = {}
+    result["kospi"] = _fetch_index_info("KS11", "KOSPI", "KOSPI 종합지수")
+    result["kosdaq"] = _fetch_index_info("KQ11", "KOSDAQ", "코스닥 종합지수")
+    result["usd_krw"] = _fetch_usd_krw_fdr()
+    result["us_10y"] = _fetch_us_10y_fred()
+    result["foreign_flow"] = _fetch_foreign_flow()
+    result["event"] = _load_market_event()
+    return result
+
+
+def compute_perf_summary(performance: list[dict], weeks: list[dict]) -> dict:
+    """최신 주차 기준 성과 요약 (스트립 4개 지표)."""
+    if not weeks or not performance:
+        return {}
+    latest_date = weeks[0]["date"]
+    latest_perf = [p for p in performance if p.get("date") == latest_date and p.get("return_pct") is not None]
+    if not latest_perf:
+        return {}
+
+    returns = [p["return_pct"] for p in latest_perf]
+    avg_return = sum(returns) / len(returns)
+    win_count = sum(1 for r in returns if r > 0)
+    total = len(returns)
+    win_rate = win_count / total * 100 if total else 0
+    best = max(latest_perf, key=lambda p: p["return_pct"])
+
+    vs_kospi: float | None = None
+    try:
+        import FinanceDataReader as fdr
+        rec_date = datetime.strptime(latest_date, "%Y%m%d")
+        df = fdr.DataReader("KS11", rec_date.strftime("%Y-%m-%d")).dropna(subset=["Close"])
+        if not df.empty and len(df) >= 2:
+            start = float(df["Close"].iloc[0])
+            end = float(df["Close"].iloc[-1])
+            kospi_return = (end - start) / start * 100
+            vs_kospi = round(avg_return - kospi_return, 2)
+    except Exception as e:
+        print(f"  [성과] KOSPI 비교 조회 실패: {e}")
+
+    return {
+        "avg_return": round(avg_return, 2),
+        "win_rate": round(win_rate, 0),
+        "win_count": win_count,
+        "total_count": total,
+        "vs_kospi": vs_kospi,
+        "best_name": best.get("company_name", ""),
+        "best_return": round(best["return_pct"], 2),
+    }
 
 
 def render_dashboard(data_json: str, use_fetch: bool = False) -> str:
@@ -1882,15 +2093,24 @@ def main() -> None:
     candles = fetch_candle_data(weeks)
     print(f"  캔들 데이터: {len(candles)}개 종목")
 
-    data_json = build_dashboard_data(weeks, performance, candles)
+    print("시장 데이터 조회 중 (KOSPI/KOSDAQ/환율/미10Y/외국인)...")
+    market = fetch_market_data()
+    print(f"  시장 데이터 수집: {sum(1 for v in market.values() if v)}/{len(market)}개")
 
-    # JSON 데이터 파일 따로 저장
+    print("성과 요약 계산 중...")
+    perf_summary = compute_perf_summary(performance, weeks)
+    if perf_summary:
+        print(f"  평균 수익률 {perf_summary.get('avg_return')}% · 승률 {perf_summary.get('win_rate')}%")
+
+    data_json = build_dashboard_data(weeks, performance, candles, market, perf_summary)
+
+    # JSON 데이터 파일 따로 저장 (HTTP 서버 운영 시 대체 로드 경로)
     json_path = out_path.parent / "dashboard_data.json"
     json_path.write_text(data_json, encoding="utf-8")
     print(f"데이터 파일 저장: {json_path} ({json_path.stat().st_size / 1024 / 1024:.1f} MB)")
 
-    # HTML은 가볍게 생성 (데이터 미포함)
-    html = render_dashboard(data_json, use_fetch=True)
+    # HTML에 데이터 인라인 삽입 → 더블클릭으로 바로 열어도 동작
+    html = render_dashboard(data_json, use_fetch=False)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
