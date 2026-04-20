@@ -1238,14 +1238,55 @@ def _fetch_us_10y_fred() -> dict | None:
 
 
 def _fetch_foreign_flow() -> dict | None:
-    """외국인 KOSPI 순매수 (네이버 모바일 스톡 API). 실패 시 market_event.json에서 수동 폴백."""
+    """외국인 KOSPI 순매수 (pykrx 우선 → 네이버 API → market_event.json 폴백)."""
+
+    def _build_result(values: list[float]) -> dict:
+        """최신순 [억원] 리스트 → {value, desc} 페이로드."""
+        latest = values[0]
+        streak = ""
+        if len(values) >= 2:
+            sign = 1 if latest > 0 else -1
+            run = 1
+            for v in values[1:]:
+                if (sign > 0 and v > 0) or (sign < 0 and v < 0):
+                    run += 1
+                else:
+                    break
+            if run >= 2:
+                kind = "순매수" if latest > 0 else "순매도"
+                streak = f"{run}일 연속 {kind} 진행"
+        if not streak:
+            streak = "순매수 진행" if latest > 0 else "순매도 진행"
+        return {"value": int(round(latest)), "desc": streak}
+
+    # 1순위: pykrx (KRX 공식 데이터)
+    try:
+        from pykrx import stock as _pykrx_stock
+        today = date.today()
+        start = today - timedelta(days=20)
+        df_pk = _pykrx_stock.get_market_trading_value_by_date(
+            start.strftime("%Y%m%d"), today.strftime("%Y%m%d"), "KOSPI"
+        )
+        if df_pk is not None and not df_pk.empty:
+            col = next((c for c in ("외국인", "외국인합계") if c in df_pk.columns), None)
+            if col:
+                series = df_pk[col].dropna().sort_index(ascending=False)
+                if len(series):
+                    values = [float(v) / 1e8 for v in series.tolist()]  # 원 → 억원, 최신순
+                    print(f"  [시장] 외국인 수급(pykrx): 최근 {len(values)}일, 최신 {values[0]:+.0f}억")
+                    return _build_result(values)
+    except ImportError:
+        print("  [시장] pykrx 미설치 → 네이버 API로 폴백")
+    except Exception as e:
+        print(f"  [시장] pykrx 외국인 수급 실패: {e} → 네이버 API로 폴백")
+
+    # 2순위: 네이버 모바일 스톡 API
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X)",
             "Referer": "https://m.stock.naver.com/",
             "Accept": "application/json, text/plain, */*",
         }
-        # 모바일 KOSPI 지수 페이지의 투자자별 매매 API
         url = "https://api.stock.naver.com/chart/domestic/index/KOSPI/investors?periodType=day&count=10"
         r = requests.get(url, headers=headers, timeout=10)
         if r.status_code == 200:
@@ -1253,35 +1294,19 @@ def _fetch_foreign_flow() -> dict | None:
             rows = data if isinstance(data, list) else data.get("data", [])
             values: list[float] = []
             for row in rows:
-                # 외국인 순매수 필드 탐색 (다양한 키명 대응)
                 for key in ("foreignerNetPurchase", "foreignNetBuy", "frgnNetBuy", "foreign"):
                     if key in row and row[key] is not None:
                         try:
-                            values.append(float(row[key]) / 1e8)  # 원 → 억원
+                            values.append(float(row[key]) / 1e8)
                             break
                         except (TypeError, ValueError):
                             pass
             if values:
-                latest = values[0]
-                streak = ""
-                if len(values) >= 2:
-                    sign = 1 if latest > 0 else -1
-                    run = 1
-                    for v in values[1:]:
-                        if (sign > 0 and v > 0) or (sign < 0 and v < 0):
-                            run += 1
-                        else:
-                            break
-                    if run >= 2:
-                        kind = "순매수" if latest > 0 else "순매도"
-                        streak = f"{run}일 연속 {kind} 진행"
-                if not streak:
-                    streak = "순매수 진행" if latest > 0 else "순매도 진행"
-                return {"value": int(round(latest)), "desc": streak}
+                return _build_result(values)
     except Exception as e:
         print(f"  [시장] 외국인 수급 API 실패: {e}")
 
-    # 폴백: market_event.json의 foreign_flow 필드
+    # 3순위: market_event.json 수동값
     try:
         event_path = SCRIPT_DIR / "market_event.json"
         if event_path.exists():
