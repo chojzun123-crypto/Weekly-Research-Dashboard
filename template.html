@@ -84,6 +84,51 @@
     padding: 24px 24px 80px;
   }
 
+  html { scroll-behavior: smooth; }
+  section[id], .exec[id] { scroll-margin-top: 88px; }
+
+  /* ══ Top Nav (sticky, right-aligned pill) ══════ */
+  .top-nav {
+    position: sticky;
+    top: 12px;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    pointer-events: none;
+  }
+  .top-nav-inner {
+    display: inline-flex;
+    gap: 2px;
+    padding: 5px;
+    background: rgba(12, 16, 24, 0.82);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid var(--hairline-hi);
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.04);
+    pointer-events: auto;
+  }
+  .top-nav-link {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted-strong);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: -0.005em;
+  }
+  .top-nav-link:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+  .top-nav-link.active { background: var(--text); color: var(--bg-base); }
+  @media (max-width: 900px) {
+    .top-nav { justify-content: center; }
+    .top-nav-inner { flex-wrap: wrap; justify-content: center; }
+    .top-nav-link { padding: 6px 12px; font-size: 12px; }
+  }
+
   /* ══ Executive Summary ═════════════════════════ */
   .exec {
     background: var(--card);
@@ -880,8 +925,20 @@
 
 <div class="shell">
 
+  <!-- ══ Top Nav ══ -->
+  <nav class="top-nav" aria-label="섹션 이동">
+    <div class="top-nav-inner">
+      <a href="#sec-overview"  class="top-nav-link active" data-target="sec-overview">개요</a>
+      <a href="#sec-top5"      class="top-nav-link"        data-target="sec-top5">TOP10</a>
+      <a href="#sec-industry"  class="top-nav-link"        data-target="sec-industry">산업 동향</a>
+      <a href="#sec-perf"      class="top-nav-link"        data-target="sec-perf">성과 검증</a>
+      <a href="#sec-candle"    class="top-nav-link"        data-target="sec-candle">차트 해설</a>
+      <a href="#sec-financial" class="top-nav-link"        data-target="sec-financial">재무 해석</a>
+    </div>
+  </nav>
+
   <!-- ══ Executive Summary ══ -->
-  <section class="exec">
+  <section class="exec" id="sec-overview">
     <div class="exec-inner">
       <div class="exec-topline">
         <div class="exec-brand">
@@ -2244,6 +2301,51 @@ function initDashboard() {
   initCandleChart();
   renderWeek(0);
   renderHistoryTable(weeks, weeks[0].label);
+  initTopNav();
+}
+
+// ══ Top Nav: 스크롤 스파이 + 클릭 이동 ══
+function initTopNav() {
+  const links = Array.from(document.querySelectorAll('.top-nav-link'));
+  if (!links.length) return;
+  const linkByTarget = new Map(links.map(l => [l.dataset.target, l]));
+  const sections = links
+    .map(l => document.getElementById(l.dataset.target))
+    .filter(Boolean);
+  if (!sections.length) return;
+
+  const setActive = (id) => {
+    links.forEach(l => l.classList.toggle('active', l.dataset.target === id));
+  };
+
+  // 클릭 시 즉시 활성화 (관찰자 지연 방지)
+  links.forEach(l => {
+    l.addEventListener('click', () => setActive(l.dataset.target));
+  });
+
+  // 현재 뷰포트 중앙 기준으로 활성 섹션 결정
+  const pickActive = () => {
+    const anchor = window.innerHeight * 0.3;
+    let cur = sections[0].id;
+    for (const s of sections) {
+      const top = s.getBoundingClientRect().top;
+      if (top - anchor <= 0) cur = s.id;
+      else break;
+    }
+    // 페이지 최하단에서는 마지막 섹션 강제 활성
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+      cur = sections[sections.length - 1].id;
+    }
+    setActive(cur);
+  };
+
+  pickActive();
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { pickActive(); ticking = false; });
+  }, { passive: true });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
