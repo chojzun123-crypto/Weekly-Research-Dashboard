@@ -770,6 +770,8 @@
   .ms-bullish { background: rgba(91,157,255,0.15); color: var(--blue-hi); border: 1px solid rgba(91,157,255,0.35); }
   .ms-bearish { background: rgba(246,106,106,0.15); color: #ff9f9f; border: 1px solid rgba(246,106,106,0.35); }
   .ms-vpa     { background: rgba(255,152,0,0.15); color: #ffb74d; border: 1px solid rgba(255,152,0,0.35); }
+  .ms-warning { background: rgba(240,180,41,0.18); color: #f0b429; border: 1px solid rgba(240,180,41,0.45); }
+  .ms-trap    { background: rgba(246,106,106,0.20); color: #ff6b6b; border: 1px solid rgba(246,106,106,0.5); font-weight: 700; }
   .ms-neutral { background: rgba(158,158,158,0.12); color: #bdbdbd; border: 1px solid rgba(158,158,158,0.3); }
 
   /* ── 4구간 매매전략 패널 ───────── */
@@ -1093,6 +1095,8 @@
         <span class="candle-legend-item"><span style="color:#f0b429">━</span> MA224</span>
         <span class="candle-legend-item"><span style="color:#6e7681">┄</span> MA448</span>
         <span class="candle-legend-item"><span style="color:#6e7681">━</span> BB 하단</span>
+        <span class="candle-legend-item"><span style="color:#f0b429">●</span> 경고</span>
+        <span class="candle-legend-item"><span style="color:#f66a6a;font-weight:700">✕</span> 트랩</span>
       </div>
     </section>
 
@@ -2042,13 +2046,22 @@ function renderCandleChart(code, weekDate) {
       const BULLISH_SET = new Set(['망치형', '상승장악형', '샛별형', '강력돌파', '강력 돌파(Confirmed)', '반전 신호(Divergence)', 'RSI 다이버전스']);
       const BEARISH_SET = new Set(['유성형', '하락장악형', '석별형', '약한 돌파(False)']);
       const VPA_SET     = new Set(['강력돌파', '강력 돌파(Confirmed)', '물량소화', '변동성 압축']);
+      const WARNING_SET = new Set(['경고']);
+      const TRAP_SET    = new Set(['✕ 트랩', '트랩']);
       summaryListEl.innerHTML = recent.map(m => {
-        const cls = VPA_SET.has(m.text) ? 'ms-vpa'
+        const cls = TRAP_SET.has(m.text) ? 'ms-trap'
+                  : WARNING_SET.has(m.text) ? 'ms-warning'
+                  : VPA_SET.has(m.text) ? 'ms-vpa'
                   : BULLISH_SET.has(m.text) ? 'ms-bullish'
                   : BEARISH_SET.has(m.text) ? 'ms-bearish'
                   : 'ms-neutral';
-        const icon = BULLISH_SET.has(m.text) ? '▲' : BEARISH_SET.has(m.text) ? '▼' : '●';
-        return `<span class="ms-item ${cls}">${icon} ${m.text} <span style="opacity:.6;font-weight:400;font-family:var(--font-mono)">${m.time}</span></span>`;
+        const icon = TRAP_SET.has(m.text) ? '✕'
+                   : WARNING_SET.has(m.text) ? '●'
+                   : BULLISH_SET.has(m.text) ? '▲'
+                   : BEARISH_SET.has(m.text) ? '▼'
+                   : '●';
+        const label = TRAP_SET.has(m.text) ? '트랩' : m.text;
+        return `<span class="ms-item ${cls}">${icon} ${label} <span style="opacity:.6;font-weight:400;font-family:var(--font-mono)">${m.time}</span></span>`;
       }).join('');
       summaryEl.style.display = 'block';
     } else {
