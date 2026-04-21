@@ -729,6 +729,73 @@ def detect_candle_markers(df, trendlines: list | None = None) -> list[dict]:
                 and times[pt2] not in {m["time"] for m in markers}):
             markers.append({"time": times[pt2], "position": "belowBar", "color": "#f0b429", "shape": "arrowUp", "text": "반전 신호(Divergence)"})
 
+    # ═ 트랩 패턴 (상승 추세 → 고점 경신 긴꼬리 음봉 → 장대 음봉 이탈) ═
+    bodies = [abs(closes[i] - opens[i]) for i in range(n)]
+    warning_idxs: list[int] = []
+    marked_set = {m["time"] for m in markers}
+
+    for i in range(20, n):
+        # 1단계: 상승 추세 확인
+        base = closes[i - 20]
+        if base <= 0:
+            continue
+        cum_ret = (closes[i] - base) / base
+        if cum_ret < 0.15:
+            continue
+        up_count = sum(1 for j in range(i - 19, i + 1) if closes[j] > opens[j])
+        if up_count / 20 < 0.6:
+            continue
+
+        # 2단계: 고점 경신 후 긴 윗꼬리 음봉
+        prev_max_high = max(highs[j] for j in range(i - 19, i))
+        if highs[i] <= prev_max_high:
+            continue
+        if closes[i] >= opens[i]:
+            continue
+        body = abs(closes[i] - opens[i])
+        if body == 0:
+            continue
+        upper_wick = highs[i] - max(opens[i], closes[i])
+        if upper_wick < body * 2:
+            continue
+
+        if times[i] not in marked_set:
+            markers.append({
+                "time": times[i], "position": "aboveBar",
+                "color": "#f0b429", "shape": "circle", "text": "경고",
+            })
+            marked_set.add(times[i])
+        warning_idxs.append(i)
+
+    # 3단계: 경고 이후 5봉 이내 장대음봉 + 직전 양봉 저점 이탈
+    for w_idx in warning_idxs:
+        for j in range(w_idx + 1, min(w_idx + 6, n)):
+            if closes[j] >= opens[j]:
+                continue
+            cur_body = abs(closes[j] - opens[j])
+            if j < 20:
+                continue
+            avg_body = sum(bodies[k] for k in range(j - 20, j)) / 20
+            if avg_body <= 0 or cur_body < avg_body * 2:
+                continue
+
+            # 직전 양봉의 저가 (j 이전 20봉 내 가장 최근 양봉)
+            prev_bull_low = None
+            for k in range(j - 1, max(j - 20, -1), -1):
+                if closes[k] > opens[k]:
+                    prev_bull_low = lows[k]
+                    break
+            if prev_bull_low is None or closes[j] >= prev_bull_low:
+                continue
+
+            if times[j] not in marked_set:
+                markers.append({
+                    "time": times[j], "position": "aboveBar",
+                    "color": "#f66a6a", "shape": "square", "text": "✕ 트랩",
+                })
+                marked_set.add(times[j])
+            break  # 첫 트랩만 기록
+
     markers.sort(key=lambda m: m["time"])
     return markers
 
