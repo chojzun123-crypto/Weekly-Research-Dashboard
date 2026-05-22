@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-05-18",
+    "end_date": "2026-05-22",
+    "generated_at": "2026-05-22T10:03:07",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 728,
+    "buy_count": 472,
+    "target_up_count": 0,
+    "total_companies": 416
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "에스엘",
+      "stock_code": "005850",
+      "institution_list": "한화투자증권, 삼성증권, NH투자증권, 교보증권, 하나증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 58900.0,
+      "avg_target_price": 89125.0,
+      "max_target_price": 93000.0,
+      "avg_upside": 51.3,
+      "bullets": [
+        "업황 불확실성을 상쇄하고도 남을 공급 사이클 1Q26 매출액과 영업이익 시장 기대치 상회, 분기 단위 최대 실적 기록 ▶ 불확실성 상쇄하고도 남을 신차 중심 공급 사이클",
+        "GM이 다시 내연기관차 위주 신차를 재정비하면서, GM향 수주 증가 예상",
+        "▶ 2분기부터는 기아 PV5와, 로보틱스 랩의 모베드, BD이 스팟 2세대 생산으로 매출 성장 가속화 예상 북미 램프 사업부의 호실적 탄탄한 본업이 받쳐주고, 신사업 기대감은 높아지고5만원으로 상향 ▶ 1Q26 Review: 영업이익률 10"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "현대해상",
+      "stock_code": "001450",
+      "institution_list": "다올투자증권, 교보증권, 미래에셋증권, LS증권, 신한투자증권",
+      "report_count": 11,
+      "buy_ratio": 0.9090909090909091,
+      "target_up_ratio": 0.0,
+      "current_price": 36700.0,
+      "avg_target_price": 42272.72727272727,
+      "max_target_price": 48000.0,
+      "avg_upside": 15.2,
+      "bullets": [
+        "1Q26 Review: 손익변동성 유의하나, 성장력과 지급여력 개선 긍정적 1Q26P 별도기준 영업이익 3,081억원(YoY +89%, QoQ 흑전), 당기순이익 2,233억원(YoY +99%, QoQ 흑전)으로, 컨센서스와 당사 추정치를 크게 상회하는 실적을 기록 ▶ 예상 K-ICS비율 2079%으로 개선 ▶ 적정주가는 상향 1Q26 Review: 보험손익 개선 흐름에 따른 연간 이익 개선 기대 2026년 1분기 당기순이익 2,233억원, YoY 9"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "씨어스",
+      "stock_code": "458870",
+      "institution_list": "신영증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 35000.0,
+      "avg_target_price": 80000.0,
+      "max_target_price": 80000.0,
+      "avg_upside": 128.6,
+      "bullets": [
+        "리스크 해소, 심각한 저평가 국면 1Q26 Review: 원가 부담을 극복하며 어닝 서프라이즈 ▶ 리스크 해소: 원가 부담, 중동 사업 전쟁 영향"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "이수페타시스",
+      "stock_code": "007660",
+      "institution_list": "SK증권, 메리츠증권, NH투자증권, 유안타증권, 하나증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 131500.0,
+      "avg_target_price": 180625.0,
+      "max_target_price": 200000.0,
+      "avg_upside": 37.4,
+      "bullets": [
+        "가격 싸이클 재점화 1분리 리뷰 & 2분기 전망: 우려와 달리 컨센서스 부합 ▶ 2026년 화두: AI + 네트워크 + 쇼티지, 삼박자 ▶ 목표주가 180,000원으로 상향, 매수 의견 유지 낮아진 멀티플, 선명해진 성장성 1Q26 Review: 역시 견고한 AI 수요",
+        "주가 소외=매수 기회 1Q26 Review ▶ 증설 규모 재차 상향 ▶ 목표주가 17만원으로 상향 On Track 기대치 부합한 1Q26 실적 ▶ 호,악재가 혼재된 하반기, 그래도 성장궤도 유지를 기대 ▶ 투자의견 ‘매수’ 및 목표주가 165,000원 유지 1Q26 Re: 묵묵하게 열일 중 계단식 매출 성장"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "SK",
+      "stock_code": "034730",
+      "institution_list": "NH투자증권, 한화투자증권, 흥국증권, 하나증권, 대신증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 530000.0,
+      "avg_target_price": 736857.1428571428,
+      "max_target_price": 880000.0,
+      "avg_upside": 39.0,
+      "bullets": [
+        "현금흐름 강화 중, 여전히 높은 할인율 반도체 호황으로 인한 NAV 확대, 지주사 현금흐름 강화 ▶ 1Q26 Review: 에코플랜트 어닝 서프라이즈 1Q26 Review : 하이닉스와 연결된 현금흐름과 에코플랜트의 존재감 1Q26 Review ▶ 하이닉스와 연결된 현금흐름과 에코플랜트의 존재감7조원(+761% YoY), 전망치 상회 ▶ 2026년: OP 70조원(+437% YoY), 양호한 실적모멘텀 반도체 슈퍼사이클에 따른 수혜 SK스퀘어 지분가치 대폭 상승으로 목표주가 상향",
+        "주요 자회사들 실적도 개선 흐름 ▶ SK에코플랜트 본격 성과 창출 단계 진입"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "하나증권, 메리츠증권, NH투자증권, IBK투자증권, 다올투자증권",
+      "report_count": 9,
+      "buy_ratio": 0.8888888888888888,
+      "target_up_ratio": 0.0,
+      "current_price": 1204000.0,
+      "avg_target_price": 1518750.0,
+      "max_target_price": 1700000.0,
+      "avg_upside": 26.1,
+      "bullets": [
+        "점점 더 강해지는 확신 실리콘 캐패시터 대규모 공급 계약 공시 ▶ 27년 연간 영업이익 3조원 전망 대체불가 삼성전기, 적정주가 160만원으로 상향 ▶ Si Cap",
+        "ABF, 트리플 모멘텀 실리콘 커패시터 수주 공시의 함의 실리콘 커패시터 대형 수주로 입증된 컴포넌트 경쟁력 ▶ 이제 시작인 실리콘 커패시터 시장, 앞서나가는 삼성전기 실리콘 커패시터/대규모 수주 공시 2026년 5월 20일 단일판매/공급 계약 체결 공시"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "CJ프레시웨이",
+      "stock_code": "051500",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 24150.0,
+      "avg_target_price": 48000.0,
+      "max_target_price": 48000.0,
+      "avg_upside": 98.8,
+      "bullets": [
+        "시장은 변화고, 펀더멘탈은 상승하고 있다 2026년 1분기 실적은 이미 예견된 수준 ▶ 온라인 채널 성장은 기대치보다 높은 것으로 판단 ▶ 투자의견 매수, 목표주가 4시장은 변화고, 펀더멘탈은 상승하고 있다 2026년 1분기 실적은 이미 예견된 수준 ▶ 온라인 채널 성장은 기대치보다 높은 것으로 판단 ▶"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "DB손해보험",
+      "stock_code": "005830",
+      "institution_list": "다올투자증권, 교보증권, 신한투자증권, 삼성증권, iM증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 156300.0,
+      "avg_target_price": 229857.14285714287,
+      "max_target_price": 260000.0,
+      "avg_upside": 47.1,
+      "bullets": [
+        "1Q26 Review: 변동성 염두하나 주주환원 모멘텀 기대 존재 1Q26P 별도기준 영업이익 4,627억원(YoY -285%), 당기순이익 2,685억원(YoY -398%)으로, 컨센서스와 당사 추정치를 크게 하회하는 실적 기록 ▶ 적정주가는 유지 ▶ 예상 K-ICS비율 2321% 1Q26 Review: 1분기 보단 2분기부터… 2026년 1분기 당기순이익 2,685억원, YoY 19"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "유진투자증권, iM증권, 다올투자증권, 미래에셋증권, 한국투자증권",
+      "report_count": 8,
+      "buy_ratio": 0.875,
+      "target_up_ratio": 0.0,
+      "current_price": 299500.0,
+      "avg_target_price": 486250.0,
+      "max_target_price": 570000.0,
+      "avg_upside": 62.4,
+      "bullets": [
+        "단기 우려보다 중요한 구조적 성장 삼성전자의 2026년, 2027년 영업이익을 323조원(+638%YoY), 504조원 (+56%YoY)으로 전망한다",
+        "▶ DRAM의 Blended ASP는 2026년과 2027년 각각 +259%, +28%YoY 상승할 것으로 예상한다 ▶ 2Q26의 영업이익은 794조원(+39%QoQ)으로 전망하며, 그 중 메모리 영업이익이 795조원을 기록해 전사 실적을 견인할 것으로 보인다 P/B 4"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "미스토홀딩스",
+      "stock_code": "081660",
+      "institution_list": "유진투자증권, 미래에셋증권, 한화투자증권, SK증권, NH투자증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 39200.0,
+      "avg_target_price": 58000.0,
+      "max_target_price": 68000.0,
+      "avg_upside": 48.0,
+      "bullets": [
+        "1Q26 Review: 미스토만의 방향, 속도로 1Q26E 매출액 12%, 이하 yoy), 영업이익 1,937억원 (+191%) 기록 ▶ 2026 가이던스: 연결 매출 0~+5% yoy, 영업이익 +5~+15%, 미스토 매출 -15~0%, 영업이익 +10~+20%0%(환율 1,440억원 가정) ▶ 압도적인 주주환원 정책, 중화권 라이선스 브랜드 신규 런칭 기대 무난한 실적 1Q26 Review: 국내, 미국 수익성 개선 + 해외 브랜드 유통 호조 지속 ▶ 모멘텀은 크지 않지만 하방은 튼튼 1Q26 Review : 대기업도 줄 서게 하는 중화권 유통 역량 1Q26 연결 매출액 12,890억원(+4"
+      ]
+    }
+  ]
+}

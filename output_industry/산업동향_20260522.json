@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "report_type": "industry",
+    "start_date": "2026-05-18",
+    "end_date": "2026-05-22",
+    "generated_at": "2026-05-22T10:06:58",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 55,
+    "covered_industries": 28,
+    "overweight_industries": 11
+  },
+  "industries": [
+    {
+      "industry_name": "자동차",
+      "report_count": 6,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "키움, 대신, 한국투자",
+      "bullets": [
+        "자동차 하반기 전망: 하이브리드 쇼티지 작년 하반기 대비 리스크는 오히려 완화 ▶ 투자 아이디어: 하이브리드 쇼티지에 주목 상승의 관성 현대/기아 SOTP 밸류에이션(260조원) = 본업 186조 + 로봇 64조 + 9조 ▶ 시장의 세가지 QnA: BD 상장 시점/전략적 지분투자/외인 수급 유입 조건 ▶ 현대차그룹주 + 테슬라 밸류체인 중심투자",
+        "현대/기아/현대모비스/HL만도 보스턴다이나믹스 전략 발표 key Takeaways 보스턴다이나믹스(BD) 전략 발표 내용 ▶ 구체적인 그룹사 역할 명시 ▶ 자동차 업종 투자 전략 제시 Mobility at a glance 로보틱스 사업에 대한 미국 IR 내용 정리 보스턴다이내믹스의 로봇 개발 및 양산 방향성과 현대차그룹 내 밸류체인 설명"
+      ],
+      "keyword": "자동차 하반기 전망: 하이브리드 쇼티지 작년 하반기 대비 리스크는 오히려"
+    },
+    {
+      "industry_name": "양방향미디어와서비스",
+      "report_count": 6,
+      "overweight_ratio": 0.16666666666666666,
+      "overweight_ratio_pct": 17,
+      "opinion": "Neutral",
+      "main_institutions": "IBK투자, 미래에셋, LS",
+      "bullets": [
+        "IBKS Daily [인터넷/게임] AI 전환 본격화에 따른 SI 업종 리레이팅 AI 패권 경쟁",
+        "수익화 양상 ▶ 커머스 에이전트의 등장 ▶ 에이전트 시대의 결제 구글 개발자 컨퍼런스 Review: 국내 플랫폼 전략 방향성 AI 에이전트 시대 청사진 제시 ▶ AI 에이전트 생태계 주도권 경쟁 심화 예상 [2026 하반기 전망] 비관론의 임계점(Bottom Out) ‘성장＇의 프리미엄은 사라졌고, ＇가치＇의 안전판만 남았다"
+      ],
+      "keyword": "IBKS Daily [인터넷/게임] AI 전환 본격화에 따른 SI 업종"
+    },
+    {
+      "industry_name": "반도체와반도체장비",
+      "report_count": 4,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "IBK투자, 유안타, 현대차",
+      "bullets": [
+        "메모리 장기공급계약(LTA)에 해답이 있다 Insights from IBKS : LTA의 맥락을 제대로 알자 ▶ DRAM : 터보퀀트는 전략적 공급 구조를 강화시킨다"
+      ],
+      "keyword": "메모리 장기공급계약(LTA)에 해답이 있다 Insights from IB"
+    },
+    {
+      "industry_name": "조선",
+      "report_count": 3,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, 상상인",
+      "bullets": [
+        "항해일지 2026 하반기 전망: 점입가경 조선: 견조한 본업에 신규 모멘텀 발현 ▶ 운송: 위기와 기회의 공존 항해일지"
+      ],
+      "keyword": "항해일지 2026 하반기 전망: 점입가경 조선: 견조한 본업에 신규 모멘"
+    },
+    {
+      "industry_name": "은행",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠, NH투자",
+      "bullets": [
+        "메리츠 Financial Daily PBR 1배를 넘어, 내재가치를 향해 견고한 실적 안정성 ▶ 호주 은행주를 통해 본 한국 은행주 밸류에이션 개선 여력 ▶ 기금형 퇴직연금, 은행계 금융지주의 추가 성장 기회 메리츠 Financial Daily"
+      ],
+      "keyword": "메리츠 Financial Daily PBR 1배를 넘어, 내재가치를 향해"
+    },
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 3,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "SK, LS, 하나",
+      "bullets": [
+        "삼성전기 ＇실리콘캐패시터＇ 수주공시 해석 삼성전기, 실리콘캐패시터 156 조원 수주 공시 ▶ FCBGA와 MLCC에 이은 또 하나의 고수익성 성장동력 ▶ 글로벌 1 등 부품주 멀티플 부여 합당 (기판-수동소자 최강자) 2차전지 Weekly 4월 ESS Battery : 글로벌 Grid 성장 지속"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "기계",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "안녕하세요 데일리에요(로봇/방산/조선) 안녕하세요 데일리에요(로봇/방산/조선)"
+      ],
+      "keyword": "안녕하세요 데일리에요(로봇/방산/조선) 안녕하세요 데일리에요(로봇/방산/"
+    },
+    {
+      "industry_name": "건설",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "KB, 신한투자",
+      "bullets": [
+        "미국 원전: 10기 아닌 20기 구체적 성과 부족으로 부진한 원전주",
+        "기대보다 거대할 시장에 먼저 주목 ▶ 미국 원전 발주 전략: 투 트랙10 + 10 ▶ DOC (상무부) + DOE (에너지부) 투 트랙으로 정치 리스크도 분산한다 1Q26: 실적 개선 이어갈 중견사 관심 필요 B2B 건자재업체보다는 중소형 건설사에 선별적 관심 필요 ▶ 건자재/중소형 건설사 1Q26 Review: 일시적 개선 후 불확실성 증대"
+      ],
+      "keyword": "미국 원전: 10기 아닌 20기 구체적 성과 부족으로 부진한 원전주"
+    },
+    {
+      "industry_name": "증권",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "iM, 키움",
+      "bullets": [
+        "[2026년 하반기전망] 냉탕과 열탕 [증권] 돌아온 천수답 ▶ [보험] 개선의 바람 ▶ 멀티플의 벽을 깨라 증권: 실적 초과 상승은 멀티플 상향 필요 ▶ 보험: 아직은 회복 단계 ▶ Top Picks: 미래에셋증권/삼성생명"
+      ],
+      "keyword": "[2026년 하반기전망] 냉탕과 열탕 [증권] 돌아온 천수답 ▶ [보험]"
+    },
+    {
+      "industry_name": "제약",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "대신, 하나",
+      "bullets": [
+        "이익은 가속, 주가는 이제부터 업종 투자의견: 비중확대(Overweight)로 커버리지 개시 ▶ 커버리지 5개사, 글로벌 밸류체인 내 차별화된 포지션 스프링 점프 4Q 기술이전 증가하는 경향, 바이오텍 펀더멘털은 분명 상향 중 ▶ 개발 마일스톤 및 학회 스케줄 등을 체크하고, 시가총액 높은 주요 종목 위주 접근"
+      ],
+      "keyword": "이익은 가속, 주가는 이제부터 업종 투자의견: 비중확대(Overweigh"
+    },
+    {
+      "industry_name": "화학",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "한국투자, 신한투자",
+      "bullets": [
+        "미국-이란 전쟁(10): 6월 국제 유가 추가 상승 가능성 검토 어느덧 전쟁 3개월차",
+        "분쟁 장기화 가능성이 높아지고 있다 ▶ 미국 재고 감소로 WTI가 Brent를 밀어 올리며 동반 상승 ▶ 석유 최고가격제가 단기간 내에 종료될 가능성 또한 높지 않다 공급 쇼크는 끝나도, 차별화는 시작된다 다같은 화학이 아니다 ▶ NB 라텍스 - 금호석유화학(글로벌 1위) ▶ 스판덱스 - 효성티앤씨(글로벌 1위)"
+      ],
+      "keyword": "미국-이란 전쟁(10): 6월 국제 유가 추가 상승 가능성 검토 어느덧"
+    },
+    {
+      "industry_name": "식품",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "F&B Morning Talk F&B Morning Talk"
+      ],
+      "keyword": "F&B Morning Talk F&B Morning Talk"
+    },
+    {
+      "industry_name": "게임엔터테인먼트",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 한국투자",
+      "bullets": [
+        "본업 우려 불식, 신사업이 트리거 ▶ 인터넷은 디지털자산, 게임은 AI ▶ Top Pick: 인터넷 NAVER / 게임 크래프톤, NC 부각되는 대형게임사의 투자 매력도 1분기 실적에서 확인한 대형게임사의 가능성 ▶ NC, 내년 초까지 풍부한 모멘텀 ▶ 크래프톤, 아직 PUBG를 내려치기에는 이르다",
+        "반등의 트리거 디레이팅 지속 구간. 본업 우려 불식, 신사업이 트리거 ▶ 인터넷은 디지털자산, 게임은 AI ▶ Top Pick: 인터넷 NAVER"
+      ],
+      "keyword": "반등의 트리거 디레이팅 지속 구간"
+    },
+    {
+      "industry_name": "IT서비스",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "Meritz Overnight Tech Meritz Overnight Tech"
+      ],
+      "keyword": "Meritz Overnight Tech Meritz Overnight T"
+    },
+    {
+      "industry_name": "화장품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "SK",
+      "bullets": [
+        "Weekly Amazon Beauty Check"
+      ],
+      "keyword": "Weekly Amazon Beauty Check"
+    },
+    {
+      "industry_name": "전기제품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "교보",
+      "bullets": [
+        "2026년 5월 셋째 주 전기전자 Weekly 실적 발표 이후 테크 전반에 걸친 차익실현 전개 ▶ 산업 단의 불확실성이 차익실현 강도를 강화하는 추세 ▶ 파업 등으로 로보틱스 밸류체인 합류했거나 가능성이 있는 기업들에 대한 수급 집중 뚜렷2026년 5월 셋째 주 전기전자 Weekly 실적 발표 이후 테크 전반에 걸친 차익실현 전개 ▶ 산업 단의 불확실성이 차익실현 강도를"
+      ],
+      "keyword": "2026년 5월 셋째 주 전기전자 Weekly 실적 발표 이후 테크 전반"
+    },
+    {
+      "industry_name": "방송과엔터테인먼트",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나",
+      "bullets": [
+        "2H26 Outlook: 모든 우려가 선 반영된 주 엔터/미디어: 엔터는 3분기 반등 전망 ▶ 레져: 우려 대비 업황은 상당히 좋습니다 ▶ 하이브와 롯데관광개발 최선호2H26 Outlook: 모든 우려가 선 반영된 주 엔터/미디어: 엔터는 3분기 반등 전망 ▶ 레져: 우려 대비 업황은 상당히 좋습니다 ▶"
+      ],
+      "keyword": "2H26 Outlook: 모든 우려가 선 반영된 주 엔터/미디어: 엔터는"
+    },
+    {
+      "industry_name": "무선통신서비스",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유안타",
+      "bullets": [
+        "통신 Weekly-특이사항 없음"
+      ],
+      "keyword": "통신 Weekly-특이사항 없음"
+    },
+    {
+      "industry_name": "우주항공과국방",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "키움",
+      "bullets": [
+        "하반기 전망: 성장판은 아직 열려 있다 방산: 중동 전쟁 과정에서 K-방산에 대한 관심 증가, 신규 수주 파이프라인 확대 기회 ▶ 조선: 에너지 공급망 개편으로 상선 발주 호황에 특수선, DC향 엔진 모멘텀까지 풍부 ▶ 건설기계: 예상보다 강한 건설장비 수요 반등, 구조적인 엔진 사업 성장 기대"
+      ],
+      "keyword": "하반기 전망: 성장판은 아직 열려 있다 방산: 중동 전쟁 과정에서 K-방"
+    },
+    {
+      "industry_name": "복합기업",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "DS투자",
+      "bullets": [
+        "저PBR 방치할 경우 M&A 표적이 된다 한국판 「베어 허그」 허용 ▶ 미국/일본 M&A 공시 프로세스 비교 ▶ M&A 제안을 통한 저평가 해소 시나리오"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "호텔,레스토랑,레저",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "KB",
+      "bullets": [
+        "인바운드 관광객 수혜 기업 주목 5/18 잇지 [MOTTO] 초동 114만장 (vs 직전 Tunnel vision 16만장) ▶ 5/18 태용 [WYLD] 초동 21만장 (vs",
+        "직전 SHALALA 44만장) ▶ 향후 기대 요소: 인바운드 관광객 추이, 북중미 월드컵"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "건강관리장비와용품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "아리스",
+      "bullets": [
+        "4월 미용 의료 수출 All-Time High! 스몰캡 이익 성장 탄력성에 주목할 시간 미용 의료 시장 인바운드 개요 ▶ 미용 의료 시장 수출 개요 ▶ 실적 성장과 소외된 밸류에이션 ▶ 다각화 vs 고도화 - 주요 관전 포인트4월 미용 의료 수출 All-Time High! 스몰캡 이익 성장 탄력성에 주목할 시간 미용 의료 시장 인바운드 개요 ▶ 미용 의료"
+      ],
+      "keyword": "4월 미용 의료 수출 All-Time High! 스몰캡 이익 성장 탄력성"
+    },
+    {
+      "industry_name": "건강관리업체및서비스",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성",
+      "bullets": [
+        "헬스케어 수출 데이터 weekly"
+      ],
+      "keyword": "헬스케어 수출 데이터 weekly"
+    },
+    {
+      "industry_name": "손해보험",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "DB",
+      "bullets": [
+        "1Q26 해약환급금준비금 적립 분석 1Q26 해약환급금준비금적립액, 신계약 CSM의 55% 수준 ▶ 해약환급금준비금 증가의 주원인인 높은 신계약비 지출, 1Q26에도 계속 ▶ 여전히 해약환급금준비금 규제 완화 방향의 지표는 관찰되지 않는다1Q26 해약환급금준비금 적립 분석 1Q26 해약환급금준비금적립액, 신계약 CSM의 55% 수준 ▶ 해약환급금준비금 증가의 주원인인 높은 신계약비 지출, 1Q26에도 계속 ▶"
+      ],
+      "keyword": "1Q26 해약환급금준비금 적립 분석 1Q26 해약환급금준비금적립액, 신계"
+    },
+    {
+      "industry_name": "생명보험",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "키움",
+      "bullets": [
+        "멀티플의 벽을 깨라 증권: 실적 초과 상승은 멀티플 상향 필요 ▶ 보험: 아직은 회복 단계 ▶ Top Picks: 미래에셋증권/삼성생명"
+      ],
+      "keyword": "멀티플의 벽을 깨라 증권: 실적 초과 상승은 멀티플 상향 필요 ▶ 보험:"
+    },
+    {
+      "industry_name": "통신장비",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "버블 in My DNA 통신장비, 다시 ‘버블 DNA’를 자극하는 구간 진입 ▶ 1) 무선: 내러티브가 돌아왔다 ▶ 2) 유선: 광인터넷 전환 사이클 ▶ 3) 데이터센터: 연결 병목 확대"
+      ],
+      "keyword": "버블 in My DNA 통신장비, 다시 ‘버블 DNA’를 자극하는 구간"
+    },
+    {
+      "industry_name": "디스플레이패널",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "5월 하반월 LCD 패널가 TV 패널: 대형 사이즈 보합 전환 (상반월 소폭 하락세)",
+        "나머지 품목은 보합 유지 ▶ IT 패널: 모니터 판가는 전반적으로 1% 미만 상승 지속"
+      ],
+      "keyword": "5월 하반월 LCD 패널가 TV 패널: 대형 사이즈 보합 전환 (상반월"
+    },
+    {
+      "industry_name": "복합유틸리티",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "미국으로부터 도착할 청구서 2H26 북미 데이터센터 ▶ 원자력과 가스터빈: 중장기 구조적, 지정학적 수혜 지속 ▶ 전선과 전력기기: 중장기 성장 가능성 높은 종목에 집중"
+      ],
+      "keyword": "미국으로부터 도착할 청구서 2H26 북미 데이터센터 ▶ 원자력과 가스터빈"
+    }
+  ]
+}
