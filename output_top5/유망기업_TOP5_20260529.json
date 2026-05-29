@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-05-25",
+    "end_date": "2026-05-29",
+    "generated_at": "2026-05-29T10:33:39",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 455,
+    "buy_count": 279,
+    "target_up_count": 0,
+    "total_companies": 330
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "iM증권, KB증권, 유진투자증권, 신한투자증권, SK증권",
+      "report_count": 10,
+      "buy_ratio": 0.9,
+      "target_up_ratio": 0.0,
+      "current_price": 1849000.0,
+      "avg_target_price": 2032444.4444444445,
+      "max_target_price": 2300000.0,
+      "avg_upside": 9.9,
+      "bullets": [
+        "글로벌 AI 컴포넌트 주도주 목표주가를 기존 140만원에서 180만원으로 상향 ▶ 27년과 ＇28년 영업이익 추정치를 각각 +10%, +9% 상향한 31조원으로 전망 ▶ 3Q26을 MLCC 수급의 변곡점으로 판단 초대형 고객 전용 기판 생산라인 증설: 최상위 기술 경쟁력 입증 삼성전기, 초대형 고객 전용 패키징 기판 생산라인 국내에 신설 예정 ▶ 초대형 고객 내 존재감 확대와 베트남 공장 증설 통해 패키징 기판 실적의 폭발적 성장세 전망 Meta Trend Pick 5월 20일 공시를 통해 156조원의 실리콘 커패시터 공급 계약을 공시 ▶ 동사의 Si-Cap수주 공시는 EMIB패키징의 레퍼런스 확보 및 가동률 확대의 직관적인 물증이라고 판단 ▶ 27년 EPS추정치 27,405원에 무라타,이비덴 ＇27FP/E평균 6539배를 적용하여 목표주가 1,792,000원으로 상향 조정,업종내 Top-Pick으로 추천 최선호주의 이유 MLCC, 기판 부문 수요>공급 시장 핵심 밸류체인으로 도약 ▶ 1) 제품 경쟁력, 2) 수익성, 3) 중장기 수요 입증"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "iM증권, 유진투자증권, 하나증권, KB증권, 신한투자증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1134000.0,
+      "avg_target_price": 1312875.0,
+      "max_target_price": 1600000.0,
+      "avg_upside": 15.8,
+      "bullets": [
+        "넘치는 러브콜 목표주가를 기존 630,000원에서 1,000,000원으로 대폭 상향 ▶ 패키지솔루션 매출은 ＇25년 17조원, ’26년 2조원, ’27년 25조원으로 성장할 전망이며, 동기간 영업이익률은 73%, 16%로 개선될 전망 FC-BGA가 끌고, RF-SiP가 밀고 Tier1업체들의 27년까지의 캐파가 모두 매진된 상황 속,Tier2업체 중 하이엔드 제품향 포트폴리오 확대를 가장 먼저 달성할 것으로 예상됨"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "동국홀딩스",
+      "stock_code": "001230",
+      "institution_list": "현대차증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 2545.0,
+      "avg_target_price": 14400.0,
+      "max_target_price": 14400.0,
+      "avg_upside": 465.8,
+      "bullets": [
+        "절대적으로 낮은 P/B, 주요 계열사 실적 개선 예상 투자의견 BUY를 유지하며 그 근거는 주요 자회사의 실적 개선이 예상 ▶ 1분기 영업이익 62억원, 순이익 53억원으로 전년동기대비 증가 ▶ 올해 연초부터 전세계 주요 지역 철강 가격 상승이 지속되고 있어 철강과 무역부문의 실적은 개선될 것으로 예상"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "녹십자",
+      "stock_code": "006280",
+      "institution_list": "삼성증권, KB증권, 신영증권, DB증권, DS투자증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 150200.0,
+      "avg_target_price": 212857.14285714287,
+      "max_target_price": 230000.0,
+      "avg_upside": 41.7,
+      "bullets": [
+        "큐레보, 릴리에 매각: 일회성 이익을 넘어선 중장기 가치 큐레보 매각, CMO 미 로열티 리커링 수익 가치 반영 ▶ 투자의견 BUY, 목표주가 22만원으로 상향 조정 적자 탈피 확인, Alyglo 성장 가시성에 주목할 시점 투자의견 Buy, 목표주가 200,000원으로 커버리지 개시 ▶ 자회사 부담 해소와 본업 성장이 만든 턴어라운드",
+        "단순 일회성이 아닌 선순환의 시작 관계사 큐레보가 릴리에 인수되며 3Q26 현금 유입 전망 ▶ 릴리 인수 이유: 아메조스바테인의 내약성 경쟁력 큐레보 매각, 끝이 아닌 시작 일라이 릴레에 관계사 큐레보 매각 ▶ 싱그릭스의 약점을 파고든 데이터, 신약가치 반영 TP 22만원으로 상향"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "에스티팜",
+      "stock_code": "237690",
+      "institution_list": "KB증권, 미래에셋증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 139700.0,
+      "avg_target_price": 200000.0,
+      "max_target_price": 200000.0,
+      "avg_upside": 43.2,
+      "bullets": [
+        "RNA 시대, 본격 성장의 길목 투자의견 Buy, 목표주가 200,000원으로 커버리지 개시 ▶ 증설이 증명하고 있는 수요, 매출 안정성과 수익성의 동반 레벨업 ▶ 잠재 고객사 파이프라인의 상업화 임박, 추가 수주의 트리거로 작용할 전망 RNA 치료제와 함께 성장 중 투자의견 매수, 목표주가 20만원 유지 ▶ 1분기 실적 어닝 서프라이즈"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "엘앤에프",
+      "stock_code": "066970",
+      "institution_list": "미래에셋증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 158900.0,
+      "avg_target_price": 300000.0,
+      "max_target_price": 300000.0,
+      "avg_upside": 88.8,
+      "bullets": [
+        "Tesla와 ESS로 인한 실적 회복 각도 우위 목표주가 30만원 및 소재 탑픽 의견 유지 ▶ 2Q26도 시장 예상치 상회하는 서프라이즈 예상 ▶ 양극재 중 리딩 컴퍼니는 분명"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "현대차",
+      "stock_code": "005380",
+      "institution_list": "삼성증권, LS증권, 신한투자증권, KB증권, 유진투자증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 677000.0,
+      "avg_target_price": 946000.0,
+      "max_target_price": 1200000.0,
+      "avg_upside": 39.7,
+      "bullets": [
+        "하반기 전망: 현대차 = Physical AI ETF 토요타의 실적 악화로 현대차가 Physical AI 시대에 테슬라와 경쟁할 수 있는 유일한 업체로 인식되어 가는 중",
+        "▶ 현대차는 지난 25년간 그룹의 사업 확장 시, 50% 이상의 자금을 부담",
+        "이제 자회사의 실적 성장으로, 투자 부담은 감소하고, 지분 가치는 부각되는 시점",
+        "▶ 현대차의 자회사는 모두 Physical AI 관련 기업"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "JB금융지주",
+      "stock_code": "175330",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 25300.0,
+      "avg_target_price": 42000.0,
+      "max_target_price": 42000.0,
+      "avg_upside": 66.0,
+      "bullets": [
+        "비은행 이익증가로 실적개선 연결순이익 YoY 22% 증가, 목표 초과 ▶ 캐피탈의 높은 이익증가율 ▶ 투자의견 매수, 목표주가 42,000원"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "하이브",
+      "stock_code": "352820",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 235000.0,
+      "avg_target_price": 370000.0,
+      "max_target_price": 370000.0,
+      "avg_upside": 57.4,
+      "bullets": [
+        "하반기에도 BTS가 캐리합니다 하반기에도 BTS가 캐리합니다 ▶ MD 중심의 실적 서프라이즈 기대"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "경동나비엔",
+      "stock_code": "009450",
+      "institution_list": "DS투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 71700.0,
+      "avg_target_price": 110000.0,
+      "max_target_price": 110000.0,
+      "avg_upside": 53.4,
+      "bullets": [
+        "1Q는 예고편 2Q부터가 진짜 1Q26 매출액 +167% YoY, OPM 사상 최고치 ▶ 관세율 하락으로 OPM 큰 폭의 개선, 2분기 관세 관련 추가 환급 전망 ▶ 하이드로 퍼네스, 히트펌프 온수기 그리고 히트펌프는 길게 봐야 할 상품"
+      ]
+    }
+  ]
+}

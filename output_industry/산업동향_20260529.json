@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "report_type": "industry",
+    "start_date": "2026-05-25",
+    "end_date": "2026-05-29",
+    "generated_at": "2026-05-29T10:33:53",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 205,
+    "covered_industries": 35,
+    "overweight_industries": 24
+  },
+  "industries": [
+    {
+      "industry_name": "은행",
+      "report_count": 19,
+      "overweight_ratio": 0.10526315789473684,
+      "overweight_ratio_pct": 11,
+      "opinion": "Neutral",
+      "main_institutions": "신한투자, 대신, 삼성",
+      "bullets": [
+        "3월 은행 연체율 동향 3월 국내은행의 원화대출 연체율은 056%(-6bp MoM, +3bp YoY) 기록 [2026년 하반기 산업전망] EPS증가+환원율 상승= Buy! 4대 금융지주 및 카카오뱅크, 26년 사상 최대 실적 달성 전망56%(+3bp YoY)로 상승 ▶ 신규 연체는 늘고 연체채권 정리는 줄어들고 ▶ 핵심은 법인 중소기업 메리츠 Financial Daily PBR 1배를 넘어, 내재가치를 향해 이자이익과 비이자이익, 대손비용 모두 양호"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 19,
+      "overweight_ratio": 0.47368421052631576,
+      "overweight_ratio_pct": 47,
+      "opinion": "Overweight",
+      "main_institutions": "대신, 미래에셋, iM",
+      "bullets": [
+        "[2026년 하반기 산업전망] 흑전 시작, 턴어라운드 구간 진입 고유가에 따른 EV 수요 반등 가능성 확대 ▶ 비중국 LFP 양극재 숏티지 가능성에 주목 각 나온다 수요(Q) 각도: EV 수요 바닥 통과",
+        "ESS 비중 확대 가속 ▶ 판가(P) 각도: 우상향",
+        "매도자 우위 시장으로 전환 ▶ ‘각’형 배터리 점유율 상승 가속 [2026년 하반기 전망] 패키지기판과 MLCC, 미래 공급을 예약하는 시대 업황 동향: 더욱 커지는 쏠림 효과 ▶ PCB: 한국 PCB 업체들의 리레이팅 가속화 ▶ MLCC: 서버용 MLCC의 나비효과 무대의 중심으로 이유 있는 Outperform"
+      ],
+      "keyword": "ESS 비중 확대 가속 ▶ 판가(P) 각도: 우상향"
+    },
+    {
+      "industry_name": "조선",
+      "report_count": 15,
+      "overweight_ratio": 0.26666666666666666,
+      "overweight_ratio_pct": 27,
+      "opinion": "Neutral",
+      "main_institutions": "SK, 다올투자, 삼성",
+      "bullets": [
+        "한수위: 조선 3사 가스운반선(Gas Carrier) 수주 호황",
+        "하반기에도 이어질 전망 신조선가지수는 18497pt)를 기록 ▶ 삼성중공업은 Seapeak으로부터 LNGC 3척을 척 당 $251"
+      ],
+      "keyword": "한수위: 조선 3사 가스운반선(Gas Carrier) 수주 호황"
+    },
+    {
+      "industry_name": "자동차",
+      "report_count": 13,
+      "overweight_ratio": 0.3076923076923077,
+      "overweight_ratio_pct": 31,
+      "opinion": "Overweight",
+      "main_institutions": "대신, 메리츠, 교보",
+      "bullets": [
+        "[2026 년 하반기 산업전망] 새로운 산업, 새로운 밸류에이션 로봇 모멘텀에 기인한 완연한 프리미엄 구간 진입 ▶ 밸류업 모범생 Mobility at a glance 2026년 5월 넷째 주 자동차 Weekly 스텔란티스: ＇FASTLane 2030＇ 5개년 전략 공개, €600억 중 60% 북미 투입, 11개 신규 모델 출시, 북미 M/S 회복 초점2H26 생산 둔화 본격화 새로운 시대가 열리는 중 자동차 판매 부진 속 생존 전략 ▶ 자율주행 시대의 개막 LS의 Car Center Weekly 하반기 전망: Next Bottleneck 실적은 안 좋은데 주가는 왜 오를까 04p ▶ NEXT Bottleneck: 로봇 행동 데이터0 현상 관찰 Mobility at a glance Mobility at a glance Corporate Day 후기: BD가 이끄는 Unlocking Value 상상 이상으로 빠른 아틀라스 성능 개선 확인 ▶ BD 가치 확대는 현대차그룹 지배구조 개편을 시사"
+      ],
+      "keyword": "[2026 년 하반기 산업전망] 새로운 산업, 새로운 밸류에이션 로봇 모"
+    },
+    {
+      "industry_name": "건설",
+      "report_count": 12,
+      "overweight_ratio": 0.4166666666666667,
+      "overweight_ratio_pct": 42,
+      "opinion": "Overweight",
+      "main_institutions": "신영, 신한투자, 유진투자",
+      "bullets": [
+        "3% 건설 수주의 회복 신한 건설 Weekly 한미 핵잠/원자력 실무그룹 출범 매매가격지수: 전국(+031%) ▶ 전세가격지수: 전국(+029%) ▶ 연료주기를 포함한 K-원전 토탈 패키지 경쟁력 확보 기대 Hyperscaler가 선택한 SMR에 주목 Off-taker, 그리고 Bankability ▶ 빅테크 기업들의 PPA 준비된 자의 독무대 중동향 재건과 대체 파이프라인 증설 사업"
+      ],
+      "keyword": "박세라의 건설이야기: Vol"
+    },
+    {
+      "industry_name": "제약",
+      "report_count": 11,
+      "overweight_ratio": 0.09090909090909091,
+      "overweight_ratio_pct": 9,
+      "opinion": "",
+      "main_institutions": "SK, 한국투자, 유안타",
+      "bullets": [
+        "Weekly Bio Insight ADC 시장을 밝혀준 머크 ASCO 2026 주인공은 머크 ▶ ADC 시장 확장 이벤트 ▶ 리가켐바이오와 에임드바이오 그리고 항암제 개발 기업에 주목 In-vivo로의 전환로의 전환 커지는 CAR-T 적용 범위 ▶ 해답은 in-vivo CAR-T9% 감소 ▶ Adalimumab 계열은 Yuflyma(+188%)로 전월비 도매 처방액이 증가하였으며, Amjevita(-9"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "식품",
+      "report_count": 9,
+      "overweight_ratio": 0.1111111111111111,
+      "overweight_ratio_pct": 11,
+      "opinion": "Neutral",
+      "main_institutions": "NH투자, 메리츠, 키움",
+      "bullets": [
+        "수요 기반의 매출 회복 전망 국내: 가격(P)보다는 수요(Q) 중심 회복 ▶ 해외: 지속적으로 증가하는 해외 매출 F&B Weekly Talk F&B Morning Talk 키움 음식료 Weekly F&B Weekly Comment: 리뷰 못한 중소형주 1Q26 Re 중동 물류난 뚫은 K푸드, 1~4월 GCC 수출 376% 급증 ▶ 삼양식품, ＇탱글＇ 내세워 멕시코 공략 ＇제2 불닭＇ 키운다 ▶ 삼양식품 수출공장, 증설 1년 만 ‘풀가동’ 눈앞 F&B Morning Talk F&B Morning Talk F&B Morning Talk [2026 하반기전망] 브랜드가 숫자를 만든다 투자포인트의 전환 ▶ 수출 지역 다변화 ▶ CAPA 부족의 의미"
+      ],
+      "keyword": "수요 기반의 매출 회복 전망 국내: 가격(P)보다는 수요(Q) 중심 회복"
+    },
+    {
+      "industry_name": "양방향미디어와서비스",
+      "report_count": 9,
+      "overweight_ratio": 0.1111111111111111,
+      "overweight_ratio_pct": 11,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, IBK투자, NH투자",
+      "bullets": [
+        "인터넷/게임 Weekly IBKS Daily [인터넷/게임] 글로벌 경쟁 속 생존 전략 플랫폼: 로컬 플랫폼, 증명의 시간 ▶ 게임: 침체를 타개할 레버리지 효과 SI 기업 비중 확대 의견 유지 인터넷 플랫폼 < SI 기업 투자 매력도 높음 ▶ 왜 SI기업 비중을 늘려야 하는가"
+      ],
+      "keyword": "인터넷/게임 Weekly IBKS Daily [인터넷/게임] 글로벌 경쟁"
+    },
+    {
+      "industry_name": "반도체와반도체장비",
+      "report_count": 7,
+      "overweight_ratio": 0.2857142857142857,
+      "overweight_ratio_pct": 29,
+      "opinion": "Neutral",
+      "main_institutions": "신영, NH투자, 하나",
+      "bullets": [
+        "HBM5로 보는 메모리 산업 전망 AI 추론, 메모리가 발목 잡다 ▶ 학습용 메모리의 진화: HBM 구조 대전환 ▶ 추론 병목 완화를 위한 인프라의 다각화 모든 AI는 메모리를 거친다 Agentic AI와 새로운 투자 패러다임",
+        "Vera CPU의 강한 매출액 전망 기판의 구조적 성장: 판이 바뀌었다 에이전틱 AI 시대의 도래 ▶ 기판의 대형화 ▶ 신기술 개발의 동반자 [2026년 하반기 전망] P/E의 시대, 재평가의 본격화 메모리 주가 랠리는 AI 시대 ＇이익 창출력＇의 구조적 제고에 대한 신뢰 형성에 기반",
+        "P/E Valuation 유지 근거 [2026년 하반기 산업 전망] Strong BUY 1H26 리뷰 - 전쟁도 막지 못한 AI 열풍 ▶ 2H26 전망 - 구조적 변화가 확인될 구간 [2026년 하반기 전망] 소부장, 조정은 곧 기회 CSP4사 CAPEX 증가율 꺾일 기세 없음"
+      ],
+      "keyword": "명목 CAPA 확대가 유일한 해결책 ▶ DRAM 3사 장비 투자: 26년"
+    },
+    {
+      "industry_name": "부동산",
+      "report_count": 7,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "삼성, NH투자, LS",
+      "bullets": [
+        "대체투자 Weekly - 해외자산을 담은 리츠의 대응 짙어지는 한파 속 오피스 방어력 전환점을 맞이한 투심 향방은? ▶ 오피스의 흔들림 없는 기초 체력 부동산 Weekly Data 건설/건자재 위클리 분수령이 될 6월 세제 개편으로 완성될 청사진 ▶ 5극 3특 기반의 지방 경제권 구축",
+        "섹터 전반에 걸친 회피 심리 우세로 차별화 장세 해소 ▶ 섹터 전반의 자금 조달 안정성 확인",
+        "다수 리츠 리파이낸싱 및 신규 조달 성공 ▶ 주가 회복의 변수는 투자 심리의 정상화 시점"
+      ],
+      "keyword": "섹터 전반에 걸친 회피 심리 우세로 차별화 장세 해소 ▶ 섹터 전반의 자"
+    },
+    {
+      "industry_name": "판매업체",
+      "report_count": 7,
+      "overweight_ratio": 0.42857142857142855,
+      "overweight_ratio_pct": 43,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, NH투자, 신한투자",
+      "bullets": [
+        "Retail Weekly Traffic 지갑이 열렸다 오프라인, 매출 반등의 본격화 ▶ 모든 업태가 좋아진다 Retail Weekly Talk 소비는 어렵다, 성장은 남는다 리뷰 ? 실적에 비례한 차별화 ▶ 전망 ? 양극화 심화 2026년 4월 주요 유통업체 및 면세점 매출 동향 백화점 고성장 지속, 대형마트 경쟁사 반사수혜 본격화 가능성 주목"
+      ],
+      "keyword": "Retail Weekly Traffic 지갑이 열렸다 오프라인, 매출 반"
+    },
+    {
+      "industry_name": "복합유틸리티",
+      "report_count": 6,
+      "overweight_ratio": 0.16666666666666666,
+      "overweight_ratio_pct": 17,
+      "opinion": "Neutral",
+      "main_institutions": "NH투자, 신한투자, LS",
+      "bullets": [
+        "미국이 보내올 청구서 원자력과 가스터빈: 중장기 구조적, 지정학적 수혜 확대 ▶ 전선과 전력기기: 중장기 성장 가능성에 집중 꺼지지 않을 불을 찾아서 알고 맞아도 아픈 호르무즈發 쇼크 ▶ 원전, 경제성 그 이상의 가치06조원(+39%) 전망 ▶ 한전기술: 매출액 5,921억원(+14%), 영업이익 774억원(+118%), 영업이익률 132%p) 전망 유틸리티 Weekly-6월부터 본격적으로 SMP 상승 시작 “올여름 에너지 가격 폭등 가능성”…글로벌 석유"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "우주항공과국방",
+      "report_count": 6,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "다올투자, 대신, DS투자",
+      "bullets": [
+        "실전, 현지화, 그래서 K-방산: 파이프라인 가치 Valuation Combat Proven",
+        "명품이 되다 ▶ 그들의 자주국방 욕구",
+        "현지화로 채워준다 ▶ 2개의 큰 시장을 위한 새로운 Valuation [2026년 하반기 산업전망] 시대의 흐름 전세계 상승 사이클에 접어든 방위산업 ▶ 확대되는 시장 속 심화되는 경쟁 ▶ 국내 방위산업체의 구조적 성장 스토리 DS Defense Daily 중요한 건 아직 꺾이지 않은 실적 업사이클 상반기보다 기대되는 하반기 실적"
+      ],
+      "keyword": "실전, 현지화, 그래서 K-방산: 파이프라인 가치 Valuation Co"
+    },
+    {
+      "industry_name": "IT서비스",
+      "report_count": 6,
+      "overweight_ratio": 0.16666666666666666,
+      "overweight_ratio_pct": 17,
+      "opinion": "Neutral",
+      "main_institutions": "메리츠, 하나, SK",
+      "bullets": [
+        "Meritz Overnight Tech Physical AI 이제 멈출 수 없다 미중 패권 전쟁에서 Physical AI의 역할 ▶ Physical AI 리더에게 배우자: Top Tier 기업들의 성과와 성장 전략 방향",
+        "그러나 소비수요는 불안 ▶ 26 년 하반기 전망: IT 인플레+재고축적 > 쇼티지 중요 Meritz Overnight Tech"
+      ],
+      "keyword": "Meritz Overnight Tech Physical AI 이제 멈출"
+    },
+    {
+      "industry_name": "무선통신서비스",
+      "report_count": 6,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "메리츠, NH투자, 유진투자",
+      "bullets": [
+        "Meritz 통신서비스 Weekly AI 시대 중요해지는 통신사 역할 AI 시대에 상승할 통신 인프라의 가치 ▶ 6G 상용화 전까지 지속될 통신 업황 호조 Auction 113 주파수 경매 코멘트 AWS-3 재경매 ▶ 주요 참가자는 SpaceX와 미국 통신3사1% ▶ 오랜만에 주도주 이외의 산업이 반등하는 가운데 통신도 지수를 소폭 아웃퍼폼 통신서비스 Weekly - 미국에서 주파수 경매가 시작됩니다"
+      ],
+      "keyword": "Meritz 통신서비스 Weekly AI 시대 중요해지는 통신사 역할 A"
+    },
+    {
+      "industry_name": "복합기업",
+      "report_count": 6,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자, 대신, SK",
+      "bullets": [
+        "2026년 하반기 전망: 산업전망 계속되는 정책 모멘텀 여전히 저평가 영역 ▶ 하반기에 집중될 거버넌스 정책 2026년 하반기 산업전망: 종합선물세트 지주업 투자의견 BUY 유지 최선호주 SK, 차선호주 HD 현대 ▶ 외국인 수급 , 지주사로 집중 ▶ 중복상장 규제와 PBR 개혁이 지주사를 타겟팅 SK증권 Research Signature #2좁아지는 시장, 높아지는 천장 [2026년 하반기 전망] 할인율이 사라진다 지주회사 베타 상승으로 코스피 상승기 좋은 주가 수익률 기록 ▶ 합산 할인율 545% 추가적인 할인율 축소 기대 ▶ 자본시장 체질개선 추진"
+      ],
+      "keyword": "5% 추가적인 할인율 축소 기대 ▶ 자본시장 체질개선 추진"
+    },
+    {
+      "industry_name": "방송과엔터테인먼트",
+      "report_count": 6,
+      "overweight_ratio": 0.16666666666666666,
+      "overweight_ratio_pct": 17,
+      "opinion": "Neutral",
+      "main_institutions": "키움, 신한투자, NH투자",
+      "bullets": [
+        "[하반기 전망] 하반기 야호~! 엔터, 기대해도 좋을 하반기 ▶ 레저, 매력적인 저점 매수 타이밍 ▶ Top-pick: 하이브, JYP Ent, 롯데관광개발 신한 플랫폼팀 Weekly (엔터/미디어/인터넷/게임/통신) - 돈이 되는 오지랖 (5월 4주차) 엔터/미디어/레저 - 인바운드 호황 지속, 엔터/미디어 IP 흥행 가속화 ▶ 인터넷/게임 - 에이전틱 AI 시대 개화, 카카오 두나무 지분 매각 ▶ 통신장비 - 4년 만에 미국 주파수 경매 임박 설국열차 광고: 얇아진 허리",
+        "또한 2분기 대거 컴백한 주요 아티스트들의 월드투어 본격화로 실적 모멘텀 진입 구간 ▶ Top Pick: HYBE, 차선호주: JYP Ent"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "증권",
+      "report_count": 5,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "대신, NH투자, 상상인",
+      "bullets": [
+        "[2026년 하반기 산업전망] 거부할 수 없는 흐름 26년 커버리지 5사 합산 순이익 10조원 상회할 전망 상승장에 베팅한다면, 증권주 높은 시장 민감도, 양날의 검 ▶ 거래환경 개선 본격화 [2026년 하반기 전망] 증권주를 바라보는 시선 가계 유동성이 만등 증권주 재평가 ▶ 거래대금은 출발점, 지속성은 고객자산과 자본활용2조원 ▶ 거래대금과의 괴리 확대 [2026년 하반기 전망] 증권의 한계를 그은 건 어쩌면 나일지도? KOSPI 지수 8,000pt 돌파",
+        "하반기에도 주식시장 강세 지속 전망 ▶ 증시 호조에 따른 수혜 고려 시, BK+WM 부문 기여도 높은 삼성증권 선호 ▶ 주식시장 강세에 따른 운용부문 수혜 측면에서 한국금융지주 선호"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "화학",
+      "report_count": 5,
+      "overweight_ratio": 0.6,
+      "overweight_ratio_pct": 60,
+      "opinion": "Overweight",
+      "main_institutions": "NH투자, 하나, 유진투자",
+      "bullets": [
+        "역래깅에 대비해야 한다 역래깅 효과 방어 여력에 따라 차별화될 실적 ▶ 펀더멘털 개선에 기반한 합성고무의 수익성 회복 Weekly Monitor: 단기 투자 선호도: 태양광>>정유>화학 WTI 96유럽 디젤 선물 WoW -4% ▶ 납사 -15% vs",
+        "에틸렌/MEG -5%, 프로필렌/PVC/가성소다 -4%, PE/PP/BD -2%"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "화장품",
+      "report_count": 4,
+      "overweight_ratio": 0.25,
+      "overweight_ratio_pct": 25,
+      "opinion": "Neutral",
+      "main_institutions": "NH투자, 한국투자, SK",
+      "bullets": [
+        "글로벌 메인 스트림으로 거듭나다 브랜드: 서구권 뷰티 민심 정조준 ▶ ODM/유통: 안정적인 성장을 뒷받침 반등 타이밍을 노려볼 시점 우려대비 양호했던 5월 1~20일 화장품 수출 ▶ 소비자의 소비 둔화에 대한 우려가 존재하지만"
+      ],
+      "keyword": "글로벌 메인 스트림으로 거듭나다 브랜드: 서구권 뷰티 민심 정조준 ▶ O"
+    },
+    {
+      "industry_name": "기계",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "안녕하세요 데일리에요(로봇/방산/조선) 위클리에요(로봇/방산/조선/항공/해운) - 2026/05/18~2026/05/25 [로봇] HDS의 어닝콜 ▶ [방산] 4월 수출 데이터 업데이트 ▶ [조선] 캐나다에 간 도산안창호함 ▶ [항공] 6월 유류할증료 인하 안녕하세요 데일리에요(로봇/방산/조선) 안녕하세요 데일리에요(로봇/방산/조선)"
+      ],
+      "keyword": "안녕하세요 데일리에요(로봇/방산/조선) 위클리에요(로봇/방산/조선/항공/"
+    },
+    {
+      "industry_name": "운송인프라",
+      "report_count": 4,
+      "overweight_ratio": 0.25,
+      "overweight_ratio_pct": 25,
+      "opinion": "Neutral",
+      "main_institutions": "한국투자, NH투자, 신한투자",
+      "bullets": [
+        "평화는 모두에게 호재 호르무즈 데드라인 한참 지난 것 같은데 증시는 최고점 ▶ 항공과 해운 모두 후르무즈 해협 통행 재개는 반가운 호재 ▶ 전쟁 이전에 좋았던 업체들이 전쟁 불확실성도 선방 확장하는 자가 이긴다 업황보다 체질 변화에 주목 ▶ 하반기 주요 변수 신한 운송 Weekly T",
+        "탱커선사 1Q26 실적 업데이트, 혼조 속에도 원유선 강세 전망 [ 2026년 하반기 전망] 미네르바의 부엉이는 황혼에 날개를 편다 항공: 단기 불확실성 극대화 ▶ 해운: 황혼에 드러난 풍경 ▶ 육운: 물밑에서 이어지는 변화"
+      ],
+      "keyword": "평화는 모두에게 호재 호르무즈 데드라인 한참 지난 것 같은데 증시는 최고"
+    },
+    {
+      "industry_name": "에너지장비및서비스",
+      "report_count": 3,
+      "overweight_ratio": 0.3333333333333333,
+      "overweight_ratio_pct": 33,
+      "opinion": "Overweight",
+      "main_institutions": "유진투자, 메리츠",
+      "bullets": [
+        "태양광 중심의 1차 재생에너지 기본계획 발표 2030년 재생에너지 100GW 확보, 2035년 발전비중 30% 목표 확정 ▶ 단기에는 태양광에 집중하고 중장기 보급 확대는 해상풍력 투 트랙으로 ▶ 글로벌 트렌드에 부합한 정책, 태양광 전성 시대 심화 Next Energy - 스타쉽 12차 시험 발사 성공 배터리: LG화학(-109%) ▶ 원자력: Cameco(-67%) ▶ 우주 태양광 산업의 급속한 성장 전망 Energy War #5: 우주 에너지의 시작 미국 우주 행정명령 ▶ 태양광_New Phase ▶ Nuclear to the Moon"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "철강",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 신한투자",
+      "bullets": [
+        "철강금속 Weekly: 중국, 최신 철강 생산능력 치환 방침 확정 국내 철강 유통가격: 판재류 가격은 그동안의 가격 상승 피로감으로 하락 반면, 철근은 강세 기조 지속 ▶ 중국 철강 유통가격: 6월 비수기 앞서 중국 철강사들의 재고 확대되는 등 수요 둔화 움직임 속에 소폭 하락"
+      ],
+      "keyword": "철강금속 Weekly: 중국, 최신 철강 생산능력 치환 방침 확정 국내"
+    },
+    {
+      "industry_name": "건강관리장비와용품",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "DB, 다올투자",
+      "bullets": [
+        "내가 만일 의사라면 미용의료, 새로움이 필요한 구간 ▶ 왜 의사가 진짜 고객인가 ▶ ROI를 높일 수 있는 명분이 필요해 Sex and the diagnostics 성병은 Wellness의 Side effect ▶ I글로벌 사례 분석 ▶ 정책이 시장을 만든다 - WHO 90-70-90과 글로벌 screening 확대"
+      ],
+      "keyword": "내가 만일 의사라면 미용의료, 새로움이 필요한 구간 ▶ 왜 의사가 진짜"
+    },
+    {
+      "industry_name": "섬유,의류,신발,호화품",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자, SK",
+      "bullets": [
+        "결국 살아남은 자가 강자다 브랜드: 비싸거나, 싸거나, K-스럽거나 ▶ OEM: 고객사와 공급망 다변화의 중요성 [2026년 하반기 전망] 다시 지갑이 열린다 하반기에도 백화점 채널에서 고가 브랜드 중심으로 의류 소비 회복 지속될 것 ▶ 중국 소비도 턴어라운드 조짐",
+        "CPI, PPI 모두 상승 전환, 패션 소비 회복세 뚜렷 ▶ 백화점 채널 소비 회복과, 중국 수출주 관점에서 신세계인터내셔날, 감성코퍼레이션 추천"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "생물공학",
+      "report_count": 2,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "ASCO 2026 정규 초록 공개 및 본격 학회 시즌 돌입 이번주 글로벌 주요 학회 시즌 본격 돌입(EASL",
+        "ADA) ▶ ASCO 2026 정규 초록 리뷰: 국내 참여 기업 주가 차별화 이유 냉정과 열정 사이 국내외 하반기 바이오 업황 전망 ▶ 구조적 신약 투자 아이디어"
+      ],
+      "keyword": "ASCO 2026 정규 초록 공개 및 본격 학회 시즌 돌입 이번주 글로벌"
+    },
+    {
+      "industry_name": "호텔,레스토랑,레저",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "선순환의 정석 레저: 늘어나는 인바운드 ▶ 엔터테인먼트: 피리 부는 K팝"
+      ],
+      "keyword": "선순환의 정석 레저: 늘어나는 인바운드 ▶ 엔터테인먼트: 피리 부는 K팝"
+    },
+    {
+      "industry_name": "해운사",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "글로벌 조선, 해운 Weekly-조기 성수기가 시작된 컨테이너, 신조선가 상승세 지속"
+      ],
+      "keyword": "글로벌 조선, 해운 Weekly-조기 성수기가 시작된 컨테이너, 신조선가"
+    },
+    {
+      "industry_name": "손해보험",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "NH투자",
+      "bullets": [
+        "손익보다 체력 + 제도 개선 실적: 이익보다 지표 관리가 우선 ▶ 대외 변수: 금리는 우호적, 관건은 해약환급금 준비금"
+      ],
+      "keyword": "손익보다 체력 + 제도 개선 실적: 이익보다 지표 관리가 우선 ▶ 대외"
+    },
+    {
+      "industry_name": "전기유틸리티",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "유진투자",
+      "bullets": [
+        "블룸에너지-네비우스 파트너십 체결 코멘트 블룸에너지(BE), 네비우스(NBIS)와 AI 인프라 구축 파트너십 발표 ▶ 블룸에너지의 연말기준 목표 CAPA는 2GW 수준 ▶ 마이크로그리드 디벨로퍼로 격상된 지위 통해 기존 제조 밸류체인인 장비/부품 업체들뿐 아니라 전력망 내 전력기기 공급하던 업체들도 직수주가 가능한 국면"
+      ],
+      "keyword": "블룸에너지-네비우스 파트너십 체결 코멘트 블룸에너지(BE), 네비우스(N"
+    },
+    {
+      "industry_name": "전기제품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "교보",
+      "bullets": [
+        "2026년 5월 넷째 주 전기전자 Weekly 테크 섹터의 차익실현이 이어지던 가운데 Nvidia 호실적 발표 후 전기전자 부문의 급등세 ▶ AI 수요 확장에 대한 기대감이 형성되며 산업 단의 불확실성이 크게 해소된 영향 ▶ 수동소자까지 확장되는 AI 수요발 슈퍼 사이클 감지, 전기전자 부문의 강세 지속 전망2026년 5월 넷째 주 전기전자 Weekly 테크 섹터의 차익실현이 이어지던 가운데 Nvidia 호실적 발표 후 전기전자 부문의 급등세 ▶ AI"
+      ],
+      "keyword": "2026년 5월 넷째 주 전기전자 Weekly 테크 섹터의 차익실현이 이"
+    },
+    {
+      "industry_name": "게임엔터테인먼트",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "키움",
+      "bullets": [
+        "정상 Value 분석 판단 기제가 중요 ▶ 종목별 의견 제시"
+      ],
+      "keyword": "정상 Value 분석 판단 기제가 중요 ▶ 종목별 의견 제시"
+    },
+    {
+      "industry_name": "디스플레이패널",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "신한투자",
+      "bullets": [
+        "[2026년 하반기 산업 전망] Begin(기술 패러다임 변화의 시작) 리뷰 - 외풍 속에도 정진 ▶ 전망 - 기술 패러다임 변화에 주목"
+      ],
+      "keyword": "[2026년 하반기 산업 전망] Begin(기술 패러다임 변화의 시작)"
+    },
+    {
+      "industry_name": "석유와가스",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "삼성",
+      "bullets": [
+        "2026년 하반기 전망 - 전쟁 이후 무엇이 달라질까? 정유: 1H26 Review -중동발 공급 타이트 ▶ 화학: 1H26 Review -펀더멘털 약세 지속2026년 하반기 전망 - 전쟁 이후 무엇이 달라질까? 정유: 1H26 Review -중동발 공급 타이트 ▶ 화학: 1H26 Review -펀더멘털 약세"
+      ],
+      "keyword": ""
+    }
+  ]
+}
