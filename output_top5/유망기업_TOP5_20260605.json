@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-05",
+    "generated_at": "2026-06-05T10:36:22",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 264,
+    "buy_count": 140,
+    "target_up_count": 0,
+    "total_companies": 174
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "한미약품",
+      "stock_code": "128940",
+      "institution_list": "KB증권, 삼성증권, 메리츠증권, DB증권, IBK투자증권",
+      "report_count": 14,
+      "buy_ratio": 0.7857142857142857,
+      "target_up_ratio": 0.0,
+      "current_price": 507000.0,
+      "avg_target_price": 694545.4545454546,
+      "max_target_price": 740000.0,
+      "avg_upside": 37.0,
+      "bullets": [
+        "릴리와 한 배를 탔다 투자의견 Buy 상향, 목표주가 630,000원으로 21% 상향 ▶ 미충족 수요가 큰 시장,  장기지속형 치료제 침투 가능성 높음 ▶ 향후 효력 입증과 적응증 확장 여부에 주목",
+        "기술이전 기대감 지속될 것 릴리의 GLP-2 베팅, 한미약품 파이프라인 가치 재발견 Sonefpeglutide, 일라이 릴리에 기술 이전 Lilly bets on GLP-2spotlight on Hanmi＇s pipeline [SAMSUNG] Sonefpeglutide licensed to Eli Lilly Eli Lilly가 선택한 GLP-2의 확장성 Eli Lilly와 약 19조원 규모 기술이전 계약 체결 ▶ SBS-IF best-in-class를 겨냥하는 월 1회 GLP-2 ▶ Eli Lilly IBD 포트폴리오 내 옵션 가능성 일라이 릴리이기에 더 의미있는 계약 릴리라서 의미있는 기술이전계약"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "한화비전",
+      "stock_code": "489790",
+      "institution_list": "키움증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 67100.0,
+      "avg_target_price": 120000.0,
+      "max_target_price": 120000.0,
+      "avg_upside": 78.8,
+      "bullets": [
+        "2Q26 실적 서프라이즈 예상 2Q26 영업이익 503억원, 서프라이즈 예상 ▶ 3Q26 영업이익 540억원 전망 ▶ 목표 주가 12만원, 반도체 업종 top pick 유지2Q26 실적 서프라이즈 예상 2Q26 영업이익 503억원, 서프라이즈 예상 ▶ 3Q26 영업이익 540억원 전망 ▶ 목표 주가 12만원, 반도체 업종"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "카카오",
+      "stock_code": "035720",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 41950.0,
+      "avg_target_price": 73000.0,
+      "max_target_price": 73000.0,
+      "avg_upside": 74.0,
+      "bullets": [
+        "Agentic AI로서 가장 유리한 플랫폼 기업 내외부 AI를 활용하여 파트너사들과의 생태계 구축 ▶ 2026년 1분기 기준 역대 최대 실적 달성"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "크래프톤",
+      "stock_code": "259960",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 257500.0,
+      "avg_target_price": 420000.0,
+      "max_target_price": 420000.0,
+      "avg_upside": 63.1,
+      "bullets": [
+        "글로벌 AI플랫폼 기업으로 확장 가능한 잠재력 게임에서 피지컬 AI로 AI산업 확장 ▶ 2026년 1분기 역대 최대 분기 실적 달성"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "영원무역",
+      "stock_code": "111770",
+      "institution_list": "KB증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 78500.0,
+      "avg_target_price": 120000.0,
+      "max_target_price": 120000.0,
+      "avg_upside": 52.9,
+      "bullets": [
+        "4개 분기 연속 서프라이즈 예상 투자의견 Buy, 목표주가 12만원, 의류 산업 탑픽 유지 ▶ 아크테릭스 오더 고성장은 올해도 지속 ▶ 2Q26E OP 1,982억원 (+364개 분기 연속 서프라이즈 예상 투자의견 Buy, 목표주가 12만원, 의류 산업 탑픽 유지 ▶ 아크테릭스 오더 고성장은 올해도 지속 ▶"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "에이비엘바이오",
+      "stock_code": "298380",
+      "institution_list": "다올투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 111900.0,
+      "avg_target_price": 240000.0,
+      "max_target_price": 240000.0,
+      "avg_upside": 114.5,
+      "bullets": [
+        "플랫폼의 시간은 끝나지 않았다 빅파마의 BBB 셔틀 수요가 확대되는 가운데 IGF1R 기반Grabody-B 플랫폼의 추가 기술이전 가능성 높다고 판단 ▶ 투자의견 BUY 유지",
+        "파이프라인 가치 조정으로 적정주가 24만원으로 하향"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "케이엠더블유",
+      "stock_code": "032500",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 32700.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 114.1,
+      "bullets": [
+        "미국에서 삼성 수혜 볼 것, 길게 보면 너무 싼 주식 매수 의견/12개월 목표가 7만원 유지, 길게 보면 빨리 사는게 유리 ▶ 버라이즌 진출은 사실상 확실, 중국 장비 제재 감안 시 M/S 전망 낙관적 ▶ 단기 미국, 장기 한국 공급 가능성 감안 시 현재 시가총액 너무 적은 상황"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "NC",
+      "stock_code": "036570",
+      "institution_list": "IBK투자증권, 한국투자증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 289500.0,
+      "avg_target_price": 390000.0,
+      "max_target_price": 390000.0,
+      "avg_upside": 34.7,
+      "bullets": [
+        "탄탄해진 체력, AI가 날개를 달아줄 것 NC AI를 통해 게임을 넘어서는 AI산업 전개 ▶ 2026년 1분기 어닝 서프라이즈 시현 ▶ 목표주가 390,000원으로 상향, 투자의견 매수 유지 NDR 후기: 놓치기 아쉬운 기회 턴어라운드에 성공한 1분기 ▶ 신작, 핵심은 서구권에서의 성과 창출 여부 ▶ 캐주얼게임, 안정적인데 고성장까지"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "대상",
+      "stock_code": "001680",
+      "institution_list": "교보증권, 하나증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 18610.0,
+      "avg_target_price": 34666.666666666664,
+      "max_target_price": 35000.0,
+      "avg_upside": 86.3,
+      "bullets": [
+        "트리거가 필요해 1Q26 Review: 트리거가 필요해 ▶ 투자의견 BUY 및 목표주가 34,000 원 유지 1Q26 Re: 2분기까지 전년 베이스 부담 1Q26 Re: 라이신 역기저 부담 ▶ 2분기까지 소재 전년 베이스 부담 ▶ 하반기는 YoY 증익 가능 1Q26 Re: 2분기까지 전년 베이스 부담 1Q26 Re: 라이신 역기저 부담"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "오리온",
+      "stock_code": "271560",
+      "institution_list": "교보증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 129600.0,
+      "avg_target_price": 190000.0,
+      "max_target_price": 190000.0,
+      "avg_upside": 46.6,
+      "bullets": [
+        "중국 성장률 반등과 초과 수요 중국 성장률 반등 ▶ 러시아 초과 수요"
+      ]
+    }
+  ]
+}
