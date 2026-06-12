@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-06-08",
+    "end_date": "2026-06-12",
+    "generated_at": "2026-06-12T10:53:21",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 409,
+    "buy_count": 217,
+    "target_up_count": 0,
+    "total_companies": 273
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "NAVER",
+      "stock_code": "035420",
+      "institution_list": "KB증권, IBK투자증권, 한화투자증권, 신영증권, DS투자증권",
+      "report_count": 13,
+      "buy_ratio": 0.8461538461538461,
+      "target_up_ratio": 0.0,
+      "current_price": 227000.0,
+      "avg_target_price": 356636.36363636365,
+      "max_target_price": 450000.0,
+      "avg_upside": 57.1,
+      "bullets": [
+        "내수 플랫폼에서 글로벌 AI 인프라 사업자로 투자의견 Buy 유지,  TP 330,000원으로 18% 상향 ▶ 글로벌 AI 팩토리 사업 본격화 중장기 매출 20조원 가이던스 제시",
+        "관건은 시간 B2B로 자본 배분 변화 ▶ GPU 우선 조달 ▶ ROE 제고 AI 팩토리 사업으로 성장 동력 확보 AI 팩토리 사업 진출 선언 ▶ 신규 성장 동력 확보는 긍정적 ▶ 구체적 자본 조달 계획 공개 필요 ▶ 초반 비용 확대 우려 AI 팩토리와 함께 춤을 6/8(월) AI 팩토리 신규 사업을 발표",
+        "엔비디아와의 전략적 파트너십을 통해 한국뿐만 아니라 아시아 중심 AI 팩토리를 구축하고 운영할 예정 ▶ 동사는 데이터센터 부지 확보",
+        "구축 및 운영을 주도하며, 엔비디아는 GPU 공급과 함께 글로벌 고객 발굴 및 매출"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "덕산네오룩스",
+      "stock_code": "213420",
+      "institution_list": "iM증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 33300.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 110.2,
+      "bullets": [
+        "하방 리스크 제한적, 적극적 비중 확대 구간 2Q26에도 시장 기대치를 상회하는 호실적 이어질 전망 ▶ 2026년 예상 실적 기준 P/E 10배로 역사적 최하단"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "SK케미칼",
+      "stock_code": "285130",
+      "institution_list": "DB증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 40500.0,
+      "avg_target_price": 80000.0,
+      "max_target_price": 80000.0,
+      "avg_upside": 97.5,
+      "bullets": [
+        "개선되고 있는 시황과 괴리된 주가 2Q copoly 판매량 분기 최대치 근접+판가 인상 효과 ▶ 26E 별도 순이익(SK케미칼+SKMU) 1,075억원(YoY+56%), 바사 제외 전 부문 개선 ▶ 주가 급락을 기회로"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "아이씨티케이",
+      "stock_code": "456010",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 22600.0,
+      "avg_target_price": 60000.0,
+      "max_target_price": 60000.0,
+      "avg_upside": 165.5,
+      "bullets": [
+        "양자 보안칩 국책 개발 주관업체로 선정됐습니다 ICTK 투자의견 매수, 목표주가 60,000원 유지 ▶ 양자보안칩 국책 개발 프로젝트 주관 기관으로 선정, 독과점업체로서 입지 강화 중 ▶ 경쟁력과 사업모델 감안하면 국내 경쟁업체보단 훨씬 더 시총이 커야 정상입니다"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "삼성E&A",
+      "stock_code": "028050",
+      "institution_list": "IBK투자증권, KB증권, iM증권, 키움증권, 미래에셋증권",
+      "report_count": 7,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 45550.0,
+      "avg_target_price": 66357.14285714286,
+      "max_target_price": 73500.0,
+      "avg_upside": 45.7,
+      "bullets": [
+        "발주처의 지갑이 두툼할 때 EPC사의 수주도 커진다 반도체 머니가 만든 단단한 수주 가이던스 상향 기대 ▶ OCF 개선 -> CAPEX 확대 -> EPC 수주 증가 The First Call EPC: 고객도, 라이선서도 먼저 찾는다 고객이 먼저 찾는 EPC를 넘어 라이선서도 찾는 EPC로 ▶ LNG 라이선서와 모듈러 강자",
+        "중소형 LNG 시장을 공략하려 한다 ▶ 폐쇄적인 LNG 시장을 정면 돌파하는 것이 아닌 라이선서와 새로운 시장을 여는 것 ▶ 비중동 LNG 사업성 증가",
+        "가시적인 성과 나올 것 펀더멘탈, 내러티브 모두 좋다 투자의견 Buy와 목표주가 67,000원 유지 ▶ 삼성전자 P4, P5 공사 재개와 P5 Fab 2 착공 수혜 예상 ▶ 하반기 대미투자, 중동 재건 등으로 투자 심리 개선 예상 사우디, UAE의 에너지 전략 속 기회요인 확인 사우디 자국 발전 가스 대체로 원유 수출 확대 전략",
+        "건설업종 차선호주 의견 제시 편안한 성장 관계사 수주 증가가 주는 편안함 ▶ 수주 가이던스 상향 및 재건사업 참여 가능성 설레는 기다림 27년 이후 성장 본격회, 26년은 설레임의 시간 ▶ 준비된 역량 기반 글로벌 EPC사의 핵심 수행 파트너사로서 부상 ▶ Valuation & Risk: LNG 수주 규모와 동행할 밸류에이션"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "DL",
+      "stock_code": "000210",
+      "institution_list": "KB증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 47150.0,
+      "avg_target_price": 83000.0,
+      "max_target_price": 83000.0,
+      "avg_upside": 76.0,
+      "bullets": [
+        "장기적으로도 고유가 수혜 투자의견 Buy, 목표주가 83만원 (유지) 2026년 말 기준, P/E 324배 ▶ 안정적으로 가격 변동 적은 원재료 수급해 고무, 디젤 대체하며, 가동률 상향 ▶ 2Q OP 2,078억원 (+189% YoY) 역대 최대 분기 실적",
+        "컨센서스 +41% 상회 ▶ 3Q OP 1,682억원 (+54% YoY): 봉쇄 지속 시 추가 달성, 미국 발전소 강세 지속"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "NH투자증권, 미래에셋증권, 메리츠증권, 현대차증권, KB증권",
+      "report_count": 6,
+      "buy_ratio": 0.8333333333333334,
+      "target_up_ratio": 0.0,
+      "current_price": 302500.0,
+      "avg_target_price": 494000.0,
+      "max_target_price": 550000.0,
+      "avg_upside": 63.3,
+      "bullets": [
+        "Agent AI와 함께 시작된 새로운 투자 Agent AI 확산과 메모리 ▶ 실적의 중심 메모리 어두울땐 실적을 켜자 모바일 DRAM 주도의 가격 상승세 지속 ▶ 실적 전망치 상향",
+        "그리고 대규모 주주환원 기대감 어닝파워 입증 및 주주환원을 통한 재평가 예상 커머디티 메모리 선두업체",
+        "규모와 전략을 통한 폭발적 실적 개선 주도 ▶ 실효적 주주환원 효과 및 주주친화 정책이 등장할 시점 ▶ 투자의견 Buy, 적정주가 42만원",
+        "메모리 사이클 어깨까지 지속적 비중 확대 권고 성과급 반영분 이상의 반도체 가격 상승 예상 2분기 영업이익은 기존 추정치와 유사한 93조원 예상 ▶ 28년 상반기까지 메모리 반도체 병목 현상 지속될 전망 CXMT 상장, 재평가의 방아쇠 2분기 서프라이즈, 3분기 100조원 진입"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "현대건설",
+      "stock_code": "000720",
+      "institution_list": "iM증권, LS증권, IBK투자증권, 미래에셋증권, 신한투자증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 122700.0,
+      "avg_target_price": 207166.66666666666,
+      "max_target_price": 260000.0,
+      "avg_upside": 68.8,
+      "bullets": [
+        "유효한 원전 트렌드, 그리고 낮아진 벨류에이션 부담감 투자의견 Buy 유지, 목표주가 210,000원에서 190,000원으로 하향 ▶ 부동산 업황 부진에도 정비 사업과 준자체사업, 캡티브향 물량 확보로 외형 유지할 것으로 예상",
+        "업종 최선호주 의견 유지 다시 무대의 중심에 서다 주가 조정은 매수 기회, 업종 최선호주 추천 ▶ 구체적 성과로 확인될 차별적 경쟁력, 하반기는 다시 현대건설의 무대 ▶ Valuation & Risk: 독보적 수주경쟁력이 프리미엄의 근거 안팎으로 확실한 존재감 원전: WH/HT/팀코리아 협력 및 참여에 따라 수주 파이프라인의 지속적인 확대 전망6조 원)로 올해 상반기 도시정비 시공권 누계 약 8조 원"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "삼성중공업",
+      "stock_code": "010140",
+      "institution_list": "신영증권, iM증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 26000.0,
+      "avg_target_price": 39500.0,
+      "max_target_price": 44000.0,
+      "avg_upside": 51.9,
+      "bullets": [
+        "아니 그 이상으로 연초 수주 목표 69% 달성 ▶ 3년의 수주달성 미달 1년의 초과수주로 해소 충분 ▶ 수주는 삼성중공업을 바쁘게 해 LNG로 흥하고 Floating으로 더 뜬다 삼성중공업의 누적 수주액은 96억 달러로 목표치(139억 달러)의 691%를 이미 달성했으며 특히 이중 상선 수주는 52억 달러로 목표치(57억 달러)의 91사실상 수주가 예정된 것이나 다름없는 해양 공사 2건(Delfin FLNG 2호기 및 Western FLNG)을 감안하면 올해 수주목표는 초과 달성이 확실시됨 ▶ 2026년 6월 Coral 2 FLNG(기존 계약분 포함 총 239억 달러) 및 Delfin FLNG 1호기(28"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "NH투자증권, 미래에셋증권, KB증권, 메리츠증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 2215000.0,
+      "avg_target_price": 3437500.0,
+      "max_target_price": 3800000.0,
+      "avg_upside": 55.2,
+      "bullets": [
+        "새로운 변화의 물결 이제 메모리도 커스텀 ▶ 2분기도 긍정적인 흐림 지속 (깐부)치킨게임 시작 본격적인 장기공급계약 체결 시작 ▶ 27년 HBM의 수요 확대와 고객 다변화가 예상 수요 가속 국면 진입 2분기 서프라이즈, 전 세계 영업이익률 1위 ▶ 고점 징후 없다, 20% 주가 조정은 단기 바닥 끝 없는 재평가 (feat",
+        "ADR, 주주환원) 큰 그림 속 중장기 성장 모색하는 스페셜티 장인",
+        "업사이클의 최대 Pure Player ▶ 압도적 재평가를 이끄는 두 가지 촉매: 1) ADR 발행, 2) 27년 초거대 주주환원"
+      ]
+    }
+  ]
+}
