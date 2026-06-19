@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-06-15",
+    "end_date": "2026-06-19",
+    "generated_at": "2026-06-19T11:10:40",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 137,
+    "buy_count": 56,
+    "target_up_count": 0,
+    "total_companies": 117
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "BNK투자증권, 미래에셋증권, 핀릿",
+      "report_count": 3,
+      "buy_ratio": 0.6666666666666666,
+      "target_up_ratio": 0.0,
+      "current_price": 322500.0,
+      "avg_target_price": 490000.0,
+      "max_target_price": 550000.0,
+      "avg_upside": 51.9,
+      "bullets": [
+        "충당금에도 실적 성장 추세 지속 성과급 소급 반영 후 2Q26 영업이익 777조원 전망 ▶ 금리 리스크 완화와 에이전트AI 열풍 수혜로 하반기도 실적 성장 ▶ 목표주가 43만원으로 상향조정, 투자의견 ‘매수’ 유지 풀스텍 내재화의 우위 풀스텍 제조 재내화 역량을 내재화했으나 가장 싸다 ▶ 풀스택 메모리 제조 역량의 가치에 주목 삼성전자, 로봇 시대의 진짜 두뇌를 쥔 기업 HBM 이 터졌다, 삼성전자 이익 체급이 바뀐다"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "비에이치",
+      "stock_code": "090460",
+      "institution_list": "대신증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 26800.0,
+      "avg_target_price": 52000.0,
+      "max_target_price": 52000.0,
+      "avg_upside": 94.0,
+      "bullets": [
+        "2Q 실적 상향 및 호조, 로봇향 매출도 처음 반영 2Q26 영업이익은 151억원(42% yoy)으로 컨센서스 상회",
+        "호실적 전망 ▶ 3Q26년 영업이익(613억원)은 78%(yoy) 증가하여 분기 최대 실적 추정 ▶ 2026년 애플 폴더블폰 효과 및 피지컬AI 매출 추가 반영"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "핀릿, KB증권",
+      "report_count": 2,
+      "buy_ratio": 0.5,
+      "target_up_ratio": 0.0,
+      "current_price": 1036000.0,
+      "avg_target_price": 2000000.0,
+      "max_target_price": 2000000.0,
+      "avg_upside": 93.1,
+      "bullets": [
+        "기판 증설 순간 다 팔리는 회사 LG 이노텍 카메라가 아니라 로봇의 눈이다 ▶ AI 기판 완판, 로봇 두뇌까지 먹는다 ▶ 라이다/레이더로 피지컬 AI 센서 장악 2분기 실적 서프라이즈 기대 2분기 서프라이즈, 컨센서스 39% 상회 전망 ▶ 4년만의최대실적,2년연속사상최대치경신"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "현대차",
+      "stock_code": "005380",
+      "institution_list": "DB증권, KB증권, 유안타증권",
+      "report_count": 3,
+      "buy_ratio": 0.6666666666666666,
+      "target_up_ratio": 0.0,
+      "current_price": 647000.0,
+      "avg_target_price": 930000.0,
+      "max_target_price": 1200000.0,
+      "avg_upside": 43.7,
+      "bullets": [
+        "미국 RMAC에 대한 기대 2Q가 저점 ▶ Fleet Orchestration의 시작 아틀라스, 휴머노이드 주도권 선점할 것 산업용 휴머노이드 선점, 막대한 가치 창출 ▶ 2035년 산업용 휴머노이드 점유율 60% ▶ 중량 화물, 킥 동작 통한 탁월한 전신제어 속성이 다른 이익에 기반한 밸류에이션 할증 무섭게 오른 주가에 대한 해석 - 오직 로봇"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "에스바이오메딕스",
+      "stock_code": "304360",
+      "institution_list": "DS투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 26300.0,
+      "avg_target_price": 65000.0,
+      "max_target_price": 65000.0,
+      "avg_upside": 147.1,
+      "bullets": [
+        "임상 1/2a상 최종 결과 - ‘성공’ 최종 24개월 Topline 데이터 - ‘성공’ ▶ 대상자 수 6명, 경쟁사 혹은 저용량군과 직접 효능 비교 불가능 ▶ 연 내 미국 임상 진입"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "DL이앤씨",
+      "stock_code": "375500",
+      "institution_list": "키움증권, 대신증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 79000.0,
+      "avg_target_price": 124500.0,
+      "max_target_price": 143000.0,
+      "avg_upside": 57.6,
+      "bullets": [
+        "이란, 미국 MoU 체결 최대 수혜 건설사 이란과 미국 MoU(양해각서) 6/19일 서명 예정 ▶ 이란 산업 내 고질적 문제와 플랜트 투자 증가 전망 증명된 주택 수익성, 선점한 SMR 성장성 차별화된 주택 수익성 + 글로벌 SMR 파이프라인 ▶ 2026년 연결 기준 매출액 7조 692억 원(-45%, YoY), 영업이익 5,176억원(+33"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "코스메카코리아",
+      "stock_code": "241710",
+      "institution_list": "한화투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 70800.0,
+      "avg_target_price": 120000.0,
+      "max_target_price": 120000.0,
+      "avg_upside": 69.5,
+      "bullets": [
+        "Corporate Day 후기: 펀더멘털 이상무 연간 가이던스 상향 이후, 수주 증가 흐름 지속 중 ▶ 여유 CAPA 기반의 공격적 고객 확보 ▶ 한국 중심 추정치 상향"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "대덕전자",
+      "stock_code": "353200",
+      "institution_list": "하나증권, 메리츠증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 167700.0,
+      "avg_target_price": 225000.0,
+      "max_target_price": 250000.0,
+      "avg_upside": 34.2,
+      "bullets": [
+        "레벨이 달라진다 2Q26 Preview: 판가 인상과 믹스 개선 효과 본격화 ▶ 대규모 증설로 중장기 성장 가시성 확보 ▶ 목표주가 25만원으로 상향 아직도 전반전 2Q26 Preview: 전방위 ASP 상승 효과 본격 발현 ▶ 트리플 크라운 ▶ 커지는 Body, 높아지는 Value"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "고영",
+      "stock_code": "098460",
+      "institution_list": "iM증권, 리딩투자증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 37400.0,
+      "avg_target_price": 50000.0,
+      "max_target_price": 50000.0,
+      "avg_upside": 33.7,
+      "bullets": [
+        "우주/휴머노이드/소캠 등 첨단산업 검사 본격화 스페이스X 상장으로 우주발사, 위성인터넷, 우주기반 AI 사업 본격화⇒ 3D 검사장비와 결합된 AI 스마트팩토리 솔루션 수요 확대(ft",
+        "휴머노이드 로봇) ▶ 소캠2 시장규모 확대되면서 반도체 검사장비 매출 본격화 될 듯 ▶ 뇌수술용 의료로봇 병원 수요가 빠르게 증가하고 있는 가운데 올해 미국 및 일본 등을 중심으로 20대 이상 설치하면서 밸류에이션 리레이팅 될 듯 본업 회복에 성장 모멘텀까지 더해지는 구간 우주/휴머노이드/소캠 2 로 확대되는 3D 검사장비 확장 ▶ 뇌수술용 의료로봇의 미국"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "한국콜마",
+      "stock_code": "161890",
+      "institution_list": "한국투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 87000.0,
+      "avg_target_price": 130000.0,
+      "max_target_price": 130000.0,
+      "avg_upside": 49.4,
+      "bullets": [
+        "2Q26 Preview: 소외된 지금이 매수 기회 영업이익이 시장 기대치를 52% 상회할 전망 ▶ 수급이 아쉬울 뿐 ▶ 소외되기엔 너무나 아까워"
+      ]
+    }
+  ]
+}
