@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-06-22",
+    "end_date": "2026-06-26",
+    "generated_at": "2026-06-29T01:34:44",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 287,
+    "buy_count": 145,
+    "target_up_count": 0,
+    "total_companies": 219
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "SK하이닉스",
+      "stock_code": "000660",
+      "institution_list": "iM증권, 한화투자증권, 다올투자증권, 현대차증권, KB증권",
+      "report_count": 9,
+      "buy_ratio": 0.7777777777777778,
+      "target_up_ratio": 0.0,
+      "current_price": 2580000.0,
+      "avg_target_price": 3800000.0,
+      "max_target_price": 4300000.0,
+      "avg_upside": 47.3,
+      "bullets": [
+        "7 조원 전망 직원들에 대한 영업이익 10% 지급 조건을 반영한 동사 FY26 영업이익은 261조원으로 YoY 452% 증가할 전망 ▶ 절대적 Valuation 관점에서도 이번 상승 싸이클의 시작이었던 FY24의 ROE 31%와 고점 P/B 배수 24배를 감안 시, FY26의 ROE가 96%라면 75배의 P/B 배수 적용이 가능 ▶ 메모리 반도체 업황은 적어도 CY27까지는 호황이 이어질 것으로 판단됨 P/E 10배는 테크 주식의 기본 배수다 돈은 제일 많이 벌고, 배수는 제일 낮게 받는 한국 메모리 메이커들 ▶ LTA, HBM, ADR 레츠고 조화로운 전 부문 가정치 상향 매출액 856조원(+63%, 이하 QoQ), 영업이익 66"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "한국콜마",
+      "stock_code": "161890",
+      "institution_list": "NH투자증권, 한화투자증권, 삼성증권, 다올투자증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 86400.0,
+      "avg_target_price": 125000.0,
+      "max_target_price": 140000.0,
+      "avg_upside": 44.7,
+      "bullets": [
+        "역대 최대 실적 전망 좋은 업황과 양질의 실적 지속 ▶ 2Q26 Preview: 컨센서스 상회 추정 수주 온기 지속, 계절성 완화 가능성 기대치를 상회할 2분기 ▶ 하반기에도 이어지는 온기 제철이 오기 전 먼저 들여다볼 기회 한국 선케어 성장과 중국 신규 고객 확대 모멘텀 실현 중 ▶ 계절성 기반 매출 믹스 개선을 통한 한국 별도 법인 마진 제고"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "LG이노텍",
+      "stock_code": "011070",
+      "institution_list": "현대차증권, 대신증권, KB증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 953000.0,
+      "avg_target_price": 1583333.3333333333,
+      "max_target_price": 2000000.0,
+      "avg_upside": 66.1,
+      "bullets": [
+        "결국 중요한 것은 진입 시점이 아닌 현재 상황 기술력과 자본력을 기반으로 지속적인 도약 핵심은 실적 호조, 광학(카메라)의 경쟁력! 2Q26 영업이익은 1,936억원(1599% yoy)으로 컨센서스 상회",
+        "호실적 전망 ▶ 2H26 영업이익(5,956억원)은 127%(yoy) 증가 추정, 카메라의 호조 ▶ 애플 아이폰 판매는 2026년 36%(yoy) 증가 추정 실적 서프라이즈, 이제 시작 빅테크 투자 지원 확대, 성장판이 열린다 ▶ 2분기 연속 서프라이즈, 하반기 사상 최대 실적 ▶ 반도체 주가 동조화 기대, 지금부터 재평가 시작"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "DL이앤씨",
+      "stock_code": "375500",
+      "institution_list": "한화투자증권, 유진투자증권, iM증권, 하나증권, NH투자증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 61900.0,
+      "avg_target_price": 120800.0,
+      "max_target_price": 144000.0,
+      "avg_upside": 95.2,
+      "bullets": [
+        "법인세 부과 관련 코멘트 사우디 과세당국, 법인세 부과 통보 ▶ 단기 재무영향 제로, 길게 봐도 제한적 사우디 법인세 과세 이슈 점검 DL이앤씨는 6월 22일 사우디 국세청(ZATCA, Zakat, Tax and Customs Authority)으로부터 약 8,533억원 규모의 법인세 과세 통보를 수령했다고 공시했으며, 이에 대한 우려로 전일 주가는 201% 하락 ▶ [주목해야 할 쟁점] 회사는 이번 과세에 대해 (1) 고정사업장(PE) 인정 여부, (2) 이중과세, (3) 제척기간 경과, (4) 과세표준 산출 방식 및 소득 배분 기준 등을 주요 쟁점으로 제시 사우디의 무리한 과세 통보, 현실화 가능성은 낮음 사우디의 무리한 과세 통보, 현실화 가능성은 낮다고 판단"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "STX엔진",
+      "stock_code": "077970",
+      "institution_list": "메리츠증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 33750.0,
+      "avg_target_price": 100000.0,
+      "max_target_price": 100000.0,
+      "avg_upside": 196.3,
+      "bullets": [
+        "유휴 CAPA가 제일 많은 엔진 제조사 한 건만 수주하면 된다 ▶ 적정주가를 100,000원으로 유지"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "에이프릴바이오",
+      "stock_code": "397030",
+      "institution_list": "한국투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 38500.0,
+      "avg_target_price": 112000.0,
+      "max_target_price": 112000.0,
+      "avg_upside": 190.9,
+      "bullets": [
+        "현금 4천억원 보유, 시총은 고작 9천억원인 바이오가 있다 TKG휴켐스-IMM자산 대상 3,468억원 유상증자 결정 ▶ 병렬 진행 파이프라인 수 늘리고 속도 높일 준비 ▶ 점점 더 부각되는 밸류에이션 매력"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "서부T&D",
+      "stock_code": "006730",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 9650.0,
+      "avg_target_price": 18000.0,
+      "max_target_price": 18000.0,
+      "avg_upside": 86.5,
+      "bullets": [
+        "Developer! 2030년 파이프라인의 가치를 봐야할 때 ▶ 2분기 영업실적은 역대 최고 수준 예상 ▶ 실적 호황 하반기에도 지속 가능"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "iM증권, 다올투자증권, 미래에셋증권, 대신증권, KB증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 340500.0,
+      "avg_target_price": 545000.0,
+      "max_target_price": 585000.0,
+      "avg_upside": 60.1,
+      "bullets": [
+        "중기 주가 상승세 유지 예상 직원들에 대한 신규 보상 체계를 감안한 동사 FY26 영업이익은 340조원으로 YoY 680% 증가할 전망 ▶ 1Q26, 2Q26의 반도체 부문 직원들에 대한 상여금 지급용 충당금이 한꺼번에 반영될 2Q26의 동사 영업이익은 761조원으로 예상됨 ▶ 메모리 반도체 업황은 적어도 CY27까지는 호황이 이어질 것으로 판단됨 눌릴 이유 없는 눌림은 적극 매수로 매출액 1728조원(+29%, 이하 QoQ), 영업이익 933조원(+63%)으로 컨센서스(OP 87"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "한중엔시에스",
+      "stock_code": "107640",
+      "institution_list": "유안타증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 34500.0,
+      "avg_target_price": 97000.0,
+      "max_target_price": 97000.0,
+      "avg_upside": 181.2,
+      "bullets": [
+        "미국 TRPP 규제 개정판 수혜주 2Q26 Preview: 외형성장 지속 예상 ▶ 2H26: 상반기 내 내연기관 물량 마무리 + 수주 모멘텀 ▶ 동사에 대한 투자의견 및 목표주가 유지"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "롯데렌탈",
+      "stock_code": "089860",
+      "institution_list": "대신증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 27650.0,
+      "avg_target_price": 46000.0,
+      "max_target_price": 46000.0,
+      "avg_upside": 66.4,
+      "bullets": [
+        "흔들림 없는 실적 호조! 2Q 좋고, 3Q 더 좋다! 2Q26 영업이익은 891억원(2호실적 전망 ▶ 3Q26 매출(8,203억원), 영업이익(948억원)은 최고를 경신 추정 ▶ 2026년 실적도 역대 최고, 밸류에이션은 저평가"
+      ]
+    }
+  ]
+}
