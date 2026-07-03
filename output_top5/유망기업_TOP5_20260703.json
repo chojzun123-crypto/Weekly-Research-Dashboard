@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-06-29",
+    "end_date": "2026-07-03",
+    "generated_at": "2026-07-03T09:47:13",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 271,
+    "buy_count": 195,
+    "target_up_count": 0,
+    "total_companies": 184
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "현대차증권, 키움증권, LS증권, 상상인증권, 한화투자증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 334000.0,
+      "avg_target_price": 508750.0,
+      "max_target_price": 590000.0,
+      "avg_upside": 52.3,
+      "bullets": [
+        "난기류 지대에 진입했다고 목적지가 변경되는 것은 아니다 메모리 반도체 병목은 관련 기업들의 수익성 급상승으로 귀결되고 있음 ▶ 올해 영업이익의 97%가 메모리 반도체에서 발생한다는 점에서 영업이익 관점에서 동사는 메모리 반도체 Pure Player와 유사하며 순수 메모리 회사 대비 Valuation Discount를 받을 필요는 없다고 보임9조원 전망 펀더멘털이 너무 좋다 글로벌 최고의 이익을 창출하는 메모리 메이커이자 가장 저렴한 메모리 메이커 ▶ 범용 메모리, HBM4, 파운드리 모두 너무 좋다 충당금 반영 후에도 높아질 눈높이 수급 불균형 단기간 내 해소 불가능",
+        "가격 상승세 지속 ▶ 2Q26 Preview: 충당금 반영에도 80조원 이상 영업이익 달성 추정 ▶ Valuation & Risk: 이익 성장 + 주주환원",
+        "주가 랠리 재개될 전망 2Q26 Preview 그럼에도 불구하고 믿음의 실적 2Q26 Preview 그럼에도 불구하고 믿음의 실적 ▶ 투자의견 BUY, 목표주가 500,000원 상향 AI 투자, 멈추지 않는 질주 극심한 공급난 완화에 최소 2년 소요 ▶ 하반기부터 메모리 확보 경쟁 본격화 ▶ AI 투자 내 메모리 비중 50%, 최대 수혜"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "크래프톤",
+      "stock_code": "259960",
+      "institution_list": "리딩투자증권, 유안타증권, 교보증권, 하나증권, KB증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 236000.0,
+      "avg_target_price": 378333.3333333333,
+      "max_target_price": 460000.0,
+      "avg_upside": 60.3,
+      "bullets": [
+        "PUBG 는 플랫폼으로, AI 는 옵션으로!!! PUBG 의 플랫폼화, 실적 서프라이즈의 핵심 ▶ ‘서브노티카 2’와 신작 파이프라인, One IP 리스크 완화 PUBG는 다시 성장하는 중 투자의견 BUY, 목표주가 380,000원으로 커버리지 개시 ▶ 2026년 매출액 4조 8,561억원, 영업이익 1조 4,635억원 전망",
+        "게임스컴 5종 출품 신작이 이끈 서프라이즈 예상, 그러나 하반기는 신중하게 2Q 실적, 컨센 상회 전망 PC (펍지, 서브노티카2)가 견인 ▶ 호실적, 낮은 밸류 불구,  주가 반등 모멘텀 부재로 주가 횡보 전망 2Q26 Preview: PUBG의 증명은 계속된다 2Q26E 연결 매출액은 1조 2,969억원(+954% QoQ), 영업이익은 4,160억원(+699% QoQ) 예상 ▶ [PC] 5,014억원(+128"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "선익시스템",
+      "stock_code": "171090",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 54800.0,
+      "avg_target_price": 141000.0,
+      "max_target_price": 141000.0,
+      "avg_upside": 157.3,
+      "bullets": [
+        "하반기는 실적, 내년 상반기는 모멘텀을 기대 2분기 실적 시장 기대치 하회 ▶ 2026년 실적은 상저하고 전망"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "삼성바이오로직스",
+      "stock_code": "207940",
+      "institution_list": "IBK투자증권, 한국투자증권, DB증권, 다올투자증권, 신한투자증권",
+      "report_count": 5,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1391000.0,
+      "avg_target_price": 2028000.0,
+      "max_target_price": 2200000.0,
+      "avg_upside": 45.8,
+      "bullets": [
+        "하반기 불확실성 해소 기대 2026년 2분기 실적, 시장 기대치 부합 전망 ▶ 3분기 숨고르기, 4분기 성장 재개 ▶ 하반기 주가 반등 기대 2Q26 Preview: 단기 실적 영향 없음 영업이익 기준 컨센서스 부합 전망 ▶ 임단협 갈등은 지속되지만 올해 매출 가이던스는 유지2% QoQ), 영업이익 5,906억원(+231%)으로 추정 ▶ 1~4공장 풀가동 및 원/달러 환율 상승 효과로 시장 기대치 부합할 전망 ▶ 3Q부터 파업 영향 및 인건비 상승 부담이 일부 반영될 전망이나, 하반기 우호적인 환율 흐름이 이를 일부 상쇄할 것으로 예상 큰 파도를 지나는 중 2Q 컨센서스 부합, 향후 수익성 노사 협상 따라 변동성 高 ▶ 2Q26 Preview: 파업 영향은 3분기부터"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "한국금융지주",
+      "stock_code": "071050",
+      "institution_list": "KB증권, SK증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 221000.0,
+      "avg_target_price": 380000.0,
+      "max_target_price": 410000.0,
+      "avg_upside": 71.9,
+      "bullets": [
+        "어닝 서프라이즈 지속에도 불구하고 매우 낮은 Valuation 투자의견 Buy, 목표주가 350,000원 유지 ▶ 2Q26 연결기준 지배주주순이익 9,306억원으로 컨센서스 392% 상회전망 ETF 타고 브로커리지 왕좌를 노린다 ETF 까지 합산 시 브로커리지 점유율 1 등에 근접 ▶ ETF 점유율 증가 배경은 단일종목 레버리지 ETF(feat",
+        "DMA) ▶ 투자의견 ‘매수’, 목표주가 410,000원, 최선호주 유지"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "삼성E&A",
+      "stock_code": "028050",
+      "institution_list": "IBK투자증권, iM증권, 신영증권, 한화투자증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 47600.0,
+      "avg_target_price": 63000.0,
+      "max_target_price": 67000.0,
+      "avg_upside": 32.4,
+      "bullets": [
+        "2Q26 Preview: 수주는 이제 시작이다 반도체 공종 건설 계획 가속화에 따라 실적 서프라이즈 가능성 존재 ▶ 투자의견 매수와 목표주가 60,000원 유지 반도체 투자 사이클 수혜 투자의견 Buy, 목표주가 67,000원 유지 ▶ 반도체 투자 사이클에서 커다란 수혜 기대2Q26 Preview: 수주는 이제 시작이다 반도체 공종 건설 계획 가속화에 따라 실적 서프라이즈 가능성 존재 ▶ 투자의견 매수와 목표주가 60,000원"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "LS ELECTRIC",
+      "stock_code": "010120",
+      "institution_list": "LS증권, NH투자증권",
+      "report_count": 2,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 238000.0,
+      "avg_target_price": 337500.0,
+      "max_target_price": 350000.0,
+      "avg_upside": 41.8,
+      "bullets": [
+        "밸류에이션 공격적 할증 지속 2Q26 Preview: 영업실적, 컨센서스 다소 초과 전망",
+        "수주, 대호조 전망 ▶ 초고압 대규모 증설",
+        "배전 대형 수주 활발, 공격적 증설 예정 ▶ 펀드멘털 방향성 최고1st Pick 유지 2분기 실적 개선 가능성 중장기 수주 방향에 따른 밸류에이션 정당화 기회 ▶ 2분기 제품 믹스 개선과 환율 효과 기대"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "현대로템",
+      "stock_code": "064350",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 169800.0,
+      "avg_target_price": 283000.0,
+      "max_target_price": 283000.0,
+      "avg_upside": 66.7,
+      "bullets": [
+        "주가는 다시 박스권 하단 목표주가 283,000원, 투자의견 매수 유지 ▶ 2Q26 영업이익 2,882억원(YoY +119%)으로 컨센서스 부합 전망 ▶ 루마니아 전차 사업은 아직 진척 내용 없고 여전히 현재진행형"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "HS효성첨단소재",
+      "stock_code": "298050",
+      "institution_list": "NH투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 157600.0,
+      "avg_target_price": 260000.0,
+      "max_target_price": 260000.0,
+      "avg_upside": 65.0,
+      "bullets": [
+        "본업 안정성에 더해질 탄소섬유의 성장성 타이어코드는 정상화 완료, 이제 슈퍼섬유의 회복을 기대 ▶ 2Q26 Preview: 컨센서스 상회 예상"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "성호전자",
+      "stock_code": "043260",
+      "institution_list": "신영증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 28900.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 142.2,
+      "bullets": [
+        "AI 광통신 소부장 대장입니다 고속 광모듈 시장의 성장 ▶ CPO의 등장 ▶ SemiAnalysis 가 제시한 의혹"
+      ]
+    }
+  ]
+}
