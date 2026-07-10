@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-07-06",
+    "end_date": "2026-07-10",
+    "generated_at": "2026-07-10T10:04:16",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 575,
+    "buy_count": 462,
+    "target_up_count": 0,
+    "total_companies": 240
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "핀릿, 유진투자증권, 메리츠증권, 삼성증권, BNK투자증권",
+      "report_count": 23,
+      "buy_ratio": 0.782608695652174,
+      "target_up_ratio": 0.0,
+      "current_price": 296000.0,
+      "avg_target_price": 509250.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 72.0,
+      "bullets": [
+        "범용 공급 부족과 HBM4 독주, 펀더멘털 재평가 +347% 상승 여력 ▶ 역대급 공급 부족, 메모리 1 위의 시간이 왔다 ▶ HBM4 싹쓸이 예고, 비메모리까지 판이 바뀐다 ▶ 2 분기 숫자가 말한다, 아직 실적 피크가 아니다 조정은 매수의 기회 2Q26 실적은 매출액 1681조원(+26%qoq), 영업이익 831조원(+45%qoq)로 전망 ▶ 2026년, 2027년 영업이익은 361"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "케이엠더블유",
+      "stock_code": "032500",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 16240.0,
+      "avg_target_price": 70000.0,
+      "max_target_price": 70000.0,
+      "avg_upside": 331.0,
+      "bullets": [
+        "C밴드 경매 최대 수혜주, 버라이즌에서 큰 수혜 볼 것 매수/목표가 7만원 유지, 데이터센터와는 무관한 데 과도한 주가 하락 기록 ▶ AWS-3에 이어 어퍼C밴드까지 미국 주파수 경매 순항 중, 최대 수혜주 될 것 ▶ 삼성 버라이즌 내 M/S 높게 유지될 것, KMW 미국에서 큰 수혜 볼 전망"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "삼성전기",
+      "stock_code": "009150",
+      "institution_list": "미래에셋증권, 교보증권, 다올투자증권, 상상인증권, DB증권",
+      "report_count": 9,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 1648000.0,
+      "avg_target_price": 2773333.3333333335,
+      "max_target_price": 3000000.0,
+      "avg_upside": 68.3,
+      "bullets": [
+        "줄을 서시오 2Q26 실적 상향 조정 ▶ HBM = AI MLCC ▶ LTA의 함의",
+        "늦으면 물량은 없다 2Q26 Preview: 영업이익 4,110억원, 컨센서스 상회 전망 2Q26 Preview 영업이익 4,110억원, 컨센서스 상회 전망 ▶ 투자의견 BUY, 목표주가 3,000,000원 상향 새로운 역사를 향한 질주 MLCC와 FC-BGA 모두 공급 부족의 점진적 심화",
+        "blended ASP 상승으로 이어지는 구조적 이익 개선 국면 ▶ 연간 영업이익 추정치는 26년 11조원으로 매년 사상 최대치를 경신할 것으로 전망 2Q26 Preview 공급자의 시간 2분기 실적은 컨센서스를 상회할 전망 ▶ 공급자의 시간 ▶ 2026년 연간 영업이익은 1조 6,982억원(+85"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "덕산네오룩스",
+      "stock_code": "213420",
+      "institution_list": "IBK투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 28600.0,
+      "avg_target_price": 69000.0,
+      "max_target_price": 69000.0,
+      "avg_upside": 141.3,
+      "bullets": [
+        "불황을 극복한 기술 경쟁력 2분기 실적은 시장 기대치 충족 전망 ▶ 신규 제품이 견인할 하반기"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "에이피알",
+      "stock_code": "278470",
+      "institution_list": "한화투자증권, 현대차증권, 교보증권, SK증권, 신영증권",
+      "report_count": 9,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 385500.0,
+      "avg_target_price": 536666.6666666666,
+      "max_target_price": 560000.0,
+      "avg_upside": 39.2,
+      "bullets": [
+        "2분기도 서프라이즈 기대치를 상회할 2분기 2Q26 Preview: 의심할 필요가 없다 에이피알 2Q26F 연결 기준 매출액은 7,509억원(+1291%yoy), 영업이익은 1,806억원(+1131%)로 다시 한번 분기 최대 매출 경신 ▶ 2Q26에도 미국과 유럽을 중심으로 견조한 고성장세가 이어질 전망 ▶ 양 지역 모두 온/오프라인 균형 잡힌 성장세를 보이고 있다는 점이 긍정적 벌써 매출액 7,500억원, 속도 미쳤는데요? 2Q26 Preview: 벌써 매출액 7,500억원, 속도 미쳤는데요?"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "현대차",
+      "stock_code": "005380",
+      "institution_list": "다올투자증권, DB증권, 신영증권, 한화투자증권, LS증권",
+      "report_count": 11,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 445500.0,
+      "avg_target_price": 772727.2727272727,
+      "max_target_price": 900000.0,
+      "avg_upside": 73.5,
+      "bullets": [
+        "2Q26 Preview: 분기말 들어서 좋아지기 시작 투자의견은 BUY를 유지하며, 적정주가는 80만원으로 하향 ▶ 2Q26은 매출액 480%)을 추정하며, 시장 기대치에 부합 예상 ▶ 2Q26 글로벌 도매판매량은 99만대(YoY -74%)를 예상함 제조 AI의 운영자(Operator), 프리미엄은 이제 시작 제조 AI 플랫폼으로 진화 ▶ 투자의견 BUY 유지, 목표주가 90만원 유지 3분기는 임금협상, 4분기는 원재료가 변수 2분기 매출은 48조원, 영업이익은 전년 동기 대비 16% 감소한 3조원 예상 ▶ 3분기 임금 협상, 4분기는 원재료 분담이 지켜봐야 할 중요 변수5배 해당) 둔화에서 회복, 기대에서 현실화 2Q 판매량 전년 동기 대비 감소, 영업이익 시장 기대치 하회 전망 ▶ 하반기 신차 출시 등 상반기 물량 차질 회복 기대 ▶ 27년 이익 턴어라운드와 로보틱스 모멘텀, 기대에서 현실화로 실적은 개선, 기대감은 현실로 2Q26E 매출액 48"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "기아",
+      "stock_code": "000270",
+      "institution_list": "다올투자증권, 신영증권, 한화투자증권, 상상인증권, LS증권",
+      "report_count": 10,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 144800.0,
+      "avg_target_price": 241000.0,
+      "max_target_price": 290000.0,
+      "avg_upside": 66.4,
+      "bullets": [
+        "2Q26 Preview: 숫자로는 이미 입증 투자의견 BUY를 유지하며, 적정주가 기존 25만원 유지 ▶ 동사는 특성상 B/C 세그먼트에 주력모델이 집중되어 있어, 하반기 물가압력/소비둔화 우려 구간에서 자동차 섹터 핵심지표인 미국 M/S확대 가능성이 뚜렷함 ▶ 2Q26 매출액 및 영업이익은 329%) 추정 4Q24 이후 첫 증익 전망 2분기 매출 327조원, 영업이익은 전년 동기 대비 4% 증가한 29조원 전망 ▶ 판매 보증 충당금 부담이 낮아지면 추가 수익성 개선도 가능할 것"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "호텔신라",
+      "stock_code": "008770",
+      "institution_list": "한화투자증권, DB증권, 교보증권",
+      "report_count": 3,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 49050.0,
+      "avg_target_price": 76333.33333333333,
+      "max_target_price": 90000.0,
+      "avg_upside": 55.6,
+      "bullets": [
+        "2Q26 Preview : 면세점의 외형성장이 중요한 시점 2Q26 Preview: 2Q26 영업이익 586억원(+573% YoY)을 기록해 영업이익 컨센서스(513억원)를 상회할 것으로 추정 ▶ 이제 중요한 것은 추세적 면세점 외형 성장 체질 개선 지속, 어닝 서프라이즈 기대 2분기 호텔신라의 연결 매출 9,542억원(-69%YoY), 영업이익 592억원(+5837%YoY)으로 시장 기대치(513억원)를 상회 전망 ▶ 동사에 대한 투자의견 Buy, 목표주가 9만원을 유지함 2Q26 Preview: 비움의 미학 인천공학점 DF1 권역 영업 종료 효과 본격화, 호텔은 고성장세 지속 ▶ 국내 브랜드 상품 가격 경쟁력이 강화될 것으로 예상되며, 향후 매출 흐름에도 긍정적으로 작용할 전망"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "현대모비스",
+      "stock_code": "012330",
+      "institution_list": "다올투자증권, DB증권, DS투자증권, 한국투자증권, LS증권",
+      "report_count": 6,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 465000.0,
+      "avg_target_price": 818333.3333333334,
+      "max_target_price": 950000.0,
+      "avg_upside": 76.0,
+      "bullets": [
+        "2Q26 Preview: 도약 직전 단계 투자의견 BUY 및 적정주가 900,000원 유지 ▶ 2Q26은 매출액 165%), 영업이익 9,979억원(YoY +147%) 전망 ▶ 자동차 모듈부분의 경우, 2Q26에는 인플레이션 비용 정산 구간에 진입을 예상함 제조 AI의 기반(Hardware) 제조 AI를 구현하는 핵심 기반에 해당 ▶ 투자의견 BUY 유지, 목표주가 56만원에서 63만월으로 상향 로보틱스 기대감, 점진적 현실화 중 2Q26F Pre: 견조한 AS와 제조 적자폭 축소1% QoQ), 영업이익 9,867억원(+13"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "POSCO홀딩스",
+      "stock_code": "005490",
+      "institution_list": "KB증권, 메리츠증권, 하나증권, 한화투자증권, 신한투자증권",
+      "report_count": 8,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 297000.0,
+      "avg_target_price": 530500.0,
+      "max_target_price": 740000.0,
+      "avg_upside": 78.6,
+      "bullets": [
+        "저가 매수 기회 2Q26: 컨센서스 소폭 하회 ▶ 철강은 향후 스프레드 개선  가능성이 더 높음 ▶ 리튬 부문은 하반기 서프라이즈 기대 2Q26 실적 모멘텀은 제한적, 중장기 방향성은 우호적 2Q26 Preview: 철강 스프레드 개선 제한, 시장 눈높이 하회 예상 ▶ 3Q26: 인프라 견조한 가운데 철강",
+        "이차전지가 QoQ 성장 견인 ▶ 적정주가 56만원48만원으로 하향, 다만 중장기 방향성은 긍정적 하반기를 기대하자! 2분기 철강 스프레드 소폭 확대 반면, 리튬 사업부 적자 확대 예상 ▶ 2분기 국내 판재류 유통가격 상승, 3분기 본격적인 영업실적 개선 견인 전망0배를 향하여 리튬이 꿈을 만들고, 실적이 꿈의 유효기간을 정한다 ▶ Good ‘Li(리튬)/Fe(철강)’ with POSCO ▶ Valuation & Risk: 29조원 투자가 밸류업으로 이어지기 위한 조건 찾기 2분기 실적, 시장 기대에 부합하는 수준 예상 26년 2분기 영업이익은 7,292억원으로 예상되며 당사 추정치는 컨센서스 수준"
+      ]
+    }
+  ]
+}
