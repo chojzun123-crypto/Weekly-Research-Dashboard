@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "report_type": "industry",
+    "start_date": "2026-07-20",
+    "end_date": "2026-07-24",
+    "generated_at": "2026-07-24T09:13:45",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 68,
+    "covered_industries": 23,
+    "overweight_industries": 12
+  },
+  "industries": [
+    {
+      "industry_name": "기계",
+      "report_count": 8,
+      "overweight_ratio": 0.25,
+      "overweight_ratio_pct": 25,
+      "opinion": "Neutral",
+      "main_institutions": "유진투자, IBK투자, 미래에셋",
+      "bullets": [
+        "안녕하세요 데일리에요(로봇/방산/조선) 시작된 삼성전자의 로봇 사업 삼성전자가 노태문 대표이사 직속의 ‘RX(Robotics eXperience) 사업추진실’을 신설 ▶ 이번 조직 개편은 삼성 로봇 사업의 재출발로 평가될 수 있음",
+        "현장 검증으로 안녕하세요 데일리에요(로봇/방산/조선) 삼성전자 로보틱스 조직 개편 발표, 의사결정 가속화 전망 삼성전자의 로보틱스 통합 컨트롤 타워 출범, 관련주 급등 ▶ 로보틱스 의사결정 속도 가속화 전망, 하반기 로드맵 및 CES 2027에 주목"
+      ],
+      "keyword": "안녕하세요 데일리에요(로봇/방산/조선) 시작된 삼성전자의 로봇 사업 삼성"
+    },
+    {
+      "industry_name": "자동차",
+      "report_count": 7,
+      "overweight_ratio": 0.14285714285714285,
+      "overweight_ratio_pct": 14,
+      "opinion": "Neutral",
+      "main_institutions": "신한투자, 미래에셋, 메리츠",
+      "bullets": [
+        "GM 2026년 2분기 영업실적 리뷰 가격",
+        "주주환원이 판매 감소를 압도 ▶ 매출액 480억달러(+11%) ▶ 영업이익 증가의 핵심은 가격 GM 2Q26 리뷰: 호실적 및 가이던스 상향 지속 GM 2Q26 컨센서스 상회, 가격효과/비용절감"
+      ],
+      "keyword": "GM 2026년 2분기 영업실적 리뷰 가격"
+    },
+    {
+      "industry_name": "은행",
+      "report_count": 7,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "BNK투자, 한화투자, 신한투자",
+      "bullets": [
+        "5월말 은행 원화대출 연체율 현황 5월 원화대출 연체율 전년동월대비 상승추세 지속 ▶ 2026년(E) 추가 충당금 부담 축소로 대손충당금전입도 감소할 전망 5월 연체율: 5월은 원래 높아져요 국내은행 5월 말 연체율 067%(+3bp YoY)로 상승 ▶ 신규 연체는 늘고 연체채권 정리는 줄어들고 ▶ 계절적으로 높아질 수밖에 없다 5월 은행 연체율 동향 5월 국내은행의 원화대출 연체율은 067%(+6bp MoM, +3bp YoY) 메리츠 Financial Daily 미국 은행권 2Q26 실적 시사점: 외국인 수급여건 개선 전망 2Q 미 은행권 이자이익/트레이딩/IB수익 동반 확대로 역대급 실적 시현 ▶ 국내 은행주 2Q 어닝시즌 투자포인트: 실적+자사주+금리인상"
+      ],
+      "keyword": "외국인 수급여건 개선 기대 ▶ 메리츠 Financial Daily 메리츠"
+    },
+    {
+      "industry_name": "반도체와반도체장비",
+      "report_count": 7,
+      "overweight_ratio": 0.42857142857142855,
+      "overweight_ratio_pct": 43,
+      "opinion": "Overweight",
+      "main_institutions": "다올투자, 대신, 미래에셋",
+      "bullets": [
+        "데이터센터 투자 전쟁 재점화 과거 웹 시대와 달리 금번 AI 시대의 빅테크는 소수 독과점 지위가 축소 될 것으로 예상",
+        "이 과정에서 여전히 독과점 중심 사업을 이어갈 수 있는 분야는 클라우드 서비스 제공 ▶ 데이터센터에 대한 경쟁적 투자는 지속될 수밖에 없다는 것을 의미하며, 메모리 관련 전방 수요는 견고",
+        "▶ 7/23(목) 구글 실적발표를 시작으로 마지막주 주요 빅테크 실적발표에서 공통적 으로 확대 기조 투자가 확인될 것으로 예상하며, 업종 분위기 반전 기대 ▶ 완연한 바닥 다지기 구간 유력, 비중확대 전략 유효 비이성적 주가 하락 약육강식의 시대, 강한 자만이 살아남는다"
+      ],
+      "keyword": "데이터센터 투자 전쟁 재점화 과거 웹 시대와 달리 금번 AI 시대의 빅테"
+    },
+    {
+      "industry_name": "양방향미디어와서비스",
+      "report_count": 4,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "IBK투자",
+      "bullets": [
+        "IBKS Daily [인터넷/게임] 2026년 2분기 실적 발표 정리 2026년 2분기 주요 실적 ▶ 실적 관련 코멘트 ▶ AI 관련 사업 (AI 모델, 클라우드 등) 코멘트 IBKS Daily [인터넷/게임] IBKS Daily [인터넷/게임]"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "조선",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "항해일지 항해일지 항해일지"
+      ],
+      "keyword": "항해일지 항해일지 항해일지"
+    },
+    {
+      "industry_name": "화장품",
+      "report_count": 3,
+      "overweight_ratio": 0.6666666666666666,
+      "overweight_ratio_pct": 67,
+      "opinion": "Overweight",
+      "main_institutions": "SK, 교보, 한국투자",
+      "bullets": [
+        "Weekly Amazon Beauty Check K뷰티 유니버스의 아마존 BSR 총점은 이번 주 1,954pt 기록해 전 주 대비 ▲114pt 개선 ▶ 주간 평균 점수 Top3 K뷰티 브랜드 ▶ 주간 평균 점수 상승 Top3 K뷰티 브랜드 K-뷰티, 오프라인 진출 확대의 함의 기존 K-뷰티 고객층과 다른 신규 소비자 확보"
+      ],
+      "keyword": "Weekly Amazon Beauty Check K뷰티 유니버스의 아마존"
+    },
+    {
+      "industry_name": "전자장비와기기",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "유안타, KB, LS",
+      "bullets": [
+        "포스코퓨처엠 Tech 세미나: 공정 혁신과 Non-PFE 공급망 구축 Part 1: 포스코퓨처엠 양극재 전략 - LFP/LMFP/LMR ▶ Part 2: 포스코퓨처엠 음극재 전략 - Non-PFE 흑연/Si-C/하드카본 흔들린 건 주가뿐, 최소 2년간 호황 지속 급격한 주가 조정, 펀더멘탈 견조",
+        "매수 기회 ▶ MLCC / 패키징기판 공급 부족 오히려 심화, 2분기 실적도 컨센 상회 전망 ▶ 전기전자 업종 최선호주: 삼성전기, LG이노텍 2차전지 Weekly"
+      ],
+      "keyword": "포스코퓨처엠 Tech 세미나: 공정 혁신과 Non-PFE 공급망 구축 P"
+    },
+    {
+      "industry_name": "식품",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "F&B Morning Talk F&B Morning Talk F&B Morning Talk"
+      ],
+      "keyword": "F&B Morning Talk F&B Morning Talk F&B Mo"
+    },
+    {
+      "industry_name": "화학",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "신한투자, iM, KB",
+      "bullets": [
+        "여수 사업재편 확정, 국내 화학 구조조정 가속화 # 대산에 이은 제2호 사업재편, 여수 통합안 구체화 ▶ 249만톤 감축 가시화, 공급 조정의 실행 단계 진입 기름뿜뿜 Weekly: 홍해 봉쇄 시나리오에서 정유업종 선호도 정리 [에너지] 홍해 봉쇄 시나리오에서 정유업종 선호도 정리",
+        "전쟁 종료 전 마지막 유가/정제마진 추가 급등 가능성 2차 봉쇄 및 홍해 봉쇄 우려에 유가 (Brent) 16일 만에 74$/b100$/b ▶ 미국 전략 비축유 (SPR), 방출 속도 유지 시 2027년 1월 고갈 ▶ 함께 감소중인 민간 재고"
+      ],
+      "keyword": "심지어 인출 가능 재고는 절반 수준으로, 2027년 3월 고갈"
+    },
+    {
+      "industry_name": "IT서비스",
+      "report_count": 3,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "메리츠",
+      "bullets": [
+        "Meritz Overnight Tech Meritz Overnight Tech Meritz Overnight Tech"
+      ],
+      "keyword": "Meritz Overnight Tech Meritz Overnight T"
+    },
+    {
+      "industry_name": "판매업체",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "하나, 한화투자",
+      "bullets": [
+        "대형마트, 새벽배송보다 더 중요한 것 새벽배송 재개 되더라도 손익 영향은 제한적 ▶ 의무휴업+온라인 업체 식품 시장 침투 등으로 이마트 영업이익 1/10로 감소 ▶ 7월 기존점 성장률 YoY 10% 이상 호조세 백화점 단기 주가 부진과 대응방안 백화점 주가 부진, 자산 효과에 대한 우려 반영 중"
+      ],
+      "keyword": "대형마트, 새벽배송보다 더 중요한 것 새벽배송 재개 되더라도 손익 영향은"
+    },
+    {
+      "industry_name": "복합유틸리티",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나",
+      "bullets": [
+        "RPS 폐지와 태양광 PPA RPS 제도 폐지",
+        "경쟁입찰 기반 계약시장제도로 전환 ▶ 낮아지는 입찰 상한가격은 공급 목표 달성 우려 요인 ▶ 고정가격계약 중도 해지 허용 시 PPA 시장 활성화 가능 유틸리티 Weekly-사우디와 미국의 123 협정 국회 53일 만에 정상화…AI",
+        "반도체용 ‘PPA법’ 논의 본격화 ▶ 발전사업허가 후 1년 내 망이용신청 않으면 접속권 상실 ▶ 호르무즈 긴장 고조에 LNG 운송 차질…글로벌 가스가격 재 상승"
+      ],
+      "keyword": "RPS 폐지와 태양광 PPA RPS 제도 폐지"
+    },
+    {
+      "industry_name": "우주항공과국방",
+      "report_count": 2,
+      "overweight_ratio": 0.5,
+      "overweight_ratio_pct": 50,
+      "opinion": "Overweight",
+      "main_institutions": "DS투자, 한국투자",
+      "bullets": [
+        "DS Defense Daily 끝나지 않는 미사일 쇼티지, 한국 업체 수출 기회 지속 록히드마틴 PAC-3 ACE 공개 ▶ 방공 미사일 공급 부족 단기 해결은 불가능 ▶ 한국 방공 미사일 밸류체인 수출 모멘텀 빠르게 확대되는 중"
+      ],
+      "keyword": "DS Defense Daily 끝나지 않는 미사일 쇼티지, 한국 업체 수"
+    },
+    {
+      "industry_name": "게임엔터테인먼트",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "삼성, 하나",
+      "bullets": [
+        "2Q26 Preview - 성장 모멘텀에 투자 신작 성과로 갈리는 2Q26 실적 ▶ 하반기 희귀해진 대작 출시 ▶ 양극화되는 M&A 시장 실적 시즌 전 주요 사항, 역시 크래프톤과 엔씨 Top Pick: 크래프톤, NC 유지 ▶ 시프트업/네오위즈: 현재 주가는 진짜 바닥 ▶ 넷마블: 추정치 하향의 막바지2Q26 Preview - 성장 모멘텀에 투자 신작 성과로 갈리는 2Q26 실적 ▶ 하반기 희귀해진 대작 출시 ▶ 양극화되는 M&A 시장"
+      ],
+      "keyword": ""
+    },
+    {
+      "industry_name": "무선통신서비스",
+      "report_count": 2,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "iM, 하나",
+      "bullets": [
+        "SKT의 에스케이하이퍼 출범과 그 의의 SK텔레콤의 AIDC 사업을 전담할 신규 법인 ‘에스케이하이퍼’ 출자 공시 ▶ ‘에스케이하이퍼’ 사업 모델 및 수익 구조 예상"
+      ],
+      "keyword": "SKT의 에스케이하이퍼 출범과 그 의의 SK텔레콤의 AIDC 사업을 전담"
+    },
+    {
+      "industry_name": "전기제품",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "교보",
+      "bullets": [
+        "2026년 7월 넷째 주 전기전자 Weekly 지난 주에 이어 Tech 섹터의 높은 변동성 지속되며 밸류에이션 부담이 중요하게 작용 ▶ 가격과 수요에 대한 기대감이 높은 밸류에이션을 정당화했던 기업들의 큰 하락폭이 뚜렷 ▶ 높은 밸류에이션에 대한 피로도가 높은 구간으로 호실적의 가치가 높아지는 구간이라고 판단2026년 7월 넷째 주 전기전자 Weekly 지난 주에 이어 Tech 섹터의 높은 변동성 지속되며 밸류에이션 부담이 중요하게 작용 ▶ 가격과"
+      ],
+      "keyword": "2026년 7월 넷째 주 전기전자 Weekly 지난 주에 이어 Tech"
+    },
+    {
+      "industry_name": "건강관리업체및서비스",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "IBK투자",
+      "bullets": [
+        "예뻐질 수 있는 기회 업황은 이미 숫자로 대답했다 ▶ 배행기 타고 오는 내수, 매월 확인 가능한 수출 호조"
+      ],
+      "keyword": "예뻐질 수 있는 기회 업황은 이미 숫자로 대답했다 ▶ 배행기 타고 오는"
+    },
+    {
+      "industry_name": "호텔,레스토랑,레저",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "삼성",
+      "bullets": [
+        "카지노 관광기금 부담 확대, 밸류에이션엔 이미 반영 문체부, 카지노업 초과이익 환수 관련 제도 개편 추진 ▶ 개정안 시행 시, 국내 외국인 카지노 3사 27년 영업이익 최대 30% 하향 불가피 ▶ 규제 강화 우려 반영하며 타겟 멀티플 20% 하향 조정"
+      ],
+      "keyword": "카지노 관광기금 부담 확대, 밸류에이션엔 이미 반영 문체부, 카지노업 초"
+    },
+    {
+      "industry_name": "통신장비",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "하나",
+      "bullets": [
+        "미국 어퍼 C밴드 경매는 초대형 이벤트입니다 미국 어퍼C 밴드 경매 일정 확정 및 2027년 본격 투자 전망 ▶ 미지의 주파수 투자 개시, 글로벌 AI RAN/피지컬 AI 붐 촉진할 것 ▶ 국내 무선통신장비주 억울한 주가 급락 기록, 2차 상승 진입 시 무섭게 오를 수도"
+      ],
+      "keyword": "미국 어퍼 C밴드 경매는 초대형 이벤트입니다 미국 어퍼C 밴드 경매 일정"
+    },
+    {
+      "industry_name": "방송과엔터테인먼트",
+      "report_count": 1,
+      "overweight_ratio": 1.0,
+      "overweight_ratio_pct": 100,
+      "opinion": "Overweight",
+      "main_institutions": "신한투자",
+      "bullets": [
+        "새로운 것이 필요해! 신규 IP, 신규사업 성과가 필요한 때 ▶ 일부 기업들을 향한 챌린지"
+      ],
+      "keyword": "새로운 것이 필요해! 신규 IP, 신규사업 성과가 필요한 때 ▶ 일부 기"
+    },
+    {
+      "industry_name": "철강",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "KB",
+      "bullets": [
+        "국내 데이터센터 구축에 따른 철강 수요 증가 기대 국내 데이터센터 구축에 따른 철강 수요 증가 기대 ▶ H형강의 사용량 늘어날 것으로 예상 ▶ 철강 업황도 반등 국면"
+      ],
+      "keyword": "국내 데이터센터 구축에 따른 철강 수요 증가 기대 국내 데이터센터 구축에"
+    },
+    {
+      "industry_name": "제약",
+      "report_count": 1,
+      "overweight_ratio": 0.0,
+      "overweight_ratio_pct": 0,
+      "opinion": "",
+      "main_institutions": "SK",
+      "bullets": [
+        "산업 현황 점검: 펀터멘탈 이상 無 특허 절벽에 따른 M&A 수요 지속 ▶ 회복 사이클에 진입한 IPO ▶ FDA 불안정한 리더십 속 승인 가속"
+      ],
+      "keyword": "산업 현황 점검: 펀터멘탈 이상 無 특허 절벽에 따른 M&A 수요 지속"
+    }
+  ]
+}

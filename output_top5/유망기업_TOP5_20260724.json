@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-07-20",
+    "end_date": "2026-07-24",
+    "generated_at": "2026-07-24T09:10:31",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 623,
+    "buy_count": 451,
+    "target_up_count": 0,
+    "total_companies": 261
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "현대차",
+      "stock_code": "005380",
+      "institution_list": "KB증권, 미래에셋증권, 상상인증권, 다올투자증권, 메리츠증권",
+      "report_count": 27,
+      "buy_ratio": 0.9259259259259259,
+      "target_up_ratio": 0.0,
+      "current_price": 432000.0,
+      "avg_target_price": 734800.0,
+      "max_target_price": 900000.0,
+      "avg_upside": 70.1,
+      "bullets": [
+        "시장 변동성 감안해 밸류에이션 추정 산입 기간 단축 투자의견 Buy 유지",
+        "목표주가 90만원으로 하향 ▶ 2Q26 영업이익, 국내 및 터키 공장 생산 공백 및 기말 환율 상승 영향으로 부진할 것 ▶ 연간 영업이익 전망치 2화재 및 공사 등 생산 차질은 일시적 ▶ 휴머노이드 시장 2050년 5조달러 전망",
+        "산업용 휴머노이드 점유율 60% 예상 2Q26 프리뷰: 우려를 넘어 로봇 모멘텀 주목 2분기 실적은 아쉽지만 최근 확대된 우려 대비 양호할 것 ▶ 생산차질/파업은 아쉽지만, 실적 이후 3Q 로봇 모멘텀 주목 하반기 생산 정상화, 이익 방어 기대 투자 의견 매수, 목표주가 700,000원 유지 ▶ 매출액 49"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "삼성E&A",
+      "stock_code": "028050",
+      "institution_list": "KB증권, 한국투자증권, IBK투자증권, 삼성증권, 해당기업",
+      "report_count": 23,
+      "buy_ratio": 0.8695652173913043,
+      "target_up_ratio": 0.0,
+      "current_price": 46650.0,
+      "avg_target_price": 67322.5,
+      "max_target_price": 80000.0,
+      "avg_upside": 44.3,
+      "bullets": [
+        "하반기 보여줄 게 많다 2Q26 Preview: 시장기대치 부합 ▶ 상반기 신규수주 75조원 전망 ▶ The First Call EPC: 고객도, 라이선서도 먼저 찾는다 2Q26 Preview: 수주 목표 초과 달성할 회사를 P/B 13배에 사자 영업이익은 컨센서스에 부합할 것, 중동 정세 영향없이 순조로운 공정 ▶ 2026년 수주 목표 초과 달성할 것, 2027F P/B 13배에 진입하기 적절 ▶ 목표주가 3% 하향, 수주 시점 가정을 수정한 결과 2Q26 Review: 기대치를 넘는 그룹사 수주 상향 2분기 실적은 첨단산업과 New Energy가 견인 ▶ 그룹사 수주 전망 확대에 따라, 가이던스 초과 달성 기대 ▶ 투자의견 매수 유지, 목표주가 68,000원으로 상향 2Q26 Review"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "삼성전자",
+      "stock_code": "005930",
+      "institution_list": "KB증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 260500.0,
+      "avg_target_price": 600000.0,
+      "max_target_price": 600000.0,
+      "avg_upside": 130.3,
+      "bullets": [
+        "구글 AI 생태계 최대 수혜주 2028년까지 메모리 공급 부족 심화 ▶ 3개 분기 연속 어닝 서프라이즈 기대 ▶ 구글 메모리 공급 점유율 1위, 50~80%"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "LS",
+      "stock_code": "006260",
+      "institution_list": "메리츠증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 284500.0,
+      "avg_target_price": 640000.0,
+      "max_target_price": 640000.0,
+      "avg_upside": 125.0,
+      "bullets": [
+        "전 계열사 실적 호조, LS Electric 다음은 LS전선과 LSMnM 차례 2Q26 영업이익 컨센서스 상회 전망 ▶ LS Electric 잠정실적 발표, 컨센서스 상회 ▶ LS전선, 역대 최고 수준 분기 실적과 수익성 예상"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "삼성바이오로직스",
+      "stock_code": "207940",
+      "institution_list": "대신증권, NH투자증권, 키움증권, KB증권, 해당기업",
+      "report_count": 22,
+      "buy_ratio": 0.7727272727272727,
+      "target_up_ratio": 0.0,
+      "current_price": 1379000.0,
+      "avg_target_price": 2022941.1764705882,
+      "max_target_price": 2200000.0,
+      "avg_upside": 46.7,
+      "bullets": [
+        "7조원 규모의 폴리펩타이드 인수로 펩타이드 CDMO 진출 ▶ 차세대 모달리티 경쟁력 강화 및 글로벌 생산거점 확보 ▶ 중장기 전략에는 긍정적, 거래 종결 및 통합 과정 확인 필요 Poly Peptide 인수 코멘트: 글로벌 비만 CDMO 첫 진입 삼성바이오로직스, Poly Peptide 27조원 인수 목적 ▶ 향후 밸류에이션 관점 수익성보다는 성장성에 주목 필요 글로벌 펩타이드 CDMO 인수로 사업 영역 확장 글로벌 펩타이드 CDMO 폴리펩타이드 약 27조원에 인수 ▶ 인수를 통해 시간을 사고, 사업 영역 확장 ▶ 기존 투자계획 변동 없음 [AI 실적속보] 2026년 2분기 컨퍼런스콜 요약 연결 매출액 1조 3,209억원으로 +301% 하회), 연결 영업이익 5,864억원으로 +22"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "한화엔진",
+      "stock_code": "082740",
+      "institution_list": "다올투자증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 42400.0,
+      "avg_target_price": 91000.0,
+      "max_target_price": 91000.0,
+      "avg_upside": 114.6,
+      "bullets": [
+        "올해 신기록 경신 확실시 2Q26에 매출 3,666억원(YoY -5%, QoQ +6%), 영업이익 515억원(+53%, 0%), 지배주주순이익 395억원(+83%, -25%)으로 탑라인이 YoY 2Q25의 물량쏠림으로 Flat하고, QoQ로도 29기 안팎 납품으로 비슷하지만, 수익성 개선으로 이익은 전기대비 크게 성장77조원에 육박해서, 올해 사상최대를 경신할 것으로 기대 기존 적정PER을 AI DC 엔진 준비의 이유로 (4월26일 산업자료, 피크아웃? 멀리 보내버리는 미국, 엔진!) 올렸던 30배에서 25배로 낮추고, 적정주가는 ▶ 91,000원(기존 112,000원)으로 -19% 하향"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "RFHIC",
+      "stock_code": "218410",
+      "institution_list": "하나증권",
+      "report_count": 1,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 44950.0,
+      "avg_target_price": 150000.0,
+      "max_target_price": 150000.0,
+      "avg_upside": 233.7,
+      "bullets": [
+        "호재 나올 텐데 주가는 급락, 정답은 매수 매수 투자의견/12개월 목표가 15만원 유지, 미국 이벤트 발생 전 매수 추천 ▶ 데이터 센터 영향 미미, C밴드 투자 움직임 나오면 주가 크게 오른다 ▶ 국내외 시장 영향으로 주가 급락, 곧 2차 상승 전개 가능성에 주목할 시점"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "LS ELECTRIC",
+      "stock_code": "010120",
+      "institution_list": "KB증권, 해당기업, 미래에셋증권, IBK투자증권, 교보증권",
+      "report_count": 17,
+      "buy_ratio": 0.8235294117647058,
+      "target_up_ratio": 0.0,
+      "current_price": 223500.0,
+      "avg_target_price": 301071.4285714286,
+      "max_target_price": 350000.0,
+      "avg_upside": 34.7,
+      "bullets": [
+        "순항하는 신규 수주 목표주가 280,000원 (상향), 투자의견 Buy (유지) ▶ 2Q26 영업이익 1,569억원 (+445% YoY) 전망 ▶ 견조한 수주 현황 확인: 2Q26 2조원 이상의 신규 수주 기대 [AI 실적속보] 2Q26 실적 속보: 시장 컨센서스 상회 2026년 2분기 실적: 시장 컨센서스 상회 ▶ 사업부문별 실적 코멘트 ▶ 주요 Q&A 내용 2026년 2분기 경영실적 20262Q Earnings Release 2Q26 Review: Hyperscaler를 의심하지 말자 2Q26 Review: 판가 인상 효과에 마진 개선 지속 ▶ Hyperscaler를 의심하지 말자 수주가 증명한 성장성 2Q26 영업이익, 시장 기대치 약 9% 상회 ▶ 전력사업 호조, 자동화/자회사 실적도 양호3%)으로 분기 사상 최대 실적을 기록 아직 떠나지 않아도 되는 이유가 되어준 호실적 주력 사업에서의 성장을 기반으로 양호한 2분기 실적 기록 ▶ 수주 성적은 예상을 크게 상회"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "하이브",
+      "stock_code": "352820",
+      "institution_list": "메리츠증권, 키움증권, 유안타증권, DS투자증권",
+      "report_count": 4,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 203000.0,
+      "avg_target_price": 340000.0,
+      "max_target_price": 350000.0,
+      "avg_upside": 67.5,
+      "bullets": [
+        "역사적 숫자의 시작 2Q26 Preview: 컨센서스 부합 전망 ▶ 공연 매출 급증에도 수익성 방어 2분기 BTS와 함께 증명될 역대 최대 실적 2Q26 Preview: 어닝 서프라이즈 가능성 상존 ▶ 펀더멘털은 더욱 좋아지고 있습니다2Q26 확신의 실적 개선 구간 진입 2Q26 매출액 +623% yoy ▶ 투자 매력도 상승 포인트가 하나 더(팬덤 크로스셀링) ▶ 관점에서 밸류에이션 정상화 논리를 뒷받침하는 근거로 판단 ▶ ? Beyond K-Pop, 전세계로 K-Pop 영역 확대 [업데이트]2Q26Pre: BTS 글로벌 투어 및 MD 실적 본격 인식되고 CORTIS, TXT 등 신보 호조로 턴어라운드 전망"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "현대글로비스",
+      "stock_code": "086280",
+      "institution_list": "KB증권, 메리츠증권, 해당기업, DB증권, 미래에셋증권",
+      "report_count": 17,
+      "buy_ratio": 0.8823529411764706,
+      "target_up_ratio": 0.0,
+      "current_price": 204500.0,
+      "avg_target_price": 325266.6666666667,
+      "max_target_price": 380000.0,
+      "avg_upside": 59.1,
+      "bullets": [
+        "자동차 운반선, 공급과잉은 어느새 옛 말 투자의견 Buy, 목표주가 360,000원 유지 ▶ 2Q26 영업이익 4,577억원 예상",
+        "유가 상승으로 해운업 영업이익 전망치 하향 ▶ 연간 영업이익 12Q26 급유단가 상승은 3Q26 운임에 전가될 것 ▶ 2Q26 중국 자동차 수출 +72현대글로비스 이익 정체 우려 불식 중장기 이익 성장동력과 지배구조 특수성 투자의견 Buy, 목표주가 36만원 유지"
+      ]
+    }
+  ]
+}
