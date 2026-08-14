@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "report_type": "top5",
+    "start_date": "2026-08-10",
+    "end_date": "2026-08-14",
+    "generated_at": "2026-08-14T08:02:54",
+    "analysis_days": 5
+  },
+  "stats": {
+    "total_reports": 917,
+    "buy_count": 621,
+    "target_up_count": 0,
+    "total_companies": 280
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "company_name": "KT",
+      "stock_code": "030200",
+      "institution_list": "KB증권, 메리츠증권, 삼성증권, 해당기업, 신한투자증권",
+      "report_count": 20,
+      "buy_ratio": 0.9,
+      "target_up_ratio": 0.0,
+      "current_price": 52700.0,
+      "avg_target_price": 74888.88888888889,
+      "max_target_price": 85000.0,
+      "avg_upside": 42.1,
+      "bullets": [
+        "번들링의 정석 - AIDC에서 과금까지 투자의견 Buy, 목표주가 80,000원 유지 ▶ AI 인프라 번들링으로 수익성 확대 로드맵 제시 ▶ 밸류업 구체화 - 성장에 방점 일회성을 걷어내도 양호한 실적 2Q26 Review: 시장 컨센서스 상회 ▶ 2026년 연결 영업이익 2조 1,414억원(-133% YoY) 전망 ▶ 2028년 연결 ROE 9~10% 목표 하반기 이익은 정상화, 성장은 AX로 2Q26 실적 Review- 컨센서스 상회 ▶ AX 인프라로 성장 기반 확대 2026년 2분기 실적발표 20262Q Earnings Release CEO 간담회 그리고 데이터센터 2Q26 Review: 그룹사 이익 체력 Up ▶ Valuation & Risk: 경쟁사 멀티플 리레이팅 시 동반 수혜 AX Company로 31년E AIDC 매출액 45만원, 투자의견 BUY 유지 새롭게 설정한 AX 사업 목표 2Q26 Review: 일회성 이익으로 인해 시장 기대치 상회 ▶ 투자의견 매수 및 목표주가 74,000원 유지 AX Platform 회사로의 도약 2Q26 Review: 작년 기저효과 속 역성장 했으나"
+      ]
+    },
+    {
+      "rank": 2,
+      "company_name": "코스맥스",
+      "stock_code": "192820",
+      "institution_list": "해당기업, LS증권, 현대차증권, 유진투자증권, SK증권",
+      "report_count": 17,
+      "buy_ratio": 0.8823529411764706,
+      "target_up_ratio": 0.0,
+      "current_price": 210000.0,
+      "avg_target_price": 294533.3333333333,
+      "max_target_price": 350000.0,
+      "avg_upside": 40.3,
+      "bullets": [
+        "2Q Earnings Release 2Q26 Review: 사상 최대 분기 실적 2Q26 Review: 사상 최대 분기 실적 ▶ 투자의견 Buy 유지, 목표주가 350,000원으로 상향 2Q26 Review: 전 법인 견조, 국내도 드디어 마진 개선 2Q26 코스맥스 연결 기준 매출액은 7,949억원(+275%yoy), 영업이익은 737억원 (+213%)으로 시장 기대치를 소폭 상회하는 실적을 시현 ▶ 국내(별도): 매출 +239% 시현 ▶ 이스트(중국): 매출 +32"
+      ]
+    },
+    {
+      "rank": 3,
+      "company_name": "한국콜마",
+      "stock_code": "161890",
+      "institution_list": "유안타증권, KB증권, 한화투자증권, 해당기업, 현대차증권",
+      "report_count": 20,
+      "buy_ratio": 0.85,
+      "target_up_ratio": 0.0,
+      "current_price": 132500.0,
+      "avg_target_price": 169588.23529411765,
+      "max_target_price": 200000.0,
+      "avg_upside": 28.0,
+      "bullets": [
+        "창사 이래 최대 실적, 남은 건 CAPA뿐 2Q26 Review: 창사 이래 최대 실적, 컨센 큰 폭 상회 ▶ 하반기 수주 모멘텀 견조, 관건은 CAPA 대응력 [AI 실적속보] 2026년 2분기 컨퍼런스콜 요약 2매출액 8,613억원 (+170% 상회 ▶ 영업이익 1,103억원 (+503% 상회 달라진 체력, 달라진 실적 기대치를 상회한 2분기 ▶ 하반기도 서프라이즈 ▶ 투자의견 BUY 유지, 목표주가 150,000원으로 상향 조정(+25%) 2026년 2분기 경영실적 2026년 2분기 실적 및 주요 경영현황 설명, Q&A 20262Q Earnings Release 2026년 2분기 실적 및 주요 경영현황 설명, Q&A 2Q26 Review: 선케어가 이끈 최대 실적, 하반기도 성장 지속 2Q26 한국콜마 연결 기준 매출액은 8,613억원(+17"
+      ]
+    },
+    {
+      "rank": 4,
+      "company_name": "신세계",
+      "stock_code": "004170",
+      "institution_list": "삼성증권, 해당기업, LS증권, 유진투자증권, 교보증권",
+      "report_count": 16,
+      "buy_ratio": 0.875,
+      "target_up_ratio": 0.0,
+      "current_price": 428500.0,
+      "avg_target_price": 729642.8571428572,
+      "max_target_price": 1000000.0,
+      "avg_upside": 70.3,
+      "bullets": [
+        "백화점 부의 효과 둔화 우려는 이미 반영 백화점 고성장이 두드러진 실적 ▶ 우려보다 양호한 실적 2026년 2분기 실적 20262Q Earnings Results 2Q26 Review: 실적의 신세계, 증명 완료 K-IFRS 2Q26 연결 총매출액은 전년동기대비 85% 증가한 3조 1,414억원, 영업이익은 YoY 122% 증가한 1,671억원을 기록하며 당사 추정치 및 시장 기대치 상회 ▶ 3Q26에도 백화점과 면세점의 동반 이익 개선이 이어질 전망2%, 외국인 매출은 지난해 높은 기저에도 120% 증가했고 외국인 매출 비중도 8"
+      ]
+    },
+    {
+      "rank": 5,
+      "company_name": "NC",
+      "stock_code": "036570",
+      "institution_list": "KB증권, 미래에셋증권, NH투자증권, 해당기업, 부국증권",
+      "report_count": 18,
+      "buy_ratio": 0.7777777777777778,
+      "target_up_ratio": 0.0,
+      "current_price": 246500.0,
+      "avg_target_price": 368928.5714285714,
+      "max_target_price": 440000.0,
+      "avg_upside": 49.7,
+      "bullets": [
+        "아이온2 글로벌에 주목 투자의견 Buy, TP 440,000원, 게임 섹터 Top Pick 의견 유지 ▶ 컨센서스 상회, 블소2 중국 잔여 계약금 조기 인식 영향 ▶ 아이온2 글로벌에 주목",
+        "신작 모멘텀 기대 다가오는 아이온2 글로벌 출시 2Q26 Review: 컨센서스 상회 ▶ 하반기도 기대되는 리니지 클래식과 아이온2 ▶ 투자의견 '매수', 목표주가 400,000원 유지 [AI 실적속보] 2Q26 실적 및 컨퍼런스 콜 요약 2Q26 매출액 7,705억원 (+1012% QoQ)으로 컨센서스 상회 ▶ 2Q26 영업이익 1,739억원 (+1,0532% QoQ)으로 컨센서스 상회 26"
+      ]
+    },
+    {
+      "rank": 6,
+      "company_name": "JYP Ent.",
+      "stock_code": "035900",
+      "institution_list": "해당기업, LS증권, 교보증권, 메리츠증권, 유진투자증권",
+      "report_count": 16,
+      "buy_ratio": 0.875,
+      "target_up_ratio": 0.0,
+      "current_price": 40850.0,
+      "avg_target_price": 66000.0,
+      "max_target_price": 80000.0,
+      "avg_upside": 61.6,
+      "bullets": [
+        "2026년 2분기 실적발표 2분기 실적발표 및 향후 사업전망 20262Q Financial Results 2분기 실적발표 및 향후 사업전망 27년 재도약 2Q26 연결 매출액은 1,831억원(-151% YoY), 영업이익은 310억원 (-419%)로 컨센서스 하회 ▶ 27년 재도약 2Q26 Review: 하반기 실적 모멘텀 유효 2Q26 시장 기대치 하회, 하반기 모멘텀은 유효 ▶ 투자의견 BUY 유지 및 목표주가 70,000원으로 하향 단기 수익성 둔화, 하반기 회복에 주목 2Q26 Review: 컨센서스 하회 ▶ 하반기는 다시 Stray Kids"
+      ]
+    },
+    {
+      "rank": 7,
+      "company_name": "와이지엔터테인먼트",
+      "stock_code": "122870",
+      "institution_list": "신영증권, 교보증권, 흥국증권, 유진투자증권, KB증권",
+      "report_count": 13,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 44300.0,
+      "avg_target_price": 61769.230769230766,
+      "max_target_price": 69000.0,
+      "avg_upside": 39.4,
+      "bullets": [
+        "괴물이 온다 2026년 2분기: MD판매 호조 ▶ 신인 두 팀 출격 준비 ▶ 신인 기대감 시작 2Q26 Review: 하반기에 집중 MD 서프라이즈, 하반기 기대감 확대 ▶ 투자의견 BUY 유지 및 목표주가 60,000원으로 하향 베몬 MD가 만든 예상 밖의 서프 2Q26 Review: 매출액 +27%, 영업이익 +31% YoY2%yoy), 영업이익은 110억원(+312% yoy)으로 시장 컨센서스 상회 ▶ 베이비몬스터와 트레저의 컴백만으로 앨범매출과 MD 매출이 외형 견인하며 시장 기대치 상회",
+        "활동 비수기에도 MD가 이렇게 팔리면… 투자의견 Buy, 목표주가 60,000원 유지 ▶ 2Q26: MD 고성장으로 컨센서스 상회 ▶ 3Q26: 전분기 대비 활동 대폭 증가 베이비몬스터 체급 성장과 빅뱅 컴백 기대감 2Q26 Review: MD 판매 호조로 컨센서스 상회"
+      ]
+    },
+    {
+      "rank": 8,
+      "company_name": "미래에셋증권",
+      "stock_code": "006800",
+      "institution_list": "KB증권, 메리츠증권, 삼성증권, 하나증권, 해당기업",
+      "report_count": 17,
+      "buy_ratio": 0.7647058823529411,
+      "target_up_ratio": 0.0,
+      "current_price": 36500.0,
+      "avg_target_price": 54800.0,
+      "max_target_price": 95000.0,
+      "avg_upside": 50.1,
+      "bullets": [
+        "대규모 평가이익 시현, 향후 손익 변동성 관리가 중요 투자의견 Buy 유지, 목표주가 43,000원으로 하향 ▶ 2Q26 연결기준 지배주주순이익 19% 상회 본업은 양호했으나 2Q26 지배주주순이익 190조원: 컨센서스 상회 ▶ 추후 평가이익 변동성 확인 필요 2Q review - 평가 이익 제외하더라도 견조한 실적 2Q26 review: 2Q26 연결 지배주주 순이익은 1조 8,959억원으로 컨센서스를 26% 상회",
+        "이를 제외한 연결 세전이익은 9,044억원 ▶ 상반기 기준 SpaceX 평가이익은 총 2조 5,659억원"
+      ]
+    },
+    {
+      "rank": 9,
+      "company_name": "NAVER",
+      "stock_code": "035420",
+      "institution_list": "신영증권, 부국증권, 유진투자증권, 교보증권, 신한투자증권",
+      "report_count": 15,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 226500.0,
+      "avg_target_price": 332866.6666666667,
+      "max_target_price": 400000.0,
+      "avg_upside": 47.0,
+      "bullets": [
+        "새로운 10년을 향한 큰 변화의 시작 AI기반 성장세 확인 ▶ 강한 AI 인프라 기대감 속 투자 불확실성 여전히 존재 AI팩토리 사업 윤곽이 드러나는 중 2Q26 Review ▶ AI 팩토리 투자 로드맵 공개에 따른 개략적인 비용구조 확인은 긍정적 ▶ 목표주가 300,000원, 투자의견 Buy 유지 하반기 관건은 AI Factory 성과 2분기 매출액 32%yoy), 영업이익 5,203억원(-02%yoy)으로 시장 컨센서스(5,662억원) 하회 ▶ 엔비디아",
+        "브룩필드와의 AI팩토리 사업 구조도 공개함 파이낸셜 투자 확대에도 중심 성장 스토리 그대로 유지 2Q26 Review: 영업이익 컨센서스 하회 ▶ 투자의견 Buy 및 목표주가 390,000원 유지 단기 수익성보다 미래 먹거리에 투자 2Q26 Review: 올해는 수익성보다 사업 확장에 집중"
+      ]
+    },
+    {
+      "rank": 10,
+      "company_name": "롯데웰푸드",
+      "stock_code": "280360",
+      "institution_list": "신한투자증권, 현대차증권, 교보증권, NH투자증권, LS증권",
+      "report_count": 12,
+      "buy_ratio": 1.0,
+      "target_up_ratio": 0.0,
+      "current_price": 116900.0,
+      "avg_target_price": 169583.33333333334,
+      "max_target_price": 200000.0,
+      "avg_upside": 45.1,
+      "bullets": [
+        "원가 개선까지 더해진다면? 3분기부터는 의미 있는 마진 스프레드 개선 기대 ▶ 2Q26 Review: 연타석 홈런 ▶ Valuation & Risk: 해외 외형 성장에 달린 밸류에이션 2Q26 Review: 호실적 롯데웰푸드 2Q26 연결 기준 매출액은 1조 1,557억원(+86%yoy), 영업이익 647억원(+886%)으로 시장 컨센서스를 큰 폭으로 상회하는 실적 시현 ▶ 인도/카자흐스탄 중심의 견조한 매출 성장에 국내 경영 효율화 효과 가시화되며 ERP 비용 반영되었음에도 불구하고 시장 기대치 크게 상회하는 실적 기록 구조적 개선, 해외 고성장, 성공적 2Q26 Review: 구조적 개선, 해외 성장이 결합된 서프라이즈",
+        "수익성 개선 및 인도 중심 글로벌 성장 지속 전망 ▶ 투자의견 매수, 목표주가 17만원 유지 판매량 증가와 가격 인상으로 원가 부담 극복 2분기 영업이익 647억원으로 시장 기대치 상회 ▶ 3분기 영업이익 924억원 전망 ▶ 투자의견 BUY, 목표주가 170,000원을 유지 가파른 체질 개선 효과 확인 2Q26P 연결 매출액 1조 1,557억원(YoY +8"
+      ]
+    }
+  ]
+}
